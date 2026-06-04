@@ -1,0 +1,431 @@
+<items>
+  <!--Weapons-->
+  <item id="oak_staff" name="Oak Staff" type="weapon" attack_bonus="2" value="12" stackable="false">
+    <description>A moon-blessed staff cut from the grove beyond the walls.</description>
+  </item>
+  <item id="iron_dagger" name="Iron Dagger" type="weapon" attack_bonus="2" value="10" stackable="false">
+    <description>A short utility blade that becomes a weapon whenever diplomacy loses patience.</description>
+  </item>
+  <item id="rusty_sword" name="Rusty Sword" type="weapon" attack_bonus="3" value="12" stackable="false">
+    <description>A battered sword from the watch armory. It is ugly, honest, and still sharp enough.</description>
+  </item>
+  <item id="iron_spear" name="Iron Spear" type="weapon" attack_bonus="6" required_level="2" value="34" stackable="false">
+    <description>A crafted watch spear with reach, balance, and a very persuasive point.</description>
+  </item>
+  <item id="watch_halberd" name="Watch Halberd" type="weapon" attack_bonus="7" required_level="3" value="58" stackable="false">
+    <description>A town-forged polearm with a hooked axe head, useful for keeping trouble at a formal distance.</description>
+  </item>
+  <item id="thorn_recurve" name="Thorn Recurve" type="weapon" attack_bonus="8" required_level="5" value="82" stackable="false">
+    <description>A greenwood bow grown rather than carved, its string humming with the patience of old trees.</description>
+  </item>
+  <item id="ember_sabre" name="Ember Sabre" type="weapon" attack_bonus="9" required_level="4" value="75" stackable="false">
+    <description>A curved blade that leaves a brief orange line in the air after every swing.</description>
+  </item>
+  <item id="oasis_staff" name="Oasis Staff" type="weapon" attack_bonus="11" mp_bonus="4" required_level="7" value="112" stackable="false">
+    <description>A staff of acacia wood and glass sand, bright with contained mirage-light.</description>
+  </item>
+  <item id="glass_sabre" name="Glass Sabre" type="weapon" attack_bonus="12" required_level="8" value="140" stackable="false" magical="true" depleted_attack_bonus="8">
+    <description>A craft-only blade of emberglass and singing sand. Its charged edge cuts like sunlight through water.</description>
+  </item>
+  <item id="archive_blade" name="Archive Blade" type="weapon" attack_bonus="14" mp_bonus="3" required_level="10" value="165" stackable="false">
+    <description>A moon-etched blade that hums whenever a hidden ward considers lying.</description>
+  </item>
+  <item id="moonfall_scepter" name="Moonfall Scepter" type="weapon" attack_bonus="15" mp_bonus="8" required_level="11" value="195" stackable="false" magical="true" depleted_attack_bonus="10" depleted_mp_bonus="3">
+    <description>A crafted scepter capped with lunar script. It focuses spells beautifully until its three charges dim.</description>
+  </item>
+  <item id="starless_edge" name="Starless Edge" type="weapon" attack_bonus="18" required_level="14" value="240" stackable="false" magical="true" depleted_attack_bonus="12">
+    <description>A final-zone blade with a black mirror edge. It cuts best while its three charges still hold.</description>
+  </item>
+  <item id="wyrmfang_lance" name="Wyrmfang Lance" type="weapon" attack_bonus="22" hp_bonus="6" required_level="16" value="330" stackable="false" magical="true" depleted_attack_bonus="16" depleted_hp_bonus="2">
+    <description>A lance shaped from void scale and relic-bright steel, meant for enemies too large to respect ordinary blades.</description>
+  </item>
+  <!--Armors-->
+  <item id="padded_armor" name="Padded Armor" type="armor" defense_bonus="2" value="16" stackable="false">
+    <description>Quilted armor stitched in green thread, good for surviving the first mistake.</description>
+  </item> 
+  <item id="focus_robe" name="Focus Robe" type="armor" defense_bonus="1" mp_bonus="3" value="14" stackable="false">
+    <description>A scholar's robe sewn with tiny grounding knots that help preserve magical focus.</description>
+  </item> 
+  <item id="leather_coat" name="Leather Coat" type="armor" defense_bonus="2" value="15" stackable="false">
+    <description>Flexible leather reinforced for travel, climbing, and abrupt exits.</description>
+  </item>
+  <item id="watch_coat" name="Watch Coat" type="armor" defense_bonus="3" hp_bonus="4" required_level="2" value="38" stackable="false">
+    <description>A green-trimmed patrol coat with hidden padding and enough pockets for bad news.</description>
+  </item>
+  <item id="wild_mage_robe" name="Wild Mage Robe" type="armor" defense_bonus="2" mp_bonus="6" value="20" stackable="false" magical="true" depleted_defense_bonus="1" depleted_mp_bonus="2">
+    <description>A fur-lined robe that hums softly when moonlight touches it.</description>
+  </item>
+  <item id="chainmail" name="Chainmail" type="armor" defense_bonus="4" hp_bonus="6" required_level="2" value="40" stackable="false">
+    <description>Interlocked steel rings that add enough protection to make bold plans less foolish.</description>
+  </item>
+  <item id="thornweave_cloak" name="Thornweave Cloak" type="armor" defense_bonus="5" mp_bonus="5" required_level="5" value="92" stackable="false" magical="true" depleted_defense_bonus="2" depleted_mp_bonus="2">
+    <description>A cloak braided from Thornwild fiber and moon ink, warm as living bark until its warding charge fades.</description>
+  </item>
+  <item id="miner_heatwrap" name="Miner Heatwrap" type="armor" defense_bonus="5" hp_bonus="6" required_level="4" value="78" stackable="false">
+    <description>A rugged wrap of slag leather and brass buckles, standard kit for workers who cannot afford to combust.</description>
+  </item>
+  <item id="dune_robe" name="Dune Robe" type="armor" defense_bonus="6" mp_bonus="9" required_level="7" value="120" stackable="false" magical="true" depleted_defense_bonus="3" depleted_mp_bonus="4">
+    <description>A robe woven to shed heat, grit, and small curses until its enchantment runs dry.</description>
+  </item>
+  <item id="cinder_mail" name="Cinder Mail" type="armor" defense_bonus="7" hp_bonus="8" required_level="4" value="82" stackable="false">
+    <description>Blackened mail lined with ash-cloth, made for walking through heat and bad odds.</description>
+  </item>
+  <item id="mirage_scale_vest" name="Mirage Scale Vest" type="armor" defense_bonus="8" hp_bonus="6" required_level="8" value="142" stackable="false">
+    <description>A vest of pale scales and desert thread that seems to shift half an inch away from incoming blows.</description>
+  </item>
+  <item id="oracle_mantle" name="Oracle Mantle" type="armor" defense_bonus="9" mp_bonus="10" required_level="10" value="170" stackable="false">
+    <description>A mantle of silver panels and soft cloth, built to protect the body and organize the mind.</description>
+  </item>
+  <item id="lunar_guard_hauberk" name="Lunar Guard Hauberk" type="armor" defense_bonus="11" hp_bonus="8" mp_bonus="4" required_level="11" value="205" stackable="false">
+    <description>Archive battle-mail etched with quiet equations that make violence arrive in a more manageable order.</description>
+  </item>
+  <item id="citadel_plate" name="Citadel Plate" type="armor" defense_bonus="13" hp_bonus="16" required_level="14" value="250" stackable="false" magical="true" depleted_defense_bonus="8" depleted_hp_bonus="8">
+    <description>Heavy plate lacquered in green and black, made for the last doors of the story.</description>
+  </item>
+  <item id="wyrmhide_wardcoat" name="Wyrmhide Wardcoat" type="armor" defense_bonus="16" hp_bonus="20" mp_bonus="6" required_level="16" value="360" stackable="false" magical="true" depleted_defense_bonus="10" depleted_hp_bonus="10" depleted_mp_bonus="2">
+    <description>A craft-only coat of void scale, sunspun thread, and old defiance. It dulls after three heavy hits but never becomes ordinary.</description>
+  </item>
+  <!--Materials-->
+  <item id="iron_blade" name="Iron Blade" type="material" value="9" stackable="true">
+    <description>A forged spearhead recovered from old watch stores.</description>
+  </item>
+  <item id="oak_haft" name="Oak Haft" type="material" value="8" stackable="true">
+    <description>A straight oak shaft, sanded smooth and balanced for a spear.</description>
+  </item>
+  <item id="wolf_pelt" name="Wolf Pelt" type="material" value="7" stackable="true">
+    <description>Thick grey fur from a road-stalking wolf.</description>
+  </item>
+  <item id="bear_pelt" name="Bear Pelt" type="material" value="12" stackable="true">
+    <description>Coarse brown fur warm enough to hold a little wild magic.</description>
+  </item>
+  <item id="glimmer_ore" name="Glimmer Ore" type="material" value="10" stackable="true">
+    <description>Green-flecked ore that brightens when carried near old wards.</description>
+  </item>
+  <item id="ember_ore" name="Ember Ore" type="material" value="16" stackable="true">
+    <description>Iron-veined ore warm enough to steam in the rain.</description>
+  </item>
+  <item id="glass_sand" name="Glass Sand" type="material" value="18" stackable="true">
+    <description>Fine desert sand that rings like crystal when poured from palm to palm.</description>
+  </item>
+  <item id="moon_ink" name="Moon Ink" type="material" value="22" stackable="true">
+    <description>Ink made from ground moonstone, useful for spells that need to remember themselves.</description>
+  </item>
+  <item id="void_shard" name="Void Shard" type="material" value="28" stackable="true">
+    <description>A cold black splinter from the Starless Citadel, heavy with borrowed night.</description>
+  </item>
+  <item id="thornheart_fiber" name="Thornheart Fiber" type="material" value="14" stackable="true">
+    <description>A resilient strand pulled from living briar, flexible until it decides not to be.</description>
+  </item>
+  <item id="greenwood_core" name="Greenwood Core" type="material" value="18" stackable="true">
+    <description>A polished heartwood rod grown in the deep Thornwild and still faintly awake.</description>
+  </item>
+  <item id="slag_leather" name="Slag Leather" type="material" value="17" stackable="true">
+    <description>Heat-cured hide from Emberdeep harnesses, tough enough to shrug off flying cinders.</description>
+  </item>
+  <item id="emberglass_ingot" name="Emberglass Ingot" type="material" value="24" stackable="true">
+    <description>A transparent ingot with a coal-red heart, prized by smiths who enjoy difficult miracles.</description>
+  </item>
+  <item id="sunspun_thread" name="Sunspun Thread" type="material" value="26" stackable="true">
+    <description>Gold-white thread traded across Vel'rasha, warm in the hand and stubborn in a weave.</description>
+  </item>
+  <item id="star_salt" name="Star Salt" type="material" value="24" stackable="true">
+    <description>Crystalline salt gathered where mirages collapse, used to keep enchantments from drifting sideways.</description>
+  </item>
+  <item id="lunar_page" name="Lunar Page" type="material" value="30" stackable="true">
+    <description>A salvaged page of silver vellum that remembers the last spell written on it.</description>
+  </item>
+  <item id="silver_quill_nib" name="Silver Quill Nib" type="material" value="22" stackable="true">
+    <description>A precise archive nib, sharp enough to draw ink through warded parchment.</description>
+  </item>
+  <item id="wyrm_scale" name="Wyrm Scale" type="material" value="40" stackable="true">
+    <description>A dark scale from a citadel serpent or worse, edged with a cold that refuses daylight.</description>
+  </item>
+  <!--Accessories-->
+  <item id="silver_ring" name="Silver Ring" type="accessory" attack_bonus="1" value="24" stackable="false">
+    <description>A bright ring that steadies the wearer's timing in a fight.</description>
+  </item>
+  <item id="warding_pendant" name="Warding Pendant" type="accessory" defense_bonus="2" mp_bonus="4" value="30" stackable="false">
+    <description>A moon-silver pendant that layers a small ward around the heart.</description>
+  </item>
+  <item id="hunter_band" name="Hunter Band" type="accessory" attack_bonus="1" defense_bonus="1" required_level="2" value="36" stackable="false">
+    <description>A practical charm worn by scouts who expect both pursuit and retaliation.</description>
+  </item>
+  <item id="guardian_band" name="Guardian Band" type="accessory" attack_bonus="2" defense_bonus="2" hp_bonus="3" mp_bonus="3" required_level="3" value="58" stackable="false">
+    <description>A refined band that joins watchcraft and archive wards into one steadying circuit.</description>
+  </item>
+  <item id="nimble_fingers_ring" name="Nimble Fingers Ring" type="accessory" pickpocket_bonus="10" lockpick_bonus="10" value="30" stackable="false">
+    <description>A thin ring with a moonstone notch that steadies careful hands near purses, pins, and stubborn locks.</description>
+  </item>
+  <item id="sunward_charm" name="Sunward Charm" type="accessory" attack_bonus="2" defense_bonus="1" required_level="5" value="70" stackable="false">
+    <description>A warm charm from caravan wardens who believe courage should be portable.</description>
+  </item>
+  <item id="ember_focus_ring" name="Ember Focus Ring" type="accessory" attack_bonus="2" mp_bonus="3" required_level="4" value="76" stackable="false">
+    <description>A brass ring set with a coal-bright chip that turns impatience into cleaner strikes.</description>
+  </item>
+  <item id="shadow_hasps" name="Shadow Hasps" type="accessory" pickpocket_bonus="15" lockpick_bonus="5" required_level="6" value="92" stackable="false">
+    <description>Tiny black cuff-clasps that keep sleeves, nerves, and suspicious attention from moving too loudly.</description>
+  </item>
+  <item id="oasis_breath_charm" name="Oasis Breath Charm" type="accessory" defense_bonus="2" hp_bonus="6" required_level="7" value="108" stackable="false">
+    <description>A blue-glass charm that makes dry air feel kinder and dangerous air feel negotiable.</description>
+  </item>
+  <item id="moon_index_ring" name="Moon Index Ring" type="accessory" defense_bonus="2" mp_bonus="6" required_level="9" value="110" stackable="false">
+    <description>A ring that keeps one tiny moonlit library indexed around the wearer's knuckle.</description>
+  </item>
+  <item id="scribe_lens_pin" name="Scribe Lens Pin" type="accessory" defense_bonus="1" mp_bonus="8" required_level="10" value="142" stackable="false">
+    <description>A lapel pin fitted with a rotating lens, perfect for reading tiny runes and enormous implications.</description>
+  </item>
+  <item id="voidward_pendant" name="Voidward Pendant" type="accessory" attack_bonus="2" defense_bonus="3" hp_bonus="5" required_level="13" value="180" stackable="false">
+    <description>A pendant that beats like a second cautious heart near the Starless Citadel.</description>
+  </item>
+  <item id="concord_seal_band" name="Concord Seal Band" type="accessory" attack_bonus="3" defense_bonus="3" hp_bonus="8" mp_bonus="8" required_level="15" value="290" stackable="false" magical="true" depleted_attack_bonus="1" depleted_defense_bonus="1" depleted_hp_bonus="3" depleted_mp_bonus="3">
+    <description>A craft-only relic band that harmonizes thorn, ember, mirage, moon, and void into one dangerous little circle.</description>
+  </item>
+  <!--Consumables-->
+  <item id="healing_tonic" name="Healing Tonic" type="consumable" value="15" stackable="true">
+    <description>A red herbal tonic that knits bruises and shallow cuts.</description>
+    <effect hp_restore="18" />
+  </item>
+  <item id="mana_tonic" name="Mana Tonic" type="consumable" value="15" stackable="true">
+    <description>A cool blue drink that clears spell-fog from the mind.</description>
+    <effect mp_restore="12" />
+  </item>
+  <item id="fury_draught" name="Fury Draught" type="consumable" value="20" stackable="true">
+    <description>A pepper-red draught that makes every swing arrive half a heartbeat sooner.</description>
+    <effect attack_bonus="3" duration="2" />
+  </item>
+  <item id="guard_tonic" name="Guard Tonic" type="consumable" value="20" stackable="true">
+    <description>A chalky tonic that turns fear into a steadier guard.</description>
+    <effect defense_bonus="3" duration="2" />
+  </item>
+  <item id="antidote" name="Antidote" type="consumable" value="18" stackable="true">
+    <description>A bitter green vial that pulls venom out of the blood before it can settle in.</description>
+    <effect cure_poison="true" />
+  </item>
+  <item id="mana_crystal" name="Mana Crystal" type="consumable" value="25" stackable="true">
+    <description>A thumb-sized crystal that stores enough clean mana to wake a depleted enchantment.</description>
+    <effect recharge_charges="true" />
+  </item>
+  <item id="greater_healing_tonic" name="Greater Healing Tonic" type="consumable" value="36" stackable="true">
+    <description>A stronger red tonic reserved for deep-zone expeditions and anyone bleeding in an impressive way.</description>
+    <effect hp_restore="36" />
+  </item>
+  <item id="greater_mana_tonic" name="Greater Mana Tonic" type="consumable" value="34" stackable="true">
+    <description>A clear blue draught that washes fatigue from the mind like rain from slate.</description>
+    <effect mp_restore="26" />
+  </item>
+  <item id="stoneskin_phial" name="Stoneskin Phial" type="consumable" value="32" stackable="true">
+    <description>A gritty gray phial that briefly convinces your bones they are architecture.</description>
+    <effect defense_bonus="5" duration="3" />
+  </item>
+  <item id="ironwill_draught" name="Ironwill Draught" type="consumable" value="38" stackable="true">
+    <description>A bitter black draught that steadies the guard hand and sharpens the striking hand at once.</description>
+    <effect attack_bonus="4" defense_bonus="2" duration="2" />
+  </item>
+  <item id="springwater_vial" name="Springwater Vial" type="consumable" value="28" stackable="true">
+    <description>A sealed vial from Vel'rasha's moonlit spring, soothing both cracked skin and frayed focus.</description>
+    <effect hp_restore="14" mp_restore="10" />
+  </item>
+  <!--Utilities-->
+  <item id="iron_pry_bar" name="Iron Pry Bar" type="utility" value="18" stackable="false">
+    <description>A short forged bar with a hooked lip, made for opening stuck grates, old crates, and bad ideas.</description>
+  </item>
+  <item id="lockpicks" name="Lockpicks" type="utility" value="20" stackable="true">
+    <description>A roll of slim picks and tension wires for quiet doors, nervous locks, and choices best made quickly.</description>
+  </item>
+  <item id="watch_token" name="Watch Token" type="utility" value="0" stackable="false">
+    <description>A stamped wooden token used to identify Watch allies and wake old signal lanterns along the north road.</description>
+  </item>
+  <item id="archive_cipher" name="Archive Cipher" type="utility" value="0" stackable="false" magical="true">
+    <description>A folded strip of moon-script used to translate whispering ore, sealed marginalia, and other Archive-minded inconveniences.</description>
+  </item>
+  <item id="ember_pump_gear" name="Ember Pump Gear" type="utility" value="0" stackable="false">
+    <description>A brass gear with heat-blackened teeth, meant to wake the old mine pumps.</description>
+  </item>
+  <item id="desert_compass" name="Desert Compass" type="utility" value="0" stackable="false" magical="true">
+    <description>A moonlit compass that points toward water, shade, and occasionally trouble.</description>
+  </item>
+  <item id="field_trowel" name="Field Trowel" type="utility" value="14" stackable="false">
+    <description>A narrow trowel carried by rangers for digging seed caches, old trail markers, and the occasional boot free.</description>
+  </item>
+  <item id="heatproof_gloves" name="Heatproof Gloves" type="utility" value="24" stackable="false">
+    <description>Thick gloves lined with slag leather, made for touching mine machinery that strongly prefers not to be touched.</description>
+  </item>
+  <item id="moon_calipers" name="Moon Calipers" type="utility" value="32" stackable="false" magical="true">
+    <description>Silver calipers that measure script spacing, relic fractures, and the distance between a good idea and a curse.</description>
+  </item>
+  <item id="void_tuning_fork" name="Void Tuning Fork" type="utility" value="42" stackable="false" magical="true">
+    <description>A black iron fork that rings without sound, useful for finding where citadel wards are pretending to be walls.</description>
+  </item>
+  <item id="rubbing_kit" name="Rubbing Kit" type="utility" value="18" stackable="false">
+    <description>Charcoal sheets, wax, and a flat brush for copying inscriptions that would rather not travel.</description>
+  </item>
+  <!--Spellbooks-->
+  <item id="sunfire_codex" name="Sunfire Codex" type="spellbook" value="28" stackable="false" teaches_spell="sunfire_burst">
+    <description>A lacquered spellbook whose pages glow like banked coals.</description>
+  </item>
+  <item id="veil_manual" name="Veil Manual" type="spellbook" value="26" stackable="false" teaches_spell="veil_barrier">
+    <description>A compact guide to layered defensive wards and very patient handwriting.</description>
+  </item>
+  <item id="root_mender_primer" name="Root Mender Primer" type="spellbook" value="34" stackable="false" teaches_spell="root_mend">
+    <description>A ranger's annotated primer on persuading wounds to close with Thornwild stubbornness.</description>
+  </item>
+  <item id="stormchain_codex" name="Stormchain Codex" type="spellbook" value="54" stackable="false" teaches_spell="storm_chain">
+    <description>A lacquered archive codex that smells like rain on hot stone and refuses to stay shut during storms.</description>
+  </item>
+  <item id="quietus_glimmer_notes" name="Quietus Glimmer Notes" type="spellbook" value="48" stackable="false" teaches_spell="quietus_glimmer">
+    <description>A loose packet of rogue marginalia written in ink visible only when nobody is looking directly at it.</description>
+  </item>
+  <item id="starless_aegis_treatise" name="Starless Aegis Treatise" type="spellbook" value="72" stackable="false" teaches_spell="starless_aegis">
+    <description>A dangerous treatise copied from citadel armor plates, teaching a ward that learned endurance from darkness.</description>
+  </item>
+  <!--Keys-->
+  <item id="vault_key" name="Vault Key" type="key" value="0" stackable="false">
+    <description>A bronze key with a crescent tooth and the Archive's old seal on its bow.</description>
+  </item>
+  <item id="exchange_vault_key" name="Exchange Vault Key" type="key" value="0" stackable="false">
+    <description>A green-glass key stamped with the exchange office seal. It opens Marlow's private vault door.</description>
+  </item>
+  <item id="smithy_cellar_key" name="Smithy Cellar Key" type="key" value="0" stackable="false">
+    <description>A wrought iron key covered in soot. It opens the padlock on the cellar door in the Smithy</description>
+  </item>
+  <item id="archive_supply_key" name="Archive Supply Key" type="key" value="0" stackable="false">
+    <description>A silver key capped with a crescent moon, the mark indicates it opens the supply room.</description>
+  </item>
+  <item id="warded_stacks_key" name="Warded Stacks Key" type="key" value="0" stackable="false">
+    <description>A slim archive key cut from white metal, warm only when pointed toward ink that bites.</description>
+  </item>
+  <!--Quests-->
+  <item id="moon_sigil" name="Moon Sigil" type="quest" value="0" stackable="false">
+    <description>A cold silver disk etched with the heartward's central glyph.</description>
+  </item>
+  <item id="heart_lantern" name="Heart Lantern" type="quest" value="0" stackable="false">
+    <description>A green glass lantern meant to carry a living spark into the heart of the keep.</description>
+  </item>
+  <item id="thorn_crown_relic" name="Thorn Crown Relic" type="quest" value="0" stackable="false">
+    <description>A living crown of green briar and old oath-magic. It pulses when carried near the final gate.</description>
+  </item>
+  <item id="emberheart_relic" name="Emberheart Relic" type="quest" value="0" stackable="false">
+    <description>A fist-sized coal that never cools, wrapped in a lattice of black crystal.</description>
+  </item>
+  <item id="mirage_orb_relic" name="Mirage Orb Relic" type="quest" value="0" stackable="false">
+    <description>A glassy orb full of moving desert light, showing roads that may not exist yet.</description>
+  </item>
+  <item id="moonfall_relic" name="Moonfall Relic" type="quest" value="0" stackable="false">
+    <description>A shard of fallen moonstone etched with the last complete heartward equation.</description>
+  </item>
+  <!--Miscellaneous-->
+  <item id="faded_keepsake" name="Faded Keepsake" type="misc" value="0" stackable="false">
+    <description>A small ribbon-bound keepsake with a pressed emerald leaf inside. It feels too personal to sell and too deliberate to ignore.</description>
+  </item>
+  <item id="pip_lucky_button" name="Pip's Lucky Button" type="misc" value="0" stackable="false">
+    <description>A brass coat button polished smooth by nervous thumbs. Pip swears every good road starts with it in his pocket.</description>
+  </item>
+  <item id="lost_watch_badge" name="Lost Watch Badge" type="misc" value="0" stackable="false">
+    <description>A dented badge from a patrol that vanished beyond the thorn line.</description>
+  </item>
+  <item id="broken_astrolabe" name="Broken Astrolabe" type="misc" value="0" stackable="false">
+    <description>A bent brass astrolabe that still points toward impossible constellations.</description>
+  </item>
+  <item id="archive_tablet" name="Archive Tablet" type="misc" value="0" stackable="false">
+    <description>A clay tablet packed with tiny script from a sealed wing of the Moonfall Archive.</description>
+  </item>
+  <item id="citadel_map" name="Citadel Map" type="misc" value="0" stackable="false">
+    <description>A charcoal map of the Starless Citadel's outer halls, drawn by someone who was running.</description>
+  </item>
+  <item id="ranger_field_notes" name="Ranger Field Notes" type="misc" value="0" stackable="false">
+    <description>A weatherproof booklet full of practical trail marks, thorn sketches, and one excellent drawing of an angry squirrel.</description>
+  </item>
+  <item id="miner_tally_stone" name="Miner Tally Stone" type="misc" value="0" stackable="false">
+    <description>A flat black stone scratched with Emberdeep shift marks, carried by miners to remember who came back up.</description>
+  </item>
+  <item id="oasis_story_shell" name="Oasis Story Shell" type="misc" value="0" stackable="false">
+    <description>A small shell from a desert spring, somehow holding the sound of water under moonlight.</description>
+  </item>
+  <item id="curator_seal_wax" name="Curator Seal Wax" type="misc" value="0" stackable="false">
+    <description>A moon-silver stick of seal wax used by the Archive for messages that should arrive unchanged.</description>
+  </item>
+  <item id="naeve_broken_lantern" name="Naeve's Broken Lantern" type="misc" value="0" stackable="false">
+    <description>A cracked green lantern from Scout Naeve's first citadel run, still smelling faintly of smoke and bad timing.</description>
+  </item>
+  <crafting>
+    <recipe id="iron_spear_pattern" name="Iron Spear Pattern" result="iron_spear">
+      <description>A watch forge pattern for fitting an iron blade to an oak haft.</description>
+      <ingredient item="iron_blade" />
+      <ingredient item="oak_haft" />
+    </recipe>
+    <recipe id="guardian_band_pattern" name="Guardian Band Pattern" result="guardian_band">
+      <description>An archive jeweler's pattern for braiding attack timing, defense wards, and endurance into one band.</description>
+      <ingredient item="silver_ring" />
+      <ingredient item="warding_pendant" />
+    </recipe>
+    <recipe id="wild_mage_robe_pattern" name="Wild Mage Robe Pattern" result="wild_mage_robe">
+      <description>A field tailor's pattern that needs two wolf pelts and one bear pelt to hold the wild magic evenly.</description>
+      <ingredient item="wolf_pelt" quantity="2" />
+      <ingredient item="bear_pelt" quantity="1" />
+    </recipe>
+    <recipe id="ember_sabre_pattern" name="Ember Sabre Pattern" result="ember_sabre">
+      <description>A heat-forge pattern for turning common steel into a blade fit for Emberdeep.</description>
+      <ingredient item="iron_blade" />
+      <ingredient item="ember_ore" quantity="2" />
+    </recipe>
+    <recipe id="oasis_staff_pattern" name="Oasis Staff Pattern" result="oasis_staff">
+      <description>A star-carver's pattern that fixes mirage-light into a useful weapon.</description>
+      <ingredient item="oak_haft" />
+      <ingredient item="glass_sand" quantity="2" />
+      <ingredient item="moon_ink" />
+    </recipe>
+    <recipe id="archive_blade_pattern" name="Archive Blade Pattern" result="archive_blade">
+      <description>An archive weapon pattern written as both a recipe and a warning.</description>
+      <ingredient item="ember_sabre" />
+      <ingredient item="moon_ink" quantity="2" />
+      <ingredient item="glimmer_ore" />
+    </recipe>
+    <recipe id="citadel_plate_pattern" name="Citadel Plate Pattern" result="citadel_plate">
+      <description>A final armoring pattern that binds steel, void, and stubborn survival together.</description>
+      <ingredient item="cinder_mail" />
+      <ingredient item="void_shard" quantity="2" />
+      <ingredient item="moon_ink" />
+    </recipe>
+    <recipe id="thornweave_cloak_pattern" name="Thornweave Cloak Pattern" result="thornweave_cloak">
+      <description>A ranger's pattern for weaving living briar fiber into a cloak that bends blows aside.</description>
+      <ingredient item="thornheart_fiber" quantity="2" />
+      <ingredient item="wolf_pelt" />
+      <ingredient item="moon_ink" />
+    </recipe>
+    <recipe id="glass_sabre_pattern" name="Glass Sabre Pattern" result="glass_sabre">
+      <description>A desert-smith pattern that quenches emberglass in ringing sand until the edge keeps its own light.</description>
+      <ingredient item="iron_blade" />
+      <ingredient item="emberglass_ingot" />
+      <ingredient item="glass_sand" quantity="2" />
+    </recipe>
+    <recipe id="moonfall_scepter_pattern" name="Moonfall Scepter Pattern" result="moonfall_scepter">
+      <description>An archive focus pattern that turns salvaged pages and silver scriptwork into a spellcaster's weapon.</description>
+      <ingredient item="greenwood_core" />
+      <ingredient item="lunar_page" />
+      <ingredient item="silver_quill_nib" />
+      <ingredient item="moon_ink" quantity="2" />
+    </recipe>
+    <recipe id="wyrmfang_lance_pattern" name="Wyrmfang Lance Pattern" result="wyrmfang_lance">
+      <description>A citadel field pattern for upgrading a proven spear with void scale and starless bite.</description>
+      <ingredient item="iron_spear" />
+      <ingredient item="wyrm_scale" />
+      <ingredient item="void_shard" quantity="2" />
+      <ingredient item="emberglass_ingot" />
+    </recipe>
+    <recipe id="wyrmhide_wardcoat_pattern" name="Wyrmhide Wardcoat Pattern" result="wyrmhide_wardcoat">
+      <description>A high-risk armoring pattern that stitches void scale into a coat strong enough for the final dark.</description>
+      <ingredient item="wyrm_scale" quantity="2" />
+      <ingredient item="slag_leather" quantity="2" />
+      <ingredient item="sunspun_thread" />
+      <ingredient item="void_shard" />
+    </recipe>
+    <recipe id="concord_seal_band_pattern" name="Concord Seal Band Pattern" result="concord_seal_band">
+      <description>A relic jeweler's pattern for harmonizing the world's scattered wards into one charged ring.</description>
+      <ingredient item="guardian_band" />
+      <ingredient item="sunward_charm" />
+      <ingredient item="moon_index_ring" />
+      <ingredient item="voidward_pendant" />
+      <ingredient item="star_salt" />
+    </recipe>
+  </crafting>
+</items>

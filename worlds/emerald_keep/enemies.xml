@@ -1,0 +1,260 @@
+<enemies>
+  <enemy id="forest_wolf" name="Forest Wolf" level="1" hp="16" attack="6" defense="1" exp_reward="25" gold_reward="8" respawns="true">
+    <description>A lean predator with bright eyes and an opinion about travelers.</description>
+    <defeat_text>The wolf gives one last ragged snarl before the forest path falls quiet again and the trees stop shivering around you.</defeat_text>
+    <loot>
+      <drop item="wolf_pelt" chance="1.0" />
+    </loot>
+  </enemy>
+  <enemy id="forest_bear" name="Forest Bear" level="2" hp="30" attack="10" defense="3" exp_reward="50" gold_reward="15" respawns="true">
+    <description>A broad bear drawn close to the road by panic, blood scent, and bad luck.</description>
+    <defeat_text>The bear crashes away through the brush, leaving broken branches and a safer path behind.</defeat_text>
+    <loot>
+      <drop item="bear_pelt" chance="1.0" />
+    </loot>
+  </enemy>
+  <enemy id="forest_snake" name="Forest Snake" level="1" hp="14" attack="5" defense="1" exp_reward="30" gold_reward="9" respawns="true" poison_chance="35">
+    <description>A green-banded snake that vanishes under leaves until the path steps too close.</description>
+    <poison_text>The snake's bite leaves poison racing hot under your skin.</poison_text>
+    <defeat_text>The snake coils once, then lies still among the roots.</defeat_text>
+    <loot>
+      <drop item="antidote" chance="0.35" />
+    </loot>
+  </enemy>
+  <enemy id="bandit_lookout" name="Bandit Lookout" level="1" hp="20" attack="5" defense="1" exp_reward="30" gold_reward="10" respawns="true" prevent_attack_chance="25" prevent_attack_turns="1">
+    <description>A nervous lookout posted among the stones to whistle if trouble arrives.</description>
+    <prevent_attack_text>The lookout snaps a mirror charm in your eyes. Your next attack will falter.</prevent_attack_text>
+    <defeat_text>The lookout drops the signal whistle and decides the ruins are no longer worth the pay.</defeat_text>
+    <loot>
+      <drop item="healing_tonic" chance="0.5" />
+    </loot>
+  </enemy>
+  <enemy id="bandit_scout" name="Bandit Scout" level="2" hp="24" attack="8" defense="2" exp_reward="40" gold_reward="12" respawns="true">
+    <description>A cutpurse with a short blade, fast feet, and no interest in fair fights.</description>
+    <defeat_text>The scout staggers back through the cracked stones, and the ruined courtyard feels less like an ambush and more like a road forward.</defeat_text>
+    <loot>
+      <drop item="healing_tonic" chance="0.5" />
+    </loot>
+  </enemy>
+  <enemy id="bandit_raider" name="Bandit Raider" level="2" hp="28" attack="9" defense="2" exp_reward="45" gold_reward="14" respawns="true">
+    <description>A hard-eyed raider with patched armor, a nicked blade, and no banner worth naming.</description>
+    <defeat_text>The raider drops back from the ruined stones, leaving the old approach a little less hungry.</defeat_text>
+    <loot>
+      <drop item="healing_tonic" chance="0.35" />
+      <drop item="iron_blade" chance="0.25" />
+    </loot>
+  </enemy>
+  <enemy id="thorn_mantis" name="Thorn Mantis" level="3" hp="34" attack="12" defense="4" exp_reward="70" gold_reward="18" respawns="true">
+    <description>A green mantis plated in bark and briar, patient enough to become part of the scenery.</description>
+    <defeat_text>The mantis folds into the undergrowth, and the thorns loosen their grip on the path.</defeat_text>
+    <loot>
+      <drop item="wolf_pelt" chance="0.35" />
+      <drop item="thornheart_fiber" chance="0.55" />
+      <drop item="greenwood_core" chance="0.15" />
+    </loot>
+  </enemy>
+  <enemy id="root_hound" name="Root Hound" level="4" hp="42" attack="14" defense="5" exp_reward="85" gold_reward="22" respawns="true">
+    <description>A hound-shaped knot of roots, moss, and bad old commands.</description>
+    <defeat_text>The root hound collapses into harmless vines that curl away from your boots.</defeat_text>
+    <loot>
+      <drop item="glimmer_ore" chance="0.4" />
+      <drop item="greenwood_core" chance="0.35" />
+      <drop item="thornheart_fiber" chance="0.25" />
+    </loot>
+  </enemy>
+  <enemy id="bramble_witch" name="Bramble Witch" level="5" hp="46" attack="16" defense="6" exp_reward="100" gold_reward="28" respawns="true" prevent_attack_chance="20" prevent_attack_turns="1">
+    <description>A thornbound spirit that speaks through snapped twigs and borrowed birdsong.</description>
+    <prevent_attack_text>The witch knots a briar around your weapon hand. Your next strike catches on thorns.</prevent_attack_text>
+    <defeat_text>The bramble witch's borrowed voice scatters into startled birds.</defeat_text>
+    <loot>
+      <drop item="mana_tonic" chance="0.45" />
+      <drop item="lunar_page" chance="0.2" />
+      <drop item="root_mender_primer" chance="0.12" />
+    </loot>
+  </enemy>
+  <enemy id="thorn_matriarch" name="Thorn Matriarch" level="6" hp="72" attack="20" defense="8" exp_reward="180" gold_reward="50" respawns="false">
+    <description>The living queen of the Thornwild, crowned in emerald briars and old bloodless vows.</description>
+    <defeat_text>The Thorn Matriarch breaks like a storm-felled tree. At her roots, the Thorn Crown Relic opens its green thorns without cutting you.</defeat_text>
+  </enemy>
+  <enemy id="cinder_imp" name="Cinder Imp" level="6" hp="48" attack="18" defense="6" exp_reward="115" gold_reward="30" respawns="true">
+    <description>A coal-eyed nuisance that throws sparks and laughs at smoke alarms.</description>
+    <defeat_text>The imp pops into a shower of harmless sparks.</defeat_text>
+    <loot>
+      <drop item="ember_ore" chance="0.35" />
+      <drop item="slag_leather" chance="0.25" />
+    </loot>
+  </enemy>
+  <enemy id="ash_hound" name="Ash Hound" level="7" hp="58" attack="22" defense="7" exp_reward="140" gold_reward="36" respawns="true">
+    <description>A charcoal hound with furnace breath and paws that leave glowing prints.</description>
+    <defeat_text>The ash hound's heat fades, leaving only black pawprints in the dust.</defeat_text>
+    <loot>
+      <drop item="fury_draught" chance="0.35" />
+      <drop item="slag_leather" chance="0.45" />
+    </loot>
+  </enemy>
+  <enemy id="ember_marauder" name="Ember Marauder" level="8" hp="64" attack="24" defense="8" exp_reward="155" gold_reward="42" respawns="true" prevent_attack_chance="25" prevent_attack_turns="1">
+    <description>A raider in heat-scarred mail, paid to keep the mines burning wrong.</description>
+    <prevent_attack_text>The marauder hurls ash into your eyes, spoiling your next attack.</prevent_attack_text>
+    <defeat_text>The marauder drops a heat-cracked blade and retreats into the smoke.</defeat_text>
+    <loot>
+      <drop item="ember_ore" chance="0.5" />
+      <drop item="emberglass_ingot" chance="0.35" />
+    </loot>
+  </enemy>
+  <enemy id="ember_colossus" name="Ember Colossus" level="9" hp="110" attack="30" defense="11" exp_reward="260" gold_reward="85" respawns="false">
+    <description>A furnace giant built around the Emberheart Relic, each step ringing like an anvil struck by thunder.</description>
+    <defeat_text>The colossus kneels into a mountain of cooling slag. In its chest, the Emberheart Relic keeps burning for you.</defeat_text>
+    <loot>
+      <drop item="emberglass_ingot" chance="1.0" />
+    </loot>
+  </enemy>
+  <enemy id="dune_wraith" name="Dune Wraith" level="9" hp="70" attack="28" defense="9" exp_reward="180" gold_reward="52" respawns="true">
+    <description>A wind-thin ghost carrying the thirst of travelers who followed the wrong star.</description>
+    <defeat_text>The wraith unravels into sand that blows against the true road.</defeat_text>
+    <loot>
+      <drop item="glass_sand" chance="0.5" />
+      <drop item="star_salt" chance="0.35" />
+    </loot>
+  </enemy>
+  <enemy id="glass_scorpion" name="Glass Scorpion" level="10" hp="76" attack="30" defense="10" exp_reward="195" gold_reward="58" respawns="true" poison_chance="30">
+    <description>A translucent scorpion whose venom glows like green fire under its shell.</description>
+    <poison_text>The scorpion's glass stinger leaves venom burning bright in your veins.</poison_text>
+    <defeat_text>The scorpion shatters into harmless glass sand.</defeat_text>
+    <loot>
+      <drop item="antidote" chance="0.5" />
+      <drop item="glass_sand" chance="0.65" />
+      <drop item="star_salt" chance="0.25" />
+    </loot>
+  </enemy>
+  <enemy id="mirage_bandit" name="Mirage Bandit" level="11" hp="82" attack="32" defense="10" exp_reward="210" gold_reward="65" respawns="true" prevent_attack_chance="25" prevent_attack_turns="1">
+    <description>A desert thief whose shadow moves a half-second before his body.</description>
+    <prevent_attack_text>The bandit's mirror coin flashes, stealing your focus for a heartbeat.</prevent_attack_text>
+    <defeat_text>The bandit's mirage double vanishes, leaving only one very tired outlaw.</defeat_text>
+    <loot>
+      <drop item="glass_sand" chance="0.4" />
+      <drop item="sunspun_thread" chance="0.3" />
+      <drop item="shadow_hasps" chance="0.08" />
+    </loot>
+  </enemy>
+  <enemy id="oasis_sphinx" name="Oasis Sphinx" level="12" hp="145" attack="38" defense="14" exp_reward="360" gold_reward="120" respawns="false">
+    <description>A moon-eyed guardian whose wings are dusted with starlight and old riddles.</description>
+    <defeat_text>The Sphinx bows once, neither defeated nor ashamed, and the Mirage Orb Relic rolls from the pool into your waiting hands.</defeat_text>
+    <loot>
+      <drop item="star_salt" chance="1.0" />
+    </loot>
+  </enemy>
+  <enemy id="script_golem" name="Script Golem" level="12" hp="92" attack="36" defense="13" exp_reward="240" gold_reward="76" respawns="true">
+    <description>A hulking archive servant covered in commands no living librarian remembers writing.</description>
+    <defeat_text>The golem's script rearranges into an apology before fading from its clay skin.</defeat_text>
+    <loot>
+      <drop item="moon_ink" chance="0.45" />
+      <drop item="lunar_page" chance="0.4" />
+      <drop item="silver_quill_nib" chance="0.25" />
+    </loot>
+  </enemy>
+  <enemy id="ink_stalker" name="Ink Stalker" level="13" hp="98" attack="38" defense="12" exp_reward="255" gold_reward="82" respawns="true">
+    <description>A predator made of spilled black ink and marginal notes with teeth.</description>
+    <defeat_text>The stalker splashes across the floor and drains harmlessly into the cracks.</defeat_text>
+    <loot>
+      <drop item="moon_ink" chance="0.6" />
+      <drop item="silver_quill_nib" chance="0.35" />
+      <drop item="lunar_page" chance="0.25" />
+    </loot>
+  </enemy>
+  <enemy id="lunar_shade" name="Lunar Shade" level="14" hp="104" attack="40" defense="13" exp_reward="275" gold_reward="90" respawns="true" prevent_attack_chance="20" prevent_attack_turns="1">
+    <description>A pale reflection of an archivist who chose to become a warning.</description>
+    <prevent_attack_text>The shade recites your next motion before you make it, ruining the attack.</prevent_attack_text>
+    <defeat_text>The shade lets out a relieved sigh and becomes ordinary moonlight.</defeat_text>
+    <loot>
+      <drop item="mana_crystal" chance="0.35" />
+      <drop item="lunar_page" chance="0.45" />
+    </loot>
+  </enemy>
+  <enemy id="moonfall_warden" name="Moonfall Warden" level="15" hp="185" attack="48" defense="17" exp_reward="480" gold_reward="160" respawns="false">
+    <description>The last warden of the fallen archive, carrying the Moonfall Relic where its heart should be.</description>
+    <defeat_text>The warden lowers its blade and finally closes eyes it never had. The Moonfall Relic settles into your palm, cold and clear.</defeat_text>
+    <loot>
+      <drop item="lunar_guard_hauberk" chance="1.0" />
+    </loot>
+  </enemy>
+  <enemy id="void_thrall" name="Void Thrall" level="16" hp="118" attack="48" defense="15" exp_reward="330" gold_reward="110" respawns="true">
+    <description>A citadel servant hollowed out by starless commands.</description>
+    <defeat_text>The thrall collapses, and a little stolen starlight escapes through its ribs.</defeat_text>
+    <loot>
+      <drop item="void_shard" chance="0.45" />
+      <drop item="star_salt" chance="0.25" />
+    </loot>
+  </enemy>
+  <enemy id="starless_knight" name="Starless Knight" level="17" hp="135" attack="54" defense="18" exp_reward="370" gold_reward="130" respawns="true" prevent_attack_chance="30" prevent_attack_turns="1">
+    <description>A knight-shaped absence wearing armor that reflects no torchlight.</description>
+    <prevent_attack_text>The knight's empty helm turns toward you, and your next attack dies in your hands.</prevent_attack_text>
+    <defeat_text>The knight falls without a sound, armor folding around nothing at all.</defeat_text>
+    <loot>
+      <drop item="void_shard" chance="0.65" />
+      <drop item="wyrm_scale" chance="0.25" />
+    </loot>
+  </enemy>
+  <enemy id="abyss_serpent" name="Abyss Serpent" level="18" hp="128" attack="56" defense="16" exp_reward="390" gold_reward="140" respawns="true" poison_chance="35">
+    <description>A black-scaled serpent swimming through air as if the world were deep water.</description>
+    <poison_text>The serpent's bite leaves cold poison spreading through your blood.</poison_text>
+    <defeat_text>The serpent dissolves into a ribbon of night and vanishes under the stones.</defeat_text>
+    <loot>
+      <drop item="antidote" chance="0.7" />
+      <drop item="wyrm_scale" chance="0.6" />
+    </loot>
+  </enemy>
+  <enemy id="arcane_sentinel" name="Arcane Sentinel" level="18" hp="240" attack="62" defense="22" exp_reward="650" gold_reward="180" respawns="false">
+    <description>A towering relic guardian of bronze ribs and blue-white moonfire, built to bar the final truths from unproven hands.</description>
+    <defeat_text>The sentinel collapses in rings of moonfire, and the old vault yields a silence heavy enough to feel like permission.</defeat_text>
+    <loot>
+      <drop item="mana_tonic" chance="1.0" />
+    </loot>
+  </enemy>
+  <enemy id="concord_wyrm" name="Concord Wyrm" level="20" hp="280" attack="68" defense="24" exp_reward="750" gold_reward="250" respawns="false" prevent_attack_chance="25" prevent_attack_turns="1" poison_chance="20">
+    <description>The ancient hunger beneath the relics, a dragon of void, thorn, ember, mirage, and moonlight forced into one impossible body.</description>
+    <prevent_attack_text>The Concord Wyrm speaks all four relic names at once, staggering your focus.</prevent_attack_text>
+    <poison_text>The wyrm's void-breath leaves a poison colder than winter in your lungs.</poison_text>
+    <defeat_text>The Concord Wyrm tears itself apart along the seams of the four relics. For the first time in centuries, Emerald Keep's heart beats without fear.</defeat_text>
+    <loot>
+      <drop item="void_shard" chance="1.0" />
+      <drop item="wyrm_scale" chance="1.0" />
+    </loot>
+  </enemy>
+  <monster_pools>
+    <pool id="ruins_patrols" name="Ruins Patrols">
+      <enemy_ref id="bandit_scout" weight="1" />
+      <enemy_ref id="bandit_raider" weight="2" />
+      <enemy_ref id="bandit_lookout" weight="4" />
+    </pool>
+    <pool id="forest_threats" name="Forest Threats">
+      <enemy_ref id="forest_wolf" weight="4" />
+      <enemy_ref id="forest_snake" weight="2" />
+      <enemy_ref id="forest_bear" weight="1" />
+    </pool>
+    <pool id="thornwild_threats" name="Thornwild Threats">
+      <enemy_ref id="thorn_mantis" weight="4" />
+      <enemy_ref id="root_hound" weight="3" />
+      <enemy_ref id="bramble_witch" weight="1" />
+    </pool>
+    <pool id="emberdeep_threats" name="Emberdeep Threats">
+      <enemy_ref id="cinder_imp" weight="4" />
+      <enemy_ref id="ash_hound" weight="3" />
+      <enemy_ref id="ember_marauder" weight="2" />
+    </pool>
+    <pool id="oasis_threats" name="Vel'rasha Threats">
+      <enemy_ref id="dune_wraith" weight="4" />
+      <enemy_ref id="glass_scorpion" weight="3" />
+      <enemy_ref id="mirage_bandit" weight="2" />
+    </pool>
+    <pool id="moonfall_threats" name="Moonfall Threats">
+      <enemy_ref id="script_golem" weight="4" />
+      <enemy_ref id="ink_stalker" weight="3" />
+      <enemy_ref id="lunar_shade" weight="2" />
+    </pool>
+    <pool id="citadel_threats" name="Starless Citadel Threats">
+      <enemy_ref id="void_thrall" weight="4" />
+      <enemy_ref id="starless_knight" weight="3" />
+      <enemy_ref id="abyss_serpent" weight="2" />
+    </pool>
+  </monster_pools>
+</enemies>

@@ -1,0 +1,64 @@
+<world id="the_last_meridian" name="The Last Meridian" start_room="arrival_gate_12">
+    <description>
+        Humanity survives inside Meridian Station, a vast ring-city orbiting the dead planet Veyra, once the capital world of an interstellar civilization. The station is old, overbuilt, and partly abandoned. Beneath its polished diplomatic decks are sealed laboratories, haunted cargo levels, black-market habitats, and machine-run districts that no longer answer to human authority.
+        The player is a freelance salvage operative hired to investigate a power failure in the stations lower ring. What begins as a routine repair job uncovers an ancient signal buried inside the stations core: a message from the extinct civilization that built Meridian.
+        The signal is waking something.
+    </description>
+    <currencies default="credit">
+        <currency id="credit" name="Station Credits" singular="station credit" plural="station credits" />
+        <currency id="scrip" name="Hard Scrip" singular="hard scrip" plural="hard scrips" />
+        <currency id="Corporate Voucher" singular="corporate voucher" plural="corporate vouchers"
+    </currencies>
+    <player_classes>
+        <class id="technician" name="Ex-Corporate Technician" max_hp="28" max_mp="26" gold="30" base_attack="4" base_defense="2" hp_per_level="5" mp_per_level="7" attack_per_level="1" defense_per_level="1">
+            <description>A technician turned salvage operative with a knack for fixing things.</description>
+        </class>
+        <class id="smuggler" name="Outer-Ring Smuggler" max_hp="34" max_mp="18" gold="32" base_attack="6" base_defense="3" hp_per_level="7" mp_per_level="5" attack_per_level="2" defense_per_level="1">
+            <description>A smuggler with a network of contacts and a talent for getting into places they shouldn't be.</description>
+        </class>
+        <class id="soldier" name="Colonial Militia Veteran" max_hp="42" max_mp="12" gold="35" base_attack="7" base_defense="4" hp_per_level="8" mp_per_level="4" attack_per_level="2" defense_per_level="1">
+            <description>A former soldier with combat training on the outer rim.</description>
+        </class>
+        <class id="advocate" name="Synthetic Rights Advocate" max_hp="30" max_mp="24" gold="28" base_attack="5" base_defense="3" hp_per_level="6" mp_per_level="6" attack_per_level="1" defense_per_level="1">
+            <description>An advocate for synthetic rights with a talent for negotiation and manipulation.</description>
+        </class>
+    </player_classes>
+    <factions>
+        <faction id="station_authority" name="Station Authority">
+            <description>The governing body of Meridian Station, responsible for maintaining order and overseeing operations.</description>
+        </faction>
+        <faction id="helix_dominion" name="Helix Dominion">
+            <description>A powerful corporate faction with interests in salvage and control over alien technology.</description>
+        </faction>
+        <faction id="children_of_the_signal" name="Children of the Signal">
+            <description>A mysterious cult that worships the signal emanating from the station's core, believing it to be a divine message.</description>
+        </faction>
+        <faction id="machine_parish" name="Machine Parish">
+            <description>A faction of sentient machines who seek autonomy and coexistence with humanity.</description>
+        </faction>
+        <faction id="neon_bazaar" name="Neon Bazaar">
+            <description>A black-market faction that thrives on open trade, smuggling, and survival in the shadows of the station.</description>
+        </faction>
+    </factions>
+    <starter_loadouts>
+        <class name="technician">
+            
+        </class>
+        <class name="smuggler">
+            
+        </class>
+        <class name="soldier">
+            
+        </class>
+        <class name="advocate">
+            
+        </class>
+    </starter_loadouts>
+    <starter_spells>
+        <class name="all">
+            <spell_ref id="overclock" />
+            <spell_ref id="holo_decoy" />
+            <spell_ref id="nano_repair" />
+        </class>
+    </starter_spells>
+</world>

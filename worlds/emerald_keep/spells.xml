@@ -1,0 +1,120 @@
+<spells>
+  <!--Offense Spells-->
+  <spell id="ember_bolt" name="Ember Bolt" school="offense" mp_cost="5" power="11">
+    <description>A common fire cantrip, quick enough to trust in bad situations.</description>
+  </spell>
+  <spell id="frost_lance" name="Frost Lance" school="offense" mp_cost="7" power="16" classes="mage">
+    <description>A mage-only spear of cold light that punches through ordinary defenses.</description>
+  </spell>
+  <spell id="sunfire_burst" name="Sunfire Burst" school="offense" mp_cost="8" power="19" classes="mage">
+    <description>A codex-taught bloom of bright fire, controlled enough to be scholarship and violence at once.</description>
+  </spell>
+  <spell id="storm_chain" name="Storm Chain" school="offense" mp_cost="10" power="24" classes="mage">
+    <description>A codex-only mage spell that leaps from one focus point to the next in white-green lightning.</description>
+  </spell>
+  <spell id="moonfire_arc" name="Moonfire Arc" school="offense" mp_cost="11" power="26" classes="mage">
+    <description>A high-order mage spell that bends moonfire into a clean, punishing arc.</description>
+  </spell>
+
+  <!--Defense Spells-->
+  <spell id="arcane_ward" name="Arcane Ward" school="defense" mp_cost="4" armor_bonus="4" duration="3">
+    <description>A shared starter ward that lifts a thin wall of force around you.</description>
+  </spell>
+  <spell id="veil_barrier" name="Veil Barrier" school="defense" mp_cost="5" armor_bonus="5" duration="4" classes="mage">
+    <description>A spellbook ward that catches impact in layered silver veils.</description>
+  </spell>
+  <spell id="stone_skin" name="Stone Skin" school="defense" mp_cost="6" armor_bonus="6" duration="4" classes="mage">
+    <description>A mage-only ward that layers stone memory over skin and robe.</description>
+  </spell>
+  <spell id="ember_guard" name="Ember Guard" school="defense" mp_cost="7" armor_bonus="8" duration="3" classes="warrior">
+    <description>A warrior charm that hardens resolve into heat-bright armor for the next rush.</description>
+  </spell>
+  <spell id="starless_aegis" name="Starless Aegis" school="defense" mp_cost="10" armor_bonus="10" duration="3" classes="mage,warrior">
+    <description>A forbidden ward copied from citadel plates, strong enough to make darkness strike itself first.</description>
+  </spell>
+
+  <!--Healing Spells-->
+  <spell id="minor_mend" name="Minor Mend" school="healing" mp_cost="3" power="8">
+    <description>A modest healing charm, useful but weaker than a proper healing tonic.</description>
+  </spell>
+  <spell id="steady_pulse" name="Steady Pulse" school="healing" mp_cost="5" power="14">
+    <description>A practical mender's spell that slows panic, steadies breath, and closes the worst small wounds.</description>
+  </spell>
+  <spell id="root_mend" name="Root Mend" school="healing" mp_cost="6" power="16">
+    <description>A field charm learned from Thornwild notes, coaxing stubborn flesh to knit like living bark.</description>
+  </spell>
+  <spell id="oasis_balm" name="Oasis Balm" school="healing" mp_cost="8" power="24">
+    <description>A Vel'rasha healing spell that cools the skin like spring water and pulls pain out by degrees.</description>
+  </spell>
+  <spell id="moonlit_restoration" name="Moonlit Restoration" school="healing" mp_cost="11" power="34" classes="mage">
+    <description>A mage-grade restoration that sets silver light under the ribs and asks the body to remember wholeness.</description>
+  </spell>
+
+  <!--Cure Spells-->
+  <spell id="herbal_cleanse" name="Herbal Cleanse" school="cure" mp_cost="3" cure_poison="true">
+    <description>A simple cleansing charm that wakes the body's own resistance before venom settles in.</description>
+  </spell>
+  <spell id="purify_blood" name="Purify Blood" school="cure" mp_cost="4" cure_poison="true">
+    <description>A clean pulse of magic that breaks venom before it can bite deeper.</description>
+  </spell>
+  <spell id="venom_break" name="Venom Break" school="cure" mp_cost="5" power="6" cure_poison="true">
+    <description>A tougher cure spell that cracks poison apart and returns a little strength to the blood.</description>
+  </spell>
+  <spell id="desert_antivenom" name="Desert Antivenom" school="cure" mp_cost="7" power="10" cure_poison="true" classes="rogue,mage">
+    <description>A precise Vel'rasha formula for scorpion venom, snakebite, and other inconvenient chemistry.</description>
+  </spell>
+  <spell id="moon_purge" name="Moon Purge" school="cure" mp_cost="9" power="14" cure_poison="true" classes="mage">
+    <description>A silver purge that burns poison out through moonlit sweat and leaves the air smelling of rain.</description>
+  </spell>
+
+  <!--Control Spells-->
+  <spell id="flash" name="Flash" school="control" mp_cost="4" power="12" skip_turns="1">
+    <description>A sharp burst of white light that blinds one foe long enough to spoil its next attack.</description>
+  </spell>
+  <spell id="snare_glare" name="Snare Glare" school="control" mp_cost="5" power="14" skip_turns="1">
+    <description>A hard stare turned magical, catching a foe's next movement in invisible brambles.</description>
+  </spell>
+  <spell id="hourglass_stutter" name="Hourglass Stutter" school="control" mp_cost="7" power="18" skip_turns="1" classes="rogue,mage">
+    <description>A timing spell that makes a foe lose the heartbeat it needed to strike.</description>
+  </spell>
+  <spell id="void_flash" name="Void Flash" school="control" mp_cost="8" power="20" skip_turns="2" classes="mage,rogue">
+    <description>A black-white pulse that interrupts a foe's sense of time long enough to spoil two attacks.</description>
+  </spell>
+  <spell id="gravity_lull" name="Gravity Lull" school="control" mp_cost="10" power="22" skip_turns="2" classes="mage">
+    <description>A moon-archive control spell that makes the air around a foe suddenly remember how heavy it is.</description>
+  </spell>
+
+  <!--Stealth Spells-->
+  <spell id="shadow_palm" name="Shadow Palm" school="stealth" mp_cost="4" pickpocket_bonus="20" duration="3" classes="rogue">
+    <description>A rogue charm that cools the fingers and blurs the small movements honest eyes are trained to catch.</description>
+  </spell>
+  <spell id="lock_whisper" name="Lock Whisper" school="stealth" mp_cost="4" lockpick_bonus="20" duration="3" classes="rogue">
+    <description>A rogue charm that lets old tumblers answer in tiny clicks before the pick fully turns.</description>
+  </spell>
+  <spell id="gutter_grace" name="Gutter Grace" school="stealth" mp_cost="5" pickpocket_bonus="15" lockpick_bonus="15" duration="4" classes="rogue">
+    <description>A streetwise rogue spell that keeps hands light, sleeves quiet, and witnesses helpfully uncertain.</description>
+  </spell>
+  <spell id="mirage_step" name="Mirage Step" school="stealth" mp_cost="7" pickpocket_bonus="25" lockpick_bonus="15" duration="3" classes="rogue">
+    <description>A rogue spell that leaves the hand half a pace behind where witnesses think it should be.</description>
+  </spell>
+  <spell id="quietus_glimmer" name="Quietus Glimmer" school="stealth" mp_cost="8" pickpocket_bonus="20" lockpick_bonus="25" duration="4" classes="rogue">
+    <description>A rogue manuscript spell that dims intent itself, letting careful hands move through a hush of false innocence.</description>
+  </spell>
+
+  <!--Attack Spells-->
+  <spell id="battle_focus" name="Battle Focus" school="attack" mp_cost="4" attack_bonus="4" duration="3" classes="warrior">
+    <description>A warrior-only breath cadence that turns discipline into sharper strikes.</description>
+  </spell>
+  <spell id="shieldbreaker_chant" name="Shieldbreaker Chant" school="attack" mp_cost="5" attack_bonus="5" duration="3" classes="warrior">
+    <description>A clipped warrior chant that teaches each strike to look for the weak point in a guard.</description>
+  </spell>
+  <spell id="titan_surge" name="Titan Surge" school="attack" mp_cost="6" attack_bonus="7" duration="2" classes="warrior">
+    <description>A warrior battle chant that briefly fills the arms with giant strength.</description>
+  </spell>
+  <spell id="colossus_rhythm" name="Colossus Rhythm" school="attack" mp_cost="8" attack_bonus="8" duration="3" classes="warrior">
+    <description>An Emberdeep marching cadence that makes heavy strikes land with forge-hammer certainty.</description>
+  </spell>
+  <spell id="final_oath" name="Final Oath" school="attack" mp_cost="10" attack_bonus="11" duration="2" classes="warrior">
+    <description>A last-gate warrior oath that turns resolve into brutal, focused force for a few decisive blows.</description>
+  </spell>
+</spells>

@@ -1,0 +1,2 @@
+"""Interactive fiction RPG package."""
+

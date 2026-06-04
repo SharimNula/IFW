@@ -1,0 +1,55 @@
+<world id="emerald_keep" name="Emerald Keep" start_room="town_square">
+  <description>
+    A large six-zone IFW campaign. Emerald Keep begins as a lantern-lit hub, then expands into the Thornwild,
+    Emberdeep, Vel'rasha, the Moonfall Archive, and the Starless Citadel. The main story follows four relics
+    guarded by escalating bosses, each relic awakening part of the final gate. The world also demonstrates
+    faction branches, companions, vendors, exchange rates, crafting, locked rooms, hidden exits, mazes,
+    mining, utility interactions, stealth, poison, charged items, class-specific spells, and ending choices.
+  </description>
+  <currencies default="gold">
+    <currency id="gold" name="Gold" singular="gold" plural="gold" />
+    <currency id="emerald_mark" name="Emerald Mark" singular="emerald mark" plural="emerald marks" />
+  </currencies>
+  <jail room="town_jail" fee="15" currency="gold" />
+  <player_classes>
+    <class id="warrior" name="Warrior" max_hp="42" max_mp="12" gold="35" base_attack="7" base_defense="4" hp_per_level="8" mp_per_level="4" attack_per_level="2" defense_per_level="1">
+      <description>A disciplined defender who turns focus and steel into forward momentum.</description>
+    </class>
+    <class id="mage" name="Mage" max_hp="28" max_mp="26" gold="30" base_attack="4" base_defense="2" hp_per_level="5" mp_per_level="7" attack_per_level="1" defense_per_level="1">
+      <description>A keeper of moonlit formulas, fragile at first but dangerous once advanced spells open.</description>
+    </class>
+    <class id="rogue" name="Rogue" max_hp="34" max_mp="18" gold="32" base_attack="6" base_defense="3" hp_per_level="7" mp_per_level="5" attack_per_level="2" defense_per_level="1" pickpocket_chance="65" lockpick_chance="60">
+      <description>A nimble problem-solver who survives by striking first and leaving before trouble settles.</description>
+    </class>
+  </player_classes>
+  <factions>
+    <faction id="town_watch" name="Town Watch">
+      <description>Road wardens, well keepers, and practical neighbors who protect the keep from immediate danger.</description>
+    </faction>
+    <faction id="moon_archive" name="Moon Archive">
+      <description>Scholars who preserve the keep's oldest rites, even when those rites argue back.</description>
+    </faction>
+  </factions>
+  <starter_loadouts>
+    <class name="warrior">
+      <item_ref id="rusty_sword" />
+      <item_ref id="padded_armor" />
+    </class>
+    <class name="mage">
+      <item_ref id="oak_staff" />
+      <item_ref id="focus_robe" />
+    </class>
+    <class name="rogue">
+      <item_ref id="iron_dagger" />
+      <item_ref id="leather_coat" />
+      <item_ref id="lockpicks" />
+    </class>
+  </starter_loadouts>
+  <starter_spells>
+    <class name="all">
+      <spell_ref id="ember_bolt" />
+      <spell_ref id="arcane_ward" />
+      <spell_ref id="minor_mend" />
+    </class>
+  </starter_spells>
+</world>

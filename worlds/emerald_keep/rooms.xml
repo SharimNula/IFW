@@ -1,0 +1,894 @@
+<rooms>
+  <room id="town_square" name="Town Square" storage="true">
+    <description>Emerald banners hang over a stone well, and every road from the square seems to be holding its breath.</description>
+    <exits>
+      <exit direction="in" to="lantern_inn" />
+      <exit direction="up" to="guard_post" />
+      <exit direction="north" to="forest_path" />
+      <exit direction="east" to="market_street" />
+      <exit direction="south" to="title_street" />
+    </exits>
+    <hidden_exits>
+      <exit direction="west" to="mage_tower" required_flag="town_mural_opened" />
+    </hidden_exits>
+    <interactions>
+      <object id="weathered_mural" name="Weathered Mural" set_flag="town_mural_opened">
+        <description>A weathered mural shows moonlit scholars walking through a door that is not painted on the wall.</description>
+        <interact_text>You press the moon sigil in the mural. Stone grinds beneath the square, and a hidden stair opens to the west.</interact_text>
+        <completed_text>The mural's moon sigil is already pressed, and the hidden western stair remains open.</completed_text>
+      </object>
+    </interactions>
+    <npcs>
+      <npc_ref id="well_keeper_mara" />
+    </npcs>
+  </room>
+  <room id="guard_post" name="Guard Post">
+    <description>A guard post overlooks the north road, and a watchful patrol is usually stationed there.</description>
+    <exits>
+      <exit direction="down" to="town_square" />
+    </exits>
+    <interactions>
+      <object id="signal_lantern" name="Signal Lantern" required_item="watch_token" set_flag="watch_signal_lit">
+        <description>An old green signal lantern hangs above the road map, its shutter stamped with the Town Watch crest.</description>
+        <missing_item_text>The lantern shutter is locked. A Watch Token would prove you have Sera's authority to light it.</missing_item_text>
+        <interact_text>You press the Watch Token to the lantern's crest. Green light spills over the north road map, marking bandit trails in sharp lines.</interact_text>
+        <completed_text>The signal lantern already burns green, keeping the north road marked for the Watch.</completed_text>
+      </object>
+    </interactions>
+    <npcs>
+      <npc_ref id="watch_captain_sera" />
+    </npcs>
+  </room>
+  <room id="title_street" name="Title Street">
+    <description>A narrow ceremonial street runs between old town homes, its stone title markers polished by generations of careful hands.</description>
+    <exits>
+      <exit direction="north" to="town_square" />
+      <exit direction="south" to="elder_house" />
+      <exit direction="east" to="new_moon_temple" />
+      <exit direction="west" to="stewards_office" />
+    </exits>
+  </room>
+  <room id="new_moon_temple" name="New Moon Temple">
+    <description>A quiet temple of pale stone and green glass gathers moonlight even during the day. Four relic carved ornately into the silver arch.</description>
+    <exits>
+      <exit direction="west" to="title_street" />
+    </exits>
+    <npcs>
+      <npc_ref id="relic_seer_maelis" />
+    </npcs>
+  </room>
+  <room id="elder_house" name="Elder's House">
+    <description>The elder's house is quiet, but the scent of herbs and old books lingers in the air.</description>
+    <exits>
+      <exit direction="north" to="title_street" />
+    </exits>
+    <hidden_exits>
+      <exit direction="down" to="elder_memory_cache" required_flag="elder_memory_honored" />
+    </hidden_exits>
+    <items>
+      <item_ref id="faded_keepsake" />
+    </items>
+    <interactions>
+      <object id="memory_shelf" name="Memory Shelf" required_item="faded_keepsake" consume_item="true" set_flag="elder_memory_honored">
+        <description>A narrow shelf holds old patrol pins, mended spectacles, and an empty place in the dust.</description>
+        <missing_item_text>The shelf has an empty space shaped by years of waiting. Something personal belongs there.</missing_item_text>
+        <interact_text>You place the Faded Keepsake on the shelf. The room seems to exhale, and the old house feels less alone.</interact_text>
+        <completed_text>The keepsake rests on the memory shelf, exactly where it was meant to be.</completed_text>
+      </object>
+    </interactions>
+    <npcs>
+      <npc_ref id="elder_rowan" />
+    </npcs>
+  </room>
+  <room id="elder_memory_cache" name="Elder Memory Cache">
+    <description>A small floor coffer opens beneath the elder's shelves, packed with supplies left for someone who remembered kindness first.</description>
+    <exits>
+      <exit direction="up" to="elder_house" />
+    </exits>
+    <items>
+      <item_ref id="healing_tonic" />
+      <item_ref id="mana_tonic" />
+      <item_ref id="wolf_pelt" />
+    </items>
+  </room>
+  <room id="stewards_office" name="Stewards Office">
+    <description>A small office situated by the Elders home, the front is marked with a lantern.</description>
+    <exits>
+      <exit direction="east" to="title_street" />
+    </exits>
+    <npcs>
+      <npc_ref id="steward_elowen" />
+    </npcs>
+  </room>
+  <room id="lantern_inn" name="Lantern Inn" rest="true">
+    <description>Amber lamps warm the common room, and a row of clean beds waits near the hearth.</description>
+    <exits>
+      <exit direction="out" to="town_square" />
+    </exits>
+    <hidden_exits>
+      <exit direction="down" to="hearth_supply_cache" required_flag="hearth_ward_kindled" />
+    </hidden_exits>
+    <interactions>
+      <object id="hearth_ward" name="Hearth Ward" required_item="healing_tonic" consume_item="true" set_flag="hearth_ward_kindled">
+        <description>A brass ward bowl rests beside the hearth, its rim etched with tiny healing runes.</description>
+        <missing_item_text>The ward bowl is dry. It needs a Healing Tonic before its runes will wake.</missing_item_text>
+        <interact_text>You pour a Healing Tonic into the ward bowl. Amber runes flare softly around the inn.</interact_text>
+        <completed_text>The hearth ward already glows with tonic-warmed light.</completed_text>
+      </object>
+    </interactions>
+    <npcs>
+      <npc_ref id="squire_tovin" />
+      <npc_ref id="apprentice_mira" />
+      <npc_ref id="trailhand_pip" />
+      <npc_ref id="pilgrim_jory" />
+    </npcs>
+  </room>
+  <room id="hearth_supply_cache" name="Hearth Supply Cache">
+    <description>The kindled hearth ward reveals a warm cubby behind the firewood, stocked with modest comforts for the road.</description>
+    <exits>
+      <exit direction="up" to="lantern_inn" />
+    </exits>
+    <items>
+      <item_ref id="healing_tonic" />
+      <item_ref id="mana_tonic" />
+      <item_ref id="antidote" />
+    </items>
+  </room>
+  <room id="market_street" name="Market Street">
+    <description>Canvas awnings snap above tidy stalls, and the smell of hot iron mingles with the crisp clink of money being counted twice.</description>
+    <exits>
+      <exit direction="west" to="town_square" />
+      <exit direction="east" to="smithy" />
+      <exit direction="south" to="currency_exchange_office" />
+      <exit direction="out" to="caravan_road" />
+    </exits>
+    <items>
+      <item_ref id="pip_lucky_button" />
+    </items>
+  </room>
+  <room id="currency_exchange_office" name="Currency Exchange Office">
+    <description>A narrow office glows behind green glass lamps. Ledgers line the walls, each one chained down as if numbers might otherwise escape.</description>
+    <exits>
+      <exit direction="north" to="market_street" />
+    </exits>
+    <hidden_exits>
+      <exit direction="east" to="exchange_vault" required_flag="exchange_vault_opened" />
+    </hidden_exits>
+    <interactions>
+      <object id="exchange_vault_door" name="Exchange Vault Door" required_item="exchange_vault_key" lockpick="true" lockpick_difficulty="15" lockpick_item="lockpicks" set_flag="exchange_vault_opened">
+        <description>A reinforced green door waits behind Marlow's counter, its lock shaped like a folded leaf.</description>
+        <missing_item_text>The vault door needs the Exchange Vault Key, unless someone skilled enough can pick the lock.</missing_item_text>
+        <interact_text>The Exchange Vault Key turns with a soft click, and the vault door opens into green lamplight.</interact_text>
+        <lockpick_text>You tease the leaf-lock open with a quiet click, and the exchange vault door swings inward.</lockpick_text>
+        <lockpick_failed_text>The vault's leaf-lock shifts, then snaps stubbornly back into place.</lockpick_failed_text>
+        <lockpick_missing_item_text>You need Lockpicks before you can work the vault's leaf-lock.</lockpick_missing_item_text>
+        <completed_text>The exchange vault door already stands open.</completed_text>
+      </object>
+    </interactions>
+    <vendors>
+      <vendor_ref id="exchange_clerk_marlow" />
+    </vendors>
+  </room>
+  <room id="exchange_vault" name="Exchange Vault">
+    <description>Green glass lamps shine over sealed strongboxes, clipped exchange notes, and a ledger that smells faintly of mint ink.</description>
+    <exits>
+      <exit direction="west" to="currency_exchange_office" />
+    </exits>
+    <items>
+      <item_ref id="nimble_fingers_ring" />
+      <item_ref id="shadow_hasps" />
+      <item_ref id="curator_seal_wax" />
+    </items>
+  </room>
+  <room id="town_jail" name="Town Jail">
+    <description>A clean but cheerless cell waits beneath the guard post. The door has no handle on your side, only a bail notice nailed at eye level.</description>
+  </room>
+  <room id="smithy" name="Smithy">
+    <description>The forge roars under a roof blackened by years of useful smoke.</description>
+    <exits>
+      <exit direction="west" to="market_street" />
+    </exits>
+    <hidden_exits>
+      <exit direction="in" to="smithy_cellar_cache" required_flag="cellar_door_opened" />
+      <exit direction="down" to="ember_lift" required_flag="smithy_grate_opened" />
+    </hidden_exits>
+    <interactions>
+      <object id="jammed_grate" name="Jammed Grate" required_item="iron_pry_bar" set_flag="smithy_grate_opened">
+        <description>A warped floor grate rattles whenever the bellows breathe. Something beneath it catches the green forge-light.</description>
+        <missing_item_text>The grate is wedged too tightly to lift by hand. A sturdy pry bar would give you leverage.</missing_item_text>
+        <interact_text>You lever the grate open, reaching in you turn a handle. A large trap door opens and a platform rises to take you to the mines.</interact_text>
+        <completed_text>The grate is already propped open, its hinges complaining softly.</completed_text>
+      </object>
+      <object id="cellar_door" name="Cellar Door" required_item="smithy_cellar_key" lockpick="true" lockpick_difficulty="15" lockpick_item="lockpicks" set_flag="cellar_door_opened">
+        <description>A blacked wood door barred in iron, secured with an old padlock.</description>
+        <missing_item_text>The cellar door needs the Cellar Key, unless someone skilled enough can pick the lock.</missing_item_text>
+        <interact_text>The Cellar Door Key turns with a soft click, and padlock clicks open and the bar slides free.</interact_text>
+        <lockpick_text>You tease the padlock open with a quiet click, and the cellar door can be opened.</lockpick_text>
+        <lockpick_failed_text>The padlock shifts, then snaps stubbornly back into place.</lockpick_failed_text>
+        <lockpick_missing_item_text>You need Lockpicks before you can work the padlock.</lockpick_missing_item_text>
+        <completed_text>The cellar door is already unlocked.</completed_text>
+      </object>
+    </interactions>
+    <vendors>
+      <vendor_ref id="smith_orin" />
+    </vendors>
+  </room>
+  <room id="smithy_cellar_cache" name="Smithy Cellar Cache">
+    <description>A cramped cellar beneath the opened grate holds spare forge stock wrapped in oilcloth.</description>
+    <exits>
+      <exit direction="out" to="smithy" />
+    </exits>
+    <items>
+      <item_ref id="iron_blade" />
+      <item_ref id="oak_haft" />
+      <item_ref id="glimmer_ore" />
+    </items>
+  </room>
+  <room id="forest_path" name="Forest Path" monster_pool="forest_threats" monster_count="1">
+    <description>The north road narrows between listening trees. Lantern hooks line the branches, but most are dark.</description>
+    <exits>
+      <exit direction="south" to="town_square" />
+      <exit direction="east" to="crystal_grotto" />
+      <exit direction="in" to="mage_tower" />
+      <exit direction="north" to="ruins" />
+      <exit direction="west" to="thornwild_camp" />
+    </exits>
+    <faction_spawns>
+      <enemy_ref faction="town_watch" id="bandit_scout" />
+      <enemy_ref faction="moon_archive" id="bandit_lookout" />
+    </faction_spawns>
+    <items>
+      <item_ref id="mana_tonic" />
+      <item_ref id="rubbing_kit" />
+    </items>
+  </room>
+  <room id="crystal_grotto" name="Crystal Grotto">
+    <description>Green crystals thread through the walls like roots caught mid-song.</description>
+    <exits>
+      <exit direction="west" to="forest_path" />
+    </exits>
+    <mining message="A crystal seam brightens as you enter.">
+      <item_ref id="glimmer_ore" min="1" max="3" />
+    </mining>
+    <interactions>
+      <object id="whispering_vein" name="Whispering Vein" required_item="archive_cipher" set_flag="ore_cipher_decoded">
+        <description>A narrow ore vein whispers in clipped syllables whenever your shadow crosses it.</description>
+        <missing_item_text>The vein whispers too quickly to understand. Keeper Nox's Archive Cipher would help you read the pattern.</missing_item_text>
+        <interact_text>You hold the Archive Cipher against the vein. Moon-script aligns with the ore's flicker, and the whispers settle into a usable pattern.</interact_text>
+        <completed_text>The vein has already been translated, its rhythm now familiar beneath the crystal hum.</completed_text>
+      </object>
+    </interactions>
+  </room>
+  <room id="mage_tower" name="Mage Tower">
+    <description>The tower smells of candle smoke, ink, rain, and theories that should probably stay theoretical.</description>
+    <exits>
+      <exit direction="out" to="forest_path" />
+    </exits>
+    <hidden_exits>
+      <exit direction="east" to="archive_supply_room" required_flag="supply_door_opened" />
+      <exit direction="up" to="moon_archive_gate" required_flag="archive_lens_focused" />
+    </hidden_exits>
+    <items>
+      <item_ref id="healing_tonic" />
+      <item_ref id="warding_pendant" />
+    </items>
+    <interactions>
+      <object id="archive_lens" name="Archive Lens" required_item="glimmer_ore" consume_item="true" set_flag="archive_lens_focused">
+        <description>A brass lens points toward a blank wall covered in patient chalk marks.</description>
+        <missing_item_text>The lens lacks a focusing core. A piece of Glimmer Ore would fit the cradle beneath it.</missing_item_text>
+        <interact_text>You set Glimmer Ore beneath the lens. Moon-script blooms across the wall. You press the highlighted marks, stairs to the upper tower appear from the walls.</interact_text>
+        <completed_text>The lens remains focused, and the moon-script still glows on the wall.</completed_text>
+      </object>
+      <object id="archive_supply_door" name="Archive Supply Door" required_item="archive_supply_key" lockpick="true" lockpick_difficulty="15" lockpick_item="lockpicks" set_flag="supply_door_opened">
+        <description>A reinforced blue door set into the wall of the tower, its lock shaped like a crescent moon.</description>
+        <missing_item_text>The door needs the Archive Supply Key, unless someone skilled enough can pick the lock.</missing_item_text>
+        <interact_text>The Archive Supply Key turns with a soft click, and the sturdy door opens into pale lamplight.</interact_text>
+        <lockpick_text>You tease the crescent-lock, it opens with a quiet click, and the supply door swings inward.</lockpick_text>
+        <lockpick_failed_text>The room's crescent-lock shifts, then snaps stubbornly back into place.</lockpick_failed_text>
+        <lockpick_missing_item_text>You need Lockpicks before you can work the Mages supply room.</lockpick_missing_item_text>
+        <completed_text>The supply door already stands open.</completed_text>
+      </object>
+    </interactions>
+    <npcs>
+      <npc_ref id="archivist_lyra" />
+      <npc_ref id="keeper_nox" />
+    </npcs>
+    <vendors>
+      <vendor_ref id="spellweaver_iris" />
+    </vendors>
+  </room>
+  <room id="archive_supply_room" name="Archive Supply Room">
+    <description>A large supply room deep within the tower, it houses various tools and supplies for scholarly endeavors.</description>
+    <exits>
+      <exit direction="west" to="mage_tower" />
+    </exits>
+    <items>
+      <item_ref id="moon_ink" />
+      <item_ref id="glimmer_ore" />
+      <item_ref id="mana_tonic" />
+    </items>
+  </room>
+  <room id="ruins" name="Ruins" monster_pool="ruins_patrols" monster_count="1">
+    <description>Broken archways lean over the old approach to the keep, and bandit marks scar the stones.</description>
+    <exits>
+      <exit direction="south" to="forest_path" />
+      <exit direction="east" to="thorn_maze" />
+      <exit direction="north" to="vault" />
+    </exits>
+    <items>
+      <item_ref id="iron_blade" />
+      <item_ref id="hunter_band" />
+      <item_ref id="ranger_field_notes" />
+    </items>
+  </room>
+  <room id="thorn_maze" name="Thorn Maze">
+    <description>A compact maze of emerald thorns shifts whenever you second-guess yourself.</description>
+    <exits>
+      <exit direction="west" to="ruins" />
+    </exits>
+    <maze success_room="hidden_cache" sequence="north,east,north">
+      <progress_message>The thorns part with a soft scrape as you follow the remembered pattern.</progress_message>
+      <failure_message>The maze folds around your mistake and returns you to the start of the pattern.</failure_message>
+      <success_message>You complete the thorn pattern, and a narrow gap opens into a hidden cache.</success_message>
+    </maze>
+  </room>
+  <room id="hidden_cache" name="Hidden Cache">
+    <description>A tiny stone chamber hides supplies left by watch scouts and archive runners who did not trust each other but trusted preparation.</description>
+    <exits>
+      <exit direction="west" to="thorn_maze" />
+    </exits>
+    <items>
+      <item_ref id="oak_haft" />
+      <item_ref id="guard_tonic" />
+      <item_ref id="thorn_recurve" />
+      <item_ref id="greenwood_core" />
+    </items>
+  </room>
+  <room id="vault" name="Ancient Vault" required_item="vault_key">
+    <description>The vault hums with layered moon wards, and a silver disk waits beyond a vigilant construct.</description>
+    <locked_message>The vault door is locked tight. You need the Vault Key to enter.</locked_message>
+    <exits>
+      <exit direction="south" to="ruins" />
+      <exit direction="east" to="moon_threshold" />
+    </exits>
+    <items>
+      <item_ref id="moon_sigil" />
+    </items>
+    <enemies>
+      <enemy_ref id="arcane_sentinel" />
+    </enemies>
+  </room>
+  <room id="moon_threshold" name="Moon Threshold" locks_on_exit="true">
+    <description>Moon-silver arches frame a narrow corridor where every footstep rings louder than it should. The way forward feels final.</description>
+    <sealed_message>The silver gate has sealed shut behind you. Moon Threshold will not yield the way back.</sealed_message>
+    <exits>
+      <exit direction="west" to="vault" />
+      <exit direction="east" to="sanctum" />
+    </exits>
+  </room>
+  <room id="sanctum" name="Sanctum">
+    <description>An outer sanctum opens beneath a pale dome. The heart chamber waits beyond doors veined with green light.</description>
+    <exits>
+      <exit direction="west" to="moon_threshold" />
+      <exit direction="east" to="heart_sanctum" />
+    </exits>
+  </room>
+  <room id="heart_sanctum" name="Heart Sanctum">
+    <description>Roots of emerald light coil around a cracked crystal heart. The room waits for a lantern, a choice, and an ending.</description>
+    <exits>
+      <exit direction="west" to="sanctum" />
+      <exit direction="east" to="relic_gate" />
+    </exits>
+  </room>
+  <room id="thornwild_camp" name="Thornwild Camp" storage="true">
+    <description>Canvas lean-tos crowd beneath old trees. Every rope is tied twice, as if the forest itself might wander off with the camp.</description>
+    <exits>
+      <exit direction="east" to="forest_path" />
+      <exit direction="north" to="eldergrove" />
+      <exit direction="west" to="bramble_overlook" />
+    </exits>
+    <npcs>
+      <npc_ref id="ranger_ileth" />
+    </npcs>
+  </room>
+  <room id="eldergrove" name="Eldergrove" monster_pool="thornwild_threats" monster_count="1">
+    <description>The oldest trees of the Thornwild bend inward here, their bark ridged like sleeping faces and old vows.</description>
+    <exits>
+      <exit direction="south" to="thornwild_camp" />
+      <exit direction="north" to="thorn_crown_grove" />
+    </exits>
+    <hidden_exits>
+      <exit direction="east" to="thorn_seed_cache" required_flag="thorn_seed_cache_opened" />
+    </hidden_exits>
+    <faction_enemies>
+      <enemy_ref id="bandit_scout" faction="town_watch" count="1" />
+    </faction_enemies>
+    <interactions>
+      <object id="buried_seed_cache" name="Buried Seed Cache" required_item="field_trowel" set_flag="thorn_seed_cache_opened">
+        <description>A circle of soft moss gives slightly underfoot, marked by ranger knots tied low around three roots.</description>
+        <missing_item_text>The moss is too dense to clear by hand. A Field Trowel would lift the cache without tearing the roots.</missing_item_text>
+        <interact_text>You ease the trowel beneath the moss and uncover a ranger seed cache wrapped in green cloth.</interact_text>
+        <completed_text>The seed cache is already open, its cloth tucked neatly back from the roots.</completed_text>
+      </object>
+    </interactions>
+  </room>
+  <room id="thorn_seed_cache" name="Thorn Seed Cache">
+    <description>The opened seed cache leads into a root-hollow where rangers hid green supplies from weather and worse company.</description>
+    <exits>
+      <exit direction="west" to="eldergrove" />
+    </exits>
+    <items>
+      <item_ref id="thornheart_fiber" />
+      <item_ref id="greenwood_core" />
+      <item_ref id="healing_tonic" />
+    </items>
+  </room>
+  <room id="bramble_overlook" name="Bramble Overlook" monster_pool="thornwild_threats" monster_count="1">
+    <description>A rocky shelf overlooks a green sea of thorns. Something bright is caught in the briars below.</description>
+    <exits>
+      <exit direction="east" to="thornwild_camp" />
+      <exit direction="north" to="bramble_lair" />
+    </exits>
+    <items>
+      <item_ref id="lost_watch_badge" />
+      <item_ref id="guard_tonic" />
+      <item_ref id="thornheart_fiber" />
+    </items>
+  </room>
+  <room id="bramble_lair" name="Bramble Witch Lair">
+    <description>Bird bones, thorn charms, and stolen road signs hang from twisted branches around a hollow of black leaves.</description>
+    <exits>
+      <exit direction="south" to="bramble_overlook" />
+    </exits>
+    <enemies>
+      <enemy_ref id="bramble_witch" />
+    </enemies>
+  </room>
+  <room id="thorn_crown_grove" name="Thorn Crown Grove">
+    <description>A circle of ancient briars forms a living throne. The air smells of rain, iron, and decisions made before language.</description>
+    <exits>
+      <exit direction="south" to="eldergrove" />
+    </exits>
+    <enemies>
+      <enemy_ref id="thorn_matriarch" />
+    </enemies>
+  </room>
+  <room id="ember_lift" name="Ember Lift">
+    <description>A chain lift descends below the smithy, rattling through warm stone toward the old Emberdeep mines.</description>
+    <exits>
+      <exit direction="up" to="smithy" />
+      <exit direction="down" to="ember_crosscut" />
+    </exits>
+    <hidden_exits>
+      <exit direction="in" to="miners_supply_cache" required_flag="miner_roll_honored" />
+    </hidden_exits>
+    <interactions>
+      <object id="miners_roll" name="Miners' Roll" required_item="miner_tally_stone" consume_item="true" set_flag="miner_roll_honored">
+        <description>A soot-dark memorial board lists Emberdeep crews by shift mark. One empty hook waits beneath a scratched tally symbol.</description>
+        <missing_item_text>The empty hook is shaped for a miner's tally stone. Someone carried their shift mark too far into the dark.</missing_item_text>
+        <interact_text>You hang the Miner Tally Stone beneath the matching shift mark. The old board settles with a soft click, and a supply niche opens beside the lift.</interact_text>
+        <completed_text>The returned tally stone rests on the miners' roll, keeping one more name from being lost to smoke.</completed_text>
+      </object>
+    </interactions>
+    <npcs>
+      <npc_ref id="foreman_borin" />
+    </npcs>
+    <vendors>
+      <vendor_ref id="ember_quartermaster" />
+    </vendors>
+  </room>
+  <room id="miners_supply_cache" name="Miners' Supply Cache">
+    <description>A narrow cache beside the lift holds practical supplies left by crews who believed remembrance should come with preparation.</description>
+    <exits>
+      <exit direction="out" to="ember_lift" />
+    </exits>
+    <items>
+      <item_ref id="healing_tonic" />
+      <item_ref id="guard_tonic" />
+      <item_ref id="slag_leather" />
+    </items>
+  </room>
+  <room id="ember_crosscut" name="Ember Crosscut" monster_pool="emberdeep_threats" monster_count="1">
+    <description>Rails split through a glowing crosscut where heat shimmers above puddles of mineral water.</description>
+    <exits>
+      <exit direction="up" to="ember_lift" />
+      <exit direction="east" to="ember_pump_house" />
+      <exit direction="south" to="ember_seam" />
+      <exit direction="west" to="cinder_rails" />
+    </exits>
+    <hidden_exits>
+      <exit direction="down" to="colossus_forge" required_flag="ember_pumps_repaired" />
+      <exit direction="in" to="ember_supply_cache" required_flag="ember_crate_opened" />
+    </hidden_exits>
+    <interactions>
+      <object id="heat_locked_crate" name="Heat-Locked Crate" required_item="heatproof_gloves" set_flag="ember_crate_opened">
+        <description>A red-hot supply crate sits beside the rails, its latch glowing with trapped forge heat.</description>
+        <missing_item_text>The latch is too hot to touch. Heatproof Gloves would make opening it survivable.</missing_item_text>
+        <interact_text>You grip the hot latch through the gloves and pull the crate open before the metal can bite.</interact_text>
+        <completed_text>The heat-locked crate already hangs open, cooling with little offended clicks.</completed_text>
+      </object>
+    </interactions>
+  </room>
+  <room id="ember_supply_cache" name="Ember Supply Cache">
+    <description>The opened heat-locked crate leads to a recessed supply niche packed by miners who expected the worst to have teeth.</description>
+    <exits>
+      <exit direction="out" to="ember_crosscut" />
+    </exits>
+    <items>
+      <item_ref id="ember_ore" />
+      <item_ref id="ember_pump_gear" />
+      <item_ref id="emberglass_ingot" />
+      <item_ref id="stoneskin_phial" />
+    </items>
+  </room>
+  <room id="ember_pump_house" name="Ember Pump House">
+    <description>Huge brass pumps sleep beneath layers of ash. Their missing gear leaves one wheel turning uselessly in place.</description>
+    <exits>
+      <exit direction="west" to="ember_crosscut" />
+    </exits>
+    <items>
+      <item_ref id="slag_leather" />
+    </items>
+    <interactions>
+      <object id="pump_assembly" name="Pump Assembly" required_item="ember_pump_gear" set_flag="ember_pumps_repaired">
+        <description>A brass pump assembly waits with one gear-shaped absence in its center.</description>
+        <missing_item_text>The pumps cannot run without the missing Ember Pump Gear.</missing_item_text>
+        <interact_text>You fit the Ember Pump Gear into place. The pump coughs, shudders, and begins dragging smoke out of the lower mine.</interact_text>
+        <completed_text>The pumps are already moving, drawing smoke away in steady iron breaths.</completed_text>
+      </object>
+    </interactions>
+  </room>
+  <room id="ember_seam" name="Ember Seam" monster_pool="emberdeep_threats" monster_count="1">
+    <description>A glowing seam of ore runs through the wall, pulsing like the mine has a fever.</description>
+    <exits>
+      <exit direction="north" to="ember_crosscut" />
+    </exits>
+    <mining message="You chip ember-bright ore from the hot seam.">
+      <item_ref id="ember_ore" min="1" max="3" />
+      <item_ref id="emberglass_ingot" min="1" max="1" />
+    </mining>
+  </room>
+  <room id="cinder_rails" name="Cinder Rails">
+    <description>Old rails vanish into smoke, their sleepers marked by glowing pawprints.</description>
+    <exits>
+      <exit direction="east" to="ember_crosscut" />
+    </exits>
+    <enemies>
+      <enemy_ref id="ash_hound" />
+    </enemies>
+    <items>
+      <item_ref id="miner_tally_stone" />
+    </items>
+  </room>
+  <room id="colossus_forge" name="Colossus Forge">
+    <description>A forge large enough for giants glows at the mine's heart. Something huge moves behind the curtain of sparks.</description>
+    <exits>
+      <exit direction="up" to="ember_crosscut" />
+    </exits>
+    <enemies>
+      <enemy_ref id="ember_colossus" />
+    </enemies>
+  </room>
+  <room id="caravan_road" name="Caravan Road">
+    <description>The road beyond the market runs into dry grass, sun-glare, and the long trade route toward Vel'rasha.</description>
+    <exits>
+      <exit direction="in" to="market_street" />
+      <exit direction="south" to="oasis_camp" />
+    </exits>
+  </room>
+  <room id="oasis_camp" name="Vel'rasha Oasis Camp" storage="true" rest="true">
+    <description>Green tents cluster around a moonlit spring at the edge of the desert. The water reflects constellations not visible overhead.</description>
+    <exits>
+      <exit direction="north" to="caravan_road" />
+      <exit direction="west" to="caravan_bones" />
+      <exit direction="east" to="mirage_maze" />
+      <exit direction="south" to="moonlit_spring" />
+    </exits>
+    <npcs>
+      <npc_ref id="astronomer_sahir" />
+    </npcs>
+    <vendors>
+      <vendor_ref id="oasis_trader_namira" />
+    </vendors>
+  </room>
+  <room id="caravan_bones" name="Caravan Bones" monster_pool="oasis_threats" monster_count="2">
+    <description>Half-buried wagon ribs point from the sand like the remains of a wooden whale.</description>
+    <exits>
+      <exit direction="east" to="oasis_camp" />
+    </exits>
+    <items>
+      <item_ref id="broken_astrolabe" />
+      <item_ref id="oasis_story_shell" />
+      <item_ref id="sunspun_thread" />
+    </items>
+  </room>
+  <room id="mirage_maze" name="Mirage Maze">
+    <description>The desert repeats itself in bright panels of false distance. Even your shadow seems unconvinced.</description>
+    <exits>
+      <exit direction="west" to="oasis_camp" />
+    </exits>
+    <maze success_room="mirage_cache" sequence="east,north,east,south">
+      <progress_message>The mirage thins as you hold to the remembered star path.</progress_message>
+      <failure_message>The desert laughs in heat-haze and returns you to the first false dune.</failure_message>
+      <success_message>The false horizon splits, revealing a hidden cache beneath a white stone arch.</success_message>
+    </maze>
+  </room>
+  <room id="mirage_cache" name="Mirage Cache">
+    <description>A stone cache rests under shade that should not exist at this hour.</description>
+    <exits>
+      <exit direction="west" to="mirage_maze" />
+    </exits>
+    <items>
+      <item_ref id="glass_sand" />
+      <item_ref id="mana_crystal" />
+      <item_ref id="star_salt" />
+      <item_ref id="quietus_glimmer_notes" />
+      <item_ref id="springwater_vial" />
+    </items>
+  </room>
+  <room id="moonlit_spring" name="Moonlit Spring" monster_pool="oasis_threats" monster_count="2">
+    <description>The oasis spring shines silver-blue, reflecting both the sky and a deeper sky beneath it.</description>
+    <exits>
+      <exit direction="north" to="oasis_camp" />
+      <exit direction="east" to="sphinx_court" />
+    </exits>
+    <hidden_exits>
+      <exit direction="down" to="spring_reflection_cache" required_flag="spring_reflection_cleansed" />
+    </hidden_exits>
+    <mining message="You sift ringing glass sand from the spring's moonlit bank.">
+      <item_ref id="glass_sand" min="1" max="3" />
+      <item_ref id="star_salt" min="1" max="1" />
+    </mining>
+    <interactions>
+      <object id="spring_reflection" name="Spring Reflection" required_item="desert_compass" set_flag="spring_reflection_cleansed">
+        <description>The spring reflects a crooked moon that is not overhead.</description>
+        <missing_item_text>The reflection refuses to settle. A Desert Compass might anchor the true direction.</missing_item_text>
+        <interact_text>You lower the Desert Compass over the water. The crooked moon straightens, and the spring remembers the present.</interact_text>
+        <completed_text>The spring now reflects only the sky above it, which feels like mercy.</completed_text>
+      </object>
+    </interactions>
+  </room>
+  <room id="spring_reflection_cache" name="Spring Reflection Cache">
+    <description>With the spring's reflection cleansed, a clear pocket opens beneath the bank where moonlit water has hidden useful things.</description>
+    <exits>
+      <exit direction="up" to="moonlit_spring" />
+    </exits>
+    <items>
+      <item_ref id="springwater_vial" />
+      <item_ref id="star_salt" />
+      <item_ref id="glass_sand" />
+    </items>
+  </room>
+  <room id="sphinx_court" name="Sphinx Court" required_item="desert_compass">
+    <description>Moonlit columns rise from the sand around a still pool. The Oasis Sphinx waits where every reflection points inward.</description>
+    <locked_message>The court folds away in mirage-light. You need the Desert Compass to hold the path steady.</locked_message>
+    <exits>
+      <exit direction="west" to="moonlit_spring" />
+    </exits>
+    <enemies>
+      <enemy_ref id="oasis_sphinx" />
+    </enemies>
+  </room>
+  <room id="moon_archive_gate" name="Moonfall Archive Gate">
+    <description>A silver bridge rises from the mage tower to a ruined archive suspended over a moonlit ravine.</description>
+    <exits>
+      <exit direction="down" to="mage_tower" />
+      <exit direction="east" to="scriptorium" />
+    </exits>
+    <npcs>
+      <npc_ref id="curator_vesper" />
+    </npcs>
+    <vendors>
+      <vendor_ref id="archive_scribe_orrin" />
+    </vendors>
+  </room>
+  <room id="scriptorium" name="Scriptorium" monster_pool="moonfall_threats" monster_count="2">
+    <description>Long desks stand beneath drifting shelves. Pens scratch by themselves, though not always helpfully.</description>
+    <exits>
+      <exit direction="west" to="moon_archive_gate" />
+      <exit direction="east" to="moon_index" />
+      <exit direction="north" to="sealed_wing" />
+      <exit direction="south" to="lunar_stacks" />
+    </exits>
+  </room>
+  <room id="moon_index" name="Moon Index">
+    <description>A circular chamber projects silver indexes into the air, sorting every name the archive has not forgotten.</description>
+    <exits>
+      <exit direction="west" to="scriptorium" />
+    </exits>
+    <hidden_exits>
+      <exit direction="east" to="moon_fracture_cache" required_flag="moon_fracture_measured" />
+    </hidden_exits>
+    <items>
+      <item_ref id="moon_ink" />
+      <item_ref id="lunar_page" />
+      <item_ref id="silver_quill_nib" />
+      <item_ref id="warded_stacks_key" />
+    </items>
+    <interactions>
+      <object id="index_prism" name="Index Prism" required_item="archive_cipher" set_flag="moon_index_focused">
+        <description>A prism at the center of the index spins too quickly to read.</description>
+        <missing_item_text>The prism speaks in broken archive shorthand. The Archive Cipher could slow it down.</missing_item_text>
+        <interact_text>You align the Archive Cipher with the prism. Silver text steadies into readable names and routes.</interact_text>
+        <completed_text>The index prism turns slowly now, patient and precise.</completed_text>
+      </object>
+      <object id="fracture_measure" name="Fracture Measure" required_flag="moon_index_focused" required_item="moon_calipers" set_flag="moon_fracture_measured">
+        <description>A hairline crack runs through the Moon Index's central prism, too fine to judge by eye.</description>
+        <missing_item_text>The crack is too precise for guessing. Moon Calipers could measure the fracture safely.</missing_item_text>
+        <interact_text>You measure the prism fracture with the calipers. The crack resolves into a repairable lunar equation.</interact_text>
+        <completed_text>The prism fracture has already been measured and annotated in tidy silver marks.</completed_text>
+      </object>
+    </interactions>
+  </room>
+  <room id="moon_fracture_cache" name="Moon Fracture Cache">
+    <description>The measured prism opens a narrow archive drawer filled with blank lunar pages and ink that has been waiting for a careful hand.</description>
+    <exits>
+      <exit direction="west" to="moon_index" />
+    </exits>
+    <items>
+      <item_ref id="lunar_page" />
+      <item_ref id="moon_ink" />
+      <item_ref id="silver_quill_nib" />
+    </items>
+  </room>
+  <room id="sealed_wing" name="Sealed Wing" monster_pool="moonfall_threats" monster_count="2">
+    <description>Cracked lunar seals mark a wing where the archive stored answers too dangerous to shelve in public.</description>
+    <exits>
+      <exit direction="south" to="scriptorium" />
+      <exit direction="east" to="warden_chamber" />
+    </exits>
+    <items>
+      <item_ref id="archive_tablet" />
+      <item_ref id="curator_seal_wax" />
+      <item_ref id="starless_aegis_treatise" />
+    </items>
+  </room>
+  <room id="lunar_stacks" name="Lunar Stacks" required_item="warded_stacks_key">
+    <description>Tall shelves lean together like conspirators. Wet black footprints cross the dust between them.</description>
+    <locked_message>The stacks seal themselves behind pale script. You need the Warded Stacks Key from the Moon Index.</locked_message>
+    <exits>
+      <exit direction="north" to="scriptorium" />
+    </exits>
+    <enemies>
+      <enemy_ref id="ink_stalker" />
+    </enemies>
+  </room>
+  <room id="warden_chamber" name="Warden Chamber">
+    <description>The archive's last sealed room holds a cold dais, a broken moon map, and a guardian that has never stopped waiting.</description>
+    <exits>
+      <exit direction="west" to="sealed_wing" />
+    </exits>
+    <enemies>
+      <enemy_ref id="moonfall_warden" />
+    </enemies>
+  </room>
+  <room id="relic_gate" name="Concord Gate">
+    <description>Four empty seals ring a black door beneath the Heart Sanctum. The gate waits for thorn, ember, mirage, and moon.</description>
+    <exits>
+      <exit direction="west" to="heart_sanctum" />
+    </exits>
+    <hidden_exits>
+      <exit direction="east" to="starless_approach" required_flag="final_gate_opened" />
+      <exit direction="north" to="relic_harmony_cache" required_flag="moonfall_seal_woken" />
+    </hidden_exits>
+    <interactions>
+      <object id="thorn_seal" name="Thorn Seal" required_item="thorn_crown_relic" set_flag="thorn_seal_woken">
+        <description>The first seal is shaped like a crown of briars.</description>
+        <missing_item_text>The Thorn Seal waits for the Thorn Crown Relic.</missing_item_text>
+        <interact_text>You set the Thorn Crown Relic against the seal. Green briars bloom across the gate without breaking the stone.</interact_text>
+        <completed_text>The Thorn Seal is already alive with quiet green thorns.</completed_text>
+      </object>
+      <object id="ember_seal" name="Ember Seal" required_flag="thorn_seal_woken" required_item="emberheart_relic" set_flag="ember_seal_woken">
+        <description>The second seal is a coal-black socket veined with heat.</description>
+        <missing_item_text>The Ember Seal waits for the Emberheart Relic.</missing_item_text>
+        <interact_text>You press the Emberheart Relic into the socket. Heat races through the gate like sunrise under iron.</interact_text>
+        <completed_text>The Ember Seal already glows with steady furnace-light.</completed_text>
+      </object>
+      <object id="mirage_seal" name="Mirage Seal" required_flag="ember_seal_woken" required_item="mirage_orb_relic" set_flag="mirage_seal_woken">
+        <description>The third seal is a glass ring full of roads that do not agree.</description>
+        <missing_item_text>The Mirage Seal waits for the Mirage Orb Relic.</missing_item_text>
+        <interact_text>You lift the Mirage Orb Relic to the glass ring. Every false road inside it bends toward the same door.</interact_text>
+        <completed_text>The Mirage Seal already shows one true road through its shifting glass.</completed_text>
+      </object>
+      <object id="moonfall_seal" name="Moonfall Seal" required_flag="mirage_seal_woken" required_item="moonfall_relic" set_flag="moonfall_seal_woken,final_gate_opened">
+        <description>The fourth seal is a silver equation missing its final answer.</description>
+        <missing_item_text>The Moonfall Seal waits for the Moonfall Relic.</missing_item_text>
+        <interact_text>You align the Moonfall Relic with the silver equation. The four seals sing together, and the Starless Gate opens east.</interact_text>
+        <completed_text>The Moonfall Seal is complete, and the Starless Gate remains open.</completed_text>
+      </object>
+    </interactions>
+  </room>
+  <room id="relic_harmony_cache" name="Relic Harmony Cache">
+    <description>When the fourth seal wakes, a quiet alcove opens behind the Concord Gate with supplies gathered from all four relic roads.</description>
+    <exits>
+      <exit direction="south" to="relic_gate" />
+    </exits>
+    <items>
+      <item_ref id="greater_healing_tonic" />
+      <item_ref id="greater_mana_tonic" />
+      <item_ref id="mana_crystal" />
+    </items>
+  </room>
+  <room id="starless_approach" name="Starless Approach" locks_on_exit="true">
+    <description>The world behind you becomes a green line of light. Ahead, the Starless Citadel rises against a sky with no stars at all.</description>
+    <sealed_message>The Concord Gate seals behind you. The citadel will not let the story retreat unchanged.</sealed_message>
+    <exits>
+      <exit direction="west" to="relic_gate" />
+      <exit direction="east" to="citadel_forward_camp" />
+    </exits>
+  </room>
+  <room id="citadel_forward_camp" name="Citadel Forward Camp" storage="true" rest="true">
+    <description>A desperate little camp burns behind a barricade of broken black stone and green lanterns.</description>
+    <exits>
+      <exit direction="west" to="starless_approach" />
+      <exit direction="east" to="void_bastion" />
+      <exit direction="north" to="starless_keep" />
+    </exits>
+    <npcs>
+      <npc_ref id="scout_naeve" />
+    </npcs>
+    <vendors>
+      <vendor_ref id="citadel_wayfarer" />
+    </vendors>
+  </room>
+  <room id="void_bastion" name="Void Bastion" monster_pool="citadel_threats" monster_count="3">
+    <description>The citadel's outer bastion is built from black stone that drinks torchlight and returns whispers.</description>
+    <exits>
+      <exit direction="west" to="citadel_forward_camp" />
+      <exit direction="east" to="abyss_walk" />
+    </exits>
+    <items>
+      <item_ref id="citadel_map" />
+      <item_ref id="naeve_broken_lantern" />
+    </items>
+  </room>
+  <room id="abyss_walk" name="Abyss Walk" monster_pool="citadel_threats" monster_count="3">
+    <description>A narrow bridge crosses a drop so deep that falling stones come back as echoes instead of sound.</description>
+    <exits>
+      <exit direction="west" to="void_bastion" />
+      <exit direction="north" to="starless_keep" />
+    </exits>
+    <mining message="You chip cold void shards from a crack in the black stone.">
+      <item_ref id="void_shard" min="1" max="2" />
+      <item_ref id="star_salt" min="1" max="1" />
+    </mining>
+  </room>
+  <room id="starless_keep" name="Starless Keep" monster_pool="citadel_threats" monster_count="3">
+    <description>The inner keep has no windows, only arrow slits looking into a darkness deeper than outside.</description>
+    <exits>
+      <exit direction="south" to="citadel_forward_camp" />
+      <exit direction="east" to="concord_throne" />
+    </exits>
+    <hidden_exits>
+      <exit direction="north" to="silent_fault_cache" required_flag="silent_fault_tuned" />
+    </hidden_exits>
+    <interactions>
+      <object id="silent_fault" name="Silent Fault" required_item="void_tuning_fork" set_flag="silent_fault_tuned">
+        <description>A seam in the black wall drinks sound so completely that even your breathing seems borrowed.</description>
+        <missing_item_text>The seam gives no answer by touch or sight. A Void Tuning Fork might find the ward hidden inside it.</missing_item_text>
+        <interact_text>You strike the tuning fork. No sound follows, but the seam shivers and releases a cold line of starlight.</interact_text>
+        <completed_text>The silent fault has already been tuned, its hidden ward humming below hearing.</completed_text>
+      </object>
+    </interactions>
+  </room>
+  <room id="silent_fault_cache" name="Silent Fault Cache">
+    <description>The tuned fault opens a slit in the black stone, revealing final supplies wrapped in cloth that has never known sunlight.</description>
+    <exits>
+      <exit direction="south" to="starless_keep" />
+    </exits>
+    <items>
+      <item_ref id="void_shard" />
+      <item_ref id="star_salt" />
+      <item_ref id="ironwill_draught" />
+    </items>
+  </room>
+  <room id="concord_throne" name="Concord Throne">
+    <description>Four relic lights crawl across a black throne where the Concord Wyrm coils around Emerald Keep's stolen future.</description>
+    <exits>
+      <exit direction="west" to="starless_keep" />
+    </exits>
+    <enemies>
+      <enemy_ref id="concord_wyrm" />
+    </enemies>
+  </room>
+</rooms>

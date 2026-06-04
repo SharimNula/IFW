@@ -1,0 +1,4 @@
+__pycache__/
+*.py[cod]
+players/*.json
+tests/_tmp_saves/

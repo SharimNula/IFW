@@ -1,0 +1,179 @@
+<vendors>
+  <vendor id="smith_orin" name="Smith Orin" buyback="0.5" currencies="gold,emerald_mark">
+    <dialogue>Bring coin, scrap, or a good story. I can work with two of the three.</dialogue>
+    <stock>
+      <item id="healing_tonic" price="15" />
+      <item id="mana_tonic" price="15" />
+      <item id="antidote" price="18" />
+      <item id="fury_draught" price="20" />
+      <item id="guard_tonic" price="20" />
+      <item id="mana_crystal" price="25" />
+      <item id="iron_pry_bar" price="18" />
+      <item id="lockpicks" price="20" />
+      <item id="field_trowel" price="14" />
+      <item id="rubbing_kit" price="18" />
+      <item id="oak_haft" price="10" />
+      <item id="silver_ring" price="5" currency="emerald_mark" />
+      <item id="nimble_fingers_ring" price="6" currency="emerald_mark" />
+      <item id="watch_coat" price="42" />
+      <item id="watch_halberd" price="68" />
+      <item id="chainmail" price="55" />
+    </stock>
+    <pickpocket>
+      <item_ref id="smithy_cellar_key" difficulty="10">
+        <success_text>You grab the key from the damaged keyring while Orin is pumping the bellows.</success_text>
+        <failure_text>Orin snatches your wrist before you can pull away, leading you to the guards post.</failure_text>
+      </item_ref>
+    </pickpocket>
+    <recipes>
+      <recipe_ref id="iron_spear_pattern" price="18" />
+    </recipes>
+  </vendor>
+  <vendor id="spellweaver_iris" name="Spellweaver Iris" buyback="0.5" currencies="gold,emerald_mark">
+    <dialogue>I sell spells to ready minds and books to stubborn ones.</dialogue>
+    <stock>
+      <item id="sunfire_codex" price="22" />
+      <item id="veil_manual" price="20" />
+      <item id="root_mender_primer" price="34" />
+      <item id="stormchain_codex" price="12" currency="emerald_mark" />
+      <item id="mana_tonic" price="15" />
+      <item id="antidote" price="18" />
+      <item id="mana_crystal" price="25" />
+    </stock>
+    <spells>
+      <spell_ref id="flash" price="14" />
+      <spell_ref id="snare_glare" price="16" />
+      <spell_ref id="shadow_palm" price="15" />
+      <spell_ref id="lock_whisper" price="15" />
+      <spell_ref id="gutter_grace" price="18" />
+      <spell_ref id="herbal_cleanse" price="10" />
+      <spell_ref id="purify_blood" price="14" />
+      <spell_ref id="steady_pulse" price="13" />
+      <spell_ref id="battle_focus" price="16" />
+      <spell_ref id="shieldbreaker_chant" price="18" />
+      <spell_ref id="frost_lance" price="18" />
+      <spell_ref id="stone_skin" price="20" />
+      <spell_ref id="titan_surge" price="24" />
+    </spells>
+    <pickpocket>
+      <item_ref id="archive_supply_key" difficulty="10">
+        <success_text>You reach into the robe pocket, and stealthily pull out a key.</success_text>
+        <failure_text>Iris pulls away and yells for a guard.</failure_text>
+      </item_ref>
+    </pickpocket>
+    <recipes>
+      <recipe_ref id="wild_mage_robe_pattern" price="20" />
+      <recipe_ref id="thornweave_cloak_pattern" price="8" currency="emerald_mark" />
+    </recipes>
+  </vendor>
+  <vendor id="exchange_clerk_marlow" name="Exchange Clerk Marlow" buyback="0.5" currencies="gold,emerald_mark" exchange="true">
+    <dialogue>Coins are only promises with better manners. I translate the promises.</dialogue>
+    <exchange_rates>
+      <rate from="gold" to="emerald_mark" from_amount="5" to_amount="1" />
+      <rate from="emerald_mark" to="gold" from_amount="1" to_amount="4" />
+    </exchange_rates>
+    <pickpocket>
+      <item_ref id="exchange_vault_key" difficulty="10">
+        <success_text>You palm the Exchange Vault Key from Marlow's waist chain while he checks a ledger.</success_text>
+        <failure_text>Marlow snaps the ledger shut on your wrist and calls for the Watch.</failure_text>
+      </item_ref>
+    </pickpocket>
+  </vendor>
+  <vendor id="ember_quartermaster" name="Ember Quartermaster Dain" buyback="0.45" currencies="gold,emerald_mark">
+    <dialogue>If the mine is breathing fire, dress like the fire expects company.</dialogue>
+    <stock>
+      <item id="healing_tonic" price="22" />
+      <item id="mana_tonic" price="22" />
+      <item id="fury_draught" price="28" />
+      <item id="guard_tonic" price="28" />
+      <item id="greater_healing_tonic" price="44" />
+      <item id="stoneskin_phial" price="38" />
+      <item id="heatproof_gloves" price="30" />
+      <item id="slag_leather" price="5" currency="emerald_mark" />
+      <item id="miner_heatwrap" price="8" currency="emerald_mark" />
+      <item id="cinder_mail" price="9" currency="emerald_mark" />
+      <item id="ember_focus_ring" price="10" currency="emerald_mark" />
+      <item id="sunward_charm" price="8" currency="emerald_mark" />
+    </stock>
+    <recipes>
+      <recipe_ref id="ember_sabre_pattern" price="6" currency="emerald_mark" />
+      <recipe_ref id="glass_sabre_pattern" price="12" currency="emerald_mark" />
+    </recipes>
+    <spells>
+      <spell_ref id="ember_guard" price="8" currency="emerald_mark" />
+      <spell_ref id="venom_break" price="6" currency="emerald_mark" />
+      <spell_ref id="colossus_rhythm" price="12" currency="emerald_mark" />
+    </spells>
+  </vendor>
+  <vendor id="oasis_trader_namira" name="Oasis Trader Namira" buyback="0.5" currencies="gold,emerald_mark">
+    <dialogue>Water, maps, spells, and rumors. The first two are reliable.</dialogue>
+    <stock>
+      <item id="antidote" price="24" />
+      <item id="greater_mana_tonic" price="42" />
+      <item id="springwater_vial" price="30" />
+      <item id="mana_crystal" price="35" />
+      <item id="sunspun_thread" price="7" currency="emerald_mark" />
+      <item id="dune_robe" price="14" currency="emerald_mark" />
+      <item id="desert_compass" price="7" currency="emerald_mark" />
+      <item id="oasis_breath_charm" price="13" currency="emerald_mark" />
+      <item id="quietus_glimmer_notes" price="11" currency="emerald_mark" />
+    </stock>
+    <recipes>
+      <recipe_ref id="oasis_staff_pattern" price="10" currency="emerald_mark" />
+    </recipes>
+    <spells>
+      <spell_ref id="oasis_balm" price="11" currency="emerald_mark" />
+      <spell_ref id="desert_antivenom" price="10" currency="emerald_mark" />
+      <spell_ref id="hourglass_stutter" price="11" currency="emerald_mark" />
+      <spell_ref id="mirage_step" price="12" currency="emerald_mark" />
+    </spells>
+  </vendor>
+  <vendor id="archive_scribe_orrin" name="Archive Scribe Orrin" buyback="0.5" currencies="gold,emerald_mark">
+    <dialogue>Everything here has a citation, including the monsters. Please do not bleed on the catalogs.</dialogue>
+    <stock>
+      <item id="moon_index_ring" price="15" currency="emerald_mark" />
+      <item id="oracle_mantle" price="18" currency="emerald_mark" />
+      <item id="scribe_lens_pin" price="16" currency="emerald_mark" />
+      <item id="moon_calipers" price="38" />
+      <item id="starless_aegis_treatise" price="20" currency="emerald_mark" />
+      <item id="mana_tonic" price="28" />
+      <item id="mana_crystal" price="40" />
+    </stock>
+    <recipes>
+      <recipe_ref id="archive_blade_pattern" price="16" currency="emerald_mark" />
+      <recipe_ref id="moonfall_scepter_pattern" price="18" currency="emerald_mark" />
+      <recipe_ref id="concord_seal_band_pattern" price="24" currency="emerald_mark" />
+    </recipes>
+    <spells>
+      <spell_ref id="moonlit_restoration" price="18" currency="emerald_mark" />
+      <spell_ref id="moon_purge" price="16" currency="emerald_mark" />
+      <spell_ref id="moonfire_arc" price="18" currency="emerald_mark" />
+      <spell_ref id="gravity_lull" price="17" currency="emerald_mark" />
+      <spell_ref id="void_flash" price="16" currency="emerald_mark" />
+    </spells>
+  </vendor>
+  <vendor id="citadel_wayfarer" name="Citadel Wayfarer Ilyx" buyback="0.4" currencies="gold,emerald_mark">
+    <dialogue>I sell only what still matters past the last gate.</dialogue>
+    <stock>
+      <item id="healing_tonic" price="35" />
+      <item id="mana_tonic" price="35" />
+      <item id="antidote" price="35" />
+      <item id="greater_healing_tonic" price="55" />
+      <item id="greater_mana_tonic" price="55" />
+      <item id="ironwill_draught" price="50" />
+      <item id="void_tuning_fork" price="18" currency="emerald_mark" />
+      <item id="voidward_pendant" price="22" currency="emerald_mark" />
+      <item id="starless_edge" price="30" currency="emerald_mark" />
+    </stock>
+    <recipes>
+      <recipe_ref id="citadel_plate_pattern" price="24" currency="emerald_mark" />
+      <recipe_ref id="wyrmfang_lance_pattern" price="28" currency="emerald_mark" />
+      <recipe_ref id="wyrmhide_wardcoat_pattern" price="30" currency="emerald_mark" />
+    </recipes>
+    <spells>
+      <spell_ref id="final_oath" price="22" currency="emerald_mark" />
+    </spells>
+  </vendor>
+</vendors>
+
+  

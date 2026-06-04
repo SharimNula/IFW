@@ -1,0 +1,96 @@
+<npcs>
+  <npc id="elder_rowan" name="Elder Rowan" quest_id="cull_the_wolf">
+    <dialogue>Elder Rowan keeps one hand on his cane and the other pointed toward trouble.</dialogue>
+  </npc>
+  <npc id="well_keeper_mara" name="Well Keeper Mara" faction="town_watch">
+    <dialogue>Mara knows every bucket, rumor, and hidden crack in the old square.</dialogue>
+    <dialogue_lines>
+      <line>The well has moods. Today it sounds like rain remembered from very far away.</line>
+      <line>If you travel north, mind the quiet patches. Forests only go silent when they are listening.</line>
+      <line>I keep three buckets ready: one for thirst, one for fire, and one for strange heroes.</line>
+    </dialogue_lines>
+  </npc>
+  <npc id="squire_tovin" name="Squire Tovin" companion="true" companion_class="warrior">
+    <dialogue>Tovin waits near the hearth with a strapped shield, a nervous grin, and more courage than polish.</dialogue>
+  </npc>
+  <npc id="apprentice_mira" name="Apprentice Mira" companion="true" companion_class="mage">
+    <dialogue>Mira keeps a spellbook tucked under one arm and watches the inn door as if it might ask a question.</dialogue>
+  </npc>
+  <npc id="trailhand_pip" name="Trailhand Pip" companion="true" companion_class="rogue" recruit_item="pip_lucky_button">
+    <dialogue>Pip leans beside the common-room stairs, already mapping exits, shadows, and likely snack routes.</dialogue>
+    <recruit_missing_item_text>Pip pats every pocket, then tries not to look worried. He will not leave the inn without his lucky button.</recruit_missing_item_text>
+  </npc>
+  <npc id="steward_elowen" name="Steward Elowen" quest_id="seal_the_heart">
+    <dialogue>Steward Elowen carries a green lantern wrapped in cloth, as if even hope needs shade.</dialogue>
+  </npc>
+  <npc id="watch_captain_sera" name="Watch Captain Sera" faction="town_watch" quest_id="hold_the_road">
+    <dialogue>Sera's cloak is patched, but her watch badge is polished bright.</dialogue>
+  </npc>
+  <npc id="archivist_lyra" name="Archivist Lyra" quest_id="recover_the_sigil">
+    <dialogue>Archivist Lyra stands beneath a mobile of silver moons and annotated keys.</dialogue>
+  </npc>
+  <npc id="keeper_nox" name="Keeper Nox" faction="moon_archive" quest_id="read_the_ore">
+    <dialogue>Nox has ink on every finger and a theory for every disaster.</dialogue>
+  </npc>
+  <npc id="relic_seer_maelis" name="Relic-Seer Maelis">
+    <dialogue>Maelis listens to the old stones as if they are whispering just under the floor.</dialogue>
+    <quests>
+      <quest_ref id="claim_thorn_relic" />
+      <quest_ref id="claim_ember_relic" />
+      <quest_ref id="claim_mirage_relic" />
+      <quest_ref id="claim_moonfall_relic" />
+      <quest_ref id="open_starless_gate" />
+      <quest_ref id="end_the_concord_wyrm" />
+    </quests>
+  </npc>
+  <npc id="ranger_ileth" name="Ranger Ilethe" faction="town_watch">
+    <dialogue>Ilethe carries thorn scratches like a map and refuses to call any forest cursed until she has walked it twice.</dialogue>
+    <quests>
+      <quest_ref id="map_the_thornwild" />
+      <quest_ref id="recover_watch_badge" />
+      <quest_ref id="silence_bramble_witch" />
+    </quests>
+  </npc>
+  <npc id="foreman_borin" name="Foreman Borin">
+    <dialogue>Borin's beard is singed at three different lengths, which he calls professional evidence.</dialogue>
+    <quests>
+      <quest_ref id="repair_ember_pumps" />
+      <quest_ref id="mine_ember_ore" />
+      <quest_ref id="break_the_ash_hound" />
+    </quests>
+  </npc>
+  <npc id="astronomer_sahir" name="Astronomer Sahir" faction="moon_archive">
+    <dialogue>Sahir keeps one eye on the sky and one on the sand, trusting neither completely.</dialogue>
+    <quests>
+      <quest_ref id="recover_astrolabe" />
+      <quest_ref id="chart_mirage_path" />
+      <quest_ref id="cleanse_the_spring" />
+    </quests>
+  </npc>
+  <npc id="curator_vesper" name="Curator Vesper" faction="moon_archive">
+    <dialogue>Vesper speaks softly because the archive repeats loud words back with commentary.</dialogue>
+    <quests>
+      <quest_ref id="copy_archive_tablet" />
+      <quest_ref id="focus_moon_index" />
+      <quest_ref id="banish_ink_stalker" />
+    </quests>
+  </npc>
+  <npc id="scout_naeve" name="Scout Naeve" faction="town_watch">
+    <dialogue>Naeve has seen the inside of the Starless Citadel and smiles like someone who escaped by arguing with fate.</dialogue>
+    <quests>
+      <quest_ref id="secure_citadel_map" />
+      <quest_ref id="shatter_void_shards" />
+      <quest_ref id="fell_starless_knight" />
+    </quests>
+  </npc>
+  <npc id="pilgrim_jory" name="Pilgrim Jory">
+    <dialogue>Jory counts blessings on one hand and escape routes on the other.</dialogue>
+    <dialogue_lines>
+      <line>Every relic road has a different weather. That is how you know the old magic is showing off.</line>
+      <line>I came to see a miracle. If I find three practical meals instead, I will call it even.</line>
+      <line>The final gate hums at night. I do not hum back. That is how it starts.</line>
+    </dialogue_lines>
+  </npc>
+</npcs>
+
+  

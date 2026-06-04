@@ -1,0 +1,11 @@
+<spells>
+    <spell id="overclock" name="Overclock" school="attack" mp_cost="4" attack_bonus="4" duration="3">
+        <description>A burst of adrenaline and focus that temporarily boosts your attack power.</description>
+    </spell>
+    <spell id="holo_decoy" name="Holo Decoy" school="control" mp_cost="4" power="12" skip_turns="1">
+        <description>Deploy a holographic decoy that distracts enemies.</description>
+    </spell>
+    <spell id="nano_repair" name="Nano Repair" school="healing" mp_cost="3" power="8">
+        <description>Release a swarm of nanobots that repair wounds over time.</description>
+    </spell>
+</spells>

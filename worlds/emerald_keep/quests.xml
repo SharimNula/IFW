@@ -1,0 +1,239 @@
+<quests>
+  <quest id="cull_the_wolf" name="Cull the Wolf" giver="elder_rowan" target_enemy="forest_wolf" reward_gold="20" reward_exp="45" reward_item="healing_tonic">
+    <offer_dialogue>The road north is no place for travelers until that wolf is dealt with.</offer_dialogue>
+    <active_dialogue>Keep your footing on the forest path. That wolf knows the road better than any of us.</active_dialogue>
+    <completed_dialogue>You have my thanks. The road north sounds like a road again, not a hunting ground.</completed_dialogue>
+    <description>Defeat the forest wolf prowling the road north of the square.</description>
+    <completion_text>The road wardens lift the lanterns again now that the wolf is gone.</completion_text>
+  </quest>
+  <quest id="recover_the_sigil" name="Recover the Sigil" giver="archivist_lyra" accept_item="vault_key" required_item="moon_sigil" reward_gold="35" reward_exp="70" reward_item="chainmail" reward_recipe="guardian_band_pattern">
+    <offer_dialogue>The sanctum key is somewhere beyond the ruins. Bring me the sigil if you find it.</offer_dialogue>
+    <active_dialogue>The sigil should be in the vault. Watch the old wards there; they were made to keep intruders out.</active_dialogue>
+    <completed_dialogue>The patterns are clearer now that the sigil has been recovered. You have preserved more than a relic.</completed_dialogue>
+    <description>Accept Lyra's Vault Key, retrieve the Moon Sigil from the Ancient Vault, and return to her with it.</description>
+    <completion_text>Lyra copies the sigil's pattern before the disk fades into safe ash.</completion_text>
+  </quest>
+  <quest id="seal_the_heart" name="Seal the Heart" giver="steward_elowen" accept_item="heart_lantern" required_item="heart_lantern" destination_room="heart_sanctum" reward_gold="50" reward_exp="110">
+    <offer_dialogue>The keep's heart is awake. Carry this lantern there, and choose what kind of story we leave behind.</offer_dialogue>
+    <active_dialogue>The lantern will know the heart chamber when you reach it. Do not let anyone tell you a banner is the same thing as a conscience.</active_dialogue>
+    <completed_dialogue>The lantern is gone, but the green in the stones remains.</completed_dialogue>
+    <description>Carry Elowen's Heart Lantern through the old sanctum and let it answer the keep's failing heart.</description>
+    <completion_text>The Heart Lantern rises from your hands and opens like a small green sun.</completion_text>
+  </quest>
+  <quest id="hold_the_road" name="Hold the Road" giver="watch_captain_sera" accept_item="watch_token" target_enemy="bandit_scout" reward_currency="emerald_mark" reward_amount="5" reward_exp="55" reward_item="hunter_band">
+    <offer_dialogue>The Watch needs someone quick enough to break the scouts before they own the road.</offer_dialogue>
+    <active_dialogue>Use the token at the signal lantern if you want the road map awake. Then hit the scouts before they signal.</active_dialogue>
+    <completed_dialogue>The road is ours again. For tonight, that is enough.</completed_dialogue>
+    <description>Defeat a bandit scout while pledged to the Town Watch.</description>
+    <completion_text>Sera knots a green cord around your token and names you road-friend.</completion_text>
+    <flag_outcome flag="watch_signal_lit">
+      <true reward_amount="7" reward_exp="70" reward_item="hunter_band">
+        <completion_text>Sera reads the lit road map, smiles once, and names you the reason the north road stayed open.</completion_text>
+      </true>
+      <false reward_amount="5" reward_exp="55" reward_item="hunter_band">
+        <completion_text>Sera knots a green cord around your token and names you road-friend.</completion_text>
+      </false>
+    </flag_outcome>
+  </quest>
+  <quest id="read_the_ore" name="Read the Ore" giver="keeper_nox" accept_item="archive_cipher" required_item="glimmer_ore" reward_gold="25" reward_exp="55" reward_item="warding_pendant">
+    <offer_dialogue>The grotto ore is speaking in old grammar. Bring me a piece before the Watch hammers it into horseshoes.</offer_dialogue>
+    <active_dialogue>Use the cipher if the ore starts whispering. Or do not. I am not your courage's clerk.</active_dialogue>
+    <completed_dialogue>The ore confirms it: the heartward is failing by design, not accident.</completed_dialogue>
+    <description>Mine Glimmer Ore from the Crystal Grotto and return it to Keeper Nox.</description>
+    <completion_text>Nox reads the ore, frowns, then rewards you for surviving scholarship.</completion_text>
+    <flag_outcome flag="ore_cipher_decoded">
+      <true reward_gold="35" reward_exp="70" reward_item="warding_pendant" reward_recipe="wild_mage_robe_pattern">
+        <completion_text>Nox compares your cipher marks to the ore and grins like a locked door just apologized.</completion_text>
+      </true>
+      <false reward_gold="25" reward_exp="55" reward_item="warding_pendant">
+        <completion_text>Nox reads the ore by candlelight, frowns, then rewards you for surviving scholarship.</completion_text>
+      </false>
+    </flag_outcome>
+  </quest>
+  <quest id="claim_thorn_relic" name="Claim the Thorn Crown" giver="relic_seer_maelis" target_enemy="thorn_matriarch" reward_gold="60" reward_exp="220" reward_item="thorn_crown_relic">
+    <offer_dialogue>The first relic sleeps in the Thornwild. Its guardian is a matriarch of living briar. Take the crown from her roots, or the final gate will never hear us.</offer_dialogue>
+    <active_dialogue>The Thorn Crown listens for courage in the green dark. Follow the ruined road until the forest becomes older than the road.</active_dialogue>
+    <completed_dialogue>The crown has accepted you. Good. The next relic burns below the keep where old mines forgot the word mercy.</completed_dialogue>
+    <description>Defeat the Thorn Matriarch and claim the Thorn Crown Relic.</description>
+    <completion_text>The Thorn Crown Relic wakes in your hands, green thorns curling around your fingers without drawing blood.</completion_text>
+  </quest>
+  <quest id="claim_ember_relic" name="Claim the Emberheart" giver="relic_seer_maelis" target_enemy="ember_colossus" reward_gold="85" reward_exp="360" reward_item="emberheart_relic">
+    <offer_dialogue>The second relic is the Emberheart, buried in the mines under the smithy. Its guardian walks like an anvil with a grudge.</offer_dialogue>
+    <active_dialogue>Emberdeep rewards preparation. Carry water, courage, and something better than starting gear.</active_dialogue>
+    <completed_dialogue>The Emberheart still burns. Keep it close, but do not sleep with it under your pillow unless you dislike pillows.</completed_dialogue>
+    <description>Defeat the Ember Colossus in Emberdeep and claim the Emberheart Relic.</description>
+    <completion_text>The Emberheart Relic lifts from the colossus' cooling chest, hot as a promise that refuses to die.</completion_text>
+  </quest>
+  <quest id="claim_mirage_relic" name="Claim the Mirage Orb" giver="relic_seer_maelis" target_enemy="oasis_sphinx" reward_gold="120" reward_exp="520" reward_item="mirage_orb_relic">
+    <offer_dialogue>The third relic waits at Vel'rasha, where the oasis misremembers the sky. The Sphinx will test strength, wit, and patience.</offer_dialogue>
+    <active_dialogue>Trust water before sand, shade before road, and the road only after it has failed to vanish twice.</active_dialogue>
+    <completed_dialogue>The Mirage Orb shows the final gate from angles no door should have. That is progress, apparently.</completed_dialogue>
+    <description>Defeat the Oasis Sphinx and claim the Mirage Orb Relic.</description>
+    <completion_text>The Mirage Orb Relic turns clear in your palm, and for one heartbeat every false road points true.</completion_text>
+  </quest>
+  <quest id="claim_moonfall_relic" name="Claim the Moonfall Shard" giver="relic_seer_maelis" target_enemy="moonfall_warden" reward_gold="160" reward_exp="720" reward_item="moonfall_relic">
+    <offer_dialogue>The fourth relic is locked in the Moonfall Archive. Its warden has been guarding a broken answer for centuries.</offer_dialogue>
+    <active_dialogue>The archive will try to preserve you. Do not let it. Preserved heroes are usually dead and alphabetized.</active_dialogue>
+    <completed_dialogue>Four relics. Four answers. Now the final gate has no excuse left.</completed_dialogue>
+    <description>Defeat the Moonfall Warden and claim the Moonfall Relic.</description>
+    <completion_text>The Moonfall Relic cools the air around you, and the heartward's missing equation settles into silence.</completion_text>
+  </quest>
+  <quest id="open_starless_gate" name="Open the Starless Gate" giver="relic_seer_maelis" destination_room="starless_approach" reward_gold="100" reward_exp="500">
+    <offer_dialogue>Take the four relics to the Concord Gate beneath the heart chamber. Use each relic on its seal. When the gate opens, step through.</offer_dialogue>
+    <active_dialogue>The relics must be answered in order: thorn, ember, mirage, moon. The gate likes ceremony almost as much as it likes secrets.</active_dialogue>
+    <completed_dialogue>The Starless Citadel is open. I would say this is good news, but it is mostly necessary news.</completed_dialogue>
+    <description>Use all four relics to open the final gate and enter the Starless Citadel.</description>
+    <completion_text>The Starless Gate closes behind you with the soft finality of a page turning.</completion_text>
+  </quest>
+  <quest id="end_the_concord_wyrm" name="End the Concord Wyrm" giver="relic_seer_maelis" target_enemy="concord_wyrm" reward_gold="300" reward_exp="1000" ending="true">
+    <offer_dialogue>The Concord Wyrm is what happens when every relic is forced to agree with hunger. End it, and Emerald Keep can choose its own future.</offer_dialogue>
+    <active_dialogue>If the wyrm speaks with four voices, answer with all four relics and your own fifth voice: refusal.</active_dialogue>
+    <completed_dialogue>The stones are quiet. Truly quiet. I had forgotten they could be.</completed_dialogue>
+    <description>Defeat the Concord Wyrm in the Starless Citadel and decide what becomes of Emerald Keep.</description>
+    <completion_text>The Concord Wyrm falls, and the four relics rise around the keep's heart like stars returning to the sky.</completion_text>
+    <ending_text>Emerald Keep survives as a free city of lanterns, archives, roads, and ordinary brave people. Your name becomes a toast before it becomes a statue.</ending_text>
+    <ending faction="town_watch">The Town Watch raises green lanterns across every road. Emerald Keep becomes a shield-city, practical and stubborn, with your deeds carved above the north gate.</ending>
+    <ending faction="moon_archive">The Moon Archive binds the relics into a living covenant. Emerald Keep becomes a city of guarded knowledge, and your story is copied in silver ink.</ending>
+    <ending_choices>
+      <choice id="1" label="Let the keep govern itself" ending="default" />
+      <choice id="2" label="Let your faction guide the future" ending="faction" />
+      <choice id="3" label="Take the relics into exile">You gather the four relics and leave before dawn. The keep is safe, but every shadow on the road knows what you carry. Years later, songs argue whether you were a thief, a guardian, or the last locked door.</choice>
+      <choice id="4" label="Return to a quiet village">You refuse every title and walk home by lanternlight. Seasons pass. The roads stay open, the wells stay sweet, and peace becomes so familiar that children think monsters were only ever stories.</choice>
+      <choice id="5" label="Seal every hidden mercy">
+        <required_flags>
+          <flag id="town_mural_opened" />
+          <flag id="watch_signal_lit" />
+          <flag id="elder_memory_honored" />
+          <flag id="hearth_ward_kindled" />
+          <flag id="exchange_vault_opened" />
+          <flag id="cellar_door_opened" />
+          <flag id="smithy_grate_opened" />
+          <flag id="ore_cipher_decoded" />
+          <flag id="archive_lens_focused" />
+          <flag id="supply_door_opened" />
+          <flag id="thorn_seed_cache_opened" />
+          <flag id="ember_crate_opened" />
+          <flag id="ember_pumps_repaired" />
+          <flag id="miner_roll_honored" />
+          <flag id="spring_reflection_cleansed" />
+          <flag id="moon_index_focused" />
+          <flag id="moon_fracture_measured" />
+          <flag id="thorn_seal_woken" />
+          <flag id="ember_seal_woken" />
+          <flag id="mirage_seal_woken" />
+          <flag id="moonfall_seal_woken" />
+          <flag id="final_gate_opened" />
+          <flag id="silent_fault_tuned" />
+        </required_flags>
+        You do not simply close the Concord's wound; you answer every small mercy hidden along the road. The Watch lanterns burn, the Archive prism steadies, the mine breathes clean and remembers its dead, the spring reflects true, and even the Starless Keep keeps one honest note of light. Emerald Keep remembers you not only as the one who defeated the wyrm, but as the one who left no quiet kindness unfinished.
+      </choice>
+    </ending_choices>
+  </quest>
+  <quest id="map_the_thornwild" name="Map the Thornwild" giver="ranger_ileth" destination_room="eldergrove" reward_currency="emerald_mark" reward_amount="4" reward_exp="120" reward_item="thorn_recurve">
+    <offer_dialogue>The Thornwild keeps moving its paths. Reach the Eldergrove and I can anchor a map to your route.</offer_dialogue>
+    <active_dialogue>When the trees get too old to care about you, you are close to the grove.</active_dialogue>
+    <completed_dialogue>Your route held. That means the next traveler may survive the forest's sense of humor.</completed_dialogue>
+    <description>Reach the Eldergrove beyond the shifting Thornwild paths.</description>
+    <completion_text>Ilethe sketches your route into her weatherproof map and marks three places where the forest lied.</completion_text>
+  </quest>
+  <quest id="recover_watch_badge" name="Recover the Lost Badge" giver="ranger_ileth" required_item="lost_watch_badge" reward_gold="45" reward_exp="130" reward_item="watch_halberd">
+    <offer_dialogue>A Watch badge vanished near the bramble overlook. Bring it back, and I can tell the family it was found with honor.</offer_dialogue>
+    <active_dialogue>The badge should be near the overlook. Thorns like shiny things almost as much as crows do.</active_dialogue>
+    <completed_dialogue>Thank you. Some losses are easier to carry once they have a shape again.</completed_dialogue>
+    <description>Find the Lost Watch Badge in the Thornwild and return it to Ilethe.</description>
+    <completion_text>Ilethe cleans the badge with her sleeve and salutes someone who is not there.</completion_text>
+  </quest>
+  <quest id="silence_bramble_witch" name="Silence the Bramble Witch" giver="ranger_ileth" target_enemy="bramble_witch" reward_gold="55" reward_exp="160" reward_recipe="thornweave_cloak_pattern">
+    <offer_dialogue>The bramble witch keeps waking old roots against travelers. Silence her voice, not the whole forest.</offer_dialogue>
+    <active_dialogue>Listen for birds repeating words they should not know. That is where she hunts.</active_dialogue>
+    <completed_dialogue>The forest is still dangerous, but now it is dangerous in its own voice.</completed_dialogue>
+    <description>Defeat a Bramble Witch in the Thornwild.</description>
+    <completion_text>The witch's borrowed birdsong fades from the branches, and the path sounds like wind again.</completion_text>
+  </quest>
+  <quest id="repair_ember_pumps" name="Repair the Ember Pumps" giver="foreman_borin" required_item="ember_pump_gear" reward_gold="70" reward_exp="190" reward_item="miner_heatwrap">
+    <offer_dialogue>The lower pumps are missing a gear. Without it, Emberdeep will fill with smoke and bad decisions.</offer_dialogue>
+    <active_dialogue>Find that gear before the mine starts coughing fire through the vents again.</active_dialogue>
+    <completed_dialogue>Good gear. Better timing. The pumps can breathe now.</completed_dialogue>
+    <description>Recover the Ember Pump Gear and return it to Foreman Borin.</description>
+    <completion_text>Borin turns the gear in his hand, nods once, and sends runners to wake the pumps.</completion_text>
+  </quest>
+  <quest id="mine_ember_ore" name="Mine Ember Ore" giver="foreman_borin" required_item="ember_ore" reward_gold="60" reward_exp="170" reward_recipe="ember_sabre_pattern">
+    <offer_dialogue>If you bring me clean Ember Ore, I will show you a blade pattern the old guild banned for being too dramatic.</offer_dialogue>
+    <active_dialogue>Clean ore glows steady. Bad ore hisses. Do not pocket the hissing kind.</active_dialogue>
+    <completed_dialogue>That ore will sing under a hammer. Listen close and you will hear the sabre inside it.</completed_dialogue>
+    <description>Mine Ember Ore from the lower seams and return it to Borin.</description>
+    <completion_text>Borin weighs the ore, grins, and teaches you the Ember Sabre Pattern.</completion_text>
+  </quest>
+  <quest id="break_the_ash_hound" name="Break the Ash Hound" giver="foreman_borin" target_enemy="ash_hound" reward_gold="75" reward_exp="210" reward_item="ember_focus_ring">
+    <offer_dialogue>An ash hound is stalking the rails. Break it before it teaches the imps confidence.</offer_dialogue>
+    <active_dialogue>Follow the glowing pawprints. If they stop, look up.</active_dialogue>
+    <completed_dialogue>The rails are ugly, hot, and safe enough. That counts as a triumph down here.</completed_dialogue>
+    <description>Defeat an Ash Hound in Emberdeep.</description>
+    <completion_text>The ash hound's heat fades from the rails, and the mine crews cheer from a sensible distance.</completion_text>
+  </quest>
+  <quest id="recover_astrolabe" name="Recover the Broken Astrolabe" giver="astronomer_sahir" required_item="broken_astrolabe" reward_gold="90" reward_exp="260" reward_item="desert_compass">
+    <offer_dialogue>My astrolabe walked away during a sandstorm. Brass does not usually walk. Please retrieve it before it learns habits.</offer_dialogue>
+    <active_dialogue>The astrolabe should be near the old caravan bones. If it points down, ignore it.</active_dialogue>
+    <completed_dialogue>Ah. Still broken, but broken in familiar ways. Thank you.</completed_dialogue>
+    <description>Find the Broken Astrolabe in the Vel'rasha Expanse and return it to Sahir.</description>
+    <completion_text>Sahir resets the astrolabe with a sigh and rewards you with a compass that lies less often.</completion_text>
+  </quest>
+  <quest id="chart_mirage_path" name="Chart the Mirage Path" giver="astronomer_sahir" destination_room="mirage_cache" reward_currency="emerald_mark" reward_amount="10" reward_exp="300" reward_recipe="oasis_staff_pattern">
+    <offer_dialogue>The mirage maze has a true path. Reach the cache beyond it and I can chart the false roads around it.</offer_dialogue>
+    <active_dialogue>The path should bend east, north, east, south. Unless the desert heard me say that.</active_dialogue>
+    <completed_dialogue>Your footprints prove the route. The desert hates evidence.</completed_dialogue>
+    <description>Cross the Vel'rasha mirage maze and reach the hidden cache.</description>
+    <completion_text>Sahir copies your route and teaches you how to bind glass sand into a staff.</completion_text>
+  </quest>
+  <quest id="cleanse_the_spring" name="Cleanse the Spring" giver="astronomer_sahir" required_item="glass_sand" reward_gold="100" reward_exp="310" reward_item="mirage_scale_vest">
+    <offer_dialogue>The moonlit spring needs clean glass sand to settle its reflection. Bring me some before the oasis starts reflecting tomorrow by mistake.</offer_dialogue>
+    <active_dialogue>Glass scorpions leave the clearest sand behind. They are not generous about it.</active_dialogue>
+    <completed_dialogue>The spring has stopped showing futures where everyone is thirsty. That is an improvement.</completed_dialogue>
+    <description>Bring Sahir clean Glass Sand from the Vel'rasha Expanse.</description>
+    <completion_text>Sahir scatters the glass sand into the spring, and the water remembers how to be water.</completion_text>
+  </quest>
+  <quest id="copy_archive_tablet" name="Copy the Archive Tablet" giver="curator_vesper" required_item="archive_tablet" reward_gold="130" reward_exp="360" reward_item="scribe_lens_pin">
+    <offer_dialogue>A tablet in the sealed wing contains one of the missing relic equations. Bring it carefully. Do not let it correct your grammar.</offer_dialogue>
+    <active_dialogue>The tablet is clay, but its pride is diamond. Carry it flat.</active_dialogue>
+    <completed_dialogue>Excellent. The tablet has only insulted me twice, which means it approves.</completed_dialogue>
+    <description>Find an Archive Tablet in the Moonfall Archive and return it to Vesper.</description>
+    <completion_text>Vesper copies the tablet in moon ink and slides the original into a warded drawer.</completion_text>
+  </quest>
+  <quest id="focus_moon_index" name="Focus the Moon Index" giver="curator_vesper" destination_room="moon_index" reward_currency="emerald_mark" reward_amount="14" reward_exp="380" reward_item="lunar_guard_hauberk">
+    <offer_dialogue>The Moon Index is drifting. Reach it, focus it, and try not to let it index you as misplaced.</offer_dialogue>
+    <active_dialogue>The index chamber is past the scriptorium. If the shelves start following you, walk with purpose.</active_dialogue>
+    <completed_dialogue>The index is stable. It has filed this success under improbable but welcome.</completed_dialogue>
+    <description>Reach the Moon Index chamber in the Moonfall Archive.</description>
+    <completion_text>The Moon Index settles into clean silver lines, and the archive stops rearranging the nearest hallway.</completion_text>
+  </quest>
+  <quest id="banish_ink_stalker" name="Banish the Ink Stalker" giver="curator_vesper" target_enemy="ink_stalker" reward_gold="140" reward_exp="400" reward_recipe="moonfall_scepter_pattern">
+    <offer_dialogue>An ink stalker is eating marginal notes and occasionally people. Banish it, and I will share a less embarrassing weapon pattern.</offer_dialogue>
+    <active_dialogue>It hunts near fresh script. If you hear pages turning with no wind, move.</active_dialogue>
+    <completed_dialogue>The margins are safe, the apprentices are safe, and my blood pressure is nearly reasonable.</completed_dialogue>
+    <description>Defeat an Ink Stalker in the Moonfall Archive.</description>
+    <completion_text>The ink stalker dissolves, and Vesper rewards you with a scepter pattern copied from a forbidden shelf.</completion_text>
+  </quest>
+  <quest id="secure_citadel_map" name="Secure the Citadel Map" giver="scout_naeve" required_item="citadel_map" reward_gold="180" reward_exp="450" reward_item="voidward_pendant">
+    <offer_dialogue>I dropped my map while leaving the citadel in a hurry. In my defense, the hallway was screaming. Get it back if you can.</offer_dialogue>
+    <active_dialogue>The map should be in the outer bastion. If the walls whisper directions, compare them to literally anything else.</active_dialogue>
+    <completed_dialogue>That map cost me two torches and most of my composure. Good to have it back.</completed_dialogue>
+    <description>Recover Naeve's Citadel Map from the Starless Citadel.</description>
+    <completion_text>Naeve flattens the map, marks three safer turns, and admits the fourth turn is mostly optimism.</completion_text>
+  </quest>
+  <quest id="shatter_void_shards" name="Shatter Void Shards" giver="scout_naeve" required_item="void_shard" reward_currency="emerald_mark" reward_amount="18" reward_exp="480" reward_recipe="wyrmhide_wardcoat_pattern">
+    <offer_dialogue>Void shards keep the citadel awake. Bring me one, and I will show you where armorers learned to stop being polite.</offer_dialogue>
+    <active_dialogue>Thralls carry shards. Knights hoard them. Serpents bite anyone who asks.</active_dialogue>
+    <completed_dialogue>This shard is ugly enough to be useful. We can turn it against the citadel.</completed_dialogue>
+    <description>Bring Naeve a Void Shard from the Starless Citadel.</description>
+    <completion_text>Naeve cracks the shard in a warded cloth and teaches you the Wyrmhide Wardcoat Pattern.</completion_text>
+  </quest>
+  <quest id="fell_starless_knight" name="Fell a Starless Knight" giver="scout_naeve" target_enemy="starless_knight" reward_gold="220" reward_exp="540" reward_item="starless_aegis_treatise">
+    <offer_dialogue>The Starless Knights keep the inner road closed. Drop one, and the rest will remember hesitation.</offer_dialogue>
+    <active_dialogue>The knights do not breathe, blink, or bargain. Plan around that.</active_dialogue>
+    <completed_dialogue>One less empty helm between us and the wyrm. I like the sound of that.</completed_dialogue>
+    <description>Defeat a Starless Knight in the final zone.</description>
+    <completion_text>The Starless Knight falls, and Naeve marks the inner road as almost survivable.</completion_text>
+  </quest>
+</quests>
+
+  

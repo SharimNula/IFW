@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<trizbort>
+	<info />
+	<map>
+		<room id="1" name="Forest Path" x="-512" y="-256" w="96" h="64" description="" />
+		<room id="2" name="Town Square" x="-544" y="0" w="160" h="128" description="" />
+		<line id="3">
+			<dock index="0" id="2" port="n" />
+			<dock index="1" id="1" port="s" />
+		</line>
+		<room id="4" name="Title Street" x="-512" y="256" w="96" h="64" description="" />
+		<line id="5">
+			<dock index="0" id="2" port="s" />
+			<dock index="1" id="4" port="n" />
+		</line>
+		<room id="6" name="Market Street" x="-224" y="32" w="96" h="64" description="" />
+		<line id="7">
+			<dock index="0" id="2" port="e" />
+			<dock index="1" id="6" port="w" />
+		</line>
+		<room id="8" name="Guard Post" x="-352" y="-96" w="96" h="64" description="" />
+		<line id="9" startText="up" endText="down">
+			<dock index="0" id="2" port="ne" />
+			<dock index="1" id="8" port="sw" />
+		</line>
+		<room id="10" name="Lantern Inn" x="-352" y="160" w="96" h="64" description="" />
+		<line id="11" startText="in" endText="out">
+			<dock index="0" id="2" port="se" />
+			<dock index="1" id="10" port="nw" />
+		</line>
+		<room id="12" name="Mages Tower" x="-704" y="-96" w="96" h="64" description="" />
+		<room id="15" name="Elder's House" x="-512" y="352" w="96" h="64" description="" />
+		<line id="16">
+			<dock index="0" id="4" port="s" />
+			<dock index="1" id="15" port="n" />
+		</line>
+		<room id="17" name="New Moon Temple" x="-384" y="256" w="96" h="64" description="" />
+		<line id="18">
+			<dock index="0" id="4" port="e" />
+			<dock index="1" id="17" port="w" />
+		</line>
+		<room id="19" name=" Memory Cache" x="-352" y="352" w="96" h="64" description="" />
+		<room id="21" name="Hearth Cache" x="-224" y="256" w="96" h="64" description="" />
+		<line id="20" startText="down" endText="up">
+			<dock index="0" id="15" port="e" />
+			<dock index="1" id="19" port="w" />
+		</line>
+		<line id="22" startText="down" endText="up">
+			<dock index="0" id="10" port="se" />
+			<dock index="1" id="21" port="nw" />
+		</line>
+		<room id="23" name="Currency Exchange" x="-224" y="128" w="96" h="64" description="" />
+		<line id="24">
+			<dock index="0" id="6" port="s" />
+			<dock index="1" id="23" port="n" />
+		</line>
+		<room id="25" name="Exchange Vault" x="-96" y="128" w="96" h="64" description="" />
+		<line id="26">
+			<dock index="0" id="23" port="e" />
+			<dock index="1" id="25" port="w" />
+		</line>
+		<room id="27" name="Smithy" x="32" y="32" w="96" h="64" description="" />
+		<line id="28">
+			<dock index="0" id="6" port="e" />
+			<dock index="1" id="27" port="w" />
+		</line>
+		<room id="29" name="Ember Lift" x="32" y="128" w="96" h="64" description="" />
+		<line id="30" startText="down" endText="up">
+			<dock index="0" id="27" port="s" />
+			<dock index="1" id="29" port="n" />
+		</line>
+		<room id="31" name="Smithy Cache" x="192" y="32" w="96" h="64" description="" />
+		<line id="32" startText="in" endText="out">
+			<dock index="0" id="27" port="e" />
+			<dock index="1" id="31" port="w" />
+		</line>
+		<room id="33" name="Crystal Grotto" x="-384" y="-256" w="96" h="64" description="" />
+		<line id="34">
+			<dock index="0" id="1" port="e" />
+			<dock index="1" id="33" port="w" />
+		</line>
+		<room id="35" name="Thornwild Camp" x="-640" y="-256" w="96" h="64" description="" />
+		<line id="36">
+			<dock index="0" id="1" port="w" />
+			<dock index="1" id="35" port="e" />
+		</line>
+		<room id="37" name="Ruins" x="-512" y="-352" w="96" h="64" description="" />
+		<line id="38">
+			<dock index="0" id="1" port="n" />
+			<dock index="1" id="37" port="s" />
+		</line>
+		<room id="13" name="Lens Cache" x="-576" y="-96" w="96" h="64" description="" />
+		<line id="14">
+			<dock index="0" id="12" port="e" />
+			<dock index="1" id="13" port="w" />
+		</line>
+		<line id="39" startText="in" endText="out">
+			<dock index="0" id="1" port="ssw" />
+			<dock index="1" id="12" port="nne" />
+		</line>
+		<line id="40">
+			<dock index="0" id="2" port="w" />
+			<dock index="1" id="12" port="s" />
+		</line>
+		<room id="41" name="Archive Gate" x="-992" y="160" w="96" h="64" description="" />
+		<room id="43" name="Thorn Maze" x="-384" y="-352" w="96" h="64" description="" />
+		<room id="44" name="Vault" x="-512" y="-448" w="96" h="64" description="" />
+		<line id="45">
+			<dock index="0" id="37" port="n" />
+			<dock index="1" id="44" port="s" />
+		</line>
+		<line id="46">
+			<dock index="0" id="37" port="e" />
+			<dock index="1" id="43" port="w" />
+		</line>
+		<room id="47" name="Hidden Cache" x="-256" y="-352" w="96" h="64" description="" />
+		<line id="48">
+			<dock index="0" id="43" port="e" />
+			<dock index="1" id="47" port="w" />
+		</line>
+		<room id="49" name="Moon Threshold" x="-384" y="-448" w="96" h="64" description="" />
+		<line id="50">
+			<dock index="0" id="44" port="e" />
+			<dock index="1" id="49" port="w" />
+		</line>
+		<room id="51" name="Sanctum" x="-256" y="-448" w="96" h="64" description="" />
+		<line id="52">
+			<dock index="0" id="49" port="e" />
+			<dock index="1" id="51" port="w" />
+		</line>
+		<room id="53" name="Heart Sanctum" x="-128" y="-448" w="96" h="64" description="" />
+		<line id="54">
+			<dock index="0" id="51" port="e" />
+			<dock index="1" id="53" port="w" />
+		</line>
+		<room id="55" name="Relic Gate" x="0" y="-448" w="96" h="64" description="" />
+		<line id="56">
+			<dock index="0" id="53" port="e" />
+			<dock index="1" id="55" port="w" />
+		</line>
+		<room id="57" name="Eldergrove" x="-640" y="-352" w="96" h="64" description="" />
+		<line id="58">
+			<dock index="0" id="35" port="n" />
+			<dock index="1" id="57" port="s" />
+		</line>
+		<room id="59" name="Bramble Overlook" x="-768" y="-256" w="96" h="64" description="" />
+		<line id="60">
+			<dock index="0" id="35" port="w" />
+			<dock index="1" id="59" port="e" />
+		</line>
+		<room id="61" name="Thorn Crown Grove" x="-640" y="-448" w="96" h="64" description="" />
+		<line id="62">
+			<dock index="0" id="57" port="n" />
+			<dock index="1" id="61" port="s" />
+		</line>
+		<room id="63" name="Bramble Witch Lair" x="-768" y="-352" w="96" h="64" description="" />
+		<line id="64">
+			<dock index="0" id="59" port="n" />
+			<dock index="1" id="63" port="s" />
+		</line>
+		<room id="65" name="Ember Crosscut" x="32" y="224" w="96" h="64" description="" />
+		<line id="66" startText="down" endText="up">
+			<dock index="0" id="29" port="s" />
+			<dock index="1" id="65" port="n" />
+		</line>
+		<room id="67" name="Ember Seam" x="32" y="320" w="96" h="64" description="" />
+		<line id="68">
+			<dock index="0" id="65" port="s" />
+			<dock index="1" id="67" port="n" />
+		</line>
+		<room id="69" name="Ember Pump House" x="160" y="224" w="96" h="64" description="" />
+		<line id="70">
+			<dock index="0" id="65" port="e" />
+			<dock index="1" id="69" port="w" />
+		</line>
+		<room id="71" name="Cinder Rails" x="-96" y="224" w="96" h="64" description="" />
+		<line id="72">
+			<dock index="0" id="65" port="w" />
+			<dock index="1" id="71" port="e" />
+		</line>
+		<room id="73" name="Colossus Forge" x="-96" y="320" w="96" h="64" description="" />
+		<room id="74" name="Ember Supply" x="160" y="320" w="96" h="64" description="" />
+		<line id="75" startText="down" endText="up">
+			<dock index="0" id="65" port="sw" />
+			<dock index="1" id="73" port="ne" />
+		</line>
+		<line id="76" startText="in" endText="out">
+			<dock index="0" id="65" port="se" />
+			<dock index="1" id="74" port="nw" />
+		</line>
+		<room id="77" name="Miner Cache" x="192" y="128" w="96" h="64" description="" />
+		<line id="78" startText="in" endText="out">
+			<dock index="0" id="29" port="e" />
+			<dock index="1" id="77" port="w" />
+		</line>
+		<room id="79" name="Caravan Road" x="64" y="-352" w="96" h="64" description="" />
+		<room id="81" name="Oasis Camp" x="64" y="-256" w="96" h="64" description="" />
+		<line id="82">
+			<dock index="0" id="79" port="s" />
+			<dock index="1" id="81" port="n" />
+		</line>
+		<room id="83" name="Moonlit Spring" x="64" y="-160" w="96" h="64" description="" />
+		<line id="84">
+			<dock index="0" id="81" port="s" />
+			<dock index="1" id="83" port="n" />
+		</line>
+		<room id="85" name="Mirage Maze" x="192" y="-256" w="96" h="64" description="" />
+		<line id="86">
+			<dock index="0" id="81" port="e" />
+			<dock index="1" id="85" port="w" />
+		</line>
+		<room id="80" name="Caravan Bones" x="-64" y="-256" w="96" h="64" description="" />
+		<line id="87">
+			<dock index="0" id="80" port="e" />
+			<dock index="1" id="81" port="w" />
+		</line>
+		<room id="88" name="Mirage Cache" x="320" y="-256" w="96" h="64" description="" />
+		<line id="89">
+			<dock index="0" id="85" port="e" />
+			<dock index="1" id="88" port="w" />
+		</line>
+		<room id="90" name="Sphinx Court" x="192" y="-160" w="96" h="64" description="" />
+		<line id="91">
+			<dock index="0" id="83" port="e" />
+			<dock index="1" id="90" port="w" />
+		</line>
+		<room id="92" name="Spring Cache" x="64" y="-64" w="96" h="64" description="" />
+		<line id="93" startText="down" endText="up">
+			<dock index="0" id="83" port="s" />
+			<dock index="1" id="92" port="n" />
+		</line>
+		<line id="94" startText="out">
+			<dock index="0" id="6" port="ne" />
+			<point index="1" x="-96" y="-320" />
+		</line>
+		<line id="95" startText="in">
+			<dock index="0" id="79" port="w" />
+			<point index="1" x="-96" y="-320" />
+		</line>
+		<room id="42" name="Scriptorium" x="-864" y="160" w="96" h="64" description="" />
+		<line id="96">
+			<dock index="0" id="41" port="e" />
+			<dock index="1" id="42" port="w" />
+		</line>
+		<room id="97" name="Moon Index" x="-736" y="160" w="96" h="64" description="" />
+		<line id="98">
+			<dock index="0" id="42" port="e" />
+			<dock index="1" id="97" port="w" />
+		</line>
+		<room id="99" name="Sealed Wing" x="-864" y="64" w="96" h="64" description="" />
+		<line id="100">
+			<dock index="0" id="42" port="n" />
+			<dock index="1" id="99" port="s" />
+		</line>
+		<room id="101" name="Lunar Stacks" x="-864" y="256" w="96" h="64" description="" />
+		<line id="102">
+			<dock index="0" id="42" port="s" />
+			<dock index="1" id="101" port="n" />
+		</line>
+		<room id="103" name="Moon Cache" x="-608" y="160" w="96" h="64" description="" />
+		<line id="104">
+			<dock index="0" id="97" port="e" />
+			<dock index="1" id="103" port="w" />
+		</line>
+		<room id="105" name="Warden Chamber" x="-736" y="64" w="96" h="64" description="" />
+		<line id="106">
+			<dock index="0" id="99" port="e" />
+			<dock index="1" id="105" port="w" />
+		</line>
+		<line id="107" startText="down" endText="up">
+			<dock index="0" id="41" port="n" />
+			<dock index="1" id="12" port="w" />
+		</line>
+		<room id="108" name="Harmony Cache" x="0" y="-544" w="96" h="64" description="" />
+		<line id="109">
+			<dock index="0" id="55" port="n" />
+			<dock index="1" id="108" port="s" />
+		</line>
+		<room id="110" name="Starless Approach" x="128" y="-448" w="96" h="64" description="" />
+		<line id="111">
+			<dock index="0" id="55" port="e" />
+			<dock index="1" id="110" port="w" />
+		</line>
+		<room id="112" name="Citadel Forward Camp" x="256" y="-448" w="128" h="64" description="" />
+		<line id="113">
+			<dock index="0" id="110" port="e" />
+			<dock index="1" id="112" port="w" />
+		</line>
+		<room id="114" name="Starless Keep" x="256" y="-576" w="384" h="64" description="" />
+		<room id="116" name="Void Bastion" x="416" y="-448" w="96" h="64" description="" />
+		<line id="117">
+			<dock index="0" id="112" port="e" />
+			<dock index="1" id="116" port="w" />
+		</line>
+		<room id="118" name="Abyss Walk" x="544" y="-448" w="96" h="64" description="" />
+		<line id="119">
+			<dock index="0" id="116" port="e" />
+			<dock index="1" id="118" port="w" />
+		</line>
+		<line id="120">
+			<dock index="0" id="114" port="sse" />
+			<dock index="1" id="118" port="nnw" />
+		</line>
+		<line id="115">
+			<dock index="0" id="114" port="ssw" />
+			<dock index="1" id="112" port="n" />
+		</line>
+		<room id="121" name="Silent Cache" x="384" y="-704" w="96" h="64" description="" />
+		<line id="122">
+			<dock index="0" id="114" port="n" />
+			<dock index="1" id="121" port="s" />
+		</line>
+		<room id="123" name="Concord Throne" x="672" y="-576" w="96" h="64" description="" />
+		<line id="124">
+			<dock index="0" id="114" port="e" />
+			<dock index="1" id="123" port="w" />
+		</line>
+	</map>
+	<settings>
+		<colors>
+			<canvas>White</canvas>
+			<fill>White</fill>
+			<border>MidnightBlue</border>
+			<line>MidnightBlue</line>
+			<selectedLine>SteelBlue</selectedLine>
+			<hoverLine>DarkOrange</hoverLine>
+			<largeText>MidnightBlue</largeText>
+			<smallText>MidnightBlue</smallText>
+			<lineText>MidnightBlue</lineText>
+			<grid>#F5F5F5</grid>
+		</colors>
+		<fonts>
+			<room size="13">Comic Sans MS</room>
+			<object size="11">Comic Sans MS</object>
+			<line size="9">Comic Sans MS</line>
+		</fonts>
+		<grid>
+			<snapTo>yes</snapTo>
+			<visible>yes</visible>
+			<showOrigin>yes</showOrigin>
+			<size>32</size>
+		</grid>
+		<lines>
+			<width>2</width>
+			<handDrawn>yes</handDrawn>
+			<arrowSize>12</arrowSize>
+			<textOffset>4</textOffset>
+		</lines>
+		<rooms>
+			<darknessStripeSize>24</darknessStripeSize>
+			<objectListOffset>4</objectListOffset>
+			<connectionStalkLength>32</connectionStalkLength>
+			<preferredDistanceBetweenRooms>64</preferredDistanceBetweenRooms>
+		</rooms>
+		<ui>
+			<handleSize>12</handleSize>
+			<snapToElementSize>16</snapToElementSize>
+		</ui>
+		<keypadNavigation>
+			<creationModifier>control</creationModifier>
+			<unexploredModifier>alt</unexploredModifier>
+		</keypadNavigation>
+	</settings>
+</trizbort>

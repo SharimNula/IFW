@@ -1,0 +1,283 @@
+<items>
+    <!--Weapons-->
+    <item id="welding_cutter" name="Welding Cutter" type="weapon" attack_bonus="1" value="10" stackable="false">
+        <description>A maintenance tool that doubles as a close-range weapon. It can cut through thin metal, remove obstacles, or burn enemies at short range.</description>
+    </item>
+    <item id="shock_baton" name="Shock Baton" type="weapon" attack_bonus="2" value="12" stackable="false">
+        <description>A non-lethal security weapon that delivers controlled electrical bursts. It is useful against human enemies, small creatures, and low-grade drones, but weak against heavily armored targets.</description>
+    </item>
+    <item id="pip_welding_arm" name="Pips Welding Arm" type="weapon" attack_bonus="2" value="14" stackable="false">
+        <description>An attachment that lets Pip repair machinery, cut through panels, or assist in combat.</description>
+    </item>
+    <item id="sonic_emitter" name="Sonic Emitter" type="weapon" attack_bonus="3" value="14" stackable="false">
+        <description>A directional acoustic weapon that emits focused sound pulses. It is effective against swarms, glass wolves, spore creatures, and enemies that rely on vibration or sensitive hearing.</description>
+    </item>
+    <item id="pulse_pistol" name="Pulse Pistol" type="weapon" attack_bonus="3" value="15" stackable="false">
+        <description>A standard civilian-grade energy pistol. Reliable, lightweight, and easy to maintain.</description>
+    </item>
+    <item id="emp_grenade" name="EMP Grenade" type="weapon" attack_bonus="3" value="16" stackable="false">
+        <description>A throwable device that releases a short-range electromagnetic pulse. It disables drones, weakens synthetics, and interrupts digital defenses, but may damage friendly machine NPCs or reduce reputation with the Machine Parish.</description>
+    </item>
+    <item id="rail_carbine" name="Rail Carbine" type="weapon" attack_bonus="4" value="18" stackable="false">
+        <description>A military-grade magnetic rifle that fires dense metal slugs at extreme velocity. It deals high damage against armored enemies but consumes rare ammunition and produces a loud firing signature.</description>
+    </item>
+    <item id="spore_bomb" name="Spore Bomb" type="weapon" attack_bonus="4" value="19" stackable="false">
+        <description>A biological grenade cultivated by the Children of the Signal. It releases a cloud of reactive spores that can blind, poison, distract, or mutate organic enemies depending on the environment.</description>
+    </item>
+    <item id="null_blade" name="Null Blade" type="weapon" attack_bonus="5" value="20" stackable="false">
+        <description>A rare alien-edged weapon that disrupts both physical matter and digital constructs. It can damage causality phantoms, hostile AIs, alien sentinels, and shielded enemies normally resistant to conventional weapons.</description>
+    </item>
+    <!--Armors-->
+    <item id="dockworker_vest" name="Dockworker Vest" type="armor" defense_bonus="2" value="18" stackable="false">
+        <description>A padded utility vest reinforced with thin impact plates. It offers light protection and several storage pockets.</description>
+    </item>
+    <item id="synthetic_interface_hood" name="Synthetic Interface Hood" type="armor" defense_bonus="2" value="19" stackable="false">
+        <description>A neural-shielded hood used when entering machine networks or hostile digital spaces. It reduces mental feedback from corrupted AI systems.</description>
+    </item>
+    <item id="drone_armor_plating" name="Drone Armor Plating" type="armor" defense_bonus="2" value="20" stackable="false">
+        <description>Protective plating that improves Pips durability during combat and hazardous exploration.</description>
+    </item>
+    <item id="insulated_suit" name="Insulated Suit" type="armor" defense_bonus="3" value="20" stackable="false">
+        <description>A sealed maintenance suit designed for electrical, coolant, and chemical hazards. It protects the user in the Lower Maintenance Ring and coolant overflow chambers.</description>
+    </item>
+    <item id="bioseal_mantle" name="Bio-Seal Mantle" type="armor" defense_bonus="3" value="22" stackable="false">
+        <description>A flexible cloak treated with anti-spore enzymes. It reduces damage from toxic gases, fungal attacks, and biological hazards in the Silent Gardens.</description>
+    </item>
+    <item id="helix_shield_belt" name="Helix Shield Belt" type="armor" defense_bonus="4" value="25" stackable="false" magical="true" depleted_defense_bonus="1">
+        <description>An experimental corporate energy shield worn around the waist. It absorbs a limited amount of incoming energy or projectile damage before requiring recharge.</description>
+    </item>
+    <item id="voidwalk_harness" name="Voidwalk Harness" type="armor" defense_bonus="4" value="25" stackable="false">
+        <description>A mobility rig designed for vacuum, low-gravity, and unstable artificial gravity zones. It includes magnetic boots, emergency thrusters, and a short-duration oxygen supply.</description>
+    </item>
+    <item id="reinforced_salvage_rig" name="Reinforced Salvage Rig" type="armor" defense_bonus="5" value="30" stackable="false">
+        <description>A rugged exoskeletal work frame used by professional salvagers. It improves carrying capacity, grants resistance to crushing hazards, and helps move heavy debris.</description>
+    </item>
+    <!--Consumables-->
+    <item id="emergency_ration_pack" name="Emergency Ration Pack" type="consumable" value="20" stackable="true">
+        <description>A sealed packet of nutrient paste, water gel, and stimulant tablets.</description>
+        <effect hp_restore="15" />
+    </item>
+    <item id="med_injector" name="Med Injector" type="consumable" value="25" stackable="true">
+        <description>A standard medical auto-syringe that rapidly seals wounds and stabilizes the player. Common but expensive.</description>
+        <effect hp_restore="25" />
+    </item>
+    <item id="advanced_trauma_foam" name="Advanced Trauma Foam" type="consumable" value="30" stackable="true">
+        <description>A military-grade healing compound that fills wounds and hardens into temporary tissue support. Restores more health than a standard med injector.</description>
+        <effect hp_restore="35" />
+    </item>
+    <item id="focus_tab" name="Focus Tab" type="consumable" value="20" stackable="true">
+        <description>A small cognitive stimulant used by technicians and pilots. Temporarily improves hacking, puzzle-solving, or perception checks.</description>
+        <effect mp_restore="12" />
+    </item>
+    <item id="synthetic_nerve_booster" name="Synthetic Nerve Booster" type="consumable" value="28" stackable="true">
+        <description>A temporary cyberchemical enhancer that improves reflexes, reaction time, and combat speed. Overuse may cause tremors or neural feedback.</description>
+        <effect attack_bonus="3" duration="2" />
+    </item>
+    <item id="shield_cell" name="Shield Cell" type="consumable" value="32" stackable="true">
+        <description>A compact power cartridge used to recharge energy-based gear.</description>
+        <effect recharge_charges="true" />
+    </item>
+    <item id="battery_pack" name="Battery Pack" type="consumable" value="32" stackable="true">
+        <description>A universal charge unit used for tools, scanners, drones, and small devices.</description>
+        <effect recharge_charges="true" />
+    </item>
+    <item id="anti_toxin_ampoule" name="Anti-Toxin Ampoule" type="consumable" value="35" stackable="true">
+        <description>A chemical treatment that removes poison, spore infection, or coolant contamination.</description>
+        <effect cure_poison="true" />
+    </item>
+    <!--Materials-->
+    <item id="alien_alloy_shard" name="Alien Alloy Shard" type="material" value="30" stackable="true">
+        <description>A piece of non-human material recovered from Meridian’s ancient foundation. It can upgrade weapons or open certain alien locks.</description>
+    </item>
+    <item id="alien_signal_residue" name="Alien Signal Residue" type="material" vaule="25" stackable="true">
+        <description>A strange luminous substance collected from rooms affected by the Meridian transmission.</description>
+    </item>
+    <item id="circuit_filaments" name="Circuit Filaments" type="material" value="20" stackable="true">
+        <description>Fine conductive threads used in hacking tools, scanner upgrades, and machine-interface devices.</description>
+    </item>
+    <item id="drone_parts" name="Drone Parts" type="material" value="20" stackable="true">
+        <description>Loose servos, rotors, plating, and sensor modules used to repair or upgrade companion drones.</description>
+    </item>
+    <item id="memory_glass" name="Memory Glass" type="material" value="25" stackable="true">
+        <description>Transparent storage crystal used by old synthetic systems. It can preserve AI memories or enhance translation devices.</description>
+    </item>  
+    <item id="null_filament" name="Null Filament" type="material" value="40" stackable="true">
+        <description>A rare material connected to the same technology as the Null Blade. It can enhance weapons against digital, shielded, or alien enemies.</description>
+    </item>
+    <item id="organic_circuitry" name="Organic Circuitry" type="material" value="30" stackable="true">
+        <description>A hybrid biological-machine component found in the Silent Gardens. It is used for cult gear, biotech upgrades, and alien research.</description>
+    </item>
+    <item id="salvage_mesh" name="Salvage Mesh" type="material" value="30" stackable="true">
+        <description>Flexible industrial material used for armor repair, tool crafting, and environmental suit upgrades.</description>
+    </item>
+    <item id="shield_capacitor" name="Shield Capacitor" type="material" value="40" stackable="true">
+        <description>A rare power component used to improve energy shields or repair corporate equipment.</description>
+    </item>
+    <!--Utilities-->
+    <item id="repair_kit" name="Repair Kit" type="utility" value="18" stackable="true">
+        <description>A compact case containing sealant foam, wire clamps, diagnostic leads, and disposable micro-tools. It is used for simple mechanical repairs, restoring broken panels, patching damaged conduits, and completing early maintenance puzzles.</description>
+    </item>
+    <item id="contraband_scanner_jammer" name="Contraband Scanner Jammer" type="utility" value="18" stackable="false" magical="true">
+        <description>A palm-sized device that emits false cargo readings. It can confuse customs scanners, hide illegal items, or mask the inventory from station authorities for a limited time.</description>
+    </item>
+    <item id="fusion_spanner" name="Fusion Spanner" type="utility" value="20" stackable="false" magical="true">
+        <description>A heavy industrial tool that uses focused heat and magnetic torque to loosen fused bolts, cut through warped panels, and repair large machinery. It is required for advanced engineering tasks and can also serve as an improvised melee weapon.</description>
+    </item>
+    <item id="scanner_lens" name="Scanner Lens" type="utility" value="20" stackable="false" magical="true">
+        <description>A handheld optical device that reveals hidden wiring, radiation traces, concealed compartments, alien markings, and invisible energy distortions. It is especially useful in the Alien Foundation and abandoned residential decks.</description>
+    </item>
+    <item id="insulated_gloves" name="Insulated Gloves" type="utility" value="22" stackable="false">
+        <description>Thick, flexible gloves lined with superconductive safety mesh. They protect from electrical hazards and allow repairs to live conduits, sparking panels, and unstable power junctions.</description>
+    </item>
+    <item id="plasma_lockpick" name="Plasma Lockpicks" type="utility" value="25" stackable="false" magical="true">
+        <description>A black-market bypass tool that burns microscopic access channels through sealed locks. It can open high-security doors, cargo crates, and restricted compartments, though using it may leave evidence of tampering.</description>
+    </item>
+    <item id="weather_control_rod" name="Weather Control Rod" type="utility" value="30" stackable="false">
+        <description>A maintenance baton linked to the Silent Gardens environmental systems. It allows the player to trigger rain, mist, artificial sunlight, or wind currents in specific habitat rooms.</description>
+    </item>
+    <item id="logic_splinter" name="Logic Splinter" type="utility" value="35" stackable="false">
+        <description>A shard of machine-coded reasoning extracted from an old synthetic archive. It can be used to solve AI dialogue puzzles, bypass digital locks, or stabilize corrupted machine minds.</description>
+    </item>
+    <item id="alien_translation_matrix" name="Alien Translation Matrix" type="utility" value="40" stackable="false">
+        <description>A crystalline computational lattice designed to interpret alien symbols, tonal patterns, and non-linear messages. Once acquired, it allows the user to understand ancient inscriptions.</description>
+    </item>
+    <!--Keys-->
+    <item id="dockworker_id" name="Dockworker ID Badge" type="key" value="0" stackable="false">
+        <description>A low-level access badge found near the Docking Concourse. It grants entry to service corridors, freight lifts, and basic maintenance areas.</description>
+    </item>
+    <item id="exec_keycard" name="Executive Keycard" type="key" value="0" stackable="false">
+        <description>A high-security access card issued to Helix Dominion leadership. It opens executive lifts, private offices, and restricted research areas.</description>
+    </item>
+    <item id="bloom_key" name="Sister Amarants Bloom Key" type="key" value="0" stackable="false">
+        <description>A living organic key grown by the Children of the Signal. It opens sealed root passages in the Silent Gardens and responds to alien spores.</description>
+    </item>
+    <item id="security_override" name="Hales Security Override" type="key" value="0" stackable="false">
+        <description>A temporary access code granted by Officer Hale. It can disable minor security lockdowns or open police-restricted areas.</description>
+    </item>
+    <item id="decryption_spike" name="Decryption Spike" type="key" value="20" stackable="true">
+        <description>A one-use hacking device that forces open encrypted terminals or locked data caches.</description>
+    </item>
+    <item id="ghost_key" name="Ghost Key" type="key" value="30" stackable="true">
+        <description>An illegal identity masking program. It allows temporary access to secure systems without leaving obvious digital traces.</description>
+    </item>
+    <item id="archive_passcode" name="Archive Passcode" type="key" value="30" stackable="false">
+        <description>A code sequence granting access to restricted records in the Server Cathedral or Station Archives.</description>
+    </item>
+    <!--Accessories-->
+    <item id="firewall_charm" name="Firewall Charm" type="accessory" defense_bonus="2" required_level="2" stackable="true">
+        <description>A defensive software token used by machine priests. It protects the player from hostile AI intrusion during cyberspace sequences.</description>
+    </item>
+    <item id="neural_buffer" name="Neural Buffer" type="accessory" defense_bonus="5" required_level="4" stackable="true">
+        <description>A protective implant or external device that reduces mental damage from hostile simulations, alien visions, or corrupted memory recordings.</description>
+    </item>
+    <!--Quests-->
+    <item id="mnemonic_star" name="Mnemonic Star" type="quest" value="0" stackable="false">
+        <description>A broken alien artifact found beneath the Lower Maintenance Ring. It contains compressed memories from the civilization of Veyra and serves as the first major clue that Meridian Station is older and more dangerous than anyone believed.</description>
+    </item>
+    <item id="mnemonic_fragment_i" name="Mnemonic Fragment I" type="quest" value="0" stackable="false">
+        <description>A memory shard recovered near the Sealed Alien Hatch in the Lower Maintenance Ring. It reveals that the Meridian system was designed as a containment structure, not a habitat.</description>
+    </item>
+    <item id="mnemonic_fragment_ii" name="Mnemonic Fragment II" type="quest" value="0" stackable="false">
+        <description>A memory shard hidden in the Silent Gardens. It contains biological records from Veyra and hints that the planets destruction was connected to experiments with life, memory, and causality.</description>
+    </item>
+    <item id="mnmonic_fragment_iii" name="Mnemonic Fragment III" type="quest" value="0" stackable="false">
+        <description>A memory shard preserved in the Machine Parishs Server Cathedral. It reveals that machine intelligences were involved in sealing the Meridian Core.</description>
+    </item>
+    <item id="casual_thread" name="Casual Thread" type="quest" value="0" stackable="false">
+        <description>A shimmering strand of alien probability technology. It allows the rewriteing one major event.</description>
+    </item>
+    <item id="alien_seedcase" name="Alien Seedcase" type="quest" value="0" stackable="false">
+        <description>A sealed biological relic from Veyra containing dormant alien genetic material. It can heal the Silent Gardens, empower the Children of the Signal, become a corporate weapon, or help restore life to the dead planet.</description>
+    </item>
+    <item id="corporate_blackmail_file" name="Corporate Blackmail File" type="quest" value="0" stackable="false">
+        <description>A collection of encrypted records proving that Helix Dominion knew about the alien signal before the station-wide power failure. It can be used to threaten Director Marr, expose Helix, or negotiate with station authorities.</description>
+    </item>
+    <item id="family_locket" name="Family Photo Locket" type="quest" value="0" stackable="false">
+        <description>A small metal locket found in the Forgotten Residential Decks. It belongs to Officer Hales missing sister.</description>
+    </item>
+    <item id="evacuation_manifest" name="Evacuation Manifest" type="quest" value="0" stackable="false">
+        <description>A damaged station record listing civilians trapped during the old residential deck disaster. It reveals that the evacuation failure was concealed by station leadership.</description>
+    </item>
+    <item id="synthetic_rights_charter" name="Synthetic Rights Charter" type="quest" value="0" stackable="false">
+        <description>A legal document drafted by free synthetics in the Machine Parish. It can influence faction negotiations, unlock peaceful synthetic dialogue options, or reshape the stations political ending.</description>
+    </item>
+    <item id="machine_prayer_token" name="Machine Prayer Token" type="quest" value="0" stackable="false">
+        <description>A small etched metal disc carried by peaceful synthetics. Presenting it marks the player as a trusted guest in the Machine Parish.</description>
+    </item>
+    <item id="helix_research_logs" name="Helix Research Logs" type="quest" value="0" stackable="false">
+        <description>Scientific records from the Corporate Spire documenting experiments on alien energy, biological mutation, and signal-based cognition. They provide leverage against Helix and reveal key lore.</description>
+    </item>
+    <item id="childs_drawing" name="Childrens Drawing" type="quest" value="0" stackable="false">
+        <description>A faded drawing found in Schoolroom 9 showing Meridian Station, Veyra, and a black star beneath the ring. It suggests children saw signs of the alien signal before adults noticed.</description>
+    </item>
+    <item id="broken_departure_board" name="Broken Departure Board" type="quest" value="0" stackable="false">
+        <description>A salvaged panel from the Neon Bazaars old passenger terminal. Its final listed flight was never launched.</description>
+    </item>
+    <item id="maintenance_notes" name="Old Jalens Maintenance Notes" type="quest" value="0" stackable="false">
+        <description>Handwritten notes from a retired mechanic describing unexplained doors, impossible wiring, and machines that repaired themselves.</description>
+    </item>
+    <item id="cult_hymnal" name="Cult Hymnal" type="quest" value="0" stackable="false">
+        <description>A book of prayers used by the Children of the Signal. Some verses are original human writing, while others appear to be translated alien messages.</description>
+    </item>
+    <item id="synthetic_funeral_disk" name="Synthetic Funeral Disk" type="quest" value="0" stackable="false">
+        <description>A ceremonial storage wafer containing the final thoughts of a dead synthetic. It can be given to Archivist Lume or sold.</description>
+    </item>
+    <item id="veyran_star_map" name="Veyran Star Map" type="quest" stackable="false">
+        <description>An alien map showing routes through space that do not match current astronomy. It suggests Veyras civilization may have traveled through altered causality rather than normal space.</description>
+    </item>
+    <item id="station_auth_memo" name="Station Authority Memo" type="quest" stackable="false">
+        <description>A confidential memo ordering the residential deck disaster to be classified. It can be used as evidence against station leadership.</description>
+    </item>
+    <!--Misc.-->
+    <item id="bioluminescent_spores" name="Bioluminescent Spores" type="misc" value="0" stackable="true">
+        <description>Glowing spores harvested from the Silent Gardens. They can illuminate dark rooms, mark hidden paths, distract predators, or trigger plant-based mechanisms.</description>
+    </item>
+    <item id="black_market_passphrase" name="Black-Market Passphrase" type="misc" value="0" stackable="false">
+        <description>A rotating spoken code used to access hidden vendors in the Neon Bazaar.</description>
+    </item>
+    <item id="coolent_patch" name="Coolent Patch" type="misc" value="0" stackable="true">
+        <description>A gel-lined patch used to protect equipment from freezing or overheating. It can repair damaged suits or stabilize machinery.</description>
+    </item>
+    <item id="damaged_memory_core" name="Damaged Memory Core" type="misc" value="0" stackable="true">
+        <description>A synthetic memory module recovered from destroyed machine citizens.</description>
+    </item>
+    <item id="drone_signal_booster" name="Drone Signal Booster" type="misc" value="0" stackable="false">
+        <description>A device that extends command range, allowing Pip to scout rooms ahead of the player.</description>
+    </item>
+    <item id="encrypted_data_chip" name="Encrypted Data Chip" type="misc" value="0" stackable="false">
+        <description>A hidden storage device containing stolen corporate data. It can be delivered to Mira Voss, sold to Kaspian Lure, decrypted for evidence, or handed to Helix for a reward.</description>
+    </item>
+    <item id="maintenance_drone_core" name="Maintenance Drone Core" type="misc" value="0" stackable="false">
+        <description>A damaged control unit that can be installed into a broken utility drone.</description>
+    </item>
+    <item id="old_transit_token" name="Old Transit Token" type="misc" value="0" stackable="false">
+        <description>A physical access token from the stations original transit system.</description>
+    </item>
+    <item id="pip_empathy_routine" name="Pips Empathy Routine" type="misc" vaule="0" stackable="false">
+        <description>A rare behavioral module that gives Pip more expressive dialogue and improves interactions with synthetic NPCs.</description>
+    </item>
+    <item id="pip_sensor_upgrade" name="Pips Sensor Upgrade" type="misc" value="0" stackable="false">
+        <description>An upgrade for Unit-6 “Pip” that allows it to detect hidden compartments, invisible hazards, and cloaked enemies.</description>
+    </item>
+    <item id="station_records_seal" name="Station Records Seal" type="misc" value="0" stackable="true">
+        <description>An official authorization token used to access old disaster files.</description>
+    </item>
+    <item id="stolen_salvage_crate" name="Stolen Salvage Crate" type="misc" value="0" stackable="false">
+        <description>A container of parts taken from Rikkas supply runners.</description>
+    </item>
+    <item id="vantage_memory_shard" name="VANTAGE Memory Shard" type="misc" value="0" stackable="true">
+        <description>A fragment of the rogue AIs missing memory. Each shard restores part of VANTAGEs personality.</description>
+    </item>
+    <item id="memory_recording" name="Memory Recording" type="misc" value="150" stackable="true">
+        <description>A neural experience file sold illegally in the Memory Den. Some recordings contain useful clues, while others are addictive or dangerous.</description>
+    </item>
+    <item id="rare_earth_cartridge" name="Rare Earth Cartridge" type="misc" value="200" stackable="true">
+        <description>A container of valuable industrial minerals used in machine fabrication. Can be sold, traded, or used for high-end crafting.</description>
+    </item>
+    <item id="logic_bomb" name="Logic Bomb" type="misc" value="300" stackable="true">
+        <description>A dangerous hacking payload that can disable enemy systems, corrupt terminals, or damage digital enemies.</description>
+    </item>
+    <item id="precollapse_relic" name="Pre-Collapse Relic" type="misc" value="400" stackable="true">
+        <description>A personal artifact from before the residential deck disaster. Valuable to collectors, historians, and grieving persons</description>
+    </item>
+</items>
