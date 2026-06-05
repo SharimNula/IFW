@@ -55,6 +55,9 @@ class RoomInteraction:
     description: str = ""
     interact_text: str = ""
     completed_text: str = ""
+    password: str = ""
+    password_text: str = ""
+    password_failed_text: str = ""
     required_flag: str | None = None
     required_item: str | None = None
     missing_item_text: str = ""

@@ -151,6 +151,21 @@ def parse_room_interaction(interaction_element: ET.Element) -> RoomInteraction:
             or _optional_text(interaction_element.find("success_text"))
         ),
         completed_text=_optional_text(interaction_element.find("completed_text")),
+        password=_first_attr(
+            interaction_element,
+            "password",
+            "answer",
+            "passcode",
+        )
+        or "",
+        password_text=(
+            _optional_text(interaction_element.find("password_text"))
+            or _optional_text(interaction_element.find("password_success_text"))
+        ),
+        password_failed_text=(
+            _optional_text(interaction_element.find("password_failed_text"))
+            or _optional_text(interaction_element.find("password_failure_text"))
+        ),
         required_flag=_first_attr(
             interaction_element,
             "required_flag",

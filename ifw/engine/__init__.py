@@ -127,6 +127,8 @@ class GameEngine(
                 return self._examine(remainder)
             if verb in {"interact", "activate", "search"}:
                 return self._interact_with_room_object(remainder)
+            if verb in {"answer", "password", "passcode", "say"}:
+                return self._answer_room_password(remainder)
             if verb == "pickpocket":
                 return self._pickpocket(remainder)
             if verb == "lockpick":

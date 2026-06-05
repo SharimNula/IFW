@@ -101,6 +101,18 @@ class GameProjectTests(unittest.TestCase):
             "glimmer_ore",
         )
         self.assertEqual(
+            self.world.rooms["crystal_grotto"].hidden_exits["in"].target_room,
+            "arcane_thief_cache",
+        )
+        self.assertEqual(
+            self.world.rooms["crystal_grotto"].interactions["serpent_cipher_door"].password,
+            "SNAKE",
+        )
+        self.assertIn("serpentstep_jacket", self.world.rooms["arcane_thief_cache"].item_ids)
+        self.assertEqual(self.world.items["serpentstep_jacket"].item_type, "armor")
+        self.assertEqual(self.world.items["serpentstep_jacket"].required_level, 6)
+        self.assertEqual(self.world.items["serpentstep_jacket"].max_charges, 3)
+        self.assertEqual(
             self.world.rooms["thorn_maze"].maze_sequence,
             ["north", "east", "north"],
         )
@@ -783,6 +795,15 @@ class GameProjectTests(unittest.TestCase):
                     world.rooms["currency_exchange_office"].interactions["exchange_vault_door"],
                     "lockpick_item",
                     "missing_picks",
+                ),
+            ),
+            (
+                "password text without password",
+                "defines password text without a password",
+                lambda world: setattr(
+                    world.rooms["town_square"].interactions["weathered_mural"],
+                    "password_text",
+                    "The wall answers.",
                 ),
             ),
         ]
@@ -2393,6 +2414,89 @@ class GameProjectTests(unittest.TestCase):
         self.assertIn("ore_cipher_decoded", engine.progress.story_flags)
         self.assertEqual(engine.progress.inventory.get("archive_cipher"), 1)
         self.assertEqual(engine.progress.item_charges["archive_cipher"], 2)
+
+    def test_password_interaction_reveals_arcane_thief_cache(self) -> None:
+        engine = self._engine()
+        engine.progress.current_room = "crystal_grotto"
+        engine.progress.story_flags.extend(
+            [
+                "cipher_letter_s_found",
+                "cipher_letter_n_found",
+                "cipher_letter_a_found",
+                "cipher_letter_k_found",
+                "cipher_letter_e_found",
+            ]
+        )
+
+        interact_lines = engine.handle_command("interact serpent cipher door")
+        wrong_lines = engine.handle_command("answer serpent cipher door with ember")
+        self.assertNotIn("arcane_thief_cache_opened", engine.progress.story_flags)
+        right_lines = engine.handle_command("answer serpent cipher door with snake")
+        move_lines = engine.handle_command("in")
+
+        self.assertIn(
+            "Serpent Cipher Door asks for a password. Use 'answer <password>' or 'answer <object> with <password>'.",
+            interact_lines,
+        )
+        self.assertIn(
+            "The crystal scales click once, unimpressed, and settle back into blank silence.",
+            wrong_lines,
+        )
+        self.assertIn(
+            "You speak SNAKE. The five scales turn one by one, and a green-lit passage curls open into the stone.",
+            right_lines,
+        )
+        self.assertIn("A path is revealed: in -> Arcane Thief's Cache.", right_lines)
+        self.assertIn("arcane_thief_cache_opened", engine.progress.story_flags)
+        self.assertEqual(engine.progress.current_room, "arcane_thief_cache")
+        self.assertIn("Arcane Thief's Cache", move_lines)
+
+    def test_archive_cipher_scavenger_hunt_requires_recharge_to_finish_password(self) -> None:
+        engine = self._engine()
+        engine.progress.add_item("archive_cipher")
+
+        clue_steps = [
+            ("elder_memory_cache", "elder cipher scale", "cipher_letter_s_found", "first recovered letter is S"),
+            ("hearth_supply_cache", "hearth cipher scale", "cipher_letter_n_found", "second recovered letter is N"),
+            ("smithy_cellar_cache", "smithy cipher scale", "cipher_letter_a_found", "third recovered letter is A"),
+        ]
+        for room_id, object_name, flag, text in clue_steps:
+            engine.progress.current_room = room_id
+            lines = engine.handle_command(f"use archive cipher on {object_name}")
+            self.assertTrue(any(text in line for line in lines))
+            self.assertIn(flag, engine.progress.story_flags)
+
+        self.assertEqual(engine.progress.item_charges["archive_cipher"], 0)
+        engine.progress.current_room = "archive_supply_room"
+        blocked_lines = engine.handle_command("use archive cipher on archive supply cipher scale")
+        self.assertEqual(blocked_lines, ["Archive Cipher has no charge left."])
+        self.assertNotIn("cipher_letter_k_found", engine.progress.story_flags)
+
+        engine.progress.add_item("mana_crystal")
+        recharge_lines = engine.handle_command("use mana crystal on archive cipher")
+        self.assertEqual(
+            recharge_lines,
+            [
+                "You use Mana Crystal on Archive Cipher.",
+                "Archive Cipher is fully recharged.",
+            ],
+        )
+
+        final_steps = [
+            ("archive_supply_room", "archive supply cipher scale", "cipher_letter_k_found", "fourth recovered letter is K"),
+            ("thorn_seed_cache", "thorn cipher scale", "cipher_letter_e_found", "fifth recovered letter is E"),
+        ]
+        for room_id, object_name, flag, text in final_steps:
+            engine.progress.current_room = room_id
+            lines = engine.handle_command(f"use archive cipher on {object_name}")
+            self.assertTrue(any(text in line for line in lines))
+            self.assertIn(flag, engine.progress.story_flags)
+
+        engine.progress.current_room = "crystal_grotto"
+        password_lines = engine.handle_command("password snake")
+        self.assertIn("arcane_thief_cache_opened", engine.progress.story_flags)
+        self.assertIn("A path is revealed: in -> Arcane Thief's Cache.", password_lines)
+        self.assertEqual(engine.progress.item_charges["archive_cipher"], 1)
 
     def test_depleted_charged_utility_item_cannot_be_used(self) -> None:
         engine = self._engine()

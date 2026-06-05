@@ -159,6 +159,8 @@ class EngineViewMixin:
             item_name = self.world.items[interaction.required_item].name
             suffix = " (consumed)" if interaction.consume_required_item else ""
             lines.append(f"Requires item: {item_name}{suffix}")
+        if interaction.password:
+            lines.append("Requires password.")
         if interaction.lockpickable:
             lockpick_name = self.world.items[interaction.lockpick_item].name
             lines.append(
@@ -398,7 +400,7 @@ class EngineViewMixin:
         return [
             "Commands:",
             "  look, go <direction>, north/south/east/west/in/out, retreat",
-            "  examine room|<object>|<item>, interact <object>",
+            "  examine room|<object>|<item>, interact <object>, answer <object> with <password>",
             "  pickpocket <npc or vendor> for <item>, lockpick <object>, pay bail, escape jail",
             "  take <item>, take all, drop <item>, inventory, key ring, stats",
             "  wallet",

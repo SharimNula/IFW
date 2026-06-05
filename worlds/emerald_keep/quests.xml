@@ -109,6 +109,12 @@
           <flag id="cellar_door_opened" />
           <flag id="smithy_grate_opened" />
           <flag id="ore_cipher_decoded" />
+          <flag id="cipher_letter_s_found" />
+          <flag id="cipher_letter_n_found" />
+          <flag id="cipher_letter_a_found" />
+          <flag id="cipher_letter_k_found" />
+          <flag id="cipher_letter_e_found" />
+          <flag id="arcane_thief_cache_opened" />
           <flag id="archive_lens_focused" />
           <flag id="supply_door_opened" />
           <flag id="thorn_seed_cache_opened" />

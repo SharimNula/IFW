@@ -208,6 +208,13 @@ def validate_room_interactions(world: World, room: Room, source: Path) -> None:
                 f"'{interaction.interaction_id}' requires unknown item "
                 f"'{interaction.required_item}'."
             )
+        if interaction.password is not None and not interaction.password.strip():
+            if interaction.password_text or interaction.password_failed_text:
+                raise ValueError(
+                    f"{source}: room '{room.room_id}' interaction "
+                    f"'{interaction.interaction_id}' defines password text without "
+                    "a password."
+                )
         for flag in interaction.set_flags:
             if not flag.strip():
                 raise ValueError(

@@ -90,6 +90,14 @@
       <item_ref id="mana_tonic" />
       <item_ref id="wolf_pelt" />
     </items>
+    <interactions>
+      <object id="elder_cipher_scale" name="Elder Cipher Scale" required_item="archive_cipher" set_flag="cipher_letter_s_found">
+        <description>A thin serpent-scale mark is scratched beneath the coffer lid, almost hidden by dust and old kindness.</description>
+        <missing_item_text>The scale-mark is written in compressed Archive shorthand. The Archive Cipher could unfold it.</missing_item_text>
+        <interact_text>The Archive Cipher warms against the coffer lid. The first recovered letter is S.</interact_text>
+        <completed_text>The translated scale-mark still reads: S.</completed_text>
+      </object>
+    </interactions>
   </room>
   <room id="stewards_office" name="Stewards Office">
     <description>A small office situated by the Elders home, the front is marked with a lantern.</description>
@@ -133,6 +141,14 @@
       <item_ref id="mana_tonic" />
       <item_ref id="antidote" />
     </items>
+    <interactions>
+      <object id="hearth_cipher_scale" name="Hearth Cipher Scale" required_flag="cipher_letter_s_found" required_item="archive_cipher" set_flag="cipher_letter_n_found">
+        <description>A soot-dark serpent scale is etched behind the firewood, too precise to be decoration.</description>
+        <missing_item_text>The mark curls into Archive shorthand. The Archive Cipher could coax it open.</missing_item_text>
+        <interact_text>The Archive Cipher catches amber firelight. The second recovered letter is N.</interact_text>
+        <completed_text>The hearth mark has already been translated: N.</completed_text>
+      </object>
+    </interactions>
   </room>
   <room id="market_street" name="Market Street">
     <description>Canvas awnings snap above tidy stalls, and the smell of hot iron mingles with the crisp clink of money being counted twice.</description>
@@ -176,7 +192,6 @@
     </exits>
     <items>
       <item_ref id="nimble_fingers_ring" />
-      <item_ref id="shadow_hasps" />
       <item_ref id="curator_seal_wax" />
     </items>
   </room>
@@ -223,6 +238,14 @@
       <item_ref id="oak_haft" />
       <item_ref id="glimmer_ore" />
     </items>
+    <interactions>
+      <object id="smithy_cipher_scale" name="Smithy Cipher Scale" required_flag="cipher_letter_n_found" required_item="archive_cipher" set_flag="cipher_letter_a_found">
+        <description>A narrow serpent scale has been tapped into the cellar stone with a smith's awl and an archivist's patience.</description>
+        <missing_item_text>The scale-mark is folded into heat-stained shorthand. The Archive Cipher could read the hidden letter.</missing_item_text>
+        <interact_text>The Archive Cipher reflects a line of green forge-light. The third recovered letter is A.</interact_text>
+        <completed_text>The cellar scale-mark remains clear in your notes: A.</completed_text>
+      </object>
+    </interactions>
   </room>
   <room id="forest_path" name="Forest Path" monster_pool="forest_threats" monster_count="1">
     <description>The north road narrows between listening trees. Lantern hooks line the branches, but most are dark.</description>
@@ -247,6 +270,9 @@
     <exits>
       <exit direction="west" to="forest_path" />
     </exits>
+    <hidden_exits>
+      <exit direction="in" to="arcane_thief_cache" required_flag="arcane_thief_cache_opened" />
+    </hidden_exits>
     <mining message="A crystal seam brightens as you enter.">
       <item_ref id="glimmer_ore" min="1" max="3" />
     </mining>
@@ -257,7 +283,25 @@
         <interact_text>You hold the Archive Cipher against the vein. Moon-script aligns with the ore's flicker, and the whispers settle into a usable pattern.</interact_text>
         <completed_text>The vein has already been translated, its rhythm now familiar beneath the crystal hum.</completed_text>
       </object>
+      <object id="serpent_cipher_door" name="Serpent Cipher Door" required_flag="cipher_letter_e_found" password="SNAKE" set_flag="arcane_thief_cache_opened">
+        <description>Five blank crystal scales coil around a hairline seam in the grotto wall, each one waiting for a letter.</description>
+        <password_text>You speak SNAKE. The five scales turn one by one, and a green-lit passage curls open into the stone.</password_text>
+        <password_failed_text>The crystal scales click once, unimpressed, and settle back into blank silence.</password_failed_text>
+        <completed_text>The serpent cipher door already stands open, its hidden passage breathing cool air from within.</completed_text>
+      </object>
     </interactions>
+  </room>
+  <room id="arcane_thief_cache" name="Arcane Thief's Cache">
+    <description>A crescent-shaped hideaway glitters behind the serpent door. Whoever built it loved locked drawers, clean exits, and jokes at the expense of honest locksmiths.</description>
+    <exits>
+      <exit direction="out" to="crystal_grotto" />
+    </exits>
+    <items>
+      <item_ref id="lockpicks" />
+      <item_ref id="mana_crystal" />
+      <item_ref id="shadow_hasps" />
+      <item_ref id="serpentstep_jacket" />
+    </items>
   </room>
   <room id="mage_tower" name="Mage Tower">
     <description>The tower smells of candle smoke, ink, rain, and theories that should probably stay theoretical.</description>
@@ -307,6 +351,14 @@
       <item_ref id="glimmer_ore" />
       <item_ref id="mana_tonic" />
     </items>
+    <interactions>
+      <object id="archive_supply_cipher_scale" name="Archive Supply Cipher Scale" required_flag="cipher_letter_a_found" required_item="archive_cipher" set_flag="cipher_letter_k_found">
+        <description>A serpent scale is pressed into the underside of a supply shelf, disguised as a catalog mark.</description>
+        <missing_item_text>The catalog mark compresses several letters into one silver knot. The Archive Cipher could loosen it.</missing_item_text>
+        <interact_text>The Archive Cipher flattens the silver knot into readable script. The fourth recovered letter is K.</interact_text>
+        <completed_text>The supply-room mark has already yielded its letter: K.</completed_text>
+      </object>
+    </interactions>
   </room>
   <room id="ruins" name="Ruins" monster_pool="ruins_patrols" monster_count="1">
     <description>Broken archways lean over the old approach to the keep, and bandit marks scar the stones.</description>
@@ -422,6 +474,14 @@
       <item_ref id="greenwood_core" />
       <item_ref id="healing_tonic" />
     </items>
+    <interactions>
+      <object id="thorn_cipher_scale" name="Thorn Cipher Scale" required_flag="cipher_letter_k_found" required_item="archive_cipher" set_flag="cipher_letter_e_found">
+        <description>A little serpent scale is tucked inside a ranger knot, green thread hiding silver script.</description>
+        <missing_item_text>The knot is ordinary until the script inside it catches the light. The Archive Cipher could read it without cutting the thread.</missing_item_text>
+        <interact_text>The Archive Cipher gleams through the ranger knot. The fifth recovered letter is E.</interact_text>
+        <completed_text>The ranger knot still holds the final translated letter: E.</completed_text>
+      </object>
+    </interactions>
   </room>
   <room id="bramble_overlook" name="Bramble Overlook" monster_pool="thornwild_threats" monster_count="1">
     <description>A rocky shelf overlooks a green sea of thorns. Something bright is caught in the briars below.</description>

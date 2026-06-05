@@ -315,6 +315,11 @@
 			<dock index="0" id="114" port="e" />
 			<dock index="1" id="123" port="w" />
 		</line>
+		<room id="125" name="Thief Cache" x="-224" y="-256" w="96" h="64" description="" />
+		<line id="126" startText="in" endText="out">
+			<dock index="0" id="33" port="e" />
+			<dock index="1" id="125" port="w" />
+		</line>
 	</map>
 	<settings>
 		<colors>
