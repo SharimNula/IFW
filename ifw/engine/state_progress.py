@@ -21,6 +21,9 @@ class EngineProgressStateMixin:
             )
             self.player.world_states[self.world.world_id] = progress
 
+        # Initialization helpers use normal engine state accessors, including charged equipment.
+        self.progress = progress
+
         if progress.current_room not in self.world.rooms:
             progress.current_room = self.world.start_room
 

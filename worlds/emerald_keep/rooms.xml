@@ -1,6 +1,10 @@
 <rooms>
   <room id="town_square" name="Town Square" storage="true">
     <description>Emerald banners hang over a stone well, and every road from the square seems to be holding its breath.</description>
+    <companion_dialogue>
+      <line>Every road meets here. If Emerald Keep has a heartbeat, this square is where it stumbles loudest.</line>
+      <line>The banners look cheerful, but everyone keeps glancing toward the roads. Something has the whole town listening.</line>
+    </companion_dialogue>
     <exits>
       <exit direction="in" to="lantern_inn" />
       <exit direction="up" to="guard_post" />
@@ -410,9 +414,8 @@
       <enemy_ref id="arcane_sentinel" />
     </enemies>
   </room>
-  <room id="moon_threshold" name="Moon Threshold" locks_on_exit="true">
-    <description>Moon-silver arches frame a narrow corridor where every footstep rings louder than it should. The way forward feels final.</description>
-    <sealed_message>The silver gate has sealed shut behind you. Moon Threshold will not yield the way back.</sealed_message>
+  <room id="moon_threshold" name="Moon Threshold">
+    <description>Moon-silver arches frame a narrow corridor where every footstep rings louder than it should. The passage remains open between the old vault and the sanctum.</description>
     <exits>
       <exit direction="west" to="vault" />
       <exit direction="east" to="sanctum" />

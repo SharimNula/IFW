@@ -159,11 +159,19 @@ def validate_rooms(world: World, source: Path) -> None:
     for room in world.rooms.values():
         validate_room_exits(world, room, source)
         validate_room_interactions(world, room, source)
+        validate_room_companion_dialogue(room, source)
         validate_room_items(world, room, source)
         validate_room_enemies(world, room, source)
         validate_room_people(world, room, source)
         validate_room_locking(world, room, source)
         validate_room_maze(world, room, source)
+
+
+def validate_room_companion_dialogue(room: Room, source: Path) -> None:
+    if len(room.companion_dialogue) != 2:
+        raise ValueError(
+            f"{source}: room '{room.room_id}' must define exactly two companion dialogue lines."
+        )
 
 
 def validate_room_exits(world: World, room: Room, source: Path) -> None:

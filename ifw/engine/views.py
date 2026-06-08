@@ -124,6 +124,9 @@ class EngineViewMixin:
         interaction_id = self._match_room_interaction(query)
         if interaction_id is not None:
             return self._examine_room_interaction(interaction_id)
+        spell_id = self._match_vendor_spell(query)
+        if spell_id is not None:
+            return self._examine_spell(spell_id)
         return self._examine_item(query)
 
     def _examine_room(self) -> list[str]:
@@ -237,6 +240,73 @@ class EngineViewMixin:
 
         if item.value:
             lines.append(f"Value: {self._format_currency(item.value, 'gold')}")
+        lines.extend(self._equipment_comparison_lines(item_id))
+        return lines
+
+    def _match_vendor_spell(self, query: str) -> str | None:
+        room = self._current_room()
+        spell_ids = {
+            spell_id
+            for vendor_id in room.vendor_ids
+            for spell_id in self.world.vendors[vendor_id].spell_stock
+        }
+        return self._match_from_names(
+            query,
+            {spell_id: self.world.spells[spell_id].name for spell_id in spell_ids},
+        )
+
+    def _examine_spell(self, spell_id: str) -> list[str]:
+        spell = self.world.spells[spell_id]
+        lines = [
+            spell.name,
+            spell.description or "No description is available.",
+            f"School: {spell.school.replace('_', ' ').title()}",
+            f"MP cost: {spell.mp_cost}",
+            f"Power level: {spell.power}",
+        ]
+        if spell.allowed_classes and "all" not in spell.allowed_classes:
+            lines.append(f"Classes: {self._spell_class_label(spell)}")
+        return lines
+
+    def _equipment_comparison_lines(self, item_id: str) -> list[str]:
+        item = self.world.items[item_id]
+        if item.item_type not in {"weapon", "armor"}:
+            return []
+
+        equipped_id = self.progress.weapon_id if item.item_type == "weapon" else self.progress.armor_id
+        if equipped_id == item_id:
+            return [f"Comparison: Currently equipped as your {item.item_type}."]
+        if equipped_id is None:
+            return [f"Comparison: Better than having no equipped {item.item_type}."]
+
+        equipped = self.world.items[equipped_id]
+        stats = (
+            ("Attack", "attack_bonus"),
+            ("Defense", "defense_bonus"),
+            ("HP", "hp_bonus"),
+            ("MP", "mp_bonus"),
+        )
+        deltas: list[int] = []
+        lines = [f"Comparison to equipped {equipped.name}:"]
+        for label, attribute in stats:
+            candidate_value = self._effective_item_bonus(item_id, attribute)
+            equipped_value = self._effective_item_bonus(equipped_id, attribute)
+            delta = candidate_value - equipped_value
+            deltas.append(delta)
+            delta_text = "same" if delta == 0 else f"{delta:+d}"
+            lines.append(
+                f"  {label}: +{candidate_value} vs +{equipped_value} ({delta_text})"
+            )
+
+        if all(delta == 0 for delta in deltas):
+            verdict = "Same"
+        elif all(delta >= 0 for delta in deltas):
+            verdict = "Better"
+        elif all(delta <= 0 for delta in deltas):
+            verdict = "Worse"
+        else:
+            verdict = "Mixed"
+        lines.append(f"Overall comparison: {verdict}.")
         return lines
 
     def _show_wallet(self) -> list[str]:
@@ -400,7 +470,7 @@ class EngineViewMixin:
         return [
             "Commands:",
             "  look, go <direction>, north/south/east/west/in/out, retreat",
-            "  examine room|<object>|<item>, interact <object>, answer <object> with <password>",
+            "  examine room|<object>|<item>|<vendor spell>, interact <object>, answer <object> with <password>",
             "  pickpocket <npc or vendor> for <item>, lockpick <object>, pay bail, escape jail",
             "  take <item>, take all, drop <item>, inventory, key ring, stats",
             "  wallet",
@@ -410,7 +480,7 @@ class EngineViewMixin:
             "  use <consumable> on <companion>, use <utility> on <object>",
             "  use <recharge item> on <charged item>",
             "  equip <item> to <companion>, equip <companion> with <item>",
-            "  talk <npc>, accept <npc or quest>, quests",
+            "  talk <npc or companion>, accept <npc or quest>, quests",
             "  choose ending <number>",
             "  shop, buy <item, recipe, or spell>, buy <spell or spellbook> for <companion>, sell <item>",
             "  rates, exchange <amount> <currency> to <currency>",

@@ -80,6 +80,7 @@ class Room:
     exits: dict[str, str] = field(default_factory=dict)
     hidden_exits: dict[str, HiddenExit] = field(default_factory=dict)
     interactions: dict[str, RoomInteraction] = field(default_factory=dict)
+    companion_dialogue: list[str] = field(default_factory=list)
     item_ids: list[str] = field(default_factory=list)
     enemy_ids: list[str] = field(default_factory=list)
     faction_enemy_spawns: list[FactionEnemySpawn] = field(default_factory=list)

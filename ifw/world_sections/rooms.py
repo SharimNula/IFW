@@ -35,6 +35,7 @@ def parse_room(room_element: ET.Element, source: Path) -> Room:
         exits=exits,
         hidden_exits=hidden_exits,
         interactions=parse_room_interactions(room_element),
+        companion_dialogue=parse_companion_dialogue(room_element),
         item_ids=[
             _required_attr(item_ref, "id") for item_ref in room_element.findall("./items/item_ref")
         ],
@@ -69,6 +70,27 @@ def parse_room(room_element: ET.Element, source: Path) -> Room:
         mining_drops=mining_drops,
         mining_message=mining_message,
     )
+
+
+def parse_companion_dialogue(room_element: ET.Element) -> list[str]:
+    dialogue_elements = (
+        room_element.findall("./companion_dialogue/line")
+        + room_element.findall("./companion_dialogue/dialogue")
+        + room_element.findall("./companion_dialogues/dialogue")
+    )
+    dialogue = [
+        text
+        for dialogue_element in dialogue_elements
+        if (text := _optional_text(dialogue_element))
+    ]
+    if dialogue:
+        return dialogue
+
+    room_name = _required_attr(room_element, "name")
+    return [
+        f"{room_name} feels like the sort of place that rewards a careful second look.",
+        f"Keep an eye on the edges of {room_name}; secrets rarely wait in the middle.",
+    ]
 
 
 def parse_room_exits(room_element: ET.Element) -> tuple[dict[str, str], dict[str, HiddenExit]]:

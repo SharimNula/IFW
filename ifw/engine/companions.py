@@ -35,6 +35,16 @@ class EngineCompanionMixin:
     def _companion_name(self, companion: CompanionState) -> str:
         return self.world.npcs[companion.npc_id].name
 
+    def _companion_room_dialogue(self, companion: CompanionState) -> list[str]:
+        dialogue = self._current_room().companion_dialogue
+        companion_name = self._companion_name(companion)
+        if not dialogue:
+            return [f"{companion_name} has nothing to add about this place."]
+        if len(self.progress.companions) == 1:
+            return [f"{companion_name}: {line}" for line in dialogue]
+        companion_index = self.progress.companions.index(companion)
+        return [f"{companion_name}: {dialogue[min(companion_index, len(dialogue) - 1)]}"]
+
     def _learn_companion_spell(self, companion: CompanionState, spell_id: str) -> bool:
         if spell_id not in self.world.spells:
             raise ValueError(f"Unknown spell '{spell_id}'.")

@@ -93,6 +93,9 @@ class EngineSocialMixin:
     def _talk_to(self, query: str) -> list[str]:
         if not query:
             return ["Talk to whom?"]
+        companion = self._match_active_companion(query)
+        if companion is not None:
+            return self._companion_room_dialogue(companion)
         room = self._current_room()
         npc_pool = {npc_id: self.world.npcs[npc_id].name for npc_id in self._room_npc_ids(room)}
         vendor_pool = {vendor_id: self.world.vendors[vendor_id].name for vendor_id in room.vendor_ids}
@@ -276,6 +279,7 @@ class EngineSocialMixin:
             "Use 'buy <item, recipe, or spell>', "
             "'buy <spell or spellbook> for <companion>', or 'sell <item>'."
         )
+        lines.append("Use 'examine <item or spell>' to inspect stock before buying.")
         if vendor.exchange_rates:
             lines.append("Use 'exchange <amount> <currency> to <currency>' to trade money.")
         return lines

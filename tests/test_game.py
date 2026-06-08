@@ -108,6 +108,16 @@ class GameProjectTests(unittest.TestCase):
             self.world.rooms["crystal_grotto"].interactions["serpent_cipher_door"].password,
             "SNAKE",
         )
+        self.assertTrue(
+            all(len(room.companion_dialogue) == 2 for room in self.world.rooms.values())
+        )
+        self.assertEqual(
+            self.world.rooms["town_square"].companion_dialogue,
+            [
+                "Every road meets here. If Emerald Keep has a heartbeat, this square is where it stumbles loudest.",
+                "The banners look cheerful, but everyone keeps glancing toward the roads. Something has the whole town listening.",
+            ],
+        )
         self.assertIn("serpentstep_jacket", self.world.rooms["arcane_thief_cache"].item_ids)
         self.assertEqual(self.world.items["serpentstep_jacket"].item_type, "armor")
         self.assertEqual(self.world.items["serpentstep_jacket"].required_level, 6)
@@ -588,6 +598,7 @@ class GameProjectTests(unittest.TestCase):
             world.rooms["relic_gate"].hidden_exits["east"].required_flag,
             "final_gate_opened",
         )
+        self.assertFalse(world.rooms["moon_threshold"].locks_on_exit)
         self.assertEqual(world.rooms["starless_approach"].locks_on_exit, True)
         self.assertEqual(world.rooms["eldergrove"].monster_pool_id, "thornwild_threats")
         self.assertEqual(world.rooms["ember_crosscut"].monster_pool_id, "emberdeep_threats")
@@ -642,6 +653,50 @@ class GameProjectTests(unittest.TestCase):
         self.assertIn("Starless Gate opens east", " ".join(moon_lines))
         self.assertEqual(engine.progress.current_room, "starless_approach")
         self.assertIn("You travel east.", move_lines)
+
+    def test_player_can_return_through_moon_threshold_to_accept_ending_quest(self) -> None:
+        engine = self._engine()
+        engine.progress.current_room = "starless_approach"
+        engine.progress.previous_room = "relic_gate"
+        engine.progress.completed_quests.extend(
+            [
+                "claim_thorn_relic",
+                "claim_ember_relic",
+                "claim_mirage_relic",
+                "claim_moonfall_relic",
+                "open_starless_gate",
+            ]
+        )
+        engine.progress.add_item("vault_key")
+        engine.progress.room_enemies["vault"] = []
+        engine.progress.room_enemies["ruins"] = []
+        engine.progress.room_enemies["forest_path"] = []
+
+        with patch("ifw.engine.random.randint", return_value=2):
+            for direction in (
+                "west",
+                "west",
+                "west",
+                "west",
+                "west",
+                "south",
+                "south",
+                "south",
+                "south",
+                "east",
+            ):
+                move_lines = engine.handle_command(direction)
+                self.assertIn(f"You travel {direction}.", move_lines)
+
+        talk_lines = engine.handle_command("talk relic-seer maelis")
+
+        self.assertEqual(engine.progress.current_room, "new_moon_temple")
+        self.assertNotIn("moon_threshold", engine.progress.sealed_rooms)
+        self.assertNotIn("starless_approach", engine.progress.sealed_rooms)
+        self.assertIn(
+            "Quest available: End the Concord Wyrm. Use 'accept Relic-Seer Maelis'.",
+            talk_lines,
+        )
 
     def test_emerald_keep_velrasha_zone_uses_maze_and_locked_boss_court(self) -> None:
         world = load_world(WORLD_PATH)
@@ -805,6 +860,11 @@ class GameProjectTests(unittest.TestCase):
                     "password_text",
                     "The wall answers.",
                 ),
+            ),
+            (
+                "room has only one companion dialogue line",
+                "must define exactly two companion dialogue lines",
+                lambda world: world.rooms["town_square"].companion_dialogue.pop(),
             ),
         ]
 
@@ -1166,6 +1226,35 @@ class GameProjectTests(unittest.TestCase):
             engine.opening_lines(),
         )
 
+    def test_existing_save_loads_companion_with_depleted_magical_armor(self) -> None:
+        self.player.level = 6
+        saved_progress = WorldProgress(
+            current_room=self.world.start_room,
+            companions=[
+                CompanionState(
+                    npc_id="squire_tovin",
+                    class_id="warrior",
+                    origin_room="lantern_inn",
+                    current_hp=999,
+                    current_mp=999,
+                    weapon_id="rusty_sword",
+                    armor_id="serpentstep_jacket",
+                    spell_ids=["ember_bolt"],
+                )
+            ],
+            item_charges={"serpentstep_jacket": 0},
+        )
+        self.player.world_states[self.world.world_id] = saved_progress
+
+        engine = self._engine()
+        companion = engine.progress.companions[0]
+
+        self.assertIs(engine.progress, saved_progress)
+        self.assertEqual(companion.armor_id, "serpentstep_jacket")
+        self.assertEqual(engine._effective_item_bonus("serpentstep_jacket", "hp_bonus"), 2)
+        self.assertEqual(companion.current_hp, engine._companion_max_hp(companion))
+        self.assertEqual(companion.current_mp, engine._companion_max_mp(companion))
+
     def test_world_class_growth_controls_level_up_stats(self) -> None:
         self.player.player_class = "mage"
         self.player.experience = 90
@@ -1233,6 +1322,7 @@ class GameProjectTests(unittest.TestCase):
 
         self.assertIn("  [Spell] Frost Lance [Mage only] - 18 gold", lines)
         self.assertIn("  [Spell] Shadow Palm [Rogue only] - 15 gold", lines)
+        self.assertIn("Use 'examine <item or spell>' to inspect stock before buying.", lines)
 
     def test_shop_sorts_item_stock_by_type_before_name(self) -> None:
         engine = self._engine()
@@ -1245,6 +1335,19 @@ class GameProjectTests(unittest.TestCase):
         self.assertLess(lines.index("  [Accessory] Silver Ring - 5 emerald marks"), lines.index("  [Consumable] Antidote - 18 gold"))
         self.assertLess(lines.index("  [Consumable] Mana Tonic - 15 gold"), lines.index("  [Utility] Field Trowel - 14 gold"))
         self.assertLess(lines.index("  [Utility] Rubbing Kit - 18 gold"), lines.index("  [Material] Oak Haft - 10 gold"))
+
+    def test_examine_vendor_spell_shows_spell_details(self) -> None:
+        engine = self._engine()
+        engine.progress.current_room = "mage_tower"
+
+        lines = engine.handle_command("examine frost lance")
+
+        self.assertEqual(lines[0], "Frost Lance")
+        self.assertIn("A mage-only spear of cold light that punches through ordinary defenses.", lines)
+        self.assertIn("School: Offense", lines)
+        self.assertIn("MP cost: 7", lines)
+        self.assertIn("Power level: 16", lines)
+        self.assertIn("Classes: Mage", lines)
 
     def test_exchange_vendor_trades_between_world_currencies(self) -> None:
         engine = self._engine()
@@ -2671,73 +2774,73 @@ class GameProjectTests(unittest.TestCase):
 
     def test_room_can_lock_after_you_leave_and_block_backtracking(self) -> None:
         engine = self._engine()
-        engine.progress.current_room = "vault"
-        engine.progress.room_enemies["vault"] = []
+        engine.progress.current_room = "relic_gate"
+        engine.progress.story_flags.append("final_gate_opened")
 
-        enter_threshold = engine.handle_command("go east")
-        self.assertIn("You travel east.", enter_threshold)
-        self.assertEqual(engine.progress.current_room, "moon_threshold")
-        self.assertEqual(engine.progress.previous_room, "vault")
+        enter_approach = engine.handle_command("go east")
+        self.assertIn("You travel east.", enter_approach)
+        self.assertEqual(engine.progress.current_room, "starless_approach")
+        self.assertEqual(engine.progress.previous_room, "relic_gate")
         self.assertEqual(engine.progress.sealed_rooms, [])
 
-        leave_threshold = engine.handle_command("go east")
-        self.assertIn("With a final echo, Moon Threshold seals behind you.", leave_threshold)
-        self.assertEqual(engine.progress.current_room, "sanctum")
-        self.assertEqual(engine.progress.previous_room, "moon_threshold")
-        self.assertEqual(engine.progress.sealed_rooms, ["moon_threshold"])
+        leave_approach = engine.handle_command("go east")
+        self.assertIn("With a final echo, Starless Approach seals behind you.", leave_approach)
+        self.assertEqual(engine.progress.current_room, "citadel_forward_camp")
+        self.assertEqual(engine.progress.previous_room, "starless_approach")
+        self.assertEqual(engine.progress.sealed_rooms, ["starless_approach"])
 
         blocked_return = engine.handle_command("go west")
         self.assertIn(
-            "The silver gate has sealed shut behind you. Moon Threshold will not yield the way back.",
+            "The Concord Gate seals behind you. The citadel will not let the story retreat unchanged.",
             blocked_return,
         )
-        self.assertEqual(engine.progress.current_room, "sanctum")
+        self.assertEqual(engine.progress.current_room, "citadel_forward_camp")
 
     def test_backtracking_from_story_room_does_not_soft_lock_progress(self) -> None:
         engine = self._engine()
-        engine.progress.current_room = "vault"
-        engine.progress.room_enemies["vault"] = []
-        engine.progress.add_item("vault_key")
+        engine.progress.current_room = "relic_gate"
+        engine.progress.story_flags.append("final_gate_opened")
 
-        enter_threshold = engine.handle_command("go east")
-        self.assertIn("You travel east.", enter_threshold)
-        self.assertEqual(engine.progress.current_room, "moon_threshold")
-        self.assertEqual(engine.progress.previous_room, "vault")
+        enter_approach = engine.handle_command("go east")
+        self.assertIn("You travel east.", enter_approach)
+        self.assertEqual(engine.progress.current_room, "starless_approach")
+        self.assertEqual(engine.progress.previous_room, "relic_gate")
         self.assertEqual(engine.progress.sealed_rooms, [])
 
         step_back = engine.handle_command("go west")
-        self.assertIn("You use Vault Key to enter Ancient Vault.", step_back)
         self.assertIn("You travel west.", step_back)
-        self.assertEqual(engine.progress.current_room, "vault")
-        self.assertEqual(engine.progress.previous_room, "moon_threshold")
+        self.assertEqual(engine.progress.current_room, "relic_gate")
+        self.assertEqual(engine.progress.previous_room, "starless_approach")
         self.assertEqual(engine.progress.sealed_rooms, [])
 
-        reenter_threshold = engine.handle_command("go east")
-        self.assertIn("You travel east.", reenter_threshold)
-        self.assertEqual(engine.progress.current_room, "moon_threshold")
-        self.assertEqual(engine.progress.previous_room, "vault")
+        reenter_approach = engine.handle_command("go east")
+        self.assertIn("You travel east.", reenter_approach)
+        self.assertEqual(engine.progress.current_room, "starless_approach")
+        self.assertEqual(engine.progress.previous_room, "relic_gate")
         self.assertEqual(engine.progress.sealed_rooms, [])
 
         move_forward = engine.handle_command("go east")
-        self.assertIn("With a final echo, Moon Threshold seals behind you.", move_forward)
-        self.assertEqual(engine.progress.current_room, "sanctum")
-        self.assertEqual(engine.progress.previous_room, "moon_threshold")
-        self.assertEqual(engine.progress.sealed_rooms, ["moon_threshold"])
+        self.assertIn("With a final echo, Starless Approach seals behind you.", move_forward)
+        self.assertEqual(engine.progress.current_room, "citadel_forward_camp")
+        self.assertEqual(engine.progress.previous_room, "starless_approach")
+        self.assertEqual(engine.progress.sealed_rooms, ["starless_approach"])
 
     def test_retreat_cannot_bypass_a_sealed_story_room(self) -> None:
         engine = self._engine()
-        engine.progress.current_room = "sanctum"
-        engine.progress.previous_room = "moon_threshold"
-        engine.progress.sealed_rooms.append("moon_threshold")
-        engine.progress.room_enemies["sanctum"] = [EnemyState(enemy_id="bandit_scout", current_hp=12)]
+        engine.progress.current_room = "citadel_forward_camp"
+        engine.progress.previous_room = "starless_approach"
+        engine.progress.sealed_rooms.append("starless_approach")
+        engine.progress.room_enemies["citadel_forward_camp"] = [
+            EnemyState(enemy_id="bandit_scout", current_hp=12)
+        ]
 
         lines = engine.handle_command("retreat")
 
         self.assertIn(
-            "The silver gate has sealed shut behind you. Moon Threshold will not yield the way back.",
+            "The Concord Gate seals behind you. The citadel will not let the story retreat unchanged.",
             lines,
         )
-        self.assertEqual(engine.progress.current_room, "sanctum")
+        self.assertEqual(engine.progress.current_room, "citadel_forward_camp")
 
     def test_cannot_take_item_while_threat_is_active(self) -> None:
         engine = self._engine()
@@ -2865,6 +2968,31 @@ class GameProjectTests(unittest.TestCase):
         self.assertIn("Healing Tonic", lines)
         self.assertIn("Type: Consumable", lines)
         self.assertIn("Restores HP: 18", lines)
+
+    def test_examine_weapon_compares_to_equipped_weapon(self) -> None:
+        engine = self._engine()
+        engine.progress.current_room = "smithy"
+
+        better_lines = engine.handle_command("examine watch halberd")
+        engine.progress.add_item("iron_dagger")
+        worse_lines = engine.handle_command("examine iron dagger")
+
+        self.assertIn("Comparison to equipped Rusty Sword:", better_lines)
+        self.assertIn("  Attack: +7 vs +3 (+4)", better_lines)
+        self.assertIn("Overall comparison: Better.", better_lines)
+        self.assertIn("  Attack: +2 vs +3 (-1)", worse_lines)
+        self.assertIn("Overall comparison: Worse.", worse_lines)
+
+    def test_examine_armor_compares_to_equipped_armor(self) -> None:
+        engine = self._engine()
+        engine.progress.current_room = "smithy"
+
+        lines = engine.handle_command("examine chainmail")
+
+        self.assertIn("Comparison to equipped Padded Armor:", lines)
+        self.assertIn("  Defense: +4 vs +2 (+2)", lines)
+        self.assertIn("  HP: +6 vs +0 (+6)", lines)
+        self.assertIn("Overall comparison: Better.", lines)
 
     def test_examine_item_shows_hp_and_mp_enchantments(self) -> None:
         engine = self._engine()
@@ -3373,6 +3501,43 @@ class GameProjectTests(unittest.TestCase):
         self.assertEqual(first, fourth)
         self.assertEqual(engine.progress.npc_dialogue_indices["well_keeper_mara"], 1)
 
+    def test_single_companion_gets_both_room_dialogue_lines(self) -> None:
+        engine = self._engine()
+        companion = engine._create_companion_state("squire_tovin", "lantern_inn")
+        engine.progress.companions.append(companion)
+
+        lines = engine.handle_command("talk squire tovin")
+
+        self.assertEqual(
+            lines,
+            [
+                "Squire Tovin: Every road meets here. If Emerald Keep has a heartbeat, this square is where it stumbles loudest.",
+                "Squire Tovin: The banners look cheerful, but everyone keeps glancing toward the roads. Something has the whole town listening.",
+            ],
+        )
+
+    def test_two_companions_split_room_dialogue_slots(self) -> None:
+        engine = self._engine()
+        tovin = engine._create_companion_state("squire_tovin", "lantern_inn")
+        mira = engine._create_companion_state("apprentice_mira", "lantern_inn")
+        engine.progress.companions.extend([tovin, mira])
+
+        tovin_lines = engine.handle_command("talk squire tovin")
+        mira_lines = engine.handle_command("talk apprentice mira")
+
+        self.assertEqual(
+            tovin_lines,
+            [
+                "Squire Tovin: Every road meets here. If Emerald Keep has a heartbeat, this square is where it stumbles loudest."
+            ],
+        )
+        self.assertEqual(
+            mira_lines,
+            [
+                "Apprentice Mira: The banners look cheerful, but everyone keeps glancing toward the roads. Something has the whole town listening."
+            ],
+        )
+
     def test_recruiting_companion_uses_class_starter_setup(self) -> None:
         engine = self._engine()
         engine.progress.current_room = "lantern_inn"
@@ -3584,7 +3749,7 @@ class GameProjectTests(unittest.TestCase):
         engine = self._engine()
         engine.progress.current_room = "forest_path"
         engine.progress.previous_room = "town_square"
-        engine.progress.sealed_rooms.append("moon_threshold")
+        engine.progress.sealed_rooms.append("starless_approach")
         engine.progress.story_flags.append("town_mural_opened")
         engine.progress.faction_id = "town_watch"
         engine.progress.pending_ending_quest_id = "end_the_concord_wyrm"
@@ -3622,7 +3787,7 @@ class GameProjectTests(unittest.TestCase):
         self.assertEqual(loaded.wallet["emerald_mark"], 3)
         self.assertEqual(progress.current_room, "forest_path")
         self.assertEqual(progress.previous_room, "town_square")
-        self.assertEqual(progress.sealed_rooms, ["moon_threshold"])
+        self.assertEqual(progress.sealed_rooms, ["starless_approach"])
         self.assertEqual(progress.story_flags, ["town_mural_opened"])
         self.assertEqual(progress.faction_id, "town_watch")
         self.assertEqual(progress.pending_ending_quest_id, "end_the_concord_wyrm")
