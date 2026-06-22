@@ -44,6 +44,26 @@ class LootDrop:
 
 
 @dataclass(slots=True)
+class BossEncounterChoice:
+    choice_type: str
+    label: str
+    text: str = ""
+    required_flags: list[str] = field(default_factory=list)
+    required_item: str | None = None
+    consume_item: bool = True
+    success_chance: int = 0
+    set_flag: str | None = None
+    success_text: str = ""
+    failure_text: str = ""
+
+
+@dataclass(slots=True)
+class BossEncounter:
+    intro: str
+    choices: list[BossEncounterChoice] = field(default_factory=list)
+
+
+@dataclass(slots=True)
 class Enemy:
     enemy_id: str
     name: str
@@ -62,6 +82,7 @@ class Enemy:
     prevent_attack_text: str = ""
     poison_chance: int = 0
     poison_text: str = ""
+    boss_encounter: BossEncounter | None = None
 
 
 @dataclass(slots=True)

@@ -75,6 +75,26 @@
   <enemy id="thorn_matriarch" name="Thorn Matriarch" level="6" hp="72" attack="20" defense="8" exp_reward="180" gold_reward="50" respawns="false">
     <description>The living queen of the Thornwild, crowned in emerald briars and old bloodless vows.</description>
     <defeat_text>The Thorn Matriarch breaks like a storm-felled tree. At her roots, the Thorn Crown Relic opens its green thorns without cutting you.</defeat_text>
+    <boss_encounter>
+      <intro>The Matriarch rises from her throne, but the old green oaths still tremble beneath her anger. For one breath, violence is only one answer.</intro>
+      <fight label="Challenge the Matriarch">You draw steel and answer the Thornwild in its oldest language.</fight>
+      <bypass label="Invoke the restored green oaths" required_flags="elder_memory_honored,thorn_seed_cache_opened">You speak the names preserved in the elder's memory and show where the buried seeds have taken root. The Matriarch recognizes the repaired covenant and folds back into the living wood.</bypass>
+      <control label="Raise the Heart Lantern" required_item="heart_lantern" consume_item="false">The Heart Lantern opens like a green eye. Its light catches the Matriarch's crown and turns command into calm; she bows, then sinks beneath the roots to await a kinder age.</control>
+      <delay label="Cut the throne-vines and run" chance="50" set_flag="thorn_matriarch_delayed">
+        <success_text>The throne-vines snap in the right order. The Matriarch lunges after the collapsing roots while you escape with what the briars leave behind. Somewhere deeper in the wood, something begins following your trail.</success_text>
+        <failure_text>You cut the wrong vine. The throne recoils, the Matriarch surges free, and your clever delay becomes a very immediate fight.</failure_text>
+      </delay>
+    </boss_encounter>
+    <loot>
+      <drop item="thornheart_fiber" chance="1.0" />
+    </loot>
+  </enemy>
+  <enemy id="thorn_debt_stalker" name="Thorn Debt Stalker" level="8" hp="88" attack="26" defense="9" exp_reward="220" gold_reward="65" respawns="false">
+    <description>A lean shape of burned briar and green eyes, grown from the debt left when the Thorn Matriarch was delayed rather than answered.</description>
+    <defeat_text>The stalker splits into dead vine and warm ash. The Thornwild's postponed anger has finally caught up, and finally ended.</defeat_text>
+    <loot>
+      <drop item="greenwood_core" chance="1.0" />
+    </loot>
   </enemy>
   <enemy id="cinder_imp" name="Cinder Imp" level="6" hp="48" attack="18" defense="6" exp_reward="115" gold_reward="30" respawns="true">
     <description>A coal-eyed nuisance that throws sparks and laughs at smoke alarms.</description>

@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 from .model_actors import (
+    BossEncounter,
+    BossEncounterChoice,
     CompanionState,
     CurrencyExchangeRate,
     Enemy,
@@ -21,6 +23,7 @@ from .model_progress import Player, WorldProgress
 from .model_world import (
     Currency,
     FactionEnemySpawn,
+    FlagEnemySpawn,
     HiddenExit,
     MiningDrop,
     MonsterPool,
@@ -31,6 +34,8 @@ from .model_world import (
 )
 
 __all__ = [
+    "BossEncounter",
+    "BossEncounterChoice",
     "Enemy",
     "EnemyState",
     "CompanionState",
@@ -38,6 +43,7 @@ __all__ = [
     "CurrencyExchangeRate",
     "Faction",
     "FactionEnemySpawn",
+    "FlagEnemySpawn",
     "HiddenExit",
     "Item",
     "ItemEffect",

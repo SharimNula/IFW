@@ -234,8 +234,55 @@ Magical items use `magical="true"` for three default charges or `charges="N"` fo
 - Enemies scale with player level.
 - Respawning enemies use a 1-in-6 room re-entry roll.
 - Non-respawning enemies are treated as bosses, receive stronger scaling, and heal fully if they defeat the player.
+- Configured bosses pause on first encounter for fight, story-flag bypass, quest-item control, or risky delay choices.
 - Enemies can poison players or prevent their next offensive action.
 - Rooms can select one or more enemies from weighted environment pools.
+
+Boss confrontations are defined on a non-respawning enemy. Fight is always option 1;
+the other fixed options appear when their XML blocks are present:
+
+```xml
+<enemy id="thorn_matriarch" name="Thorn Matriarch"
+       level="6" hp="72" attack="20" defense="8"
+       exp_reward="180" gold_reward="50" respawns="false">
+  <boss_encounter>
+    <intro>The guardian pauses long enough for you to choose an approach.</intro>
+    <fight label="Stand and fight">You draw your weapon.</fight>
+    <bypass label="Invoke the restored oath"
+            required_flags="oath_read,shrine_restored">
+      The guardian accepts the repaired covenant and withdraws.
+    </bypass>
+    <control label="Raise the binding relic"
+             required_item="binding_relic" consume_item="true">
+      The relic bends the guardian to your command.
+    </control>
+    <delay label="Collapse the pursuit route"
+           chance="50" set_flag="guardian_delayed">
+      <success_text>You escape with the guardian's loot, but not its forgiveness.</success_text>
+      <failure_text>The trap fails. Standard combat begins.</failure_text>
+    </delay>
+  </boss_encounter>
+</enemy>
+```
+
+Use `boss <1-4>` or `boss fight|bypass|control|delay`. Bypass and control
+remove the boss without combat rewards. Successful delay guarantees the boss's
+configured item drops, grants no boss gold or experience, and sets its story
+flag; a failed delay enters standard combat. Resolved alternatives satisfy
+quests that target that enemy.
+
+A delay flag can trigger a one-time future challenge when the player enters a
+later room:
+
+```xml
+<flag_enemies>
+  <enemy_ref id="thorn_debt_stalker"
+             required_flag="guardian_delayed" count="1" />
+</flag_enemies>
+```
+
+Flag-triggered enemies must use `respawns="false"`. Once defeated, they do not
+appear again.
 
 ### NPCs, Companions, and Stealth
 

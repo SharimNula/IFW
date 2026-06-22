@@ -93,6 +93,29 @@ class GameProjectTests(unittest.TestCase):
         self.assertEqual(self.world.quests["seal_the_heart"].ending_text_by_faction, {})
         self.assertEqual(self.world.quests["seal_the_heart"].ending_choices, [])
         self.assertTrue(self.world.quests["end_the_concord_wyrm"].ends_world)
+        thorn_encounter = self.world.enemies["thorn_matriarch"].boss_encounter
+        self.assertIsNotNone(thorn_encounter)
+        assert thorn_encounter is not None
+        self.assertEqual(
+            [choice.choice_type for choice in thorn_encounter.choices],
+            ["fight", "bypass", "control", "delay"],
+        )
+        self.assertEqual(thorn_encounter.choices[1].required_flags, [
+            "elder_memory_honored",
+            "thorn_seed_cache_opened",
+        ])
+        self.assertEqual(thorn_encounter.choices[2].required_item, "heart_lantern")
+        self.assertFalse(thorn_encounter.choices[2].consume_item)
+        self.assertEqual(thorn_encounter.choices[3].success_chance, 50)
+        self.assertEqual(thorn_encounter.choices[3].set_flag, "thorn_matriarch_delayed")
+        self.assertEqual(
+            self.world.rooms["ember_lift"].flag_enemy_spawns[0].required_flag,
+            "thorn_matriarch_delayed",
+        )
+        self.assertEqual(
+            self.world.rooms["ember_lift"].flag_enemy_spawns[0].enemy_id,
+            "thorn_debt_stalker",
+        )
         self.assertEqual(len(self.world.quests["end_the_concord_wyrm"].ending_choices), 5)
         self.assertEqual(self.world.quests["end_the_concord_wyrm"].ending_choices[0].ending_type, "default")
         self.assertEqual(self.world.quests["end_the_concord_wyrm"].ending_choices[1].ending_type, "faction")
@@ -1161,6 +1184,27 @@ class GameProjectTests(unittest.TestCase):
         self.assertLess(lines.index("  [Utility] Iron Pry Bar x1"), lines.index("  [Misc] Faded Keepsake x1"))
         self.assertLess(lines.index("  [Misc] Faded Keepsake x1"), lines.index("  [Material] Wolf Pelt x1"))
         self.assertFalse(any("Vault Key" in line for line in lines))
+
+    def test_non_stackable_items_render_as_individual_inventory_and_storage_entries(self) -> None:
+        engine = self._engine()
+        engine.progress.add_item("lunar_guard_hauberk", 2)
+        engine.progress.add_item("healing_tonic", 2)
+
+        inventory_lines = engine.handle_command("inventory")
+
+        self.assertEqual(
+            inventory_lines.count("  [Armor] Lunar Guard Hauberk x1"),
+            2,
+        )
+        self.assertNotIn("  [Armor] Lunar Guard Hauberk x2", inventory_lines)
+        self.assertIn("  [Consumable] Healing Tonic x2", inventory_lines)
+
+        engine.handle_command("store lunar guard hauberk")
+        engine.handle_command("store lunar guard hauberk")
+        storage_lines = engine.handle_command("storage")
+
+        self.assertEqual(storage_lines.count("  Lunar Guard Hauberk x1"), 2)
+        self.assertNotIn("  Lunar Guard Hauberk x2", storage_lines)
 
     def test_key_ring_shows_collected_keys(self) -> None:
         engine = self._engine()
@@ -2233,6 +2277,158 @@ class GameProjectTests(unittest.TestCase):
         self.assertEqual(engine._enemy_attack_score(sentinel), 62)
         self.assertEqual(engine._enemy_defense_score(sentinel), 22)
         self.assertGreater(engine._enemy_max_hp(sentinel), engine._enemy_max_hp(scout))
+
+    def test_boss_encounter_pauses_combat_and_shows_fixed_choices(self) -> None:
+        engine = self._engine()
+        engine.progress.current_room = "eldergrove"
+        engine.progress.room_enemies["eldergrove"] = []
+        state = engine.progress.room_enemies["thorn_crown_grove"][0]
+
+        room_lines = engine.handle_command("north")
+        attack_lines = engine.handle_command("attack thorn matriarch")
+
+        self.assertIn("You travel north.", room_lines)
+        self.assertIn("Boss confrontation: Thorn Matriarch", room_lines)
+        self.assertIn("  1. Challenge the Matriarch [standard combat]", room_lines)
+        self.assertTrue(any(line.startswith("  2. Invoke the restored green oaths") for line in room_lines))
+        self.assertTrue(any(line.startswith("  3. Raise the Heart Lantern") for line in room_lines))
+        self.assertIn("  4. Cut the throne-vines and run [50% success]", room_lines)
+        self.assertIn("The boss confrontation must be resolved before you act.", attack_lines)
+        self.assertEqual(state.current_hp, state.max_hp)
+
+    def test_boss_fight_choice_opens_standard_combat_and_persists(self) -> None:
+        engine = self._engine()
+        state = engine._spawn_enemy_state("thorn_matriarch")
+        engine.progress.current_room = "thorn_crown_grove"
+        engine.progress.room_enemies["thorn_crown_grove"] = [state]
+
+        choice_lines = engine.handle_command("boss 1")
+        with patch("ifw.engine.random.randint", return_value=100):
+            attack_lines = engine.handle_command("attack thorn matriarch")
+
+        self.assertIn("Standard combat begins.", choice_lines)
+        self.assertIn(
+            "thorn_crown_grove:thorn_matriarch",
+            engine.progress.started_boss_encounters,
+        )
+        self.assertNotIn("The boss confrontation must be resolved before you act.", attack_lines)
+        self.assertIn("Your attack misses Thorn Matriarch.", attack_lines)
+
+    def test_boss_bypass_requires_flags_and_advances_target_quest_without_loot(self) -> None:
+        engine = self._engine()
+        state = engine._spawn_enemy_state("thorn_matriarch")
+        engine.progress.current_room = "thorn_crown_grove"
+        engine.progress.room_enemies["thorn_crown_grove"] = [state]
+        engine.progress.active_quests.append("claim_thorn_relic")
+
+        blocked_lines = engine.handle_command("boss bypass")
+        engine.progress.story_flags.extend([
+            "elder_memory_honored",
+            "thorn_seed_cache_opened",
+        ])
+        resolved_lines = engine.handle_command("boss 2")
+
+        self.assertIn("You have not met the story requirements for that approach.", blocked_lines)
+        self.assertEqual(engine.progress.room_enemies["thorn_crown_grove"], [])
+        self.assertIn("thorn_matriarch", engine.progress.defeated_enemies)
+        self.assertIn("claim_thorn_relic", engine.progress.completed_quests)
+        self.assertIn("thorn_crown_relic", engine.progress.inventory)
+        self.assertNotIn("thornheart_fiber", engine.progress.inventory)
+        self.assertFalse(any(line.startswith("Loot found:") for line in resolved_lines))
+
+    def test_boss_control_requires_quest_item_and_can_preserve_it(self) -> None:
+        engine = self._engine()
+        state = engine._spawn_enemy_state("thorn_matriarch")
+        engine.progress.current_room = "thorn_crown_grove"
+        engine.progress.room_enemies["thorn_crown_grove"] = [state]
+
+        blocked_lines = engine.handle_command("boss control")
+        engine.progress.add_item("heart_lantern")
+        resolved_lines = engine.handle_command("boss 3")
+
+        self.assertIn("You need Heart Lantern to control this boss.", blocked_lines)
+        self.assertEqual(engine.progress.inventory.get("heart_lantern"), 1)
+        self.assertEqual(engine.progress.room_enemies["thorn_crown_grove"], [])
+        self.assertFalse(any(line.startswith("Loot found:") for line in resolved_lines))
+
+    def test_successful_boss_delay_sets_flag_and_grants_only_item_drops(self) -> None:
+        engine = self._engine()
+        state = engine._spawn_enemy_state("thorn_matriarch")
+        engine.progress.current_room = "thorn_crown_grove"
+        engine.progress.room_enemies["thorn_crown_grove"] = [state]
+        starting_gold = self.player.gold
+        starting_experience = self.player.experience
+
+        with patch("ifw.engine.bosses.random.randint", return_value=1):
+            lines = engine.handle_command("boss delay")
+
+        self.assertIn("thorn_matriarch_delayed", engine.progress.story_flags)
+        self.assertEqual(engine.progress.inventory.get("thornheart_fiber"), 1)
+        self.assertEqual(self.player.gold, starting_gold)
+        self.assertEqual(self.player.experience, starting_experience)
+        self.assertEqual(engine.progress.room_enemies["thorn_crown_grove"], [])
+        self.assertIn("Loot found: Thornheart Fiber.", lines)
+
+    def test_boss_delay_flag_triggers_one_time_future_challenge(self) -> None:
+        engine = self._engine()
+        state = engine._spawn_enemy_state("thorn_matriarch")
+        engine.progress.current_room = "thorn_crown_grove"
+        engine.progress.room_enemies["thorn_crown_grove"] = [state]
+
+        with patch("ifw.engine.bosses.random.randint", return_value=1):
+            engine.handle_command("boss delay")
+
+        engine.progress.current_room = "smithy"
+        engine.progress.room_enemies["smithy"] = []
+        engine.progress.story_flags.append("smithy_grate_opened")
+        entry_lines = engine.handle_command("down")
+
+        self.assertEqual(engine.progress.current_room, "ember_lift")
+        self.assertEqual(
+            [enemy.enemy_id for enemy in engine.progress.room_enemies["ember_lift"]],
+            ["thorn_debt_stalker"],
+        )
+        self.assertTrue(any("Thorn Debt Stalker" in line for line in entry_lines))
+
+        engine.progress.room_enemies["ember_lift"] = []
+        engine.progress.defeated_enemies.append("thorn_debt_stalker")
+        self.assertEqual(engine._respawn_enemies_for_room("ember_lift"), [])
+
+    def test_failed_boss_delay_enters_combat_without_setting_flag(self) -> None:
+        engine = self._engine()
+        state = engine._spawn_enemy_state("thorn_matriarch")
+        engine.progress.current_room = "thorn_crown_grove"
+        engine.progress.room_enemies["thorn_crown_grove"] = [state]
+
+        with patch("ifw.engine.bosses.random.randint", return_value=100):
+            delay_lines = engine.handle_command("boss 4")
+        with patch("ifw.engine.random.randint", return_value=100):
+            attack_lines = engine.handle_command("attack thorn matriarch")
+
+        self.assertIn("Standard combat begins.", delay_lines)
+        self.assertNotIn("thorn_matriarch_delayed", engine.progress.story_flags)
+        self.assertEqual(engine.progress.room_enemies["thorn_crown_grove"], [state])
+        self.assertIn("Your attack misses Thorn Matriarch.", attack_lines)
+
+    def test_boss_encounter_validation_rejects_respawning_enemy(self) -> None:
+        encounter = self.world.enemies["thorn_matriarch"].boss_encounter
+
+        self._assert_world_validation_error(
+            lambda world: setattr(world.enemies["forest_wolf"], "boss_encounter", encounter),
+            "defines a boss encounter but respawns",
+        )
+
+    def test_boss_encounter_validation_requires_quest_control_item(self) -> None:
+        def use_consumable_control_item(world) -> None:
+            encounter = world.enemies["thorn_matriarch"].boss_encounter
+            assert encounter is not None
+            control = next(choice for choice in encounter.choices if choice.choice_type == "control")
+            control.required_item = "healing_tonic"
+
+        self._assert_world_validation_error(
+            use_consumable_control_item,
+            "must be a quest item",
+        )
 
     def test_boss_enemy_resets_to_full_health_when_player_falls(self) -> None:
         self.player.level = 10
@@ -3757,6 +3953,7 @@ class GameProjectTests(unittest.TestCase):
         engine.progress.player_poisoned = True
         engine.progress.pickpocketed_targets.append("vendor:exchange_clerk_marlow:exchange_vault_key")
         engine.progress.lockpick_failures["currency_exchange_office:exchange_vault_door"] = 2
+        engine.progress.started_boss_encounters.append("thorn_crown_grove:thorn_matriarch")
         engine.player.wallet["emerald_mark"] = 3
         engine.progress.add_item("wolf_pelt")
         engine.progress.add_item("silver_ring")
@@ -3798,6 +3995,10 @@ class GameProjectTests(unittest.TestCase):
             ["vendor:exchange_clerk_marlow:exchange_vault_key"],
         )
         self.assertEqual(progress.lockpick_failures["currency_exchange_office:exchange_vault_door"], 2)
+        self.assertEqual(
+            progress.started_boss_encounters,
+            ["thorn_crown_grove:thorn_matriarch"],
+        )
         self.assertEqual(progress.accessory_ids, ["silver_ring"])
         self.assertEqual(progress.unlocked_recipes, ["iron_spear_pattern"])
         self.assertEqual(progress.inventory.get("wolf_pelt"), 1)

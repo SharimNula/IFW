@@ -32,6 +32,7 @@ class WorldProgress:
     player_poisoned: bool = False
     pickpocketed_targets: list[str] = field(default_factory=list)
     lockpick_failures: dict[str, int] = field(default_factory=dict)
+    started_boss_encounters: list[str] = field(default_factory=list)
 
     def add_item(self, item_id: str, amount: int = 1) -> None:
         self.inventory[item_id] = self.inventory.get(item_id, 0) + amount
@@ -102,6 +103,7 @@ class WorldProgress:
             "player_poisoned": self.player_poisoned,
             "pickpocketed_targets": self.pickpocketed_targets,
             "lockpick_failures": self.lockpick_failures,
+            "started_boss_encounters": self.started_boss_encounters,
         }
 
     @classmethod
@@ -165,6 +167,10 @@ class WorldProgress:
                 str(target_key): int(failures)
                 for target_key, failures in dict(payload.get("lockpick_failures", {})).items()
             },
+            started_boss_encounters=[
+                str(encounter_key)
+                for encounter_key in list(payload.get("started_boss_encounters", []))
+            ],
         )
 
 

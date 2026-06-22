@@ -226,12 +226,17 @@ class EngineCombatMixin:
         lines.append(f"You gain {enemy.exp_reward} experience.")
         lines.extend(self._gain_player_experience(enemy.exp_reward))
 
-        for drop in enemy.loot:
-            if random.random() <= drop.chance:
-                self.progress.add_item(drop.item_id)
-                lines.append(f"Loot found: {self.world.items[drop.item_id].name}.")
+        lines.extend(self._award_enemy_loot(enemy))
 
         lines.extend(self._check_quest_completion())
+        return lines
+
+    def _award_enemy_loot(self, enemy, guaranteed: bool = False) -> list[str]:
+        lines: list[str] = []
+        for drop in enemy.loot:
+            if guaranteed or random.random() <= drop.chance:
+                self.progress.add_item(drop.item_id)
+                lines.append(f"Loot found: {self.world.items[drop.item_id].name}.")
         return lines
 
     def _enemy_turn(self) -> list[str]:

@@ -54,7 +54,7 @@
     <offer_dialogue>The first relic sleeps in the Thornwild. Its guardian is a matriarch of living briar. Take the crown from her roots, or the final gate will never hear us.</offer_dialogue>
     <active_dialogue>The Thorn Crown listens for courage in the green dark. Follow the ruined road until the forest becomes older than the road.</active_dialogue>
     <completed_dialogue>The crown has accepted you. Good. The next relic burns below the keep where old mines forgot the word mercy.</completed_dialogue>
-    <description>Defeat the Thorn Matriarch and claim the Thorn Crown Relic.</description>
+    <description>Resolve the confrontation with the Thorn Matriarch and claim the Thorn Crown Relic.</description>
     <completion_text>The Thorn Crown Relic wakes in your hands, green thorns curling around your fingers without drawing blood.</completion_text>
   </quest>
   <quest id="claim_ember_relic" name="Claim the Emberheart" giver="relic_seer_maelis" target_enemy="ember_colossus" reward_gold="85" reward_exp="360" reward_item="emberheart_relic">

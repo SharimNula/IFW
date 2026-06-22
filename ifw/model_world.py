@@ -42,6 +42,13 @@ class FactionEnemySpawn:
 
 
 @dataclass(slots=True)
+class FlagEnemySpawn:
+    required_flag: str
+    enemy_id: str
+    count: int = 1
+
+
+@dataclass(slots=True)
 class HiddenExit:
     direction: str
     target_room: str
@@ -84,6 +91,7 @@ class Room:
     item_ids: list[str] = field(default_factory=list)
     enemy_ids: list[str] = field(default_factory=list)
     faction_enemy_spawns: list[FactionEnemySpawn] = field(default_factory=list)
+    flag_enemy_spawns: list[FlagEnemySpawn] = field(default_factory=list)
     monster_pool_id: str | None = None
     monster_count: int = 0
     npc_ids: list[str] = field(default_factory=list)

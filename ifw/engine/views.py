@@ -25,6 +25,11 @@ class EngineViewMixin:
         item = self.world.items[item_id]
         return (ITEM_TYPE_ORDER.get(item.item_type, 99), item.name)
 
+    def _display_item_amounts(self, item_id: str, amount: int) -> list[int]:
+        if self.world.items[item_id].stackable:
+            return [amount]
+        return [1] * amount
+
     def describe_current_room(self) -> list[str]:
         room = self._current_room()
         lines = [room.name, room.description]
@@ -60,6 +65,7 @@ class EngineViewMixin:
                 for state in self._room_enemies()
             )
             lines.append(f"Threats: {enemy_names}")
+        lines.extend(self._boss_encounter_lines())
         if room.has_storage:
             lines.append("A secure storage chest is available here.")
         if room.can_rest:
@@ -86,10 +92,11 @@ class EngineViewMixin:
                 key=lambda pair: self._item_sort_key(pair[0]),
             ):
                 item = self.world.items[item_id]
-                lines.append(
-                    f"  [{self._item_type_label(item_id)}] {item.name} x{amount}"
-                    f"{self._item_charge_display(item_id)}"
-                )
+                for display_amount in self._display_item_amounts(item_id, amount):
+                    lines.append(
+                        f"  [{self._item_type_label(item_id)}] {item.name} x{display_amount}"
+                        f"{self._item_charge_display(item_id)}"
+                    )
         weapon = self.world.items[self.progress.weapon_id].name if self.progress.weapon_id else "None"
         armor = self.world.items[self.progress.armor_id].name if self.progress.armor_id else "None"
         accessories = ", ".join(self._equipped_accessory_names()) if self.progress.accessory_ids else "None"
@@ -112,7 +119,8 @@ class EngineViewMixin:
             return lines
 
         for item_id, amount in sorted(key_items.items(), key=lambda pair: self.world.items[pair[0]].name):
-            lines.append(f"  {self.world.items[item_id].name} x{amount}")
+            for display_amount in self._display_item_amounts(item_id, amount):
+                lines.append(f"  {self.world.items[item_id].name} x{display_amount}")
         return lines
 
     def _examine(self, query: str) -> list[str]:
@@ -325,7 +333,8 @@ class EngineViewMixin:
             for item_id, amount in sorted(
                 self.progress.storage.items(), key=lambda pair: self.world.items[pair[0]].name
             ):
-                lines.append(f"  {self.world.items[item_id].name} x{amount}")
+                for display_amount in self._display_item_amounts(item_id, amount):
+                    lines.append(f"  {self.world.items[item_id].name} x{display_amount}")
         return lines
 
     def _show_stats(self) -> list[str]:
@@ -485,6 +494,7 @@ class EngineViewMixin:
             "  shop, buy <item, recipe, or spell>, buy <spell or spellbook> for <companion>, sell <item>",
             "  rates, exchange <amount> <currency> to <currency>",
             "  attack <enemy>, cast <spell> [on <enemy>], spells",
+            "  boss <1-4|fight|bypass|control|delay>",
             "  craft <item>, combine <item> with <item>, recipes",
             "  storage, store <item>, retrieve <item>",
             "  save, quit",

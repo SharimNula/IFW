@@ -290,6 +290,26 @@ def validate_room_enemies(world: World, room: Room, source: Path) -> None:
                 f"{source}: room '{room.room_id}' faction spawn for enemy "
                 f"'{faction_spawn.enemy_id}' must use count >= 1."
             )
+    for flag_spawn in room.flag_enemy_spawns:
+        if not flag_spawn.required_flag.strip():
+            raise ValueError(
+                f"{source}: room '{room.room_id}' flag spawn requires a non-empty flag."
+            )
+        if flag_spawn.enemy_id not in world.enemies:
+            raise ValueError(
+                f"{source}: room '{room.room_id}' flag spawn uses unknown enemy "
+                f"'{flag_spawn.enemy_id}'."
+            )
+        if flag_spawn.count < 1:
+            raise ValueError(
+                f"{source}: room '{room.room_id}' flag spawn for enemy "
+                f"'{flag_spawn.enemy_id}' must use count >= 1."
+            )
+        if world.enemies[flag_spawn.enemy_id].respawns:
+            raise ValueError(
+                f"{source}: room '{room.room_id}' flag spawn enemy "
+                f"'{flag_spawn.enemy_id}' must not respawn."
+            )
     if room.monster_pool_id:
         if room.enemy_ids:
             raise ValueError(
@@ -459,6 +479,76 @@ def validate_enemies(world: World, source: Path) -> None:
             raise ValueError(
                 f"{source}: enemy '{enemy.enemy_id}' poison_chance must be between 0 and 100."
             )
+        validate_boss_encounter(world, enemy, source)
+
+
+def validate_boss_encounter(world: World, enemy, source: Path) -> None:
+    encounter = enemy.boss_encounter
+    if encounter is None:
+        return
+    if enemy.respawns:
+        raise ValueError(
+            f"{source}: enemy '{enemy.enemy_id}' defines a boss encounter but respawns."
+        )
+    if not encounter.intro.strip():
+        raise ValueError(
+            f"{source}: enemy '{enemy.enemy_id}' boss encounter must define intro text."
+        )
+
+    choice_types = [choice.choice_type for choice in encounter.choices]
+    unknown_choice_types = set(choice_types) - {"fight", "bypass", "control", "delay"}
+    if unknown_choice_types:
+        unknown = ", ".join(sorted(unknown_choice_types))
+        raise ValueError(
+            f"{source}: enemy '{enemy.enemy_id}' boss encounter uses unknown choices: "
+            f"{unknown}."
+        )
+    if not choice_types or choice_types[0] != "fight":
+        raise ValueError(
+            f"{source}: enemy '{enemy.enemy_id}' boss encounter must begin with fight."
+        )
+    if len(choice_types) != len(set(choice_types)):
+        raise ValueError(
+            f"{source}: enemy '{enemy.enemy_id}' boss encounter repeats a choice type."
+        )
+    if len(choice_types) < 2:
+        raise ValueError(
+            f"{source}: enemy '{enemy.enemy_id}' boss encounter needs an alternative to fighting."
+        )
+
+    for choice in encounter.choices:
+        if not choice.label.strip():
+            raise ValueError(
+                f"{source}: enemy '{enemy.enemy_id}' boss choice '{choice.choice_type}' "
+                "must have a label."
+            )
+        if choice.choice_type == "bypass":
+            if not choice.required_flags or any(
+                not flag.strip() for flag in choice.required_flags
+            ):
+                raise ValueError(
+                    f"{source}: enemy '{enemy.enemy_id}' bypass choice requires story flags."
+                )
+        elif choice.choice_type == "control":
+            if choice.required_item not in world.items:
+                raise ValueError(
+                    f"{source}: enemy '{enemy.enemy_id}' control choice requires unknown item "
+                    f"'{choice.required_item}'."
+                )
+            if world.items[choice.required_item].item_type != "quest":
+                raise ValueError(
+                    f"{source}: enemy '{enemy.enemy_id}' control choice item "
+                    f"'{choice.required_item}' must be a quest item."
+                )
+        elif choice.choice_type == "delay":
+            if not 1 <= choice.success_chance <= 100:
+                raise ValueError(
+                    f"{source}: enemy '{enemy.enemy_id}' delay chance must be between 1 and 100."
+                )
+            if choice.set_flag is None or not choice.set_flag.strip():
+                raise ValueError(
+                    f"{source}: enemy '{enemy.enemy_id}' delay choice must set a flag."
+                )
 
 
 def validate_monster_pools(world: World, source: Path) -> None:

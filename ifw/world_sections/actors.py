@@ -3,6 +3,8 @@ from __future__ import annotations
 import xml.etree.ElementTree as ET
 
 from ..models import (
+    BossEncounter,
+    BossEncounterChoice,
     CurrencyExchangeRate,
     Enemy,
     LootDrop,
@@ -117,8 +119,87 @@ def parse_enemies(root: ET.Element) -> dict[str, Enemy]:
                 or enemy_element.get("venom_chance")
             ),
             poison_text=_optional_text(enemy_element.find("poison_text")),
+            boss_encounter=_parse_boss_encounter(enemy_element),
         )
     return enemies
+
+
+def _parse_boss_encounter(enemy_element: ET.Element) -> BossEncounter | None:
+    encounter_element = enemy_element.find("boss_encounter")
+    if encounter_element is None:
+        return None
+
+    choices = [
+        _parse_boss_choice(
+            encounter_element.find("fight"),
+            "fight",
+            "Enter standard combat",
+        )
+    ]
+    bypass_element = encounter_element.find("bypass")
+    if bypass_element is not None:
+        bypass_choice = _parse_boss_choice(
+            bypass_element,
+            "bypass",
+            "Use what you have learned to bypass the fight",
+        )
+        bypass_choice.required_flags = _parse_id_list(
+            bypass_element.get("required_flags") or bypass_element.get("flags")
+        )
+        bypass_choice.required_flags.extend(
+            _required_attr(flag_element, "id")
+            for flag_element in bypass_element.findall("./required_flags/flag")
+        )
+        choices.append(bypass_choice)
+
+    control_element = encounter_element.find("control")
+    if control_element is not None:
+        control_choice = _parse_boss_choice(
+            control_element,
+            "control",
+            "Use a quest item to control the boss",
+        )
+        control_choice.required_item = _required_attr(control_element, "required_item")
+        control_choice.consume_item = _parse_bool(
+            control_element.get("consume_item"),
+            default=True,
+        )
+        choices.append(control_choice)
+
+    delay_element = encounter_element.find("delay")
+    if delay_element is not None:
+        delay_choice = _parse_boss_choice(
+            delay_element,
+            "delay",
+            "Delay the boss and risk a future challenge",
+        )
+        delay_choice.success_chance = _parse_int(
+            delay_element.get("chance") or delay_element.get("success_chance"),
+            default=50,
+        )
+        delay_choice.set_flag = _required_attr(delay_element, "set_flag")
+        delay_choice.success_text = _optional_text(delay_element.find("success_text"))
+        delay_choice.failure_text = _optional_text(delay_element.find("failure_text"))
+        choices.append(delay_choice)
+
+    return BossEncounter(
+        intro=_optional_text(encounter_element.find("intro")),
+        choices=choices,
+    )
+
+
+def _parse_boss_choice(
+    choice_element: ET.Element | None,
+    choice_type: str,
+    default_label: str,
+) -> BossEncounterChoice:
+    if choice_element is None:
+        return BossEncounterChoice(choice_type=choice_type, label=default_label)
+    return BossEncounterChoice(
+        choice_type=choice_type,
+        label=choice_element.get("label", "").strip() or default_label,
+        text=_optional_text(choice_element),
+    )
 
 
 def parse_monster_pools(root: ET.Element) -> dict[str, MonsterPool]:

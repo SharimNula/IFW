@@ -3,7 +3,14 @@ from __future__ import annotations
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
-from ..models import FactionEnemySpawn, HiddenExit, MiningDrop, Room, RoomInteraction
+from ..models import (
+    FactionEnemySpawn,
+    FlagEnemySpawn,
+    HiddenExit,
+    MiningDrop,
+    Room,
+    RoomInteraction,
+)
 from ..world_loader_xml import (
     _first_attr,
     _optional_text,
@@ -44,6 +51,7 @@ def parse_room(room_element: ET.Element, source: Path) -> Room:
             for enemy_ref in room_element.findall("./enemies/enemy_ref")
         ],
         faction_enemy_spawns=parse_faction_enemy_spawns(room_element),
+        flag_enemy_spawns=parse_flag_enemy_spawns(room_element),
         monster_pool_id=room_element.get("monster_pool"),
         monster_count=_parse_int(
             room_element.get("monster_count"),
@@ -354,3 +362,18 @@ def parse_faction_enemy_spawns(room_element: ET.Element) -> list[FactionEnemySpa
             )
         )
     return faction_enemy_spawns
+
+
+def parse_flag_enemy_spawns(room_element: ET.Element) -> list[FlagEnemySpawn]:
+    spawn_elements = (
+        room_element.findall("./flag_enemies/enemy_ref")
+        + room_element.findall("./flag_spawns/enemy_ref")
+    )
+    return [
+        FlagEnemySpawn(
+            required_flag=_required_attr_any(enemy_ref, "required_flag", "flag"),
+            enemy_id=_required_attr(enemy_ref, "id"),
+            count=_parse_int(enemy_ref.get("count"), default=1),
+        )
+        for enemy_ref in spawn_elements
+    ]

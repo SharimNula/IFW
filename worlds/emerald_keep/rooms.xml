@@ -525,6 +525,9 @@
     <hidden_exits>
       <exit direction="in" to="miners_supply_cache" required_flag="miner_roll_honored" />
     </hidden_exits>
+    <flag_enemies>
+      <enemy_ref id="thorn_debt_stalker" required_flag="thorn_matriarch_delayed" />
+    </flag_enemies>
     <interactions>
       <object id="miners_roll" name="Miners' Roll" required_item="miner_tally_stone" consume_item="true" set_flag="miner_roll_honored">
         <description>A soot-dark memorial board lists Emberdeep crews by shift mark. One empty hook waits beneath a scratched tally symbol.</description>

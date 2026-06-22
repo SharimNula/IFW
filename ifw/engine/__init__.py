@@ -4,6 +4,7 @@ import random  # Re-exported so existing tests/tools can patch ifw.engine.random
 from typing import Callable
 
 from .companions import EngineCompanionMixin
+from .bosses import EngineBossMixin
 from .combat import EngineCombatMixin
 from .environment import EngineEnvironmentMixin
 from .items import EngineItemMixin
@@ -53,6 +54,7 @@ __all__ = [
 
 class GameEngine(
     EngineStateMixin,
+    EngineBossMixin,
     EngineCompanionMixin,
     EngineViewMixin,
     EngineNavigationMixin,
@@ -112,6 +114,18 @@ class GameEngine(
         remainder = remainder.strip()
 
         try:
+            if verb in {"boss", "confront", "confrontation"}:
+                return self._choose_boss_option(remainder)
+            if verb in {"choose", "select"} and remainder.lower().startswith("boss "):
+                return self._choose_boss_option(remainder[5:].strip())
+            if (
+                self._pending_boss_encounter() is not None
+                and not self._boss_confrontation_allows_command(verb, remainder)
+            ):
+                return [
+                    "The boss confrontation must be resolved before you act.",
+                    *self._boss_encounter_lines(),
+                ]
             if verb in {"north", "south", "east", "west", "up", "down", "in", "out"}:
                 return self._move(verb)
             if verb in {"n", "s", "e", "w", "u", "d"}:

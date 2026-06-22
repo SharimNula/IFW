@@ -197,6 +197,7 @@ class EngineRoomStateMixin:
 
         if self.progress.faction_id:
             respawned.extend(self._respawn_faction_enemies(room, room_enemies, present_counts))
+        respawned.extend(self._spawn_flag_enemies(room, room_enemies, present_counts))
 
         return respawned
 
@@ -256,6 +257,31 @@ class EngineRoomStateMixin:
                         faction_spawn.enemy_id,
                     )
         return respawned
+
+    def _spawn_flag_enemies(
+        self,
+        room,
+        room_enemies: list[EnemyState],
+        present_counts: Counter[str],
+    ) -> list[str]:
+        spawned: list[str] = []
+        for flag_spawn in room.flag_enemy_spawns:
+            if not self._has_story_flag(flag_spawn.required_flag):
+                continue
+            if flag_spawn.enemy_id in self.progress.defeated_enemies:
+                continue
+            missing_count = max(
+                0,
+                flag_spawn.count - present_counts.get(flag_spawn.enemy_id, 0),
+            )
+            for _ in range(missing_count):
+                self._append_respawned_enemy(
+                    room_enemies,
+                    present_counts,
+                    spawned,
+                    flag_spawn.enemy_id,
+                )
+        return spawned
 
     def _append_respawned_enemy(
         self,
