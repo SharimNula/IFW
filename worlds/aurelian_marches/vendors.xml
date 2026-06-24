@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='utf-8'?>
+<vendors>
+  <vendor id="tamsin_quickcart" name="Tamsin Quickcart" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Maps, charms, socks, scandals, and exactly one thing you did not know you needed.</dialogue>
+    <stock>
+      <item id="healing_draught" price="15" />
+      <item id="mana_phial" price="16" />
+      <item id="antitoxin" price="18" />
+      <item id="travel_rations" price="5" />
+      <item id="tracking_kit" price="35" />
+      <item id="thieves_tools" price="40" />
+    </stock>
+  </vendor>
+  <vendor id="bren_armory" name="Bren’s Armory" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Do not ask whether it is sharp. Ask whether you are.</dialogue>
+    <stock>
+      <item id="plain_longsword" price="22" />
+      <item id="balanced_dagger" price="20" />
+      <item id="yew_longbow" price="26" />
+      <item id="padded_jack" price="18" />
+      <item id="trail_leathers" price="28" />
+      <item id="pilgrim_mail" price="32" />
+    </stock>
+  </vendor>
+  <vendor id="annel_reliquary" name="Annel’s Reliquary" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Blessings are free. Components are not.</dialogue>
+    <stock>
+      <item id="healing_draught" price="14" />
+      <item id="antitoxin" price="16" />
+      <item id="saints_icon" price="20" />
+    </stock>
+    <spells>
+      <spell_ref id="minor_mend" price="10" />
+      <spell_ref id="steady_pulse" price="16" />
+      <spell_ref id="purify_blood" price="18" />
+      <spell_ref id="bless" price="20" />
+      <spell_ref id="sacred_flame" price="22" />
+    </spells>
+  </vendor>
+  <vendor id="marla_inn" name="Bronze Bell Services" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>A bed, a meal, a rumor, and no fighting unless I sell tickets.</dialogue>
+    <stock>
+      <item id="travel_rations" price="4" />
+      <item id="healing_draught" price="16" />
+    </stock>
+  </vendor>
+  <vendor id="osrik_bellfoundry" name="Osrik’s Bellfoundry" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Rivets, rings, bells, and the sort of metalwork that keeps you alive without looking heroic.</dialogue>
+    <stock>
+      <item id="plain_longsword" price="24" />
+      <item id="balanced_dagger" price="22" />
+      <item id="padded_jack" price="20" />
+      <item id="bellfounder_chime" price="25" />
+    </stock>
+  </vendor>
+  <vendor id="senna_market" name="Senna’s Market Counter" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Certified weights, fair prices, and absolutely no cursed flour after last winter.</dialogue>
+    <stock>
+      <item id="travel_rations" price="4" />
+      <item id="healing_draught" price="15" />
+      <item id="mana_phial" price="16" />
+      <item id="oath_tallow_candle" price="12" />
+    </stock>
+  </vendor>
+  <vendor id="fex_tinkerworks" name="Fex’s Tinkerworks" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Everything has been tested at least once, often by Fex.</dialogue>
+    <stock>
+      <item id="thieves_tools" price="38" />
+      <item id="tracking_kit" price="34" />
+      <item id="ink_sigil_kit" price="28" />
+      <item id="concordium_chalk" price="18" />
+    </stock>
+    <spells>
+      <spell_ref id="lock_whisper" price="18" />
+    </spells>
+  </vendor>
+  <vendor id="nyx_spellwright" name="Nyx’s Spellwright Stall" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Scrolls, chalk, ink, and only the educational kind of smoke.</dialogue>
+    <stock>
+      <item id="mana_phial" price="15" />
+      <item id="ink_sigil_kit" price="27" />
+      <item id="concordium_chalk" price="18" />
+    </stock>
+    <spells>
+      <spell_ref id="minor_mend" price="10" />
+      <spell_ref id="spark_dart" price="12" />
+      <spell_ref id="flash" price="14" />
+      <spell_ref id="mage_armor" price="24" />
+      <spell_ref id="sleep_hex" price="26" />
+    </spells>
+  </vendor>
+  <vendor id="greenbarrow_fields_vendor" name="Applewallow Co-op Counter" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Coin works, but so do favors, honest work, and not stealing from the winter shelf.</dialogue>
+    <stock>
+      <item id="applewallow_pie" price="7" />
+      <item id="travel_rations" price="4" />
+      <item id="cider_vinegar_flask" price="12" />
+      <item id="healing_draught" price="15" />
+      <item id="antitoxin" price="17" />
+      <item id="greenbarrow_seed_pouch" price="18" />
+      <item id="greenbarrow_fields_craft" price="24" />
+      <item id="greenbarrow_fields_ward" price="62" />
+      <item id="greenbarrow_fields_blade" price="78" />
+    </stock>
+  </vendor>
+  <vendor id="applewallow_militia_supply" name="Freehold Militia Supply Chest" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Take what you can use, return what you can repair, and write your name so Aunt Mara can yell at the correct person.</dialogue>
+    <stock>
+      <item id="slingstone_pouch" price="18" />
+      <item id="tunnel_lantern" price="20" />
+      <item id="cider_vinegar_flask" price="12" />
+      <item id="healing_draught" price="16" />
+      <item id="padded_jack" price="18" />
+      <item id="yew_longbow" price="26" />
+      <item id="tracking_kit" price="35" />
+    </stock>
+    <spells>
+      <spell_ref id="hunters_mark" price="22" />
+      <spell_ref id="thorn_snare" price="24" />
+      <spell_ref id="root_mend" price="34" />
+      <spell_ref id="applewarden_thorns" price="38" />
+    </spells>
+  </vendor>
+  <vendor id="applewallow_hearth_kitchen" name="Common Kitchen Supper Table" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Payment is welcome. Helping with dishes is holier.</dialogue>
+    <stock>
+      <item id="applewallow_pie" price="6" />
+      <item id="travel_rations" price="4" />
+      <item id="healing_draught" price="15" />
+      <item id="barrow_freehold_scrip" price="10" />
+    </stock>
+  </vendor>
+  <vendor id="dh_bhon_falduhr_supply" name="Bhon Falduhr Mine Supply" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Lamps, braces, salves, and the kind of tools you miss only when the ceiling moves.</dialogue>
+    <stock>
+      <item id="healing_draught" price="22" />
+      <item id="mana_phial" price="24" />
+      <item id="antitoxin" price="25" />
+      <item id="dh_miner_candle" price="18" />
+      <item id="dh_cache_rivets" price="32" />
+      <item id="dh_quarry_plate" price="150" />
+    </stock>
+  </vendor>
+  <vendor id="dh_vandarom_forge_market" name="Vandarom Forge Market" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Tools for work, weapons for necessity, and no chains for sale.</dialogue>
+    <stock>
+      <item id="dh_suniron_handaxe" price="135" />
+      <item id="dawnhammer_hills_blade" price="210" />
+      <item id="dawnhammer_hills_ward" price="180" />
+      <item id="dh_cabalsmith_chain" price="125" />
+      <item id="dh_guild_seal" price="55" />
+      <item id="tracking_kit" price="40" />
+    </stock>
+    <spells>
+      <spell_ref id="stone_skin" price="32" />
+      <spell_ref id="bless" price="26" />
+      <spell_ref id="battle_focus" price="42" />
+      <spell_ref id="shieldbreaker_chant" price="58" />
+      <spell_ref id="sunforge_guard" price="72" />
+      <spell_ref id="quarry_renewal" price="76" />
+    </spells>
+  </vendor>
+  <vendor id="dh_caravan_yard_supply" name="Jassa's Convoy Counter" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>If it keeps wheels turning, oxen calm, or guards awake, I stock it.</dialogue>
+    <stock>
+      <item id="travel_rations" price="5" />
+      <item id="healing_draught" price="21" />
+      <item id="mana_phial" price="24" />
+      <item id="antitoxin" price="25" />
+      <item id="dh_miner_candle" price="20" />
+      <item id="dh_quiet_tunnel_map" price="85" />
+    </stock>
+  </vendor>
+  <vendor id="whispering_briar_vendor" name="Vessa Candlecap’s Spore Counter" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Mushroom lanterns, Fey salves, charm-bread, and advice you will ignore until your third mistake.</dialogue>
+    <stock>
+      <item id="healing_draught" price="22" />
+      <item id="mana_phial" price="24" />
+      <item id="antitoxin" price="24" />
+      <item id="sweetroot_cake" price="21" />
+      <item id="briar_mere_lily" price="36" />
+      <item id="moonmote_ichor" price="32" />
+      <item id="whispering_briar_craft" price="50" />
+      <item id="glassroot_charm" price="88" />
+    </stock>
+    <spells>
+      <spell_ref id="briar_balm" price="110" />
+      <spell_ref id="foxfire_feint" price="95" />
+    </spells>
+  </vendor>
+  <vendor id="wb_thornsilk_tailor" name="Lorien’s Thorn-Silk Table" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>If the garment does not know your intention, it will embarrass you at the worst possible time.</dialogue>
+    <stock>
+      <item id="whispering_briar_ward" price="142" />
+      <item id="whispering_briar_blade" price="152" />
+      <item id="root_mirror_shard" price="130" />
+      <item id="singing_leaf" price="28" />
+      <item id="vowtree_ribbon" price="35" />
+    </stock>
+  </vendor>
+  <vendor id="sc_tebo_marsh_boat" name="Tebo’s Reed-Skiff Supplies" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>If it keeps you floating, breathing, or merely less dead, I know a cousin who sells it.</dialogue>
+    <stock>
+      <item id="antitoxin" price="22" />
+      <item id="travel_rations" price="7" />
+      <item id="healing_draught" price="20" />
+      <item id="tracking_kit" price="45" />
+      <item id="sc_mirewalker_cloak" price="135" />
+      <item id="sc_marsh_breath_charm" price="180" />
+    </stock>
+  </vendor>
+  <vendor id="hawga_daar_bonecarver" name="Raaksha’s Bone-Song Rack" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>No bright steel. Bright steel frightens fish and tells ghosts where to bite.</dialogue>
+    <stock>
+      <item id="sc_bogwalker_spear" price="155" />
+      <item id="sc_bonehook_javelins" price="130" />
+      <item id="sunken_crown_marsh_ward" price="235" />
+      <item id="antitoxin" price="20" />
+      <item id="sc_lizardfolk_fishstew" price="30" />
+      <item id="sc_mirewalker_cloak" price="125" />
+    </stock>
+  </vendor>
+  <vendor id="hawga_daar_pumpwright_supplies" name="Drokh’s Valve Pier" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Pumps, valves, patched boots, and advice about which ruins deserve to stay drowned.</dialogue>
+    <stock>
+      <item id="sc_drainage_wrench" price="110" />
+      <item id="sc_vault_pump_crank" price="160" />
+      <item id="mana_phial" price="24" />
+      <item id="healing_draught" price="22" />
+      <item id="sc_marsh_breath_charm" price="165" />
+    </stock>
+    <spells>
+      <spell_ref id="marsh_breath" price="75" />
+      <spell_ref id="venom_siphon" price="125" />
+      <spell_ref id="blackwater_grasp" price="140" />
+    </spells>
+  </vendor>
+  <vendor id="gw_ajuna_formula_wagon" name="Ajuna Formula Wagon" buyback="0.5" currencies="gold,favor_mark,astral_shard">
+    <dialogue>Equations, charms, and three warnings for every one spell.</dialogue>
+    <stock>
+      <item id="mana_phial" price="24" />
+      <item id="gw_star_sand_vial" price="140" />
+      <item id="gw_prism_focus" price="360" />
+      <item id="gw_mirage_silk_sash" price="310" />
+    </stock>
+    <spells>
+      <spell_ref id="mirage_step" price="175" />
+      <spell_ref id="dune_bind" price="190" />
+      <spell_ref id="dune_focus" price="210" />
+      <spell_ref id="oasis_equation" price="240" />
+      <spell_ref id="glass_mirror" price="160" />
+    </spells>
+  </vendor>
+  <vendor id="gw_dhanor_gear_caravan" name="Dhanor Lens-and-Gear Caravan" buyback="0.5" currencies="gold,favor_mark,astral_shard">
+    <dialogue>Good gear survives heat, greed, and bad roads. Bad gear becomes a lesson.</dialogue>
+    <stock>
+      <item id="healing_draught" price="28" />
+      <item id="antitoxin" price="30" />
+      <item id="gw_sun_glass_sabre" price="345" />
+      <item id="gw_dhanor_lensbuckler" price="360" />
+      <item id="gw_mirage_glass_shard" price="150" />
+    </stock>
+  </vendor>
+  <vendor id="gw_shakni_spell_notary" name="Shakni Silent Spell Notary" buyback="0.5" currencies="gold,favor_mark,astral_shard">
+    <dialogue>Speak softly. The sand is taking notes.</dialogue>
+    <stock>
+      <item id="mana_phial" price="24" />
+      <item id="gw_shakni_silence_charm" price="380" />
+      <item id="gw_prism_focus" price="350" />
+    </stock>
+    <spells>
+      <spell_ref id="prismatic_refraction" price="260" />
+      <spell_ref id="prism_bolt" price="245" />
+      <spell_ref id="glass_lance" price="235" />
+      <spell_ref id="mirage_step" price="175" />
+    </spells>
+  </vendor>
+  <vendor id="duskfall_coast_vendor" name="Tibalt Quayreed" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Buy before the gulls steal it, sell before the auditors value it.</dialogue>
+    <stock>
+      <item id="healing_draught" price="45" />
+      <item id="mana_phial" price="52" />
+      <item id="antitoxin" price="45" />
+      <item id="travel_rations" price="12" />
+      <item id="dc_kelpcook_stew" price="55" />
+      <item id="duskfall_coast_craft" price="180" />
+      <item id="dc_tidebound_saber" price="470" />
+      <item id="duskfall_coast_ward" price="510" />
+      <item id="dc_shellbone_charm" price="310" />
+      <item id="dc_pitchseal_barrel" price="145" />
+    </stock>
+    <spells>
+      <spell_ref id="tidecall" price="180" />
+    </spells>
+  </vendor>
+  <vendor id="dc_ferry_ticket_vendor" name="Terrecester Ferry Ticket Office" buyback="0.0" currencies="gold">
+    <dialogue>Stamped tickets only. I do not sell rumors, forgiveness, or shortcuts.</dialogue>
+    <stock>
+      <item id="dc_ferry_ticket" price="75" />
+    </stock>
+  </vendor>
+  <vendor id="dc_league_quartermaster" name="Tidebound League Quartermaster" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>League issue is not pretty. Pretty sinks. This works.</dialogue>
+    <stock>
+      <item id="healing_draught" price="48" />
+      <item id="mana_phial" price="58" />
+      <item id="dc_stormbow_harpoon" price="560" />
+      <item id="dc_saltwarden_stormcoat" price="585" />
+      <item id="duskfall_coast_blade" price="540" />
+      <item id="dc_seaglass_spellhook" price="545" />
+      <item id="dc_net_mending_charm" price="265" />
+    </stock>
+    <spells>
+      <spell_ref id="harbor_chain" price="230" />
+      <spell_ref id="breaker_prayer" price="280" />
+      <spell_ref id="saltmist_veil" price="225" />
+      <spell_ref id="tidecall" price="180" />
+    </spells>
+  </vendor>
+  <vendor id="dc_fishmarket_vendor" name="Mother Sennit’s Fishmarket Pot" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Eat first. Then go do something foolish on a full stomach.</dialogue>
+    <stock>
+      <item id="dc_kelpcook_stew" price="45" />
+      <item id="travel_rations" price="10" />
+      <item id="healing_draught" price="45" />
+      <item id="antitoxin" price="40" />
+      <item id="dc_salt_cod_crate" price="120" />
+    </stock>
+  </vendor>
+  <vendor id="thundervale_peaks_vendor" name="High Eyrie Provisions" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Rope, balm, lanterns, and weatherwise advice. Only one of those is free.</dialogue>
+    <stock>
+      <item id="healing_draught" price="58" />
+      <item id="mana_phial" price="60" />
+      <item id="travel_rations" price="10" />
+      <item id="tv_thunder_balm" price="78" />
+      <item id="tv_sky_iron_piton" price="150" />
+      <item id="thundervale_peaks_ward" price="620" />
+    </stock>
+  </vendor>
+  <vendor id="tv_cloudsmith_vendor" name="Kell’s Storm-Script Desk" buyback="0.5" currencies="gold,favor_mark">
+    <dialogue>Authorized mortal-sized copies of giant storm formulae. Do not cast them under copper gutters.</dialogue>
+    <stock>
+      <item id="mana_phial" price="58" />
+      <item id="ink_sigil_kit" price="45" />
+      <item id="tv_stormglass_lantern" price="260" />
+      <item id="tv_cloudstep_scroll" price="320" />
+    </stock>
+    <spells>
+      <spell_ref id="storm_stride" price="360" />
+      <spell_ref id="cloudstep_ascent" price="420" />
+      <spell_ref id="thunderheart_ward" price="500" />
+      <spell_ref id="fulmen_spear" price="540" />
+      <spell_ref id="thunderclap_rebuke" price="560" />
+      <spell_ref id="skyhook_mending" price="440" />
+    </spells>
+  </vendor>
+  <vendor id="um_bone_map_stall" name="Nimri’s Bone-Map Stall" buyback="0.5" currencies="gold,favor_mark,astral_shard">
+    <dialogue>No refunds if the cavern moves. It does that sometimes.</dialogue>
+    <stock>
+      <item id="um_bone_map_lower_roads" price="520" />
+      <item id="tracking_kit" price="50" />
+      <item id="ink_sigil_kit" price="55" />
+      <item id="um_spore_sealed_rations" price="70" />
+    </stock>
+  </vendor>
+  <vendor id="um_spore_healer" name="Quiet Bloom Spore-Healing" buyback="0.5" currencies="gold,favor_mark,astral_shard">
+    <dialogue>Breathe when I say breathe. Not before. Not after.</dialogue>
+    <stock>
+      <item id="healing_draught" price="38" />
+      <item id="mana_phial" price="42" />
+      <item id="antitoxin" price="35" />
+      <item id="um_spore_sealed_rations" price="64" />
+      <item id="um_mycelial_memory_bead" price="560" />
+    </stock>
+    <spells>
+      <spell_ref id="spore_communion" price="680" />
+      <spell_ref id="grave_salve" price="720" />
+      <spell_ref id="shadowglass_ward" price="760" />
+    </spells>
+  </vendor>
+  <vendor id="um_duergar_free_forge_vendor" name="Freehammer Deep Forge" buyback="0.5" currencies="gold,favor_mark,astral_shard">
+    <dialogue>I sell tools. What you do with them decides whether I call them weapons.</dialogue>
+    <stock>
+      <item id="um_silent_hammer" price="820" />
+      <item id="um_blackscale_mantle" price="780" />
+      <item id="umbralwyrm_depths_ward" price="900" />
+      <item id="um_black_lantern_rod" price="850" />
+    </stock>
+  </vendor>
+  <vendor id="um_shadowspell_tutor" name="Nocturne Shadow Scriptorium" buyback="0.5" currencies="gold,favor_mark,astral_shard">
+    <dialogue>The spell is not dark. Your intent might be.</dialogue>
+    <stock>
+      <item id="mana_phial" price="44" />
+      <item id="um_nightscale_ink" price="340" />
+      <item id="um_shadowglass_shard" price="285" />
+    </stock>
+    <spells>
+      <spell_ref id="night_eye_veil" price="720" />
+      <spell_ref id="echo_step" price="740" />
+      <spell_ref id="black_key_whisper" price="820" />
+      <spell_ref id="black_lantern_flare" price="850" />
+    </spells>
+  </vendor>
+  <vendor id="ac_refuge_quartermaster" name="Refuge Quartermaster" buyback="0.5" currencies="gold,favor_mark,astral_shard">
+    <dialogue>Nothing here is new. Everything here is useful.</dialogue>
+    <stock>
+      <item id="ac_starless_healing_tonic" price="95" />
+      <item id="ac_starless_mana_tonic" price="100" />
+      <item id="ac_refuge_supply_cache" price="350" />
+      <item id="astral_crown_citadel_blade" price="1280" />
+      <item id="astral_crown_citadel_ward" price="1180" />
+      <item id="ac_astral_chain_ring" price="1050" />
+      <item id="ac_seal_stabilizer" price="720" />
+    </stock>
+  </vendor>
+  <vendor id="ac_last_spellwright_vendor" name="Dhani’s Last Equation" buyback="0.5" currencies="gold,favor_mark,astral_shard">
+    <dialogue>Learn quickly. The walls are learning too.</dialogue>
+    <stock>
+      <item id="mana_phial" price="40" />
+      <item id="ac_starless_mana_tonic" price="100" />
+    </stock>
+    <spells>
+      <spell_ref id="ac_seal_mending" price="500" />
+      <spell_ref id="ac_crownward_aegis" price="560" />
+      <spell_ref id="ac_astral_banishment" price="680" />
+      <spell_ref id="ac_chainbreaker_word" price="620" />
+      <spell_ref id="starfallen_focus" price="700" />
+    </spells>
+  </vendor>
+  <vendor id="ac_refuge_infirmary" name="Refuge Infirmary Stores" buyback="0.5" currencies="gold,favor_mark,astral_shard">
+    <dialogue>Payment later if there is a later. Payment now if you have coin.</dialogue>
+    <stock>
+      <item id="healing_draught" price="35" />
+      <item id="antitoxin" price="35" />
+      <item id="ac_starless_healing_tonic" price="95" />
+      <item id="ac_starless_mana_tonic" price="100" />
+    </stock>
+    <spells>
+      <spell_ref id="minor_mend" price="35" />
+      <spell_ref id="ac_seal_mending" price="480" />
+      <spell_ref id="ac_crownward_aegis" price="540" />
+    </spells>
+  </vendor>
+</vendors>

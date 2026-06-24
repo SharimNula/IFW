@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<world id="aurelian_marches" name="Aurelian Marches" start_room="hearthwatch_square">
+  <description>A high-fantasy interactive fiction campaign inspired by tabletop d20 adventure structure. The Aurelian Marches begin in the expanded hub town of Hearthwatch Crossing and progress through living faction zones before the final lockout into the Astral Crown Citadel. The campaign emphasizes populated settlements, faction choices, dungeon delves, wilderness routes, class identity, social quests, vendor economies, recurring companions, relic-gated progression, boss-choice encounters, and choice-driven endings.</description>
+  <currencies default="gold">
+    <currency id="gold" name="Gold" singular="gold" plural="gold" />
+    <currency id="favor_mark" name="Favor Mark" singular="favor mark" plural="favor marks" />
+    <currency id="astral_shard" name="Astral Shard" singular="astral shard" plural="astral shards" />
+  </currencies>
+  <jail room="hearthwatch_lockup" fee="25" currency="gold" />
+  <player_classes>
+    <class id="fighter" name="Fighter" max_hp="48" max_mp="10" gold="40" base_attack="8" base_defense="5" hp_per_level="9" mp_per_level="3" attack_per_level="2" defense_per_level="1">
+      <description>A disciplined weapon master built for front-line combat and battlefield control.</description>
+    </class>
+    <class id="wizard" name="Wizard" max_hp="28" max_mp="32" gold="35" base_attack="4" base_defense="2" hp_per_level="5" mp_per_level="8" attack_per_level="1" defense_per_level="1">
+      <description>An arcane scholar who solves obstacles with prepared magic, lore, and dangerous precision.</description>
+    </class>
+    <class id="cleric" name="Cleric" max_hp="40" max_mp="24" gold="38" base_attack="6" base_defense="4" hp_per_level="7" mp_per_level="6" attack_per_level="1" defense_per_level="1">
+      <description>A divine champion who blends healing, warding, radiant wrath, and social authority.</description>
+    </class>
+    <class id="ranger" name="Ranger" max_hp="38" max_mp="18" gold="36" base_attack="7" base_defense="3" hp_per_level="7" mp_per_level="5" attack_per_level="2" defense_per_level="1" lockpick_chance="45">
+      <description>A wilderness scout tuned for tracking, ambushes, beast lore, and long journeys beyond roads.</description>
+    </class>
+    <class id="rogue" name="Rogue" max_hp="34" max_mp="16" gold="38" base_attack="7" base_defense="3" hp_per_level="6" mp_per_level="4" attack_per_level="2" defense_per_level="1" pickpocket_chance="70" lockpick_chance="70">
+      <description>A quick infiltrator who opens locked routes, reads crowds, and ends fights before they begin.</description>
+    </class>
+  </player_classes>
+  <factions>
+    <faction id="marchwardens" name="Marchwardens">
+      <description>Road captains, lantern keepers, and town militias sworn to keep the border roads open.</description>
+    </faction>
+    <faction id="dawnhammer_free_state" name="Dawnhammer Free State">
+      <description>A neutral dwarven free state rather than a factional bloc: independent miners, manufacturers, caravan masters, and guild speakers of Bhon Falduhr and Vandarom who trade with all powers while refusing exclusive control by any of them.</description>
+    </faction>
+    <faction id="silver_concord" name="Silver Concord">
+      <description>Scholars, mages, temple archivists, and oathbound sages who police dangerous relics.</description>
+    </faction>
+    <faction id="barrow_freeholds" name="Barrow Freeholds">
+      <description>Halfling farmers, grave-tenders, and hedge knights defending ancestral land.</description>
+    </faction>
+    <faction id="thorn_court" name="Thorn Court">
+      <description>Fey nobles, awakened beasts, and forest spirits who resent mortal border-making.</description>
+    </faction>
+    <faction id="hawga_daar_clans" name="Hawga Daar Clans">
+      <description>The independent lizardfolk clans of Hawga Daar, bound by brood-oaths, hunting law, oral memory, and hard-won distrust of foreign crowns. They refuse formal allegiance to any major faction, but may honor an outsider who proves useful, humble, and patient.</description>
+    </faction>
+    <faction id="lost_crown_remnants" name="Lost Crown Remnants">
+      <description>The oathbound dead, broken heralds, ghostly servants, and drowned officers of the forgotten kingdom beneath Sunken Crown Marsh. They are not allies of Hawga Daar, but the marsh clans remember them as warnings against crown-law without living duty.</description>
+    </faction>
+    <faction id="crownless_cabal" name="Crownless Cabal">
+      <description>Necromancers, fallen knights, and planar cultists serving the Crownless Lich.</description>
+    </faction>
+    <faction id="blue_veil_caravans" name="Blue Veil Caravans">
+      <description>A confederation of desert nomads, caravaneers, monster-hunters, and traveling spellwrights. In the Glasswind Expanse the faction is embodied by three research-driven peoples—the Ajuna, Dhanor, and Shakni—whose camp heads compete for magical discoveries while keeping trade moving across the Buried Titan Highway.</description>
+    </faction>
+    <faction id="tidebound_league" name="Tidebound League">
+      <description>A coastal league of harbor councils, ferrymasters, dock priests, shipwright guilds, bonded privateers, and smugglers who protect the Thesmeda Sea lanes for a price. In Duskfall Coast their power centers on Terrecester Wharf, where trade, naval defense, and sea-law matter more than mainland rank.</description>
+    </faction>
+    <faction id="storm_crowned_hold" name="Storm-Crowned Hold">
+      <description>The storm giants of Vhal Torunn: prophetic highland sovereigns, rune-masons, cloud-smiths, and weather-shapers who guard Thundervale Peaks from above mortal politics. They are allies only after proof, and judges before they are friends.</description>
+    </faction>
+    <faction id="high_eyrie_freefolk" name="High Eyrie Freefolk">
+      <description>Mortal shepherds, climbers, ropewalkers, griffon keepers, and storm-watch families who survive below the giant hold through custom, courage, and weather sense.</description>
+    </faction>
+    <faction id="glowcap_compact" name="Glowcap Compact">
+      <description>A pragmatic survival alliance of deep gnomes, myconids, duergar refugees, drow exiles, blind surface-descended families, kobold lantern-keepers, smugglers, and underworld farmers. They govern Glowcap Commons by enforcing light, water, debt, and silence laws rather than surface politics.</description>
+    </faction>
+    <faction id="mycelial_choir" name="Mycelial Choir">
+      <description>A fungal memory-circle that preserves grief, warning, dream, and underworld history through spores. The Choir is not a state, but its consent matters to anyone seeking old roads beneath the Marches.</description>
+    </faction>
+    <faction id="umbralwyrm_brood" name="Umbralwyrm Brood">
+      <description>Shadow-scaled drakes, echo-born spirits, fossil memories, and wyrm-touched predators shaped by the sleeping presence of Vorgul Nethra beneath the deepest caverns.</description>
+    </faction>
+    <faction id="refuge_broken_chains" name="Refuge of Broken Chains">
+      <description>Escaped prisoners, displaced peoples, unlucky planar castaways, and former Cabal captives who have built a desperate final outpost inside the Astral Crown Citadel. They are not a nation, but they are the last living community before the Crownless Throne.</description>
+    </faction>
+  </factions>
+  <starter_loadouts>
+    <class name="fighter">
+      <item_ref id="plain_longsword" />
+      <item_ref id="padded_jack" />
+      <item_ref id="travel_rations" />
+    </class>
+    <class name="wizard">
+      <item_ref id="ashwood_staff" />
+      <item_ref id="apprentice_robe" />
+      <item_ref id="ink_sigil_kit" />
+    </class>
+    <class name="cleric">
+      <item_ref id="mace_of_bells" />
+      <item_ref id="pilgrim_mail" />
+      <item_ref id="saints_icon" />
+    </class>
+    <class name="ranger">
+      <item_ref id="yew_longbow" />
+      <item_ref id="trail_leathers" />
+      <item_ref id="tracking_kit" />
+    </class>
+    <class name="rogue">
+      <item_ref id="balanced_dagger" />
+      <item_ref id="shadow_coat" />
+      <item_ref id="thieves_tools" />
+    </class>
+  </starter_loadouts>
+  <starter_spells>
+    <class name="all">
+      <spell_ref id="minor_mend" />
+      <spell_ref id="spark_dart" />
+    </class>
+    <class name="wizard">
+      <spell_ref id="mage_armor" />
+      <spell_ref id="sleep_hex" />
+    </class>
+    <class name="cleric">
+      <spell_ref id="bless" />
+      <spell_ref id="sacred_flame" />
+    </class>
+    <class name="ranger">
+      <spell_ref id="hunters_mark" />
+    </class>
+    <class name="rogue">
+      <spell_ref id="shadowstep_trick" />
+    </class>
+  </starter_spells>
+</world>

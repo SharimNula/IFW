@@ -1,0 +1,701 @@
+<?xml version='1.0' encoding='utf-8'?>
+<npcs>
+  <npc id="matron_velia" name="Matron Velia" faction="marchwardens" quest_id="quest_hearthwatch_six_districts">
+    <description>A silver-braided human administrator who knows every family debt and every road song.</description>
+    <dialogue>The Marches are not empty wilderness. Every hill has a name, and every name has someone ready to fight for it.</dialogue>
+  </npc>
+  <npc id="captain_orran" name="Captain Orran Vale" faction="marchwardens" quest_id="quest_road_lanterns">
+    <description>A scarred half-orc officer whose patience is more intimidating than his axe.</description>
+    <dialogue>Trouble moves like weather. Watch the roads and you can see the storm forming.</dialogue>
+  </npc>
+  <npc id="peddler_tamsin" name="Tamsin Quickcart" faction="blue_veil_caravans">
+    <description>A halfling peddler with bright scarves, louder opinions, and suspiciously useful maps.</description>
+    <dialogue>Buy now. Regret later. Or regret now and buy later; both end at my cart.</dialogue>
+  </npc>
+  <npc id="quartermaster_bren" name="Quartermaster Bren" faction="marchwardens" quest_id="quest_supply_lines">
+    <description>A practical dwarf with ink-black fingers and no tolerance for heroic under-planning.</description>
+    <dialogue>Heroes die when they forget rope. Buy rope.</dialogue>
+  </npc>
+  <npc id="scribe_miravel" name="Scribe Miravel" faction="silver_concord" quest_id="quest_names_of_the_dead">
+    <description>An elven records officer who annotates gossip as if it might become law.</description>
+    <dialogue>Rumor is not evidence, but it is often evidence wearing a cheaper cloak.</dialogue>
+  </npc>
+  <npc id="prior_annel" name="Prior Annel" faction="silver_concord" quest_id="quest_saints_errand">
+    <description>A calm cleric who can bless a blade, scold a noble, and comfort a stranger in the same breath.</description>
+    <dialogue>Mercy is not softness. It is discipline with a lantern.</dialogue>
+  </npc>
+  <npc id="seer_liora" name="Seer Liora" faction="silver_concord" quest_id="quest_astral_warning">
+    <description>A blind aasimar seer whose white eyes follow invisible constellations.</description>
+    <dialogue>The dead star is patient. That is why we must not be.</dialogue>
+  </npc>
+  <npc id="dockmaster_keel" name="Dockmaster Keel" faction="tidebound_league" quest_id="quest_missing_manifest">
+    <description>A dragonborn customs master who remembers every crate, captain, and bribe offered at the river gate.</description>
+    <dialogue>Declare your cargo honestly. I can smell lies and lamp oil from across the bridge.</dialogue>
+  </npc>
+  <npc id="innkeeper_marla" name="Marla Hen-and-Bell" faction="marchwardens">
+    <description>A broad-shouldered innkeeper who hosts travelers, informants, and at least one disguised noble per month.</description>
+    <dialogue>Eat first, talk second. Hungry people make bad bargains.</dialogue>
+  </npc>
+  <npc id="companion_kael" name="Kael Thorne" faction="marchwardens" companion="true" companion_class="fighter">
+    <description>A young veteran with a dented shield, dry humor, and a fear of becoming the kind of soldier he once followed.</description>
+    <dialogue>I can hold a doorway. I am less good at holding my tongue.</dialogue>
+  </npc>
+  <npc id="companion_nessa" name="Nessa Valequill" faction="silver_concord" companion="true" companion_class="wizard">
+    <description>A tiefling scholar who treats danger as field research and apologizes only when the experiment is over.</description>
+    <dialogue>That rune is either a warning or a recipe. Possibly both.</dialogue>
+  </npc>
+  <npc id="jailer_pike" name="Jailer Pike" faction="marchwardens">
+    <description>A tired old guard who has heard every excuse except an original one.</description>
+    <dialogue>Pay the fine, sleep it off, or convince me the goat started it.</dialogue>
+  </npc>
+  <npc id="ferryman_ollis" name="Ollis Reed" faction="barrow_freeholds" quest_id="quest_dc_closed_hearthwatch_window">
+    <description>A reed-thin boatman who knows Greenbarrow crossings and resents being blamed for Tidebound League ticket policy.</description>
+    <dialogue>I can pole you upriver, but I cannot sell a Terrecester ticket from a locked Hearthwatch window.</dialogue>
+  </npc>
+  <npc id="greenbarrow_fields_guide" name="Pip Thornbarrow" faction="barrow_freeholds" quest_id="quest_greenbarrow_fields_arrival">
+    <description>A cheerful halfling pathwarden with muddy boots, a sling, and a flawless memory for who owes whom a casserole.</description>
+    <dialogue>Mind the stile, praise the stew, and do not call a burrow house a hole unless you enjoy lectures.</dialogue>
+  </npc>
+  <npc id="greenbarrow_fields_elder" name="Elder Merrian Applebloom" faction="barrow_freeholds" quest_id="quest_greenbarrow_fields_people">
+    <description>A silver-haired halfling matriarch whose soft voice can quiet a market, a militia, or a noble envoy.</description>
+    <dialogue>Applewallow has survived lords, floods, owlbears, and three winters of turnip soup. We will survive this too, but not by being careless.</dialogue>
+  </npc>
+  <npc id="greenbarrow_fields_merchant" name="Hob Tumblepot" faction="barrow_freeholds" quest_id="quest_greenbarrow_grain_coop">
+    <description>A broad-smiling co-op keeper who treats inventory as sacred community memory.</description>
+    <dialogue>A shared pantry is a promise. Someone is trying to turn it into a weapon.</dialogue>
+  </npc>
+  <npc id="greenbarrow_fields_scout" name="Tressa Goodfurrow" faction="barrow_freeholds" quest_id="quest_greenbarrow_fields_hunt">
+    <description>A sharp-eyed halfling scout with burrs in her cloak, a shortbow across her back, and no patience for heroic stomping.</description>
+    <dialogue>The ground has tells. Right now it is telling me something under it has a plan.</dialogue>
+  </npc>
+  <npc id="greenbarrow_fields_boss_npc" name="Seed-Warden Ysella" faction="barrow_freeholds" quest_id="quest_greenbarrow_fields_relic">
+    <description>A translucent halfling seed-warden bound to the first cache, equal parts grandmother, guardian, and hearthfire.</description>
+    <dialogue>Fallowmaw calls hunger order. We call sharing survival. Choose which law leaves this burrow.</dialogue>
+  </npc>
+  <npc id="ysella_seedwake" name="Ysella Seedwake" faction="barrow_freeholds" quest_id="quest_greenbarrow_maze">
+    <description>A warm-eyed ancestral spirit who keeps the First Seed Cache from those who would own what was meant to be shared.</description>
+    <dialogue>The path through the loam is simple if you remember the first oath: bowl, hand, loaf, seed.</dialogue>
+  </npc>
+  <npc id="mara_puddlepot" name="Aunt Mara Puddlepot" faction="barrow_freeholds">
+    <description>A flour-dusted kitchen commander who knows every family allergy, feud, and courtship in Applewallow.</description>
+    <dialogue>Soup first. Questions after. Panic never improved a broth.</dialogue>
+  </npc>
+  <npc id="fenlo_twicebarrel" name="Fenlo Twicebarrel" faction="barrow_freeholds">
+    <description>A red-cheeked cider maker who judges character by how a person treats borrowed cups.</description>
+    <dialogue>Best cider in the Marches. Worst time for the earth to start chewing wagons.</dialogue>
+  </npc>
+  <npc id="lina_honeybell" name="Lina Honeybell" faction="barrow_freeholds" quest_id="quest_applewallow_bee_warning">
+    <description>A calm beekeeper with veiled hair, wax-stained fingers, and prophetic confidence in her hives.</description>
+    <dialogue>The bees are spelling trouble in circles. That is never decorative.</dialogue>
+  </npc>
+  <npc id="sister_benna_seedwake" name="Sister Benna Seedwake" faction="barrow_freeholds" quest_id="quest_greenbarrow_barrow_names">
+    <description>A practical priest of Yondalla’s Table who blesses bread knives, birth rooms, scarecrows, and militia spears with equal seriousness.</description>
+    <dialogue>The dead do not mind visitors. They mind thieves.</dialogue>
+  </npc>
+  <npc id="obo_stoutbarrel" name="Obo Stoutbarrel" faction="barrow_freeholds" quest_id="quest_greenbarrow_sheepfold_watch">
+    <description>A compact militia quartermaster who can arm a dozen farmers from one cupboard and a grudge.</description>
+    <dialogue>Take a sling. Tallfolk always underestimate slings until gravity explains them.</dialogue>
+  </npc>
+  <npc id="jory_whistlegrain" name="Jory Whistlegrain" faction="barrow_freeholds">
+    <description>A wiry miller who whistles to the waterwheel and swears it answers in squeaks.</description>
+    <dialogue>The mill knows honest mud. This mud is lying.</dialogue>
+  </npc>
+  <npc id="old_tobin_manykeys" name="Old Tobin Manykeys" faction="barrow_freeholds">
+    <description>An elderly locksmith who remembers which burrow doors connect, which should not, and which are pretending.</description>
+    <dialogue>A good door keeps out weather, taxmen, and bad manners. Monsters require additional hinges.</dialogue>
+  </npc>
+  <npc id="kite_underhill" name="Kite Underhill" faction="barrow_freeholds" quest_id="quest_applewallow_lost_pie_tin">
+    <description>A small halfling child with scraped knees, enormous confidence, and a missing pie tin of supposedly legendary importance.</description>
+    <dialogue>Adventurers get shields. I had a pie tin. Then the tunnel took it.</dialogue>
+  </npc>
+  <npc id="dorrick_pennymeasure" name="Dorrick Pennymeasure" faction="silver_concord" quest_id="quest_applewallow_scholar_mud">
+    <description>A gnome antiquarian attempting to study Freehold burial customs without being exiled by offended grandmothers.</description>
+    <dialogue>For the record, I now understand that asking to borrow ancestral mud is not a neutral phrase.</dialogue>
+  </npc>
+  <npc id="cartwright_nessa_hollowheel" name="Nessa Hollowheel" faction="blue_veil_caravans">
+    <description>A half-elf cartwright repairing wagon wheels while mediating between outside merchants and local field law.</description>
+    <dialogue>The Freeholds are generous, not naïve. There is a very expensive difference.</dialogue>
+  </npc>
+  <npc id="dawnhammer_hills_guide" name="Khorra Ironmile" faction="dawnhammer_free_state" quest_id="quest_dawnhammer_hills_arrival">
+    <description>A broad-shouldered dwarf cartographer with chalked boots, survey chains, and a professional hatred of anyone who calls the free road unclaimed.</description>
+    <dialogue>Roads are promises laid in stone. Someone is breaking ours cart by cart.</dialogue>
+  </npc>
+  <npc id="dawnhammer_hills_elder" name="Foreman Dorrak Falduhr" faction="dawnhammer_free_state" quest_id="quest_dawnhammer_hills_people">
+    <description>The working head of Bhon Falduhr, more comfortable reading ore than politics, but impossible to intimidate where worker safety is concerned.</description>
+    <dialogue>Sun-iron comes out of this mountain by paid hands and living backs. Nobody takes those hands from me.</dialogue>
+  </npc>
+  <npc id="dawnhammer_hills_merchant" name="Nalda Brightvein" faction="dawnhammer_free_state" quest_id="quest_dh_assay_theft">
+    <description>A meticulous dwarf assayer whose spectacles have six rotating lenses and whose patience has none.</description>
+    <dialogue>The numbers are clean, which means the theft is dirty somewhere else.</dialogue>
+  </npc>
+  <npc id="dawnhammer_hills_scout" name="Rusk Flintwake" faction="dawnhammer_free_state" quest_id="quest_dawnhammer_hills_hunt">
+    <description>A one-eyed hill scout who reads broken axles and boot scuffs with the delicacy of a court poet.</description>
+    <dialogue>Bandits steal coin. These raiders stole ore, manifests, and people-shaped measurements.</dialogue>
+  </npc>
+  <npc id="dawnhammer_hills_boss_npc" name="Hadrin of the Lost Shift" faction="dawnhammer_free_state" quest_id="quest_dawnhammer_hills_relic">
+    <description>The ghost of a miner whose crew sealed the Quiet Tunnels rather than let a tyrant inherit their work.</description>
+    <dialogue>We held the dark with picks and lunch pails. You have sharper tools. Use them well.</dialogue>
+  </npc>
+  <npc id="dh_roadwarden_helka" name="Helka Seven-Rivets" faction="dawnhammer_free_state" quest_id="quest_dh_switchback_signals">
+    <description>A dwarf roadwarden whose armor is repaired with seven visible rivets, each commemorating a different caravan she brought home.</description>
+    <dialogue>If the signals fail, the road becomes six isolated graves with wheels.</dialogue>
+  </npc>
+  <npc id="dh_caravan_master_karvi" name="Karvi Chainclock" faction="dawnhammer_free_state" quest_id="quest_dh_caravans_under_hammerfall">
+    <description>A clockwork-handed caravan master who schedules wagons with mathematical severity and curses raiders with artistic freedom.</description>
+    <dialogue>My wagons can outrun weather, debt, and bad cooking. They cannot outrun insider knowledge.</dialogue>
+  </npc>
+  <npc id="dh_medic_bera_copperpulse" name="Bera Copperpulse" faction="dawnhammer_free_state" quest_id="quest_dh_wounds_that_do_not_bleed">
+    <description>A dwarf medic treating injuries caused by cold magic, phantom picks, and fear.</description>
+    <dialogue>A cut tells you what blade made it. These wounds tell me someone is practicing on workers.</dialogue>
+  </npc>
+  <npc id="dh_assayer_nalda_brightvein" name="Nalda Brightvein" faction="dawnhammer_free_state" quest_id="quest_dh_purity_sample">
+    <description>Nalda can identify a sun-iron seam by smell, color, and the mood of the crucible flame.</description>
+    <dialogue>Bring me a true sample from the face, and I can shame every counterfeit in Vandarom.</dialogue>
+  </npc>
+  <npc id="dh_liftwright_sella_quickgear" name="Sella Quickgear" faction="dawnhammer_free_state" quest_id="quest_dh_lift_house_sabotage">
+    <description>A gnome engineer adopted into three dwarf crews after saving a lift full of miners with a bootlace and profanity.</description>
+    <dialogue>Somebody forced the side gate from below. If that lift drops, the mountain gets a vote.</dialogue>
+  </npc>
+  <npc id="dh_memory_keeper_ulfra" name="Ulfra Stonepsalm" faction="dawnhammer_free_state" quest_id="quest_dh_honor_lost_shift">
+    <description>A gray-bearded dwarf who keeps the shift rolls, funeral songs, and unpaid jokes of miners who did not return.</description>
+    <dialogue>Names are wages paid to the dead. Bring me the tally stone and I will pay what is owed.</dialogue>
+  </npc>
+  <npc id="dh_blueveil_broker_orris" name="Orris Vale" faction="blue_veil_caravans" quest_id="quest_dh_buyer_trail">
+    <description>A human broker trying to keep neutral trade alive while every faction accuses every other faction of theft.</description>
+    <dialogue>I move goods, not allegiances. Someone is using my schedules like a knife.</dialogue>
+  </npc>
+  <npc id="dh_cook_tali_emberpot" name="Tali Emberpot" faction="barrow_freeholds" quest_id="quest_dh_waystation_cookfires">
+    <description>A halfling cook whose stew line hears more reliable intelligence than most spy networks.</description>
+    <dialogue>People confess over stew. Mostly about salt, sometimes about murder.</dialogue>
+  </npc>
+  <npc id="dh_guildspeaker_brunda" name="Guildspeaker Brunda Vandar" faction="dawnhammer_free_state" quest_id="quest_dh_no_chains_in_the_forge">
+    <description>The elected speaker of Vandarom, chosen by guild vote and known for ending council arguments by handing everyone a hammer and a problem.</description>
+    <dialogue>We sell to factions. We do not belong to them. The Cabal will learn the difference.</dialogue>
+  </npc>
+  <npc id="dh_ambassador_iolanthe" name="Iolanthe Reedglass" faction="silver_concord" quest_id="quest_dh_foreign_buyers">
+    <description>An elf advocate who audits foreign contracts to make sure Dawnhammer neutrality is not abused.</description>
+    <dialogue>Neutrality is not naivety. Every buyer leaves a shadow in the paperwork.</dialogue>
+  </npc>
+  <npc id="dh_forgemaster_rogan" name="Rogan Anvilwake" faction="dawnhammer_free_state" quest_id="quest_dh_false_maker_marks">
+    <description>A master smith whose hands are scarred by honest heat and whose temper rises at counterfeit marks.</description>
+    <dialogue>A forged maker mark is not fraud. It is identity theft with casualties.</dialogue>
+  </npc>
+  <npc id="dh_gear_vendor_maerin" name="Maerin Brassbuckle" faction="dawnhammer_free_state">
+    <description>A cheerful dwarf merchant selling mine gear, sun-iron tools, and unsolicited advice about tunnel footwear.</description>
+    <dialogue>Buy quality once or cheap twice, assuming the cheap version lets you survive the first lesson.</dialogue>
+  </npc>
+  <npc id="dh_caravan_quartermaster_jassa" name="Jassa Oxfriend" faction="blue_veil_caravans" quest_id="quest_dh_manifest_convoy">
+    <description>A half-orc quartermaster who knows every ox by name and every suspicious buyer by smell.</description>
+    <dialogue>Supplies move when paperwork, hooves, and nerves all agree. Lately only the hooves are honest.</dialogue>
+  </npc>
+  <npc id="dh_loremason_torva" name="Torva Runehand" faction="dawnhammer_free_state" quest_id="quest_dh_rune_press_sabotage">
+    <description>A nonbinary dwarf loremason who treats maker marks as sacred signatures rather than decoration.</description>
+    <dialogue>The press remembers every mark. This bone tried to make it lie.</dialogue>
+  </npc>
+  <npc id="dh_tapkeeper_gimla" name="Gimla Openmug" faction="dawnhammer_free_state" quest_id="quest_dh_open_anvil_grievances">
+    <description>A retired shield-smith who now protects workers by making sure grievances are heard before they become riots.</description>
+    <dialogue>My taproom has three rules: pay your tab, name your complaint, and no one owns another person's hands.</dialogue>
+  </npc>
+  <npc id="dh_bound_smith_mara" name="Mara Chain-Sunder" faction="dawnhammer_free_state" quest_id="quest_dh_free_bound_smiths">
+    <description>A wounded dwarf smith who escaped the first capture team and hid long enough to learn the Cabal's production plan.</description>
+    <dialogue>They measured us for shackles before they measured the forge beds. Break the pens first.</dialogue>
+  </npc>
+  <npc id="lieutenant_sera" name="Lieutenant Sera Duskshield" faction="marchwardens" quest_id="quest_keep_readiness">
+    <description>A calm shield-dwarf lieutenant who rotates patrols through every district and knows which streets go quiet before trouble.</description>
+    <dialogue>A hub survives on boring discipline. Boring discipline is what lets heroes chase the dramatic fires.</dialogue>
+  </npc>
+  <npc id="sergeant_vell" name="Sergeant Vell Ardent" faction="marchwardens" quest_id="quest_basic_drills">
+    <description>A human veteran with a cedar practice sword and a voice that can stop a tavern brawl through two walls.</description>
+    <dialogue>Hold the line, mind your flanks, and never trust a clean pair of boots.</dialogue>
+  </npc>
+  <npc id="constable_brindle" name="Constable Brindle Tallow" faction="marchwardens" quest_id="quest_residential_witnesses">
+    <description>A stout halfling constable who settles neighbor disputes, missing chickens, and actual conspiracies with the same notebook.</description>
+    <dialogue>People call it gossip until it saves a patrol.</dialogue>
+  </npc>
+  <npc id="osrik_bellfounder" name="Osrik Bellfounder" faction="marchwardens">
+    <description>An elderly dwarf artisan whose family cast the keep bell and every shrine bell in the district. He hears cracks like other people hear lies.</description>
+    <dialogue>A bell remembers the hand that made it. This one remembers something older.</dialogue>
+  </npc>
+  <npc id="elder_bramblewick" name="Elder Bramblewick Fen" faction="barrow_freeholds">
+    <description>A green-coated halfling elder from Applewallow, visiting Hearthwatch to demand that the town protect people before relics.</description>
+    <dialogue>Greenbarrow feeds half your road patrols. Remember that before you call our fields quaint.</dialogue>
+  </npc>
+  <npc id="lady_isolde" name="Lady Isolde Aurelian" faction="marchwardens" quest_id="quest_noble_masks">
+    <description>A poised noblewoman whose house funded the keep generations ago and now hides fear behind impeccable manners.</description>
+    <dialogue>The city must see confidence, even if confidence must be tailored overnight.</dialogue>
+  </npc>
+  <npc id="varo_silk" name="Varo Silk" faction="blue_veil_caravans">
+    <description>A half-elf courtier who sells secrets to prevent worse secrets from winning.</description>
+    <dialogue>Everyone has a price. The trick is learning whether they want coin, mercy, or silence.</dialogue>
+  </npc>
+  <npc id="majordomo_renic" name="Majordomo Renic Vale" faction="marchwardens">
+    <description>A tireless tiefling steward who knows exactly which heirlooms are missing and who was last alone with them.</description>
+    <dialogue>Servants do not vanish. They are made invisible by those who benefit.</dialogue>
+  </npc>
+  <npc id="marketmaster_senna" name="Marketmaster Senna Brisk" faction="blue_veil_caravans" quest_id="quest_market_measures">
+    <description>A quick-talking human marketmaster who can identify a forged tax seal by smell and a desperate merchant by posture.</description>
+    <dialogue>Trade is a bloodstream. Poison it and the whole Marches go cold.</dialogue>
+  </npc>
+  <npc id="fex_coppergrin" name="Fex Coppergrin" faction="blue_veil_caravans">
+    <description>A cheerful goblin artificer whose “mostly safe” gear is usually safer than his explanations.</description>
+    <dialogue>Good news: it works. Bad news: we learn what it works on together.</dialogue>
+  </npc>
+  <npc id="guild_notary_pavel" name="Guild Notary Pavel" faction="blue_veil_caravans">
+    <description>A severe aasimar clerk who treats false weights as moral injuries.</description>
+    <dialogue>Ink does not lie. People lie near ink.</dialogue>
+  </npc>
+  <npc id="warehouse_forewoman_naia" name="Forewoman Naia Keelhand" faction="tidebound_league" quest_id="quest_quay_crate_marks">
+    <description>A broad-shouldered goliath forewoman who runs the quay crews and has no patience for smugglers who endanger dockhands.</description>
+    <dialogue>You can hide a crate. You cannot hide the people hurt by it.</dialogue>
+  </npc>
+  <npc id="river_priest_calan" name="River-Priest Calan" faction="tidebound_league">
+    <description>A sea-elf priest who blesses barges, names the drowned, and speaks to the river when it refuses ordinary maps.</description>
+    <dialogue>Water keeps accounts longer than kings.</dialogue>
+  </npc>
+  <npc id="initiate_pella" name="Initiate Pella" faction="silver_concord">
+    <description>A young gnome acolyte juggling charity ledgers, candle tithes, and a very opinionated temple cat.</description>
+    <dialogue>Faith is logistics with a soul.</dialogue>
+  </npc>
+  <npc id="sister_mara" name="Sister Mara Hush" faction="silver_concord">
+    <description>A half-orc healer whose gentleness never prevents her from physically removing fools from the infirmary.</description>
+    <dialogue>Sit down before you fall down. That is both medical advice and theology.</dialogue>
+  </npc>
+  <npc id="archmage_caldus" name="Archmage Caldus Vane" faction="silver_concord" quest_id="quest_arcane_lantern_array">
+    <description>A raven-haired elf mage whose expensive composure frays whenever the dead star shifts by a fraction of a degree.</description>
+    <dialogue>The star is not above us. It is aimed at us.</dialogue>
+  </npc>
+  <npc id="silver_envoy_thalen" name="Envoy Thalen Moonscript" faction="silver_concord">
+    <description>A moon elf diplomat trying to keep nobles, priests, and mages from starting a jurisdictional war during an actual apocalypse.</description>
+    <dialogue>Jurisdiction is what powerful people argue about while frightened people wait.</dialogue>
+  </npc>
+  <npc id="apprentice_nyx" name="Apprentice Nyx Emberquill" faction="silver_concord">
+    <description>A soot-smudged tiefling apprentice who sells scrolls, collects anomalies, and grins whenever an experiment only nearly explodes.</description>
+    <dialogue>Do not lick the blue residue. That rule is from experience.</dialogue>
+  </npc>
+  <npc id="archivist_izzet" name="Archivist Izzet of Nine Keys" faction="silver_concord">
+    <description>A meticulous kobold archivist who files forbidden knowledge by danger, language, and bite risk.</description>
+    <dialogue>Some books bite figuratively. Mine are labeled when they bite literally.</dialogue>
+  </npc>
+  <npc id="wb_pip_mossmantle" name="Pip Mossmantle" faction="thorn_court" quest_id="quest_whispering_briar_arrival">
+    <description>A moss-haired satyr courier with inked hooves and a perfect memory for safe paths, insulting etiquette, and edible flowers.</description>
+    <dialogue>Do not ask whether the trees are alive. Ask whether they are in a forgiving mood.</dialogue>
+  </npc>
+  <npc id="wb_rill_silverflies" name="Rill-of-Silverflies" faction="thorn_court" quest_id="quest_wb_names_under_leaves">
+    <description>A palm-sized sprite followed by silver fireflies that arrange themselves into warning signs when Rill is too impatient to explain.</description>
+    <dialogue>Messages move fastest when they are frightened. I prefer them merely nervous.</dialogue>
+  </npc>
+  <npc id="wb_thorn_court_herald" name="Nettle-Veil Herald" faction="thorn_court" quest_id="quest_wb_root_toll">
+    <description>A masked eladrin herald whose cloak is embroidered with living nettles and diplomatic loopholes.</description>
+    <dialogue>Guests receive hospitality. Trespassers receive lessons. Declare which one you intend to be.</dialogue>
+  </npc>
+  <npc id="wb_archduchess_thyralune" name="Archduchess Thyralune of the White Thorn" faction="thorn_court" quest_id="quest_whispering_briar_people">
+    <description>A luminous archfey noble with antler-like branches crowned in white blossoms. Her grace is real, but so is the city’s fear of her political memory.</description>
+    <dialogue>The Thorn Court remembers beautifully and forgets strategically. The Oracle is what happens when forgetting becomes a crime.</dialogue>
+  </npc>
+  <npc id="wb_sir_bramble_third_root" name="Sir Bramble-of-the-Third-Root" faction="thorn_court" quest_id="quest_wb_old_bargain_markers">
+    <description>A beetle-armored knight barely taller than a halfling, formal to the point of absurdity and deadly with a thorn-lance.</description>
+    <dialogue>A vow is armor. Broken, it cuts the wearer first.</dialogue>
+  </npc>
+  <npc id="wb_elowen_glassroot" name="Elowen Glassroot" faction="thorn_court" quest_id="quest_wb_lost_orrery">
+    <description>A dryad archivist grown through a desk of green crystal, patient with scholarship and ruthless with omissions.</description>
+    <dialogue>Bring me facts, not comfort. Comfort is how courts teach history to limp.</dialogue>
+  </npc>
+  <npc id="wb_keeper_asterion" name="Keeper Asterion Vale" faction="silver_concord" quest_id="quest_wb_orrery_projection">
+    <description>A half-elf astronomer whose eyes reflect moving constellations after too many years guarding a broken Fey mechanism.</description>
+    <dialogue>The Orrery does not predict the dead star. It remembers why the dead star can find us.</dialogue>
+  </npc>
+  <npc id="wb_vessa_candlecap" name="Vessa Candlecap" faction="blue_veil_caravans" quest_id="quest_wb_baker_familiar">
+    <description>A cheerful myconid-adopted gnome who sells spore salves, mushroom lanterns, and brutally honest advice.</description>
+    <dialogue>All cures are negotiations. Some are just with your liver.</dialogue>
+  </npc>
+  <npc id="wb_lorien_witherbloom" name="Lorien Witherbloom" faction="thorn_court">
+    <description>A changeling tailor who stitches emotions into thorn-silk and refuses to sell black without asking why.</description>
+    <dialogue>A cloak can hide you from guards. Better cloth hides you from stories.</dialogue>
+  </npc>
+  <npc id="wb_granny_elmoria" name="Granny Elmoria" faction="thorn_court" quest_id="quest_wb_hearth_of_many_seasons">
+    <description>An elderly awakened elm spirit in an apron, known for spiced tea, severe hospitality, and curses that mostly improve manners.</description>
+    <dialogue>Sit. Eat. Then tell me which disaster has followed you home.</dialogue>
+  </npc>
+  <npc id="wb_orren_mossmead" name="Orren Mossmead" faction="barrow_freeholds" quest_id="quest_wb_moonbee_swarms">
+    <description>A halfling beekeeper from Applewallow who married into Onfadell’s orbit and now keeps bees that pollinate spells.</description>
+    <dialogue>Fey honey is like politics: sweet, sticky, and likely to outlive you.</dialogue>
+  </npc>
+  <npc id="wb_ilex_ninesongs" name="Ilex Nine-Songs" faction="thorn_court" quest_id="quest_wb_ninth_song">
+    <description>An androgynous eladrin bard whose harp remembers eight songs they have forgotten and one they are afraid to sing.</description>
+    <dialogue>The ninth song belongs to someone who was made nameless. I would rather learn it before it learns me.</dialogue>
+  </npc>
+  <npc id="wb_nemae_name_witness" name="Nemae the Name-Witness" faction="thorn_court" quest_id="quest_whispering_briar_hunt">
+    <description>A veiled Fey witness who records names on their own shadow so even magic cannot erase them twice.</description>
+    <dialogue>Justice without names becomes weather. It destroys whoever stands outside.</dialogue>
+  </npc>
+  <npc id="wb_nameless_oracle_witness" name="The Last Named Witness" faction="silver_concord" quest_id="quest_whispering_briar_relic">
+    <description>A wounded Concord witness preserved in a ring of mushrooms, able to confirm the Oracle’s relic is part of the Astral Crown ward-chain.</description>
+    <dialogue>She was wronged. She is also wrong. Both truths must survive the fight.</dialogue>
+  </npc>
+  <npc id="sc_blueveil_boatman_tebo" name="Tebo Reedwake" faction="blue_veil_caravans" quest_id="quest_sc_arrival_reed_law">
+    <description>A wiry human boatman who ferries legal cargo, illegal rumors, and anyone brave enough to sit still in a reed-skiff.</description>
+    <dialogue>Do not smile with teeth at Hawga Daar. Teeth mean challenge unless you are eating. Sometimes both.</dialogue>
+  </npc>
+  <npc id="sc_scholar_velis" name="Velis Orrenwater" faction="silver_concord" quest_id="quest_sc_crown_mosaic_rubbing">
+    <description>A soaked half-elf scholar who has been politely refused entry to Hawga Daar for eleven consecutive days.</description>
+    <dialogue>They say Hawga Daar means Lost King. I believe the name is not metaphor. I also believe saying that too loudly will get me pushed into a bog.</dialogue>
+  </npc>
+  <npc id="hawga_daar_gate_speaker_thraax" name="Thraax-of-the-Closed-Gate" faction="hawga_daar_clans" quest_id="quest_sc_the_outsider_who_listens">
+    <description>A broad-jawed lizardfolk watch speaker with painted warning marks across his throat scales.</description>
+    <dialogue>Outsiders bring maps, then taxes, then graves. Stand where I see your hands.</dialogue>
+  </npc>
+  <npc id="hawga_daar_clan_leader_ssharketh" name="Ssharketh Brood-Mother" faction="hawga_daar_clans" quest_id="quest_sc_prove_under_black_water">
+    <description>The clan leader wears no crown, only bead strings naming every hatchling, hunter, and elder under her protection.</description>
+    <dialogue>Trust is not spoken. Trust is carried in the mouth of the marsh and returned alive.</dialogue>
+  </npc>
+  <npc id="hawga_daar_broodwarden_issra" name="Issra Warm-Nest" faction="hawga_daar_clans" quest_id="quest_sc_no_steps_in_broodwater">
+    <description>A careful broodwarden who counts eggs, weather, strangers, and knives with equal seriousness.</description>
+    <dialogue>Soft shells become hard scales if fools do not step on them first.</dialogue>
+  </npc>
+  <npc id="hawga_daar_hunter_vhaak" name="Vhaak Mud-Spear" faction="hawga_daar_clans" quest_id="quest_sc_blood_in_the_reeds">
+    <description>A scarred lizardfolk hunter who smells blood in the reeds before insects find it.</description>
+    <dialogue>You want clan trust? Hunt what hunts us. Bring back proof, not a story.</dialogue>
+  </npc>
+  <npc id="hawga_daar_lorekeeper_korr" name="Old-Scale Korr" faction="hawga_daar_clans" quest_id="quest_sc_mud_is_memory">
+    <description>An elderly lizardfolk whose cataract-clouded eyes sharpen whenever old Draconic names are spoken.</description>
+    <dialogue>Stone forgets slower than meat. Bring me a stone that remembers the Lost King.</dialogue>
+  </npc>
+  <npc id="hawga_daar_siltseer_nema" name="Nema Under-Moon" faction="hawga_daar_clans" quest_id="quest_sc_sunken_vaults_main">
+    <description>A quiet shaman seated in a sunken royal doorway, reading ripples that move against the wind.</description>
+    <dialogue>The crown below is not our crown. Still, it poisons our water because outsiders died clutching it.</dialogue>
+  </npc>
+  <npc id="hawga_daar_pumpwright_drokh" name="Drokh Valve-Biter" faction="hawga_daar_clans" quest_id="quest_sc_repair_the_low_pumps">
+    <description>A lizardfolk engineer with bronze tools, webbed gloves, and a personal grudge against ancient plumbing.</description>
+    <dialogue>Old kings loved water until it entered their boots. Take this crank and teach the vaults humility.</dialogue>
+  </npc>
+  <npc id="hawga_daar_bonecarver_raaksha" name="Raaksha Bone-Song" faction="hawga_daar_clans">
+    <description>A bonewright who carves hooks, charms, and spearheads while humming genealogies under her breath.</description>
+    <dialogue>Bone is honest. It says what carried weight and what broke.</dialogue>
+  </npc>
+  <npc id="sc_captain_ildran_echo" name="Echo of Captain Ildran" faction="lost_crown_remnants" quest_id="quest_sc_wight_captain">
+    <description>A fading human ghost with a rusted officer’s gorget and eyes finally emptied of command.</description>
+    <dialogue>The crown was never ours to guard. We mistook possession for duty and drowned with the difference.</dialogue>
+  </npc>
+  <npc id="sc_ghost_barge_pilot" name="The Poleman Without Ripples" faction="lost_crown_remnants" quest_id="quest_sc_blueveil_barge">
+    <description>A translucent barge pilot whose pole never touches bottom and whose cargo manifest lists names instead of crates.</description>
+    <dialogue>One name short. Always one name short. Pay the toll with memory, not coin.</dialogue>
+  </npc>
+  <npc id="hawga_daar_lotus_mender" name="Mender Ssaali" faction="hawga_daar_clans" quest_id="quest_sc_black_lotus">
+    <description>A small, copper-scaled healer who trusts plants more readily than people but does not confuse caution for cruelty.</description>
+    <dialogue>Lotus heals fever. Listening heals insult. Outsiders usually bring both fever and insult.</dialogue>
+  </npc>
+  <npc id="gw_yasira_ajuna" name="Yasira of the Starcloth" faction="blue_veil_caravans" quest_id="quest_gw_meet_three_veils">
+    <description>A tall Ajuna woman wrapped in blue starcloth, Yasira treats mirages as geometry and politics as an irritating branch of weather prediction.</description>
+  </npc>
+  <npc id="gw_borun_dhanor" name="Borun Brass-Eye" faction="blue_veil_caravans" quest_id="quest_gw_dhanor_lens_crates">
+    <description>A broad dwarf-descended nomad with brass lenses over one eye, Borun believes every mystery deserves a hinge, screw, and safety note.</description>
+  </npc>
+  <npc id="gw_naleth_shakni" name="Naleth of the Quiet Bell" faction="blue_veil_caravans" quest_id="quest_gw_shakni_silent_proofs">
+    <description>A soft-spoken Shakni elder whose bells make no sound until a lie is spoken nearby.</description>
+  </npc>
+  <npc id="gw_roadmarshal_tavik" name="Roadmarshal Tavik Veilhand" faction="blue_veil_caravans" quest_id="quest_gw_arrival_highway">
+    <description>A scarred highway rider who knows every buried milestone and every place where a caravan can vanish in full sunlight.</description>
+  </npc>
+  <npc id="gw_saffi_miragewright" name="Saffi Three-Horizons" faction="blue_veil_caravans" quest_id="quest_gw_ajuna_wind_formula">
+    <description>A young Ajuna theorist who sketches spell diagrams in the air and erases them before rivals can copy the last line.</description>
+  </npc>
+  <npc id="gw_merek_sandledger" name="Merek Sandledger" faction="blue_veil_caravans" quest_id="quest_gw_raid_accounting">
+    <description>A Dhanor accountant with an abacus of glass beads and an iron memory for missing crates, suspicious delays, and expensive excuses.</description>
+  </npc>
+  <npc id="gw_ishun_glassflute" name="Ishun Glassflute" faction="blue_veil_caravans" quest_id="quest_gw_lost_song">
+    <description>A musician-mage who tunes glass flutes to silence storms, angry camels, and occasionally shouting scholars.</description>
+  </npc>
+  <npc id="gw_thirana_pale_compass" name="Thirana Pale-Compass" faction="silver_concord" quest_id="quest_gw_three_mirage_towers">
+    <description>A Silver Concord observer sent to determine whether the dead star has distorted Glasswind’s ancient mirror network.</description>
+  </npc>
+  <npc id="gw_peddler_omes" name="Omes of the Blue Pot" faction="blue_veil_caravans" quest_id="quest_gw_independent_blue_pot">
+    <description>A cheerful tea seller who hears more research gossip than any official envoy because everyone underestimates hot water.</description>
+  </npc>
+  <npc id="gw_spellvendor_ajuna" name="Luminous Aunt Veyra" faction="blue_veil_caravans">
+    <description>An elderly Ajuna aunt who sells formula scrolls only after correcting the buyer’s posture and pronunciation.</description>
+  </npc>
+  <npc id="gw_vendor_dhanor" name="Kherm Lenshook" faction="blue_veil_caravans">
+    <description>A precise merchant whose caravan carries lensbucklers, heat-thread repairs, spare axles, and small lectures about warranty limits.</description>
+  </npc>
+  <npc id="gw_spellvendor_shakni" name="Silent Cousin Orresh" faction="blue_veil_caravans">
+    <description>A veiled notary who writes spells silently and taps the price on a sandclock before allowing negotiation.</description>
+  </npc>
+  <npc id="gw_cabal_turncoat" name="Edran Voss" faction="crownless_cabal" quest_id="quest_gw_null_mage_collars">
+    <description>A frightened deserter who claims the Crownless Cabal wanted the Invisible Dungeon not for treasure, but for a workshop no army could find.</description>
+  </npc>
+  <npc id="glasswind_expanse_boss_npc" name="Auralis in Blue Glass" faction="silver_concord" quest_id="quest_gw_glass_wyrm_relic">
+    <description>A recorded memory trapped in blue glass, repeating the last safe alignment of the Astral Crown’s mirage ward.</description>
+  </npc>
+  <npc id="duskfall_coast_guide" name="Marra Lowtide" faction="tidebound_league" quest_id="quest_duskfall_coast_arrival">
+    <description>A hard-eyed half-elf road guide with a salt-cracked cloak and a ledger of travelers who did not listen.</description>
+    <dialogue>Terrecester is not a fishing village with walls. It is a harbor at war. Learn the bells before you follow the gulls.</dialogue>
+  </npc>
+  <npc id="duskfall_coast_elder" name="Harbormaster Veyla Terrecester" faction="tidebound_league" quest_id="quest_duskfall_coast_people">
+    <description>A broad-shouldered human official who treats every dock plank as her jurisdiction and every hungry family as League business.</description>
+    <dialogue>The League keeps the coast alive. Some call that control. I call it keeping pirate hooks out of children.</dialogue>
+  </npc>
+  <npc id="duskfall_coast_merchant" name="Tibalt Quayreed" faction="tidebound_league">
+    <description>A cheerful dock merchant with waterproof ledgers, gull feathers in his hat, and one eye always on the tide-clock.</description>
+    <dialogue>If it floats, rusts, heals, cuts, or keeps rain out, I have a legal version and a cheaper version I never mentioned.</dialogue>
+  </npc>
+  <npc id="duskfall_coast_scout" name="Lira Netmender" faction="tidebound_league" quest_id="quest_duskfall_coast_hunt">
+    <description>A young scout with a net needle, signal flags, and a habit of naming pirate ships after rude barnyard animals.</description>
+    <dialogue>The raiders are not random. Kobold rafts drive us inward while human cutters mark the heavy cargo. Someone taught them our schedule.</dialogue>
+  </npc>
+  <npc id="duskfall_coast_boss_npc" name="Tide-Echo of Eshdru" faction="tidebound_league" quest_id="quest_duskfall_coast_relic">
+    <description>A translucent echo shed from the ancient serpent’s memory, speaking in tide-slow sentences after the trial is complete.</description>
+    <dialogue>The pearl was never hidden from the strong. It was hidden from the unready.</dialogue>
+  </npc>
+  <npc id="dc_watch_captain_marna" name="Watch-Captain Marna Beld" faction="tidebound_league" quest_id="quest_dc_checkpoint_raiders">
+    <description>A scarred captain whose blue League sash has been mended with fishing line more than once.</description>
+    <dialogue>Raiders hit supply carts, not glory patrols. That means they know what keeps the town standing.</dialogue>
+  </npc>
+  <npc id="dc_gate_sergeant_orrin" name="Gate-Sergeant Orrin Pell" faction="tidebound_league" quest_id="quest_dc_hold_the_south_gate">
+    <description>A square-jawed sergeant with salt in his beard and a voice made for making crowds step back.</description>
+    <dialogue>If you bring trouble through my gate, at least bring it where I can see it.</dialogue>
+  </npc>
+  <npc id="dc_commander_seressa" name="Commander Seressa Knifewake" faction="tidebound_league" quest_id="quest_dc_breakwater_bombardment">
+    <description>A tiefling naval commander with a hook-scar across one horn and a tactical map tattooed on her left forearm.</description>
+    <dialogue>Privateers respect fear, pay, and weather. Today we have weather. Bring me the other two.</dialogue>
+  </npc>
+  <npc id="dc_admiral_ysolde" name="Admiral Ysolde Nine-Tides" faction="tidebound_league" quest_id="quest_dc_privateer_flags">
+    <description>An elderly dwarf admiral whose medals are dull with sea spray and whose eyes miss nothing near a shoreline.</description>
+    <dialogue>The League survives because captains argue, vote, and still sail when the bell rings.</dialogue>
+  </npc>
+  <npc id="dc_councilor_terrecester" name="Councilor Rul Terrecester" faction="tidebound_league" quest_id="quest_dc_league_feeds_its_own">
+    <description>A polished half-orc councilor descended from the wharf’s founders, careful with words and ruthless with contracts.</description>
+    <dialogue>A free coast is not an ungoverned coast. Ask the pirates which one they prefer.</dialogue>
+  </npc>
+  <npc id="dc_ticketmistress_pella" name="Ticketmistress Pella Vane" faction="tidebound_league" quest_id="quest_dc_ferries_do_not_sail_on_promises">
+    <description>A halfling clerk behind brass bars, armed with ink, stamps, and an absolute refusal to bend ferry policy for heroic pleading.</description>
+    <dialogue>One ticket, one stamped route, no exceptions. Hearthwatch sales are closed because roads are meant to be traveled in order.</dialogue>
+  </npc>
+  <npc id="dc_ferry_captain_luro" name="Captain Luro Brinehand" faction="tidebound_league" quest_id="quest_dc_glendes_passage">
+    <description>A weather-bent gnome ferry captain whose left glove is always wet and whose boat bells ring even when still.</description>
+    <dialogue>I can get you to Hearthwatch, to Glendes, or to regret. Two of those require a ticket.</dialogue>
+  </npc>
+  <npc id="dc_sister_maevra" name="Sister Maevra of the Returning Tide" faction="tidebound_league" quest_id="quest_dc_sea_temple_lamps">
+    <description>A calm priest with mother-of-pearl prayer beads and a knife for cutting drowned ghosts free from wreckage.</description>
+    <dialogue>The sea returns what it chooses. Our work is to be ready, grateful, and occasionally armed.</dialogue>
+  </npc>
+  <npc id="dc_master_shipwright_anlo" name="Master Shipwright Anlo Tarhand" faction="tidebound_league" quest_id="quest_dc_ropes_cut_at_midnight">
+    <description>A broad human shipwright whose hands are black with pitch and whose temper worsens around sabotage.</description>
+    <dialogue>Cut a rope and you cut a life. Find who did it before I start testing knots on suspects.</dialogue>
+  </npc>
+  <npc id="dc_drydock_mage_hellis" name="Hellis Vowglass" faction="silver_concord" quest_id="quest_dc_tidal_ink">
+    <description>A Silver Concord mage seconded to the drydock, studying tide-glass wards with the expression of someone who misses quiet libraries.</description>
+    <dialogue>A ship ward is a spell that has agreed to get wet. Mine have been tampered with.</dialogue>
+  </npc>
+  <npc id="dc_widow_elane" name="Widow Elane Codds" faction="tidebound_league" quest_id="quest_dc_widows_net">
+    <description>A fisher widow who mends nets for half the town and remembers every sailor by the knot they tied.</description>
+    <dialogue>A missing net can tell you more than a shouting sailor. Mine was cut, not torn.</dialogue>
+  </npc>
+  <npc id="dc_mother_sennit" name="Mother Sennit" faction="tidebound_league" quest_id="quest_dc_salt_cod_for_the_wall">
+    <description>A round, severe cook who feeds refugees, sailors, orphans, and informants from the same steaming cauldron.</description>
+    <dialogue>Hungry people talk. Full people tell the truth slower, but with better details.</dialogue>
+  </npc>
+  <npc id="dc_customs_auditor_jem" name="Auditor Jem Lockwater" faction="tidebound_league" quest_id="quest_dc_false_privateer_bonds">
+    <description>A meticulous auditor with wax seals dangling from every pocket and a smile like a closed ledger.</description>
+    <dialogue>False warrants are worse than forged coin. Coin steals goods. Warrants steal authority.</dialogue>
+  </npc>
+  <npc id="dc_blueveil_saltbroker" name="Nadin Blue-Veil" faction="blue_veil_caravans" quest_id="quest_dc_saltbroker_missing_crates">
+    <description>A Blue Veil trader who moves salt, glass, rumors, and magical reagents between Glasswind and the coast.</description>
+    <dialogue>The sea has markets the desert understands: scarcity, mirage, and men who swear their map is honest.</dialogue>
+  </npc>
+  <npc id="dc_labyrinth_scholar_vannis" name="Vannis Shell-Eye" faction="silver_concord" quest_id="quest_dc_buried_labyrinth">
+    <description>A nervous scholar wearing shell spectacles and carrying rubbings of every wall except the one that nearly ate him.</description>
+    <dialogue>The Buried Labyrinth is not a tomb. It is a test that grew teeth.</dialogue>
+  </npc>
+  <npc id="dc_kobold_defector_rikrik" name="Rikrik No-Flag" faction="tidebound_league" quest_id="quest_dc_kobold_surrender">
+    <description>A soaked kobold privateer deserter clutching a white shell like a surrender flag.</description>
+    <dialogue>No more boom-boats. No more captains who count kobolds as fuses. Rikrik wants shore-law now.</dialogue>
+  </npc>
+  <npc id="thundervale_peaks_guide" name="Rellan Cloudmark" faction="high_eyrie_freefolk" quest_id="quest_thundervale_peaks_arrival">
+    <description>A weather-burned guide with copper beads braided into his beard to warn him before lightning strikes nearby stone.</description>
+    <dialogue>The path up is not hard because it climbs. It is hard because the mountain asks why you climb.</dialogue>
+  </npc>
+  <npc id="thundervale_peaks_elder" name="Matriarch Ysbet Wind-Latch" faction="high_eyrie_freefolk" quest_id="quest_thundervale_peaks_people">
+    <description>The elected matriarch of Shepherd’s Eyrie, keeper of storm-season ledgers, herd rights, and old agreements with the giants.</description>
+    <dialogue>Help my people breathe through this storm, then I will help you speak where thunder listens.</dialogue>
+  </npc>
+  <npc id="thundervale_peaks_merchant" name="Brannik Weatherwise" faction="high_eyrie_freefolk">
+    <description>A compact merchant whose packs are organized by altitude, wind direction, and how close the buyer looks to panic.</description>
+    <dialogue>Buy rope before prophecy. One saves you more often.</dialogue>
+  </npc>
+  <npc id="thundervale_peaks_scout" name="Ilyra Far-Ridge" faction="marchwardens" quest_id="quest_thundervale_peaks_hunt">
+    <description>A Marchwarden scout posted to the upper switchback to track Cabal sappers, missing climbers, and unnatural lightning strikes.</description>
+    <dialogue>The raiders are not trying to hold the bridge. They are trying to make the bridge angry.</dialogue>
+  </npc>
+  <npc id="thundervale_peaks_boss_npc" name="Echo of Foreman Dagna" faction="dawnhammer_free_state" quest_id="quest_thundervale_peaks_relic">
+    <description>The freed echo of a Dawnhammer dwarf miner whose bones were dragged into the storm engine and forced to work after death.</description>
+    <dialogue>Break his circle. Then take the Aegis as a shield, not a crown.</dialogue>
+  </npc>
+  <npc id="tv_bellherd_mina" name="Mina Bellherd" faction="high_eyrie_freefolk" quest_id="quest_tv_lost_bell_line">
+    <description>A teenage goat-herder with a sling, a weather eye, and no patience for travelers who underestimate livestock.</description>
+    <dialogue>A goat knows a bad storm before a wizard has finished naming it.</dialogue>
+  </npc>
+  <npc id="tv_eyrie_matriarch" name="Old Nessa Highroof" faction="high_eyrie_freefolk">
+    <description>An elder who keeps meal rotations, guest lists, and storm-shelter rules with terrifying precision.</description>
+    <dialogue>No one freezes in my common while I have soup or opinions.</dialogue>
+  </npc>
+  <npc id="tv_ropewalker_senn" name="Senn the Ropewalker" faction="high_eyrie_freefolk">
+    <description>A ropewalker who crosses cliff-lines carrying medicine, gossip, and the occasional terrified outsider.</description>
+    <dialogue>Do not look down unless down has information you need.</dialogue>
+  </npc>
+  <npc id="tv_innkeeper_toma" name="Toma of the Struck Chimney" faction="high_eyrie_freefolk">
+    <description>A patient innkeeper who marks each lightning strike on the chimney and each foolish climber on the wall behind the bar.</description>
+    <dialogue>Tea first. Heroics after your hands stop shaking.</dialogue>
+  </npc>
+  <npc id="tv_cloudless_peddler" name="Savi Cloudless" faction="blue_veil_caravans">
+    <description>A Blue Veil peddler collecting high-altitude charms and selling desert lenscloth to people who have never seen a dune.</description>
+    <dialogue>The desert and the peak agree on one thing: weather is a language.</dialogue>
+  </npc>
+  <npc id="tv_storm_priest_elaun" name="Elaun Sky-Kneeler" faction="high_eyrie_freefolk" quest_id="quest_tv_first_thunder">
+    <description>A cliff-priest who blesses climbing lines, buries lightning victims, and translates thunder into practical warnings.</description>
+    <dialogue>Thunder is not anger. Anger is much less patient.</dialogue>
+  </npc>
+  <npc id="tv_griffon_keeper_rusk" name="Rusk Feather-Covenant" faction="high_eyrie_freefolk" quest_id="quest_tv_griffon_treaty">
+    <description>A scarred keeper responsible for maintaining the old treaty between Shepherd’s Eyrie and the wild griffons above the roost.</description>
+    <dialogue>We do not own them. We ask, and we pay in respect.</dialogue>
+  </npc>
+  <npc id="tv_silver_concord_envoy" name="Envoy Caldus Vey" faction="silver_concord" quest_id="quest_tv_tempest_archive">
+    <description>A cold-fingered envoy comparing the dead-star readings from Glasswind with the prophetic weather records of Vhal Torunn.</description>
+    <dialogue>The relics no longer need to share names to share a pattern.</dialogue>
+  </npc>
+  <npc id="tv_maelthra_storm_vow" name="Maelthra Storm-Vow" faction="storm_crowned_hold" quest_id="quest_tv_audience">
+    <description>A storm giant guardian in dark blue mail, suspicious of every small folk kingdom, faction, oath, and emergency.</description>
+    <dialogue>Small hands broke the old seals once. Prove yours can mend before they ask to carry.</dialogue>
+  </npc>
+  <npc id="tv_jorund_sky_hearer" name="Jorund Sky-Hearer" faction="storm_crowned_hold">
+    <description>An ancient storm giant oracle whose beard is braided with rainstones. He listens to thunder as if it is a courtroom record.</description>
+    <dialogue>The dead star is not above us. It is behind the laws that keep above and below apart.</dialogue>
+  </npc>
+  <npc id="tv_orvanth_cloud_smith" name="Orvanth Cloud-Smith" faction="storm_crowned_hold" quest_id="quest_tv_three_runes">
+    <description>A patient cloud-smith with hands large enough to crush a wagon and precise enough to repair a mortal buckle.</description>
+    <dialogue>Bring me what the raiders stole, and I will make the Stormlift remember mercy.</dialogue>
+  </npc>
+  <npc id="tv_cloudsmith_vendor_npc" name="Kell of the Small Anvil" faction="high_eyrie_freefolk">
+    <description>A mortal apprentice to Orvanth who sells sanctioned storm formulae in script small enough for ordinary spellbooks.</description>
+    <dialogue>No refunds for spells cast during hail. That is in the first line.</dialogue>
+  </npc>
+  <npc id="tv_stormlift_keeper" name="Keeper Veyra Lift-Bound" faction="storm_crowned_hold" quest_id="quest_tv_stormlift">
+    <description>A giant-taught human keeper who maintains the Stormlift base and refuses to let panic override ascent law.</description>
+    <dialogue>The lift rises for proof, not impatience.</dialogue>
+  </npc>
+  <npc id="tv_rain_court_attendant" name="Sarro of the Rain Court" faction="storm_crowned_hold">
+    <description>A silent attendant who records rain color, wind taste, and the exact number of lies told under each storm.</description>
+    <dialogue>Blue rain means grief. Silver rain means judgment. Black rain means run.</dialogue>
+  </npc>
+  <npc id="um_shale_blackfall_guide" name="Shale of the Blackfall" faction="glowcap_compact" quest_id="quest_um_down_the_blackfall">
+    <description>A scarred deep gnome climber wrapped in glowmoss rope and old surface medals. He measures newcomers by how they treat borrowed light.</description>
+    <dialogue>Do not ask how far down. Ask what you are willing to leave above.</dialogue>
+  </npc>
+  <npc id="um_vessa_lanternwarden" name="Vessa Lanternwarden" faction="glowcap_compact" quest_id="quest_um_no_flame_without_debt">
+    <description>A blind human warden whose staff is hung with tiny light-crystals, each one owed to someone dead or saved.</description>
+    <dialogue>You want entry? Bring back stolen light. Down here, trust begins with what you refuse to waste.</dialogue>
+  </npc>
+  <npc id="um_mother_velvetcap" name="Mother Velvetcap" faction="glowcap_compact" quest_id="quest_um_price_of_light">
+    <description>A broad-hatted myconid elder who communicates through spores, slate taps, and a patient translator.</description>
+    <dialogue>The surface speaks of kingdoms. The Depths ask a simpler question: did you poison the water?</dialogue>
+  </npc>
+  <npc id="um_ikxit_lanternkeeper" name="Ikxit Blue-Wick" faction="glowcap_compact" quest_id="quest_um_compact_suspicion">
+    <description>A precise kobold with blue candle stubs tied along his tail and a ledger of every flame lent to strangers.</description>
+    <dialogue>Two drops oil, one pinch wick-salt, no shouting near the nursery caps. Rules keep softskins edible less often.</dialogue>
+  </npc>
+  <npc id="um_nimri_bonecartographer" name="Nimri Three-Down" faction="glowcap_compact" quest_id="quest_um_cartographer_forgot_up">
+    <description>A deep gnome mapmaker who temporarily forgot which way was up and now distrusts all arrows.</description>
+    <dialogue>Maps are lies agreed upon by people who have not fallen through the floor yet.</dialogue>
+  </npc>
+  <npc id="um_maav_spore_speaker" name="Maav of the Quiet Bloom" faction="mycelial_choir" quest_id="quest_um_mushrooms_for_mourning">
+    <description>A myconid interpreter whose cap blooms with pale symbols whenever the Choir recalls a dead traveler.</description>
+    <dialogue>We do not forget. We compost. There is a difference.</dialogue>
+  </npc>
+  <npc id="um_borvak_freehammer" name="Borvak Freehammer" faction="glowcap_compact" quest_id="quest_um_duergar_would_not_kneel">
+    <description>A duergar smith who broke his own taskmaster brand and now refuses all chains, including polite ones.</description>
+    <dialogue>A hammer can make a shackle or crack one. I decided which sound I prefer.</dialogue>
+  </npc>
+  <npc id="um_seryne_nocturne" name="Seryne Nocturne" faction="glowcap_compact" quest_id="quest_um_shattered_observatory">
+    <description>A drow astronomer who studies the dead star by reconstructing a sky she can no longer see.</description>
+    <dialogue>Do not confuse darkness with ignorance. The surface has sunlight and still misses the obvious.</dialogue>
+  </npc>
+  <npc id="um_elian_lastsong" name="Elian Lastsong" faction="glowcap_compact" quest_id="quest_um_last_surface_song">
+    <description>An elderly descendant of a lost surface expedition, preserving sky-memory through inherited songs.</description>
+    <dialogue>My grandmother never saw dawn. She taught me the song anyway.</dialogue>
+  </npc>
+  <npc id="um_tholm_ashen_broker" name="Tholm Ashenhand" faction="glowcap_compact" quest_id="quest_um_ashen_exchange">
+    <description>A soot-fingered broker who knows which debts are honest, which are poisonous, and which smell like the Cabal.</description>
+    <dialogue>Bone, crystal, silence, maps. Someone is buying ingredients for a very bad idea.</dialogue>
+  </npc>
+  <npc id="um_ayra_waterdiviner" name="Ayra Below-Rain" faction="glowcap_compact" quest_id="quest_um_water_that_whispers_names">
+    <description>A calm woman with silvered eyes who listens to underground water as if it were testimony.</description>
+    <dialogue>This pool has begun speaking dead kings’ names. Water should remember stone, not crowns.</dialogue>
+  </npc>
+  <npc id="um_vond_chainbreaker" name="Vond Without-Collar" faction="glowcap_compact" quest_id="quest_um_chains_beneath_the_wyrm">
+    <description>A bruised duergar refugee hiding near Cabal chains, terrified of capture and furious at his own fear.</description>
+    <dialogue>If you came to save us, stop talking like a banner and start cutting iron.</dialogue>
+  </npc>
+  <npc id="um_choir_node_suul" name="Suul of the Mycelial Choir" faction="mycelial_choir" quest_id="quest_um_maps_written_in_spores">
+    <description>A small, luminous myconid node grown from preserved warnings of people who died carrying maps.</description>
+    <dialogue>The old roads are written in spores. Breathe gently, or you will read too much.</dialogue>
+  </npc>
+  <npc id="um_keth_blackwater" name="Keth Blackwater" faction="glowcap_compact" quest_id="quest_um_blackwater_law">
+    <description>A wiry keeper with a spear, a bucket, and no patience for anyone who fouls the Compact’s water.</description>
+    <dialogue>Light can be traded. Food can be grown. Bad water kills everyone equally.</dialogue>
+  </npc>
+  <npc id="um_orrix_debtknife" name="Orrix Debtknife" faction="glowcap_compact" quest_id="quest_um_debt_token_den">
+    <description>A sharp-eyed judge who settles disputes in iron tokens, memory beads, and occasionally blood.</description>
+    <dialogue>Every debt is a tunnel. Choose where it opens before you crawl in.</dialogue>
+  </npc>
+  <npc id="um_sunmote_echo" name="Echo of the Buried Sun" faction="silver_concord" quest_id="quest_um_wyrmglass_lens">
+    <description>A warm outline of a long-dead Concord keeper, preserved in the only honest light inside the ossuary.</description>
+    <dialogue>The Sun-Mote is not a weapon. It is proof that the dark has boundaries.</dialogue>
+  </npc>
+  <npc id="um_vorgul_witness" name="Witness Beneath Nightscale" faction="glowcap_compact" quest_id="quest_um_nightscale_bargain">
+    <description>A masked Compact envoy sent to witness whether the player frees, kills, binds, or bargains with the Umbralwyrm.</description>
+    <dialogue>The Compact does not require mercy. It requires that you understand the cost of your choice.</dialogue>
+  </npc>
+  <npc id="ac_vena_brokenchain" name="Vena Brokenchain" faction="refuge_broken_chains" quest_id="quest_ac_refuge_defense">
+    <description>A scarred human commander chosen by the escaped prisoners because she refuses crowns, ranks, and despair.</description>
+    <dialogue>No one here was supposed to survive. That makes every breath a rebellion.</dialogue>
+  </npc>
+  <npc id="ac_mother_liska" name="Mother Liska Apple-End" faction="barrow_freeholds" quest_id="quest_ac_refuge_supply">
+    <description>A halfling cook from Greenbarrow who has turned three stolen cauldrons into the Refuge’s morale engine.</description>
+    <dialogue>Eat. Then panic if you must. Empty stomachs serve the Cabal.</dialogue>
+  </npc>
+  <npc id="ac_threx_siltprayer" name="Threx Siltprayer" faction="hawga_daar_clans">
+    <description>A lizardfolk healer taken from Hawga Daar and now tending wounds in a half-flooded reliquary.</description>
+    <dialogue>Softskins waste blood by letting it leave the body. Hold still.</dialogue>
+  </npc>
+  <npc id="ac_sable_of_names" name="Sable of Unreturned Names" faction="thorn_court" quest_id="quest_ac_memory_gate">
+    <description>A fey envoy who escaped a name-vault with half a title and all of her anger intact.</description>
+    <dialogue>The Citadel steals names before it steals bodies. That is how it makes obedience sound natural.</dialogue>
+  </npc>
+  <npc id="ac_borun_chainforge" name="Borun Chainforge" faction="dawnhammer_free_state">
+    <description>A dwarven forge-prison survivor who repairs armor while reciting the names of captured smiths.</description>
+    <dialogue>Forced work is not craft. It is a wound wearing an apron.</dialogue>
+  </npc>
+  <npc id="ac_yasira_last_lens" name="Yasira Last-Lens" faction="blue_veil_caravans" quest_id="quest_ac_direction_gate">
+    <description>A Blue Veil researcher whose mirage diagrams now map a fortress trying to become real.</description>
+    <dialogue>The Citadel has direction, but no right to arrive.</dialogue>
+  </npc>
+  <npc id="ac_korun_runeservitor" name="Korun of the Broken Fulmen" faction="storm_crowned_hold" quest_id="quest_ac_survival_gate">
+    <description>A wounded giant-servitor carrying a storm rune larger than a shield.</description>
+    <dialogue>The high ones judged slowly. The Lich broke quickly. We must mend faster than both.</dialogue>
+  </npc>
+  <npc id="ac_sister_marivane" name="Sister Marivane of the Open Door" faction="silver_concord" quest_id="quest_ac_black_star_door">
+    <description>A Concord cleric who now blesses people she may never see leave.</description>
+    <dialogue>Hope is not confidence. Hope is choosing the next useful mercy.</dialogue>
+  </npc>
+  <npc id="ac_last_spellwright" name="Dhani of the Last Equation" faction="blue_veil_caravans">
+    <description>A sand-burned spellwright selling formulas copied while the walls were rearranging themselves.</description>
+    <dialogue>Prices are high because time is short and ink keeps evaporating.</dialogue>
+  </npc>
+  <npc id="ac_refuge_quartermaster_npc" name="Quartermaster Pell of No Banner" faction="refuge_broken_chains">
+    <description>A former Cabal wagon clerk who defected when he realized ledgers could become chains.</description>
+    <dialogue>I know what they stole because I wrote it down. Now I write down what we take back.</dialogue>
+  </npc>
+  <npc id="ac_crown_witness" name="The Crown Witness" faction="refuge_broken_chains" quest_id="quest_ac_crownless_lich">
+    <description>A silent figure wrapped in prison cloth, speaking only when the final throne is near. No one agrees which race they are.</description>
+    <dialogue>The Crown was never lost. It was waiting to see who would mistake possession for worthiness.</dialogue>
+  </npc>
+</npcs>

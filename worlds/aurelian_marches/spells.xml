@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='utf-8'?>
+<spells>
+  <spell id="spark_dart" name="Spark Dart" school="offense" mp_cost="3" power="8">
+    <description>A quick arcane attack taught to anyone with enough discipline not to scorch their own sleeve.</description>
+  </spell>
+  <spell id="minor_mend" name="Minor Mend" school="healing" mp_cost="3" power="10">
+    <description>A modest healing charm for cuts, bruises, and desperate seconds.</description>
+  </spell>
+  <spell id="mage_armor" name="Mage Armor" school="defense" mp_cost="4" armor_bonus="5" duration="4" classes="wizard">
+    <description>A wizardly ward that turns equations into force.</description>
+  </spell>
+  <spell id="sleep_hex" name="Sleep Hex" school="control" mp_cost="6" duration="2" classes="wizard" power="14" skip_turns="1">
+    <description>A soft violet sigil that drags weak minds toward magical sleep.</description>
+  </spell>
+  <spell id="bless" name="Bless" school="attack" mp_cost="5" attack_bonus="3" duration="4" classes="cleric">
+    <description>A cleric prayer that steadies allies and makes courage easier.</description>
+  </spell>
+  <spell id="sacred_flame" name="Sacred Flame" school="offense" mp_cost="5" power="13" classes="cleric">
+    <description>Radiant fire that punishes undead and oathbreakers.</description>
+  </spell>
+  <spell id="hunters_mark" name="Hunter’s Mark" school="attack" mp_cost="4" attack_bonus="4" duration="3" classes="ranger">
+    <description>A ranger focus that makes prey easier to track and strike.</description>
+  </spell>
+  <spell id="shadowstep_trick" name="Shadowstep Trick" school="stealth" mp_cost="5" duration="3" classes="rogue" pickpocket_bonus="12" lockpick_bonus="8">
+    <description>A rogue charm that borrows one step from a nearby shadow.</description>
+  </spell>
+  <spell id="thorn_snare" name="Thorn Snare" school="control" mp_cost="7" duration="3" power="16" skip_turns="1">
+    <description>Briars erupt from the ground and hold a foe in place.</description>
+  </spell>
+  <spell id="sun_iron_smite" name="Sun-Iron Smite" school="offense" mp_cost="8" power="22" classes="fighter,cleric">
+    <description>A battle prayer learned in the Dawnhammer Hills.</description>
+  </spell>
+  <spell id="marsh_breath" name="Marsh Breath" school="defense" mp_cost="8" duration="6" armor_bonus="6">
+    <description>A bubble of air and stubborn will, useful in drowned ruins.</description>
+  </spell>
+  <spell id="glass_mirror" name="Glass Mirror" school="defense" mp_cost="10" armor_bonus="9" duration="4" classes="wizard">
+    <description>A desert ward that turns a strike aside in a flash of hard light.</description>
+  </spell>
+  <spell id="tidecall" name="Tidecall" school="healing" mp_cost="10" power="28">
+    <description>A coastal rite that pulls pain away like an outgoing tide.</description>
+  </spell>
+  <spell id="umbral_banishment" name="Umbral Banishment" school="offense" mp_cost="14" power="38" classes="cleric,wizard">
+    <description>A dangerous formula that rejects undead and shadow creatures from the living world.</description>
+  </spell>
+  <spell id="astral_seal" name="Astral Seal" school="control" mp_cost="18" duration="4" power="42" skip_turns="2">
+    <description>A final-tier spell used to close planar breaches in the Astral Crown Citadel.</description>
+  </spell>
+  <spell id="stone_skin" name="Stone Skin" school="defense" mp_cost="8" armor_bonus="8" duration="4" classes="fighter,cleric,wizard">
+    <description>A Dawnhammer ward that hardens skin and armor like quarried stone for a short time.</description>
+  </spell>
+  <spell id="mirage_step" name="Mirage Step" school="stealth" mp_cost="10" duration="4" classes="ranger,rogue,wizard" pickpocket_bonus="18" lockpick_bonus="12">
+    <description>A Blue Veil movement charm that bends heat-haze around the caster’s next few steps.</description>
+  </spell>
+  <spell id="dune_bind" name="Dune Bind" school="control" mp_cost="11" duration="3" power="26" skip_turns="1">
+    <description>A field formula that turns loose sand into grasping bands around a foe’s ankles.</description>
+  </spell>
+  <spell id="glass_lance" name="Glass Lance" school="offense" mp_cost="14" power="38" classes="wizard">
+    <description>A hard-light spear used by Glasswind duelists to pierce wards and brittle armor.</description>
+  </spell>
+  <spell id="prismatic_refraction" name="Prismatic Refraction" school="defense" mp_cost="15" armor_bonus="13" duration="4" classes="wizard,rogue">
+    <description>A complex refraction spell copied from the hidden Dhanor spellbook. Incoming force splits across false images before it finds the caster.</description>
+  </spell>
+  <spell id="oasis_equation" name="Oasis Equation" school="healing" mp_cost="16" power="42" classes="cleric,wizard">
+    <description>An Ajuna theorem-prayer that pulls moisture, mercy, and mathematical possibility into a wounded body.</description>
+  </spell>
+  <spell id="saltmist_veil" name="Saltmist Veil" school="defense" mp_cost="13" armor_bonus="12" duration="4" classes="ranger,rogue,wizard">
+    <description>A Tidebound ward that wraps the caster in stinging mist, blurring outlines and hardening wet cloth like shell.</description>
+  </spell>
+  <spell id="harbor_chain" name="Harbor Chain" school="control" mp_cost="12" duration="3" classes="cleric,wizard" power="28" skip_turns="1">
+    <description>Spectral harbor chains snap from the ground or deck to bind a foe in place for a few crucial breaths.</description>
+  </spell>
+  <spell id="storm_stride" name="Storm Stride" school="stealth" mp_cost="12" duration="3" classes="ranger,rogue,wizard" pickpocket_bonus="16" lockpick_bonus="10">
+    <description>A peak-born movement spell from Thundervale that lets the caster move in the pause between thunderbeats.</description>
+  </spell>
+  <spell id="cloudstep_ascent" name="Cloudstep Ascent" school="defense" mp_cost="14" duration="4" classes="wizard,cleric,ranger" armor_bonus="12">
+    <description>A storm giant ascent charm adapted for mortal casters. It briefly lightens the body and steadies movement on vertical paths, stormlifts, and cloud-wet ledges.</description>
+  </spell>
+  <spell id="thunderheart_ward" name="Thunderheart Ward" school="defense" mp_cost="16" armor_bonus="15" duration="4" classes="cleric,wizard,fighter">
+    <description>A protective storm-ward that turns the first violence of a strike into a harmless peal of thunder.</description>
+  </spell>
+  <spell id="fulmen_spear" name="Fulmen Spear" school="offense" mp_cost="17" power="46" classes="wizard,cleric">
+    <description>A focused lance of white-blue lightning taught by High Eyrie stormwrights and refined from giant rune geometry.</description>
+  </spell>
+  <spell id="skyhook_mending" name="Skyhook Mending" school="healing" mp_cost="15" power="44" classes="cleric,ranger">
+    <description>A ropewalker’s recovery charm that knits torn muscle and steadies shaking limbs after a fall or climb.</description>
+  </spell>
+  <spell id="night_eye_veil" name="Night-Eye Veil" school="stealth" mp_cost="18" duration="6" classes="wizard,ranger,rogue" pickpocket_bonus="18" lockpick_bonus="18">
+    <description>A late-game underworld veil that lets the caster read shadow seams, fresh tracks, and faint heat through near-total darkness.</description>
+  </spell>
+  <spell id="spore_communion" name="Spore Communion" school="defense" mp_cost="16" duration="4" classes="cleric,wizard,ranger" armor_bonus="10">
+    <description>The caster breathes a controlled spore pattern and can receive memories from prepared fungal circles without surrendering identity.</description>
+  </spell>
+  <spell id="shadowglass_ward" name="Shadowglass Ward" school="defense" mp_cost="20" armor_bonus="18" duration="5" classes="cleric,wizard">
+    <description>A dark reflective ward that turns necrotic and shadow-force aside while revealing the outline of the attacker.</description>
+  </spell>
+  <spell id="echo_step" name="Echo Step" school="stealth" mp_cost="17" duration="3" classes="rogue,wizard,ranger" pickpocket_bonus="18" lockpick_bonus="18">
+    <description>The caster moves between two matching echoes, escaping a bad angle or crossing a short cavern gap without disturbing loose stone.</description>
+  </spell>
+  <spell id="black_lantern_flare" name="Black Lantern Flare" school="offense" mp_cost="22" power="64" classes="cleric,wizard">
+    <description>A cold flare of revealing light that burns shadow-bound enemies and exposes invisible writing or false walls.</description>
+  </spell>
+  <spell id="ac_seal_mending" name="Seal Mending" school="healing" mp_cost="26" power="145" classes="cleric,wizard">
+    <description>Repairs torn flesh by briefly aligning it with an unbroken version of itself.</description>
+  </spell>
+  <spell id="ac_crownward_aegis" name="Crownward Aegis" school="defense" mp_cost="24" armor_bonus="28" duration="5" classes="cleric,wizard">
+    <description>Raises a ward against dominion magic, necromantic command, and planar pressure.</description>
+  </spell>
+  <spell id="ac_astral_banishment" name="Astral Banishment" school="offense" mp_cost="32" power="185" classes="wizard,cleric">
+    <description>Strikes a target with the force of a door closing between planes.</description>
+  </spell>
+  <spell id="ac_chainbreaker_word" name="Chainbreaker Word" school="control" mp_cost="28" power="120" skip_turns="1" duration="2" classes="wizard,cleric,rogue">
+    <description>Speaks a stolen Cabal command backward, disrupting control effects and stunning weaker binders.</description>
+  </spell>
+  <spell id="steady_pulse" name="Steady Pulse" school="healing" mp_cost="5" power="16">
+    <description>A practical field charm that steadies breath, slows panic, and closes small wounds before they become large regrets.</description>
+  </spell>
+  <spell id="purify_blood" name="Purify Blood" school="healing" mp_cost="6" power="8" cure_poison="true">
+    <description>A clean pulse of reliquary magic that breaks venom in the blood while returning a little strength to the body.</description>
+  </spell>
+  <spell id="flash" name="Flash" school="control" mp_cost="4" power="12" skip_turns="1">
+    <description>A sharp burst of white light that ruins a foe's next attack and gives the caster one precious breath.</description>
+  </spell>
+  <spell id="battle_focus" name="Battle Focus" school="attack" mp_cost="4" attack_bonus="5" duration="3" classes="fighter">
+    <description>A fighter cadence that turns breath, stance, and discipline into cleaner strikes.</description>
+  </spell>
+  <spell id="lock_whisper" name="Lock Whisper" school="stealth" mp_cost="4" lockpick_bonus="20" duration="3" classes="rogue">
+    <description>A rogue charm that lets old tumblers answer in tiny clicks before the pick fully turns.</description>
+  </spell>
+  <spell id="root_mend" name="Root Mend" school="healing" mp_cost="7" power="22" classes="cleric,ranger">
+    <description>A Greenbarrow charm that coaxes stubborn flesh to knit like living bark around a wounded branch.</description>
+  </spell>
+  <spell id="applewarden_thorns" name="Applewarden Thorns" school="control" mp_cost="8" power="20" skip_turns="1" duration="2" classes="ranger">
+    <description>Old orchard thorns rise underfoot, pinning a foe as if the freehold itself has objected.</description>
+  </spell>
+  <spell id="shieldbreaker_chant" name="Shieldbreaker Chant" school="attack" mp_cost="7" attack_bonus="8" duration="3" classes="fighter">
+    <description>A clipped Dawnhammer battle chant that teaches every swing to search for buckles, seams, and fear.</description>
+  </spell>
+  <spell id="sunforge_guard" name="Sunforge Guard" school="defense" mp_cost="9" armor_bonus="10" duration="4" classes="fighter,cleric">
+    <description>A Vandarom forge-prayer that sets warm light between the body and the next hard blow.</description>
+  </spell>
+  <spell id="quarry_renewal" name="Quarry Renewal" school="healing" mp_cost="9" power="28" classes="fighter,cleric">
+    <description>A miners' recovery charm built for cracked ribs, falling stone, and the stubborn refusal to stay down.</description>
+  </spell>
+  <spell id="briar_balm" name="Briar Balm" school="healing" mp_cost="10" power="32" classes="cleric,ranger,wizard">
+    <description>A Fey poultice spell that smells of rain, sap, and promises nobody should make lightly.</description>
+  </spell>
+  <spell id="foxfire_feint" name="Foxfire Feint" school="stealth" mp_cost="9" pickpocket_bonus="14" lockpick_bonus="14" duration="4" classes="rogue,ranger">
+    <description>A small green flame misdirects attention just long enough for quiet hands to finish their work.</description>
+  </spell>
+  <spell id="venom_siphon" name="Venom Siphon" school="healing" mp_cost="11" power="20" cure_poison="true" classes="cleric,ranger">
+    <description>A marsh rite that pulls poison out through the skin as dark beads of harmless water.</description>
+  </spell>
+  <spell id="blackwater_grasp" name="Blackwater Grasp" school="control" mp_cost="12" power="30" skip_turns="1" duration="3" classes="cleric,wizard">
+    <description>Drowned crown-water rises like a cold hand and holds a foe in place while the mud remembers its name.</description>
+  </spell>
+  <spell id="dune_focus" name="Dune Focus" school="attack" mp_cost="12" attack_bonus="11" duration="3" classes="fighter,ranger">
+    <description>A desert breathing form that makes each strike arrive with the patience of sand burying a road.</description>
+  </spell>
+  <spell id="prism_bolt" name="Prism Bolt" school="offense" mp_cost="13" power="36" classes="wizard,rogue">
+    <description>A split-light bolt that ricochets through a target's outline before deciding where damage belongs.</description>
+  </spell>
+  <spell id="breaker_prayer" name="Breaker Prayer" school="attack" mp_cost="15" attack_bonus="14" duration="3" classes="fighter,cleric">
+    <description>A Tidebound boarding prayer that asks the sea to make the next few blows land like waves against rotten pilings.</description>
+  </spell>
+  <spell id="thunderclap_rebuke" name="Thunderclap Rebuke" school="control" mp_cost="18" power="52" skip_turns="1" duration="2" classes="fighter,cleric,wizard">
+    <description>A peak-born rebuke that cracks the air hard enough to steal an enemy's next attack.</description>
+  </spell>
+  <spell id="black_key_whisper" name="Black Key Whisper" school="stealth" mp_cost="19" pickpocket_bonus="22" lockpick_bonus="24" duration="4" classes="rogue,wizard">
+    <description>An underworld cipher-spell that convinces locks and pockets they have already been opened.</description>
+  </spell>
+  <spell id="grave_salve" name="Grave Salve" school="healing" mp_cost="20" power="70" classes="cleric,wizard">
+    <description>A somber deep-road healing formula that borrows stillness from tomb air and uses it to calm torn flesh.</description>
+  </spell>
+  <spell id="starfallen_focus" name="Starfallen Focus" school="attack" mp_cost="26" attack_bonus="24" duration="3" classes="fighter,cleric">
+    <description>A last-citadel oath that turns fear of the dead star into deliberate, punishing force.</description>
+  </spell>
+</spells>

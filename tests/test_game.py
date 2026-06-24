@@ -549,7 +549,7 @@ class GameProjectTests(unittest.TestCase):
         world_paths = list_world_files(ROOT / "worlds")
         world_ids = {load_world(path).world_id for path in world_paths}
 
-        self.assertEqual(world_ids, {"emerald_keep"})
+        self.assertEqual(world_ids, {"aurelian_marches", "emerald_keep"})
 
     def test_split_world_folder_can_load_from_folder_or_metadata_file(self) -> None:
         folder_world = load_world(WORLD_PATH)
