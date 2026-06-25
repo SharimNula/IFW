@@ -24,6 +24,9 @@
   <spell id="shadowstep_trick" name="Shadowstep Trick" school="stealth" mp_cost="5" duration="3" classes="rogue" pickpocket_bonus="12" lockpick_bonus="8">
     <description>A rogue charm that borrows one step from a nearby shadow.</description>
   </spell>
+  <spell id="nameward_veil" name="Nameward Veil" school="defense" mp_cost="6" armor_bonus="7" duration="4" classes="wizard">
+    <description>A small whispered prayer to protect the casters name.</description>
+  </spell>
   <spell id="thorn_snare" name="Thorn Snare" school="control" mp_cost="7" duration="3" power="16" skip_turns="1">
     <description>Briars erupt from the ground and hold a foe in place.</description>
   </spell>

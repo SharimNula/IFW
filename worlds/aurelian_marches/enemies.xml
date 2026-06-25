@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <enemies>
+  <!--Greenbarrow Field Enemies-->
   <enemy id="greenbarrow_fields_stalker" name="Hollow Scarecrow" level="2" hp="42" attack="10" defense="3" exp_reward="70" gold_reward="10" respawns="true">
     <description>A stolen scarecrow packed with grave straw, crow bones, and bitter field magic. It shambles toward warmth and tries to make farms feel abandoned.</description>
     <defeat_text>The scarecrow collapses into ordinary straw, and the field immediately seems less lonely.</defeat_text>
@@ -65,6 +66,7 @@
       <drop item="greenbarrow_fields_blade" chance="0.5" />
     </loot>
   </enemy>
+  <!--Dawnhammer Hills Enemies-->
   <enemy id="dawnhammer_hills_stalker" name="Cabal Scree Raider" level="9" hp="122" attack="28" defense="13" exp_reward="260" gold_reward="65" respawns="true">
     <description>A masked raider trained to cut wagon traces, scatter oxen, and vanish into red stone before roadwardens arrive.</description>
     <defeat_text>The raider slides down the scree, leaving stolen route chalk and a badly forged Vandarom token behind.</defeat_text>
@@ -153,6 +155,7 @@
       <drop item="dh_cabal_weapon_schematic" chance="0.20" />
     </loot>
   </enemy>
+  <!--Whispering Briar Enemies-->
   <enemy id="wb_briar_pact_wisp" name="Briar-Pact Wisp" level="5" hp="82" attack="18" defense="7" exp_reward="170" gold_reward="28" respawns="true">
     <description>A green-white wisp born from an oath broken in secret. It burns brighter when someone nearby lies.</description>
     <defeat_text>The wisp unravels into ribbon-smoke and the broken oath falls silent.</defeat_text>
@@ -228,6 +231,7 @@
       <drop item="nameless_oracle_tear" chance="0.50" />
     </loot>
   </enemy>
+  <!--Sunken Crown Marsh Enemies-->
   <enemy id="sc_mire_leech_swarm" name="Mire Leech Swarm" level="13" hp="170" attack="36" defense="17" exp_reward="420" gold_reward="90" respawns="true">
     <description>A boiling mass of thumb-thick leeches that climbs reeds and armor whenever warm blood passes.</description>
     <defeat_text>The swarm drops back into the mud, leaving the water briefly clear.</defeat_text>
@@ -293,6 +297,7 @@
       <drop item="sunken_crown_marsh_blade" chance="0.35" />
     </loot>
   </enemy>
+  <!--Glasswind Expanse Enemies-->
   <enemy id="gw_saltglass_jackal" name="Saltglass Jackal" level="17" hp="255" attack="52" defense="25" exp_reward="720" gold_reward="128" respawns="true">
     <description>A lean desert pack-beast with glassy spines along its back and a talent for attacking from heat-haze.</description>
     <defeat_text>Saltglass Jackal falls, and the heat-haze around it steadies into ordinary desert light.</defeat_text>
@@ -374,6 +379,7 @@
       <drop item="glasswind_expanse_ward" chance="0.45" />
     </loot>
   </enemy>
+  <!--Duskfall Coast Enemies-->
   <enemy id="duskfall_coast_stalker" name="Kobold Sail-Stalker" level="22" hp="360" attack="72" defense="35" exp_reward="1180" gold_reward="170" respawns="true">
     <description>A lean kobold raider wrapped in tarred sailcloth, trained to strike from reeds and vanish under raft covers.</description>
     <defeat_text>The sail-stalker drops its hooked knife and disappears beneath its own wet cloak.</defeat_text>
@@ -471,6 +477,7 @@
       <drop item="duskfall_coast_blade" chance="0.30" />
     </loot>
   </enemy>
+  <!--Thundervale Peaks Enemies-->
   <enemy id="thundervale_peaks_stalker" name="Cabal Stormcut Raider" level="27" hp="470" attack="88" defense="44" exp_reward="1450" gold_reward="240" respawns="true">
     <description>A Crownless Cabal raider wrapped in copper grounding wire and stolen shepherd rope, trained to sabotage bridges and vanish into bad weather.</description>
     <defeat_text>The raider falls with a crackle of dying blue sparks, leaving behind stolen climbing marks and a Cabal weather tally.</defeat_text>
@@ -554,6 +561,7 @@
       <drop item="tv_binder_rod_fragment" chance="0.75" />
     </loot>
   </enemy>
+  <!--Umbralwyrm Depths Enemies-->
   <enemy id="um_blindstone_stalker" name="Blindstone Stalker" level="32" hp="820" attack="124" defense="60" exp_reward="2700" gold_reward="330" respawns="true">
     <description>A pale, eyeless cavern predator that listens through its feet and lunges at torch-breath.</description>
     <defeat_text>The stalker folds into the stone, finally still.</defeat_text>
@@ -662,6 +670,7 @@
       </delay>
     </boss_encounter>
   </enemy>
+  <!--Astral Crown Citadel Enemies-->
   <enemy id="ac_cabal_crown_soldier" name="Cabal Crown-Soldier" level="37" hp="1320" attack="178" defense="84" exp_reward="4800" gold_reward="520" respawns="true">
     <description>A black-armored infantry veteran whose helm bears a crown with no brow beneath it.</description>
     <defeat_text>The Crown-Soldier drops with a clatter of unliving discipline.</defeat_text>
@@ -775,4 +784,209 @@
       </delay>
     </boss_encounter>
   </enemy>
+  <monster_pools>
+    <pool id="gb_field_threats" name="Greenbarrow Field Threats">
+      <enemy_ref id="greenbarrow_fields_stalker" weight="4" />
+      <enemy_ref id="starved_field_rat" weight="4" />
+      <enemy_ref id="grain_mite_swarm" weight="3" />
+      <enemy_ref id="burrow_gnawer" weight="2" />
+      <enemy_ref id="rotroot_blight" weight="1" />
+    </pool>
+    <pool id="gb_barrow_threats" name="Greenbarrow Barrow Threats">
+      <enemy_ref id="miser_wight" weight="5" />
+      <enemy_ref id="rotroot_blight" weight="2" />
+      <enemy_ref id="grain_mite_swarm" weight="2" />
+      <enemy_ref id="greenbarrow_fields_guardian" weight="1" />
+    </pool>
+    <pool id="gb_burrow_threats" name="Greenbarrow Burrow Threats">
+      <enemy_ref id="burrow_gnawer" weight="5" />
+      <enemy_ref id="grain_mite_swarm" weight="3" />
+      <enemy_ref id="starved_field_rat" weight="2" />
+      <enemy_ref id="rotroot_blight" weight="2" />
+      <enemy_ref id="greenbarrow_fields_guardian" weight="1" />
+    </pool>
+    <pool id="gb_deep_burrow_threats" name="Greenbarrow Deep Burrow Threats">
+      <enemy_ref id="burrow_gnawer" weight="4" />
+      <enemy_ref id="miser_wight" weight="3" />
+      <enemy_ref id="rotroot_blight" weight="3" />
+      <enemy_ref id="grain_mite_swarm" weight="2" />
+      <enemy_ref id="greenbarrow_fields_guardian" weight="2" />
+    </pool>
+    <pool id="wb_briar_threats" name="Whispering Briar Threats">
+      <enemy_ref id="wb_briar_pact_wisp" weight="4" />
+      <enemy_ref id="wb_moon_mote_swarm" weight="3" />
+      <enemy_ref id="wb_thornbound_hound" weight="3" />
+      <enemy_ref id="wb_name_eaten_pilgrim" weight="2" />
+      <enemy_ref id="wb_petal_masked_duelist" weight="1" />
+    </pool>
+    <pool id="wb_orrery_threats" name="Lost Orrery Threats">
+      <enemy_ref id="wb_orrery_gear_spirit" weight="5" />
+      <enemy_ref id="wb_moon_mote_swarm" weight="3" />
+      <enemy_ref id="wb_name_eaten_pilgrim" weight="1" />
+    </pool>
+    <pool id="wb_oracle_grotto_threats" name="Oracle Grotto Threats">
+      <enemy_ref id="wb_grotto_echo" weight="5" />
+      <enemy_ref id="wb_revenge_sprite" weight="4" />
+      <enemy_ref id="wb_name_eaten_pilgrim" weight="4" />
+      <enemy_ref id="wb_briar_pact_wisp" weight="1" />
+    </pool>
+    <pool id="dh_scree_threats" name="Dawnhammer Scree Threats">
+      <enemy_ref id="dawnhammer_hills_stalker" weight="4" />
+      <enemy_ref id="dh_scree_raider" weight="3" />
+      <enemy_ref id="dh_cabal_chaincaller" weight="1" />
+    </pool>
+    <pool id="dh_mine_threats" name="Dawnhammer Mine Threats">
+      <enemy_ref id="dh_dead_miner_thrall" weight="5" />
+      <enemy_ref id="dh_bone_pick_minion" weight="4" />
+      <enemy_ref id="dh_carrion_bat_swarm" weight="3" />
+      <enemy_ref id="dh_pit_scarab_swarm" weight="3" />
+      <enemy_ref id="dh_suniron_ghoul" weight="2" />
+    </pool>
+    <pool id="dh_cabal_forge_threats" name="Dawnhammer Cabal Forge Threats">
+      <enemy_ref id="dh_cabal_chaincaller" weight="4" />
+      <enemy_ref id="dh_cabal_taskmaster" weight="3" />
+      <enemy_ref id="dh_dead_miner_thrall" weight="3" />
+      <enemy_ref id="dh_suniron_ghoul" weight="2" />
+      <enemy_ref id="dh_bone_rail_sentinel" weight="1" />
+    </pool>
+    <pool id="sc_marsh_threats" name="Sunken Crown Marsh Threats">
+      <enemy_ref id="sc_mire_leech_swarm" weight="4" />
+      <enemy_ref id="sc_reedbone_blight" weight="4" />
+      <enemy_ref id="sc_blackwater_crocodile" weight="3" />
+      <enemy_ref id="sc_drowned_soldier" weight="2" />
+    </pool>
+    <pool id="sc_keep_threats" name="Drowned Keep Threats">
+      <enemy_ref id="sc_drowned_soldier" weight="5" />
+      <enemy_ref id="sc_reedbone_blight" weight="3" />
+      <enemy_ref id="sc_oathless_shield_ghoul" weight="3" />
+      <enemy_ref id="sc_silt_slime" weight="2" />
+      <enemy_ref id="sc_vault_wight_squire" weight="1" />
+    </pool>
+    <pool id="sc_vault_threats" name="Sunken Vault Threats">
+      <enemy_ref id="sc_silt_slime" weight="4" />
+      <enemy_ref id="sc_oathless_shield_ghoul" weight="4" />
+      <enemy_ref id="sc_vault_wight_squire" weight="3" />
+      <enemy_ref id="sc_drowned_soldier" weight="3" />
+      <enemy_ref id="sc_reedbone_blight" weight="2" />
+    </pool>
+    <pool id="gw_highway_threats" name="Glasswind Highway Threats">
+      <enemy_ref id="gw_saltglass_jackal" weight="4" />
+      <enemy_ref id="gw_mirror_bandit_arcanist" weight="3" />
+      <enemy_ref id="gw_highway_raid_sabre" weight="3" />
+      <enemy_ref id="gw_mirage_revenant" weight="2" />
+      <enemy_ref id="gw_veilglass_basilisk" weight="1" />
+    </pool>
+    <pool id="gw_tower_threats" name="Mirage Tower Threats">
+      <enemy_ref id="gw_tower_lens_golem" weight="4" />
+      <enemy_ref id="gw_mirror_bandit_arcanist" weight="3" />
+      <enemy_ref id="gw_mirage_revenant" weight="2" />
+      <enemy_ref id="gw_prism_shade" weight="2" />
+    </pool>
+    <pool id="gw_invisible_dungeon_threats" name="Invisible Dungeon Threats">
+      <enemy_ref id="gw_silent_glass_sentinel" weight="5" />
+      <enemy_ref id="gw_prism_shade" weight="3" />
+      <enemy_ref id="gw_null_mage_binder" weight="3" />
+      <enemy_ref id="gw_veilglass_basilisk" weight="2" />
+      <enemy_ref id="gw_saltglass_jackal" weight="1" />
+    </pool>
+    <pool id="dc_coast_threats" name="Duskfall Coast Threats">
+      <enemy_ref id="duskfall_coast_stalker" weight="4" />
+      <enemy_ref id="dc_powder_keg_kobold" weight="3" />
+      <enemy_ref id="dc_human_privateer_spotter" weight="3" />
+      <enemy_ref id="dc_kobold_raftcaller" weight="3" />
+      <enemy_ref id="dc_reef_ghoul" weight="2" />
+      <enemy_ref id="duskfall_coast_guardian" weight="1" />
+    </pool>
+    <pool id="dc_privateer_threats" name="Duskfall Privateer Threats">
+      <enemy_ref id="dc_human_privateer_spotter" weight="4" />
+      <enemy_ref id="dc_kobold_raftcaller" weight="4" />
+      <enemy_ref id="dc_powder_keg_kobold" weight="3" />
+      <enemy_ref id="dc_human_privateer_duelist" weight="2" />
+      <enemy_ref id="dc_reef_ghoul" weight="2" />
+      <enemy_ref id="dc_reef_ogre_deckbreaker" weight="1" />
+    </pool>
+    <pool id="dc_labyrinth_threats" name="Duskfall Labyrinth Threats">
+      <enemy_ref id="dc_serpent_tile_construct" weight="5" />
+      <enemy_ref id="dc_labyrinth_scorpion_swarm" weight="4" />
+      <enemy_ref id="dc_maze_drowned_guardian" weight="3" />
+      <enemy_ref id="dc_reef_ghoul" weight="2" />
+    </pool>
+    <pool id="tv_mountain_threats" name="Thundervale Mountain Threats">
+      <enemy_ref id="thundervale_peaks_stalker" weight="4" />
+      <enemy_ref id="tv_skyclaw_rocling" weight="4" />
+      <enemy_ref id="tv_stormcrazed_ram" weight="3" />
+      <enemy_ref id="tv_cabal_storm_sapper" weight="2" />
+      <enemy_ref id="thundervale_peaks_guardian" weight="1" />
+    </pool>
+    <pool id="tv_cabal_threats" name="Thundervale Cabal Threats">
+      <enemy_ref id="tv_cabal_storm_sapper" weight="5" />
+      <enemy_ref id="thundervale_peaks_stalker" weight="3" />
+      <enemy_ref id="tv_corpse_lightning_thrall" weight="2" />
+      <enemy_ref id="tv_bound_storm_spirit" weight="1" />
+    </pool>
+    <pool id="tv_stormforge_threats" name="Hollow Thunderforge Threats">
+      <enemy_ref id="tv_corpse_lightning_thrall" weight="5" />
+      <enemy_ref id="tv_bound_storm_spirit" weight="4" />
+      <enemy_ref id="tv_bone_gantry_miners" weight="3" />
+      <enemy_ref id="tv_cabal_storm_sapper" weight="2" />
+      <enemy_ref id="thundervale_peaks_guardian" weight="2" />
+      <enemy_ref id="tv_stormforge_abomination" weight="1" />
+    </pool>
+    <pool id="um_cavern_threats" name="Umbral Cavern Threats">
+      <enemy_ref id="um_blindstone_stalker" weight="5" />
+      <enemy_ref id="um_echo_wraith" weight="4" />
+      <enemy_ref id="um_duergar_chain_taker" weight="3" />
+      <enemy_ref id="um_cabal_bone_lamplighter" weight="2" />
+      <enemy_ref id="um_glowcap_spore_thrall" weight="2" />
+    </pool>
+    <pool id="um_glowcap_threats" name="Glowcap Commons Threats">
+      <enemy_ref id="um_glowcap_spore_thrall" weight="5" />
+      <enemy_ref id="um_echo_wraith" weight="3" />
+      <enemy_ref id="um_blindstone_stalker" weight="2" />
+      <enemy_ref id="um_duergar_chain_taker" weight="1" />
+    </pool>
+    <pool id="um_wyrmglass_threats" name="Wyrmglass Chasm Threats">
+      <enemy_ref id="um_wyrmglass_skitterer" weight="5" />
+      <enemy_ref id="um_blackscale_drake" weight="3" />
+      <enemy_ref id="um_echo_wraith" weight="2" />
+      <enemy_ref id="um_umbralwyrms_breath" weight="1" />
+      <enemy_ref id="um_blindstone_stalker" weight="1" />
+    </pool>
+    <pool id="um_ossuary_threats" name="Umbral Ossuary Threats">
+      <enemy_ref id="um_shadow_chained_dead" weight="5" />
+      <enemy_ref id="um_cabal_bone_lamplighter" weight="3" />
+      <enemy_ref id="um_wyrmglass_skitterer" weight="2" />
+      <enemy_ref id="um_echo_wraith" weight="2" />
+      <enemy_ref id="um_ossuary_giant" weight="1" />
+    </pool>
+    <pool id="um_cabal_threats" name="Umbral Cabal Threats">
+      <enemy_ref id="um_cabal_bone_lamplighter" weight="5" />
+      <enemy_ref id="um_shadow_chained_dead" weight="4" />
+      <enemy_ref id="um_duergar_chain_taker" weight="2" />
+      <enemy_ref id="um_wyrmglass_skitterer" weight="2" />
+      <enemy_ref id="um_blackscale_drake" weight="1" />
+    </pool>
+    <pool id="ac_breach_threats" name="Astral Breach Threats">
+      <enemy_ref id="ac_cabal_crown_soldier" weight="5" />
+      <enemy_ref id="ac_dead_star_harrier" weight="4" />
+      <enemy_ref id="ac_astral_chainbinder" weight="3" />
+      <enemy_ref id="ac_planar_seal_horror" weight="2" />
+      <enemy_ref id="ac_siege_golem" weight="1" />
+    </pool>
+    <pool id="ac_relic_hall_threats" name="Astral Relic Hall Threats">
+      <enemy_ref id="ac_relic_scavenged_wight" weight="4" />
+      <enemy_ref id="ac_name_flayed_oracle" weight="3" />
+      <enemy_ref id="ac_crownless_death_adept" weight="3" />
+      <enemy_ref id="ac_astral_chainbinder" weight="2" />
+      <enemy_ref id="ac_dead_star_harrier" weight="2" />
+    </pool>
+    <pool id="ac_inner_citadel_threats" name="Astral Inner Citadel Threats">
+      <enemy_ref id="ac_uncrowned_knight" weight="4" />
+      <enemy_ref id="ac_crownless_choir_dead" weight="3" />
+      <enemy_ref id="ac_crownless_death_adept" weight="3" />
+      <enemy_ref id="ac_planar_seal_horror" weight="2" />
+      <enemy_ref id="ac_relic_scavenged_wight" weight="2" />
+      <enemy_ref id="ac_siege_golem" weight="1" />
+    </pool>
+  </monster_pools>
 </enemies>

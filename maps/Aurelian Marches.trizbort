@@ -1,0 +1,2667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trizbort>
+	<info />
+	<map>
+		<room id="1" name="Hearthwatch Keep Courtyard" x="0" y="0" w="150" h="64" description="id: hearthwatch_square | zone: hearthwatch_crossing | level: 1" />
+		<room id="2" name="Keep Council Hall" x="190" y="0" w="150" h="64" description="id: keep_council_hall | zone: hearthwatch_crossing | level: 1" />
+		<room id="3" name="Keep Muster Yard" x="380" y="0" w="150" h="64" description="id: keep_muster_yard | zone: hearthwatch_crossing | level: 1" />
+		<room id="4" name="Hearthwatch Keep Lockup" x="570" y="0" w="150" h="64" description="id: hearthwatch_lockup | zone: hearthwatch_crossing | level: 1" />
+		<room id="5" name="Residential District: Hearth Commons" x="760" y="0" w="150" h="64" description="id: hearthwatch_residential_common | zone: hearthwatch_crossing | level: 1" />
+		<room id="6" name="Residential District: Bellfounder Lane" x="950" y="0" w="150" h="64" description="id: bellfounder_lane | zone: hearthwatch_crossing | level: 1" />
+		<room id="7" name="Bronze Bell Inn" x="1140" y="0" w="150" h="64" description="id: bronze_bell_inn | zone: hearthwatch_crossing | level: 1" />
+		<room id="8" name="Bronze Bell Guest Rooms" x="1330" y="0" w="150" h="64" description="id: inn_rooms | zone: hearthwatch_crossing | level: 1" />
+		<room id="9" name="Noble District: Aurelian Terrace" x="0" y="120" w="150" h="64" description="id: hearthwatch_noble_terrace | zone: hearthwatch_crossing | level: 1" />
+		<room id="10" name="Noble District: Auric House Parlor" x="190" y="120" w="150" h="64" description="id: auric_house_parlor | zone: hearthwatch_crossing | level: 1" />
+		<room id="11" name="Noble District: Council Garden" x="380" y="120" w="150" h="64" description="id: council_garden | zone: hearthwatch_crossing | level: 1" />
+		<room id="12" name="Market District: Lantern Arcade" x="570" y="120" w="150" h="64" description="id: market_arcade | zone: hearthwatch_crossing | level: 1" />
+		<room id="13" name="Market District: Guildhall of Measures" x="760" y="120" w="150" h="64" description="id: guildhall_of_measures | zone: hearthwatch_crossing | level: 1" />
+		<room id="14" name="Market District: Adventurers Exchange" x="950" y="120" w="150" h="64" description="id: adventurers_exchange | zone: hearthwatch_crossing | level: 1" />
+		<room id="15" name="Warehouse District: River Gate" x="1140" y="120" w="150" h="64" description="id: river_gate | zone: hearthwatch_crossing | level: 1" />
+		<room id="16" name="Warehouse District: Lantern Quay" x="1330" y="120" w="150" h="64" description="id: warehouse_quay | zone: hearthwatch_crossing | level: 1" />
+		<room id="17" name="Warehouse District: Customs Vault" x="0" y="240" w="150" h="64" description="id: customs_vault | zone: hearthwatch_crossing | level: 1" />
+		<room id="18" name="Warehouse District: Ferry Landing" x="190" y="240" w="150" h="64" description="id: ferry_landing | zone: hearthwatch_crossing | level: 1" />
+		<room id="19" name="Temple District: Row of Six Lamps" x="380" y="240" w="150" h="64" description="id: temple_row | zone: hearthwatch_crossing | level: 1" />
+		<room id="20" name="Temple District: Mercy Cloister" x="570" y="240" w="150" h="64" description="id: mercy_cloister | zone: hearthwatch_crossing | level: 1" />
+		<room id="21" name="Temple District: Oath Brazier Sanctum" x="760" y="240" w="150" h="64" description="id: oath_brazier_sanctum | zone: hearthwatch_crossing | level: 1" />
+		<room id="22" name="Arcane District: Concordium Lanternhouse" x="950" y="240" w="150" h="64" description="id: concordium_lanternhouse | zone: hearthwatch_crossing | level: 1" />
+		<room id="23" name="Arcane District: Spellwright Lane" x="1140" y="240" w="150" h="64" description="id: spellwright_lane | zone: hearthwatch_crossing | level: 1" />
+		<room id="24" name="Arcane District: Subterranean Glyph Archive" x="1330" y="240" w="150" h="64" description="id: glyph_archive | zone: hearthwatch_crossing | level: 1" />
+		<room id="25" name="Arcane District: Starfall Observatory" x="0" y="360" w="150" h="64" description="id: starfall_observatory | zone: hearthwatch_crossing | level: 1" />
+		<room id="26" name="Greenbarrow Road: Applebough Mile" x="1700" y="0" w="150" h="64" description="id: greenbarrow_road | zone: greenbarrow_fields | level: 2-5" />
+		<room id="27" name="Roadside Lantern Furrow" x="1890" y="0" w="150" h="64" description="id: greenbarrow_roadside_lanterns | zone: greenbarrow_fields | level: 2-5" />
+		<room id="28" name="Wayside Shrine of the Full Bowl" x="2080" y="0" w="150" h="64" description="id: greenbarrow_wayside_shrine | zone: greenbarrow_fields | level: 2-5" />
+		<room id="29" name="Applewallow South Stile" x="2270" y="0" w="150" h="64" description="id: applewallow_south_stile | zone: greenbarrow_fields | level: 2-5" />
+		<room id="30" name="Applewallow Village Green" x="2460" y="0" w="150" h="64" description="id: greenbarrow_fields_settlement | zone: greenbarrow_fields | level: 2-5" />
+		<room id="31" name="Applewallow Common Kitchen" x="2650" y="0" w="150" h="64" description="id: applewallow_common_kitchen | zone: greenbarrow_fields | level: 2-5" />
+		<room id="32" name="Common Root Cellars" x="2840" y="0" w="150" h="64" description="id: applewallow_root_cellars | zone: greenbarrow_fields | level: 2-5" />
+		<room id="33" name="Cider Market and Tinker Stalls" x="3030" y="0" w="150" h="64" description="id: applewallow_cider_market | zone: greenbarrow_fields | level: 2-5" />
+		<room id="34" name="Honeybell Bee-Yards" x="1700" y="120" w="150" h="64" description="id: applewallow_bee_yards | zone: greenbarrow_fields | level: 2-5" />
+		<room id="35" name="Harvest Chapel of Yondalla’s Table" x="1890" y="120" w="150" h="64" description="id: applewallow_harvest_chapel | zone: greenbarrow_fields | level: 2-5" />
+		<room id="36" name="Burrowhome Lanes" x="2080" y="120" w="150" h="64" description="id: applewallow_burrowhomes | zone: greenbarrow_fields | level: 2-5" />
+		<room id="37" name="Freehold Grain Co-op" x="2270" y="120" w="150" h="64" description="id: applewallow_grain_coop | zone: greenbarrow_fields | level: 2-5" />
+		<room id="38" name="Applewallow Moot Hall" x="2460" y="120" w="150" h="64" description="id: applewallow_moot_hall | zone: greenbarrow_fields | level: 2-5" />
+		<room id="39" name="Moot Hall Loft" x="2650" y="120" w="150" h="64" description="id: moot_hall_loft | zone: greenbarrow_fields | level: 2-5" />
+		<room id="40" name="Freehold Militia Post" x="2840" y="120" w="150" h="64" description="id: barrow_freehold_militia_post | zone: greenbarrow_fields | level: 2-5" />
+		<room id="41" name="Applebough Orchards" x="3030" y="120" w="150" h="64" description="id: greenbarrow_apple_orchards | zone: greenbarrow_fields | level: 2-5" />
+		<room id="42" name="Cloverdown Sheepfolds" x="1700" y="240" w="150" h="64" description="id: greenbarrow_sheepfolds | zone: greenbarrow_fields | level: 2-5" />
+		<room id="43" name="Miller Stream and Waterwheel" x="1890" y="240" w="150" h="64" description="id: applewallow_miller_stream | zone: greenbarrow_fields | level: 2-5" />
+		<room id="44" name="Clover-Barrow Rise" x="2080" y="240" w="150" h="64" description="id: greenbarrow_south_barrows | zone: greenbarrow_fields | level: 2-5" />
+		<room id="45" name="Ancestor Crypt of Shared Loaves" x="2270" y="240" w="150" h="64" description="id: greenbarrow_barrows_crypt | zone: greenbarrow_fields | level: 2-5" />
+		<room id="46" name="Scarecrow Furrows" x="2460" y="240" w="150" h="64" description="id: greenbarrow_scarecrow_furrows | zone: greenbarrow_fields | level: 2-5" />
+		<room id="47" name="North Furrows and Badger Runs" x="2650" y="240" w="150" h="64" description="id: greenbarrow_fields_wilds | zone: greenbarrow_fields | level: 2-5" />
+		<room id="48" name="Old Willow Crossing" x="2840" y="240" w="150" h="64" description="id: greenbarrow_old_willow_crossing | zone: greenbarrow_fields | level: 2-5" />
+		<room id="49" name="Tenant Copse" x="3030" y="240" w="150" h="64" description="id: tenant_copse | zone: greenbarrow_fields | level: 2-5" />
+		<room id="50" name="Elder Barrow Marker" x="1700" y="360" w="150" h="64" description="id: elder_barrow_marker | zone: greenbarrow_fields | level: 2-5" />
+		<room id="51" name="The Dire Burrows Mouth" x="1890" y="360" w="150" h="64" description="id: greenbarrow_fields_dungeon_gate | zone: greenbarrow_fields | level: 2-5" />
+		<room id="52" name="Dire Burrows: Lantern Ledge" x="2080" y="360" w="150" h="64" description="id: greenbarrow_fields_dungeon_depths | zone: greenbarrow_fields | level: 2-5" />
+		<room id="53" name="Dire Burrows: Mushroom Run" x="2270" y="360" w="150" h="64" description="id: dire_burrows_mushroom_run | zone: greenbarrow_fields | level: 2-5" />
+		<room id="54" name="Dire Burrows: Chittering Nest" x="2460" y="360" w="150" h="64" description="id: dire_burrows_chittering_nest | zone: greenbarrow_fields | level: 2-5" />
+		<room id="55" name="Dire Burrows: Three-Tine Fork" x="2650" y="360" w="150" h="64" description="id: dire_burrows_fork | zone: greenbarrow_fields | level: 2-5" />
+		<room id="56" name="Dire Burrows: Stolen Root Cellar" x="2840" y="360" w="150" h="64" description="id: dire_burrows_root_cellar | zone: greenbarrow_fields | level: 2-5" />
+		<room id="57" name="Dire Burrows: Bone Pantry" x="3030" y="360" w="150" h="64" description="id: dire_burrows_bone_pantry | zone: greenbarrow_fields | level: 2-5" />
+		<room id="58" name="Dire Burrows: Grave-Loam Maze" x="1700" y="480" w="150" h="64" description="id: dire_burrows_grave_loam_maze | zone: greenbarrow_fields | level: 2-5 | maze: east,north,west,north" />
+		<room id="59" name="Dire Burrows: First Seed Cache" x="1890" y="480" w="150" h="64" description="id: dire_burrows_seed_cache | zone: greenbarrow_fields | level: 2-5" />
+		<room id="60" name="Dire Burrows: Fallow Shrine" x="2080" y="480" w="150" h="64" description="id: dire_burrows_fallow_shrine | zone: greenbarrow_fields | level: 2-5" />
+		<room id="61" name="Dire Burrows: Starved Hall" x="2270" y="480" w="150" h="64" description="id: dire_burrows_starved_hall | zone: greenbarrow_fields | level: 2-5" />
+		<room id="62" name="The Dire Burrows: Hoard-Throne of the Unsharing Maw" x="2460" y="480" w="150" h="64" description="id: greenbarrow_fields_boss_chamber | zone: greenbarrow_fields | level: 2-5" />
+		<room id="63" name="North Stile Beyond the Barrows" x="2650" y="480" w="150" h="64" description="id: greenbarrow_north_stile | zone: greenbarrow_fields | level: 2-5" />
+		<room id="64" name="Root-Toll Hollow" x="0" y="1250" w="150" h="64" description="id: whispering_briar_crossroads | zone: whispering_briar | level: 5-9" />
+		<room id="65" name="Glimmerhazel Path" x="190" y="1250" w="150" h="64" description="id: wb_glimmerhazel_path | zone: whispering_briar | level: 5-9" />
+		<room id="66" name="Moonmote Causeway" x="380" y="1250" w="150" h="64" description="id: wb_moonmote_causeway | zone: whispering_briar | level: 5-9" />
+		<room id="67" name="Briar Mere" x="570" y="1250" w="150" h="64" description="id: wb_briar_mere | zone: whispering_briar | level: 5-9" />
+		<room id="68" name="Vowtree Grove" x="760" y="1250" w="150" h="64" description="id: wb_vowtree_grove | zone: whispering_briar | level: 5-9" />
+		<room id="69" name="Name-Taken Ford" x="950" y="1250" w="150" h="64" description="id: wb_name_taken_ford | zone: whispering_briar | level: 5-9" />
+		<room id="70" name="Onfadell Living Gate" x="1140" y="1250" w="150" h="64" description="id: wb_living_gate | zone: whispering_briar | level: 5-9" />
+		<room id="71" name="Onfadell Outer Ring" x="1330" y="1250" w="150" h="64" description="id: wb_onfadell_outer_ring | zone: whispering_briar | level: 5-9" />
+		<room id="72" name="Onfadell Briar Market" x="0" y="1370" w="150" h="64" description="id: wb_onfadell_briar_market | zone: whispering_briar | level: 5-9" />
+		<room id="73" name="Glassroot Residences" x="190" y="1370" w="150" h="64" description="id: wb_onfadell_glassroot_residences | zone: whispering_briar | level: 5-9" />
+		<room id="74" name="Verdant Archive" x="380" y="1370" w="150" h="64" description="id: wb_onfadell_verdant_archive | zone: whispering_briar | level: 5-9" />
+		<room id="75" name="Seat of the Thorn Court" x="570" y="1370" w="150" h="64" description="id: wb_onfadell_thorn_court | zone: whispering_briar | level: 5-9" />
+		<room id="76" name="The Lost Orrery: Overgrown Portico" x="760" y="1370" w="150" h="64" description="id: wb_lost_orrery_portico | zone: whispering_briar | level: 5-9" />
+		<room id="77" name="The Lost Orrery: Axis Hall" x="950" y="1370" w="150" h="64" description="id: wb_lost_orrery_axis | zone: whispering_briar | level: 5-9" />
+		<room id="78" name="The Lost Orrery: Moonstairs" x="1140" y="1370" w="150" h="64" description="id: wb_lost_orrery_moonstairs | zone: whispering_briar | level: 5-9" />
+		<room id="79" name="The Lost Orrery: Starwell" x="1330" y="1370" w="150" h="64" description="id: wb_lost_orrery_starwell | zone: whispering_briar | level: 5-9" />
+		<room id="80" name="The Lost Orrery: Gearvault Below" x="0" y="1490" w="150" h="64" description="id: wb_lost_orrery_gearvault | zone: whispering_briar | level: 5-9" />
+		<room id="81" name="The Lost Orrery: Broken Planetarium" x="190" y="1490" w="150" h="64" description="id: wb_lost_orrery_planetarium | zone: whispering_briar | level: 5-9" />
+		<room id="82" name="Grotto of the Nameless Oracle: Briar-Mouth" x="380" y="1490" w="150" h="64" description="id: wb_oracle_grotto_mouth | zone: whispering_briar | level: 5-9" />
+		<room id="83" name="Grotto: Veilpool Antechamber" x="570" y="1490" w="150" h="64" description="id: wb_oracle_veilpool | zone: whispering_briar | level: 5-9" />
+		<room id="84" name="Grotto: Echoing Reeds" x="760" y="1490" w="150" h="64" description="id: wb_oracle_echoing_reeds | zone: whispering_briar | level: 5-9" />
+		<room id="85" name="Grotto: Shelves of Unkept Memory" x="950" y="1490" w="150" h="64" description="id: wb_oracle_memory_shelves | zone: whispering_briar | level: 5-9" />
+		<room id="86" name="Grotto: Three Springs of Judgment" x="1140" y="1490" w="150" h="64" description="id: wb_oracle_three_springs | zone: whispering_briar | level: 5-9" />
+		<room id="87" name="Grotto: Spring of Truth" x="1330" y="1490" w="150" h="64" description="id: wb_oracle_spring_truth | zone: whispering_briar | level: 5-9" />
+		<room id="88" name="Grotto: Spring of Grief" x="0" y="1610" w="150" h="64" description="id: wb_oracle_spring_grief | zone: whispering_briar | level: 5-9" />
+		<room id="89" name="Grotto: Spring of Debt" x="190" y="1610" w="150" h="64" description="id: wb_oracle_spring_debt | zone: whispering_briar | level: 5-9" />
+		<room id="90" name="Grotto: Unspeaking Descent" x="380" y="1610" w="150" h="64" description="id: wb_oracle_unspeaking_descent | zone: whispering_briar | level: 5-9" />
+		<room id="91" name="Grotto: Root-Mirror Chamber" x="570" y="1610" w="150" h="64" description="id: wb_oracle_root_mirror | zone: whispering_briar | level: 5-9" />
+		<room id="92" name="Grotto: Chamber of the Last Name" x="760" y="1610" w="150" h="64" description="id: wb_oracle_last_name_chamber | zone: whispering_briar | level: 5-9" />
+		<room id="93" name="Grotto: Pool of All Stolen Names" x="950" y="1610" w="150" h="64" description="id: wb_oracle_boss_chamber | zone: whispering_briar | level: 5-9" />
+		<room id="94" name="Dawnhammer Roadhead" x="1700" y="1250" w="150" h="64" description="id: dawnhammer_hills_crossroads | zone: dawnhammer_hills | level: 9-13" />
+		<room id="95" name="Switchback Watch" x="1890" y="1250" w="150" h="64" description="id: dh_switchback_watch | zone: dawnhammer_hills | level: 9-13" />
+		<room id="96" name="Red Scree Ambush Site" x="2080" y="1250" w="150" h="64" description="id: dh_red_scree_ambush | zone: dawnhammer_hills | level: 9-13" />
+		<room id="97" name="Raider Hide-Scrape" x="2270" y="1250" w="150" h="64" description="id: dh_raider_hide_scrape | zone: dawnhammer_hills | level: 9-13" />
+		<room id="98" name="Sun-Iron Way: Western Cut" x="2460" y="1250" w="150" h="64" description="id: dh_suniron_way_west | zone: dawnhammer_hills | level: 9-13" />
+		<room id="99" name="Bhon Falduhr Mine Gate" x="2650" y="1250" w="150" h="64" description="id: dh_bhon_falduhr_gate | zone: dawnhammer_hills | level: 9-13" />
+		<room id="100" name="Bhon Falduhr Yard" x="2840" y="1250" w="150" h="64" description="id: dh_bhon_falduhr_yard | zone: dawnhammer_hills | level: 9-13" />
+		<room id="101" name="Bhon Falduhr Assay Hall" x="3030" y="1250" w="150" h="64" description="id: dh_bhon_falduhr_assay_hall | zone: dawnhammer_hills | level: 9-13" />
+		<room id="102" name="Bhon Falduhr: Sun-Iron Face" x="1700" y="1370" w="150" h="64" description="id: dh_bhon_falduhr_suniron_face | zone: dawnhammer_hills | level: 9-13" />
+		<room id="103" name="Bhon Falduhr: Sealed Old Gallery" x="1890" y="1370" w="150" h="64" description="id: dh_bhon_falduhr_old_gallery | zone: dawnhammer_hills | level: 9-13" />
+		<room id="104" name="Bhon Falduhr Lift House" x="2080" y="1370" w="150" h="64" description="id: dh_bhon_falduhr_lift_house | zone: dawnhammer_hills | level: 9-13" />
+		<room id="105" name="Bhon Falduhr Deep Lift" x="2270" y="1370" w="150" h="64" description="id: dh_bhon_falduhr_deep_lift | zone: dawnhammer_hills | level: 9-13" />
+		<room id="106" name="Bhon Falduhr Bunkhouse" x="2460" y="1370" w="150" h="64" description="id: dh_bhon_falduhr_bunkhouse | zone: dawnhammer_hills | level: 9-13" />
+		<room id="107" name="Bhon Falduhr Counting Office" x="2650" y="1370" w="150" h="64" description="id: dh_bhon_falduhr_counting_office | zone: dawnhammer_hills | level: 9-13" />
+		<room id="108" name="Sun-Iron Way: Midway Stones" x="2840" y="1370" w="150" h="64" description="id: dh_caravan_midway | zone: dawnhammer_hills | level: 9-13" />
+		<room id="109" name="Convoy Cookfires" x="3030" y="1370" w="150" h="64" description="id: dh_waystation_cookfires | zone: dawnhammer_hills | level: 9-13" />
+		<room id="110" name="Broken Wagon Hollow" x="1700" y="1490" w="150" h="64" description="id: dawnhammer_hills_wilds | zone: dawnhammer_hills | level: 9-13" />
+		<room id="111" name="Abandoned Wheelwright Shack" x="1890" y="1490" w="150" h="64" description="id: dh_abandoned_wheelwright_shack | zone: dawnhammer_hills | level: 9-13" />
+		<room id="112" name="Sun-Iron Way: Eastern Grade" x="2080" y="1490" w="150" h="64" description="id: dh_suniron_way_east | zone: dawnhammer_hills | level: 9-13" />
+		<room id="113" name="Vandarom West Gate" x="2270" y="1490" w="150" h="64" description="id: dh_vandarom_west_gate | zone: dawnhammer_hills | level: 9-13" />
+		<room id="114" name="Vandarom Guildhall" x="2460" y="1490" w="150" h="64" description="id: dawnhammer_hills_settlement | zone: dawnhammer_hills | level: 9-13" />
+		<room id="115" name="Vandarom Foundry Quarter" x="2650" y="1490" w="150" h="64" description="id: dh_vandarom_foundry_quarter | zone: dawnhammer_hills | level: 9-13" />
+		<room id="116" name="Vandarom Gear Market" x="2840" y="1490" w="150" h="64" description="id: dh_vandarom_gear_market | zone: dawnhammer_hills | level: 9-13" />
+		<room id="117" name="Vandarom Caravan Yard" x="3030" y="1490" w="150" h="64" description="id: dh_vandarom_caravan_yard | zone: dawnhammer_hills | level: 9-13" />
+		<room id="118" name="Vandarom Rune Press" x="1700" y="1610" w="150" h="64" description="id: dh_vandarom_rune_press | zone: dawnhammer_hills | level: 9-13" />
+		<room id="119" name="The Open Anvil Taproom" x="1890" y="1610" w="150" h="64" description="id: dh_vandarom_taproom | zone: dawnhammer_hills | level: 9-13" />
+		<room id="120" name="The Quiet Tunnels: Abandoned Mouth" x="2080" y="1610" w="150" h="64" description="id: dawnhammer_hills_dungeon_gate | zone: dawnhammer_hills | level: 9-13" />
+		<room id="121" name="Quiet Tunnels: Foreman Station" x="2270" y="1610" w="150" h="64" description="id: dh_qt_foreman_station | zone: dawnhammer_hills | level: 9-13" />
+		<room id="122" name="Quiet Tunnels: Dead-End Timber Pocket" x="2460" y="1610" w="150" h="64" description="id: dh_qt_dead_end_timber | zone: dawnhammer_hills | level: 9-13" />
+		<room id="123" name="Quiet Tunnels: Ore Cart Spur" x="2650" y="1610" w="150" h="64" description="id: dh_qt_ore_cart_spur | zone: dawnhammer_hills | level: 9-13" />
+		<room id="124" name="Quiet Tunnels: False Vein Dead End" x="2840" y="1610" w="150" h="64" description="id: dh_qt_false_vein_dead_end | zone: dawnhammer_hills | level: 9-13" />
+		<room id="125" name="Quiet Tunnels: Pitfall Drop" x="3030" y="1610" w="150" h="64" description="id: dh_qt_pitfall_drop | zone: dawnhammer_hills | level: 9-13" />
+		<room id="126" name="Quiet Tunnels: Dry Powder Cache" x="1700" y="1730" w="150" h="64" description="id: dh_qt_powder_cache | zone: dawnhammer_hills | level: 9-13" />
+		<room id="127" name="Quiet Tunnels: Sunken Rail Junction" x="1890" y="1730" w="150" h="64" description="id: dh_qt_sunken_rail | zone: dawnhammer_hills | level: 9-13" />
+		<room id="128" name="Quiet Tunnels: Side-Cutter Cache" x="2080" y="1730" w="150" h="64" description="id: dh_qt_side_cutter_cache | zone: dawnhammer_hills | level: 9-13" />
+		<room id="129" name="Quiet Tunnels: Pump Sump" x="2270" y="1730" w="150" h="64" description="id: dh_qt_pump_sump | zone: dawnhammer_hills | level: 9-13" />
+		<room id="130" name="Quiet Tunnels: Collapsed Barricade" x="2460" y="1730" w="150" h="64" description="id: dh_qt_collapsed_barricade | zone: dawnhammer_hills | level: 9-13" />
+		<room id="131" name="Quiet Tunnels: Unfinished Chain Pens" x="2650" y="1730" w="150" h="64" description="id: dh_qt_enslavement_pens | zone: dawnhammer_hills | level: 9-13" />
+		<room id="132" name="Quiet Tunnels: Lower Haulage" x="2840" y="1730" w="150" h="64" description="id: dawnhammer_hills_dungeon_depths | zone: dawnhammer_hills | level: 9-13" />
+		<room id="133" name="Quiet Tunnels: Echo Chamber" x="3030" y="1730" w="150" h="64" description="id: dh_qt_echo_chamber | zone: dawnhammer_hills | level: 9-13" />
+		<room id="134" name="Quiet Tunnels: Hidden Audit Cache" x="1700" y="1850" w="150" h="64" description="id: dh_qt_audit_cache | zone: dawnhammer_hills | level: 9-13" />
+		<room id="135" name="Quiet Tunnels: Blind Raise" x="1890" y="1850" w="150" h="64" description="id: dh_qt_blind_raise | zone: dawnhammer_hills | level: 9-13" />
+		<room id="136" name="Quiet Tunnels: Bone-Rail Tram" x="2080" y="1850" w="150" h="64" description="id: dh_qt_bone_rail | zone: dawnhammer_hills | level: 9-13" />
+		<room id="137" name="Quiet Tunnels: Crownless Forge Plan" x="2270" y="1850" w="150" h="64" description="id: dh_qt_crownless_forge_plan | zone: dawnhammer_hills | level: 9-13" />
+		<room id="138" name="Quiet Tunnels: Black Anvil Chapel" x="2460" y="1850" w="150" h="64" description="id: dh_qt_black_anvil_chapel | zone: dawnhammer_hills | level: 9-13" />
+		<room id="139" name="Quiet Tunnels: Sun-Iron Reliquary" x="2650" y="1850" w="150" h="64" description="id: dh_qt_suniron_reliquary | zone: dawnhammer_hills | level: 9-13" />
+		<room id="140" name="Quiet Tunnels: Lichlit Stoping" x="2840" y="1850" w="150" h="64" description="id: dh_qt_lichlit_stoping | zone: dawnhammer_hills | level: 9-13" />
+		<room id="141" name="Quiet Tunnels: Collapsed Stope Dead End" x="3030" y="1850" w="150" h="64" description="id: dh_qt_collapsed_stope_dead_end | zone: dawnhammer_hills | level: 9-13" />
+		<room id="142" name="The Quiet Tunnels: Blackvein Command Vault" x="1700" y="1970" w="150" h="64" description="id: dawnhammer_hills_boss_chamber | zone: dawnhammer_hills | level: 9-13" />
+		<room id="143" name="Sunken Crown Marsh: Blackwater Approach" x="0" y="2500" w="150" h="64" description="id: sunken_crown_marsh_crossroads | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="144" name="Blackwater Lotus Isle" x="190" y="2500" w="150" h="64" description="id: sc_bog_lotus_isle | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="145" name="Blackwater Causeway" x="380" y="2500" w="150" h="64" description="id: sc_blackwater_causeway | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="146" name="Drowned Cause-Stones" x="570" y="2500" w="150" h="64" description="id: sc_drowned_cause_stones | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="147" name="Ghost Barge Mooring" x="760" y="2500" w="150" h="64" description="id: sc_ghost_barge | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="148" name="Ghost Barge Hold" x="950" y="2500" w="150" h="64" description="id: sc_ghost_barge_hold | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="149" name="Reed-Blind Watch" x="1140" y="2500" w="150" h="64" description="id: sc_reed_blind_watch | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="150" name="Mire Hunter Camp" x="1330" y="2500" w="150" h="64" description="id: sc_mire_hunter_camp | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="151" name="Mangrove Cut" x="0" y="2620" w="150" h="64" description="id: sc_mangrove_cut | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="152" name="Trial Pool of Patient Teeth" x="190" y="2620" w="150" h="64" description="id: sc_trial_pool | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="153" name="Hatchling Reed-Nest" x="380" y="2620" w="150" h="64" description="id: sc_hatchling_reed_nest | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="154" name="Blackjaw Den" x="570" y="2620" w="150" h="64" description="id: sc_blackjaw_den | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="155" name="Hawga Daar Outer Palings" x="760" y="2620" w="150" h="64" description="id: hawga_daar_outer_palings | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="156" name="Hawga Daar Heartwalk" x="950" y="2620" w="150" h="64" description="id: hawga_daar_heartwalk | zone: sunken_crown_marsh | level: 13-17 | requires: hawga_daar_oath_scale" />
+		<room id="157" name="Brood-Mother’s Platform" x="1140" y="2620" w="150" h="64" description="id: hawga_daar_chieftain_platform | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="158" name="Warm-Nest Broodhouse" x="1330" y="2620" w="150" h="64" description="id: hawga_daar_broodhouse | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="159" name="Stilt-House Ring" x="0" y="2740" w="150" h="64" description="id: hawga_daar_stilt_ring | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="160" name="Bonecarver Dock" x="190" y="2740" w="150" h="64" description="id: hawga_daar_bonecarver_dock | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="161" name="Story Stones of Hawga Daar" x="380" y="2740" w="150" h="64" description="id: hawga_daar_story_stones | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="162" name="Pumpwright Pier" x="570" y="2740" w="150" h="64" description="id: hawga_daar_pumpwright_pier | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="163" name="Sunken Plaza of the Lost King" x="760" y="2740" w="150" h="64" description="id: hawga_daar_sunken_plaza | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="164" name="Ruin-Market Under Stilt Shadows" x="950" y="2740" w="150" h="64" description="id: hawga_daar_ruin_market | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="165" name="Old Keep Overlook" x="1140" y="2740" w="150" h="64" description="id: hawga_daar_old_keep_overlook | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="166" name="The Sunken Vaults: Drowned Sallyport" x="1330" y="2740" w="150" h="64" description="id: sunken_crown_marsh_dungeon_gate | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="167" name="Old Keep Courtyard" x="0" y="2860" w="150" h="64" description="id: sc_keep_outer_courtyard | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="168" name="Gatehouse Dead-End Cache" x="190" y="2860" w="150" h="64" description="id: sc_keep_gatehouse_cache | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="169" name="Cracked Battlement Walk" x="380" y="2860" w="150" h="64" description="id: sc_keep_cracked_battlement | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="170" name="Cistern Works: Upper Pump House" x="570" y="2860" w="150" h="64" description="id: sc_keep_cistern_works | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="171" name="Upper Drain Spillway" x="760" y="2860" w="150" h="64" description="id: sc_vault_upper_drain | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="172" name="Sunken Vaults: Floodline Anteroom" x="950" y="2860" w="150" h="64" description="id: sc_vault_anteroom | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="173" name="Silted Records Room" x="1140" y="2860" w="150" h="64" description="id: sc_vault_silted_records | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="174" name="Drained Armory" x="1330" y="2860" w="150" h="64" description="id: sc_vault_dry_armory | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="175" name="Knee-Deep Gallery" x="0" y="2980" w="150" h="64" description="id: sc_vault_knee_deep_gallery | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="176" name="Half-Drowned Barracks" x="190" y="2980" w="150" h="64" description="id: sc_vault_half_drowned_barracks | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="177" name="Pitfall Shaft" x="380" y="2980" w="150" h="64" description="id: sc_vault_pitfall_shaft | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="178" name="Sump Dead-End Cache" x="570" y="2980" w="150" h="64" description="id: sc_vault_sump_deadend | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="179" name="Pumped-Out Prison Cells" x="760" y="2980" w="150" h="64" description="id: sc_vault_flooded_cells | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="180" name="Lower Pump Chamber" x="950" y="2980" w="150" h="64" description="id: sc_vault_lower_pump_chamber | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="181" name="Crown Mosaic Hall" x="1140" y="2980" w="150" h="64" description="id: sc_vault_crown_mosaic_hall | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="182" name="Chain-Pulley Dead End" x="1330" y="2980" w="150" h="64" description="id: sc_vault_chain_pulley_deadend | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="183" name="Pumped-Out Sunken Treasury" x="0" y="3100" w="150" h="64" description="id: sc_vault_sunken_treasury | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="184" name="Oath-Shield Grotto" x="190" y="3100" w="150" h="64" description="id: sc_vault_oath_shield_grotto | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="185" name="Knight-Captain’s Watch" x="380" y="3100" w="150" h="64" description="id: sc_vault_knight_watch | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="186" name="The Sunken Vaults: Drowned Oathhall" x="570" y="3100" w="150" h="64" description="id: sunken_crown_marsh_boss_chamber | zone: sunken_crown_marsh | level: 13-17" />
+		<room id="187" name="Buried Titan Highway: Marshward Gate" x="1700" y="2500" w="150" h="64" description="id: glasswind_expanse_crossroads | zone: glasswind_expanse | level: 17-22" />
+		<room id="188" name="Buried Titan Highway: Stone-Rib Mile" x="1890" y="2500" w="150" h="64" description="id: gw_highway_stone_rib | zone: glasswind_expanse | level: 17-22" />
+		<room id="189" name="Buried Titan Finger Cache" x="2080" y="2500" w="150" h="64" description="id: gw_buried_titan_finger_cache | zone: glasswind_expanse | level: 17-22" />
+		<room id="190" name="Buried Titan Highway: Mirage Well" x="2270" y="2500" w="150" h="64" description="id: gw_highway_mirage_well | zone: glasswind_expanse | level: 17-22" />
+		<room id="191" name="Saltflat Raid Site" x="2460" y="2500" w="150" h="64" description="id: gw_saltflat_raid_site | zone: glasswind_expanse | level: 17-22" />
+		<room id="192" name="Veilglass Sink" x="2650" y="2500" w="150" h="64" description="id: gw_veilglass_sink | zone: glasswind_expanse | level: 17-22" />
+		<room id="193" name="Buried Titan Highway: Dhanor Turn" x="2840" y="2500" w="150" h="64" description="id: gw_highway_dhanor_turn | zone: glasswind_expanse | level: 17-22" />
+		<room id="194" name="Buried Titan Highway: Titan-Spine Causeway" x="3030" y="2500" w="150" h="64" description="id: gw_highway_titan_spine | zone: glasswind_expanse | level: 17-22" />
+		<room id="195" name="Sunblistered Waystone" x="1700" y="2620" w="150" h="64" description="id: gw_sunblistered_waystone | zone: glasswind_expanse | level: 17-22" />
+		<room id="196" name="Buried Titan Highway: Shakni Turn" x="1890" y="2620" w="150" h="64" description="id: gw_highway_shakni_turn | zone: glasswind_expanse | level: 17-22" />
+		<room id="197" name="Buried Titan Highway: Invisible Barrier Basin" x="2080" y="2620" w="150" h="64" description="id: gw_highway_barrier_basin | zone: glasswind_expanse | level: 17-22" />
+		<room id="198" name="Buried Titan Highway: Eastern Arch of Blue Veils" x="2270" y="2620" w="150" h="64" description="id: gw_highway_eastern_arch | zone: glasswind_expanse | level: 17-22" />
+		<room id="199" name="Ajuna Camp: Starcloth Gate" x="2460" y="2620" w="150" h="64" description="id: gw_ajuna_camp_gate | zone: glasswind_expanse | level: 17-22" />
+		<room id="200" name="Ajuna Camp: Starcloth Pavilion" x="2650" y="2620" w="150" h="64" description="id: gw_ajuna_starcloth_pavilion | zone: glasswind_expanse | level: 17-22" />
+		<room id="201" name="Ajuna Camp: Lens Yard" x="2840" y="2620" w="150" h="64" description="id: gw_ajuna_lens_yard | zone: glasswind_expanse | level: 17-22" />
+		<room id="202" name="Ajuna Camp: Guest Mat Circle" x="3030" y="2620" w="150" h="64" description="id: gw_ajuna_guest_mat | zone: glasswind_expanse | level: 17-22" />
+		<room id="203" name="Ajuna Camp: Formula Scroll Wagon" x="1700" y="2740" w="150" h="64" description="id: gw_ajuna_scroll_wagon | zone: glasswind_expanse | level: 17-22" />
+		<room id="204" name="Dhanor Camp: Brass Yard" x="1890" y="2740" w="150" h="64" description="id: gw_dhanor_camp_yard | zone: glasswind_expanse | level: 17-22" />
+		<room id="205" name="Dhanor Camp: Brass-Eye Workshop" x="2080" y="2740" w="150" h="64" description="id: gw_dhanor_brass_workshop | zone: glasswind_expanse | level: 17-22" />
+		<room id="206" name="Dhanor Camp: Map Tent" x="2270" y="2740" w="150" h="64" description="id: gw_dhanor_map_tent | zone: glasswind_expanse | level: 17-22" />
+		<room id="207" name="Dhanor Camp: Caravan Corral" x="2460" y="2740" w="150" h="64" description="id: gw_dhanor_caravan_corral | zone: glasswind_expanse | level: 17-22" />
+		<room id="208" name="Dhanor Camp: Blue Pot Teahouse" x="2650" y="2740" w="150" h="64" description="id: gw_dhanor_teahouse | zone: glasswind_expanse | level: 17-22" />
+		<room id="209" name="Shakni Camp: Ring of White Cloth" x="2840" y="2740" w="150" h="64" description="id: gw_shakni_camp_ring | zone: glasswind_expanse | level: 17-22" />
+		<room id="210" name="Shakni Camp: Silent Library" x="3030" y="2740" w="150" h="64" description="id: gw_shakni_silent_library | zone: glasswind_expanse | level: 17-22" />
+		<room id="211" name="Shakni Camp: Glassflute Tents" x="1700" y="2860" w="150" h="64" description="id: gw_shakni_glassflute_tents | zone: glasswind_expanse | level: 17-22" />
+		<room id="212" name="Shakni Camp: Sandclock Stage" x="1890" y="2860" w="150" h="64" description="id: gw_shakni_sandclock_stage | zone: glasswind_expanse | level: 17-22" />
+		<room id="213" name="Azure Mirage Tower: Blue Base" x="2080" y="2860" w="150" h="64" description="id: gw_azure_mirage_tower_base | zone: glasswind_expanse | level: 17-22" />
+		<room id="214" name="Azure Mirage Tower: Lens Stair" x="2270" y="2860" w="150" h="64" description="id: gw_azure_tower_lens_stair | zone: glasswind_expanse | level: 17-22" />
+		<room id="215" name="Azure Mirage Tower: Mirror Deck" x="2460" y="2860" w="150" h="64" description="id: gw_azure_tower_mirror_deck | zone: glasswind_expanse | level: 17-22" />
+		<room id="216" name="Ember Mirage Tower: Brass Base" x="2650" y="2860" w="150" h="64" description="id: gw_ember_mirage_tower_base | zone: glasswind_expanse | level: 17-22" />
+		<room id="217" name="Ember Mirage Tower: Scriptorium" x="2840" y="2860" w="150" h="64" description="id: gw_ember_tower_scriptorium | zone: glasswind_expanse | level: 17-22" />
+		<room id="218" name="Ember Mirage Tower: Hidden Spell Cache" x="3030" y="2860" w="150" h="64" description="id: gw_ember_spell_cache | zone: glasswind_expanse | level: 17-22" />
+		<room id="219" name="Ember Mirage Tower: Mirror Deck" x="1700" y="2980" w="150" h="64" description="id: gw_ember_tower_mirror_deck | zone: glasswind_expanse | level: 17-22" />
+		<room id="220" name="Ivory Mirage Tower: Silent Base" x="1890" y="2980" w="150" h="64" description="id: gw_ivory_mirage_tower_base | zone: glasswind_expanse | level: 17-22" />
+		<room id="221" name="Ivory Mirage Tower: Whisper Stair" x="2080" y="2980" w="150" h="64" description="id: gw_ivory_tower_whisper_stair | zone: glasswind_expanse | level: 17-22" />
+		<room id="222" name="Ivory Mirage Tower: Mirror Deck" x="2270" y="2980" w="150" h="64" description="id: gw_ivory_tower_mirror_deck | zone: glasswind_expanse | level: 17-22" />
+		<room id="223" name="Invisible Dungeon: Absent Threshold" x="2460" y="2980" w="150" h="64" description="id: gw_invisible_threshold | zone: glasswind_expanse | level: 17-22" />
+		<room id="224" name="Invisible Dungeon: Unseen Foyer" x="2650" y="2980" w="150" h="64" description="id: gw_unseen_foyer | zone: glasswind_expanse | level: 17-22" />
+		<room id="225" name="Invisible Dungeon: Absent Wall Gallery" x="2840" y="2980" w="150" h="64" description="id: gw_absent_wall_gallery | zone: glasswind_expanse | level: 17-22" />
+		<room id="226" name="Invisible Dungeon: Null-Sun Chamber" x="3030" y="2980" w="150" h="64" description="id: gw_null_sun_chamber | zone: glasswind_expanse | level: 17-22" />
+		<room id="227" name="Invisible Dungeon: Whisperless Kennel" x="1700" y="3100" w="150" h="64" description="id: gw_whisperless_kennel | zone: glasswind_expanse | level: 17-22" />
+		<room id="228" name="Invisible Dungeon: Hall of Wrong Shadows" x="1890" y="3100" w="150" h="64" description="id: gw_hall_of_wrong_shadows | zone: glasswind_expanse | level: 17-22" />
+		<room id="229" name="Invisible Dungeon: Prism Bath" x="2080" y="3100" w="150" h="64" description="id: gw_prism_bath | zone: glasswind_expanse | level: 17-22" />
+		<room id="230" name="Invisible Dungeon: Refracted Crossing" x="2270" y="3100" w="150" h="64" description="id: gw_refracted_crossing | zone: glasswind_expanse | level: 17-22" />
+		<room id="231" name="Invisible Dungeon: Room of Cartographers Who Lied" x="2460" y="3100" w="150" h="64" description="id: gw_invisible_map_room | zone: glasswind_expanse | level: 17-22" />
+		<room id="232" name="Invisible Dungeon: Glass-Bone Roost" x="2650" y="3100" w="150" h="64" description="id: gw_glass_bone_roost | zone: glasswind_expanse | level: 17-22" />
+		<room id="233" name="Invisible Dungeon: Shed-Skin Cache" x="2840" y="3100" w="150" h="64" description="id: gw_wyrm_shed_cache | zone: glasswind_expanse | level: 17-22" />
+		<room id="234" name="Invisible Dungeon: Upside-Down Stairs" x="3030" y="3100" w="150" h="64" description="id: gw_upside_down_stairs | zone: glasswind_expanse | level: 17-22" />
+		<room id="235" name="Invisible Dungeon: Glass Wyrm’s Crucible" x="1700" y="3220" w="150" h="64" description="id: glasswind_expanse_boss_chamber | zone: glasswind_expanse | level: 17-22" />
+		<room id="236" name="Duskfall Coast: Saltflat Border Road" x="0" y="3750" w="150" h="64" description="id: dc_saltflat_border_road | zone: duskfall_coast | level: 22-27" />
+		<room id="237" name="Burnt Caravan Pullout" x="190" y="3750" w="150" h="64" description="id: dc_burnt_caravan_pullout | zone: duskfall_coast | level: 22-27" />
+		<room id="238" name="Tidebound League Checkpoint" x="380" y="3750" w="150" h="64" description="id: dc_tidebound_checkpoint | zone: duskfall_coast | level: 22-27" />
+		<room id="239" name="Gullwatch Bluff" x="570" y="3750" w="150" h="64" description="id: dc_gullwatch_bluff | zone: duskfall_coast | level: 22-27" />
+		<room id="240" name="Smuggler’s Step Path" x="760" y="3750" w="150" h="64" description="id: dc_smugglers_step_path | zone: duskfall_coast | level: 22-27" />
+		<room id="241" name="Hidden Kelp Beach" x="950" y="3750" w="150" h="64" description="id: dc_hidden_kelp_beach | zone: duskfall_coast | level: 22-27" />
+		<room id="242" name="Smuggler Reed-Ditch" x="1140" y="3750" w="150" h="64" description="id: dc_smuggler_reed_ditch | zone: duskfall_coast | level: 22-27" />
+		<room id="243" name="Saltmarsh Boardwalk" x="1330" y="3750" w="150" h="64" description="id: dc_saltmarsh_boardwalk | zone: duskfall_coast | level: 22-27" />
+		<room id="244" name="Kobold Raft Reeds" x="0" y="3870" w="150" h="64" description="id: dc_kobold_raft_reeds | zone: duskfall_coast | level: 22-27" />
+		<room id="245" name="Reefmist Shrine" x="190" y="3870" w="150" h="64" description="id: dc_reefmist_shrine | zone: duskfall_coast | level: 22-27" />
+		<room id="246" name="Terrecester Wharf: South Gate" x="380" y="3870" w="150" h="64" description="id: dc_terrecester_south_gate | zone: duskfall_coast | level: 22-27" />
+		<room id="247" name="Cedar Net Yard" x="570" y="3870" w="150" h="64" description="id: dc_cedar_net_yard | zone: duskfall_coast | level: 22-27" />
+		<room id="248" name="Tidebound Barracks" x="760" y="3870" w="150" h="64" description="id: dc_tidebound_barracks | zone: duskfall_coast | level: 22-27" />
+		<room id="249" name="Signal Platform" x="950" y="3870" w="150" h="64" description="id: dc_signal_platform | zone: duskfall_coast | level: 22-27" />
+		<room id="250" name="Barracks Armory" x="1140" y="3870" w="150" h="64" description="id: dc_barracks_armory | zone: duskfall_coast | level: 22-27" />
+		<room id="251" name="Terrecester Wharf: Harbor Market" x="1330" y="3870" w="150" h="64" description="id: dc_wharf_market | zone: duskfall_coast | level: 22-27" />
+		<room id="252" name="Terrecester Ferry Ticket Office" x="0" y="3990" w="150" h="64" description="id: dc_ferry_ticket_office | zone: duskfall_coast | level: 22-27" />
+		<room id="253" name="Terrecester Tidepier" x="190" y="3990" w="150" h="64" description="id: dc_terrecester_tidepier | zone: duskfall_coast | level: 22-27" />
+		<room id="254" name="Ferry Watchtower" x="380" y="3990" w="150" h="64" description="id: dc_ferry_watchtower | zone: duskfall_coast | level: 22-27" />
+		<room id="255" name="Tidebound Ferry: Hearthwatch Crossing Run" x="570" y="3990" w="150" h="64" description="id: dc_hearthwatch_ferry_crossing | zone: duskfall_coast | level: 22-27 | requires: dc_ferry_ticket" />
+		<room id="256" name="Fishmarket Arcade" x="760" y="3990" w="150" h="64" description="id: dc_fishmarket_arcade | zone: duskfall_coast | level: 22-27" />
+		<room id="257" name="Customs House of Salt and Scale" x="950" y="3990" w="150" h="64" description="id: dc_customs_house | zone: duskfall_coast | level: 22-27" />
+		<room id="258" name="Kelpcook Kitchens" x="1140" y="3990" w="150" h="64" description="id: dc_kelpcook_kitchens | zone: duskfall_coast | level: 22-27" />
+		<room id="259" name="Shipwright Lane" x="1330" y="3990" w="150" h="64" description="id: dc_shipwright_lane | zone: duskfall_coast | level: 22-27" />
+		<room id="260" name="The Long Ropewalk" x="0" y="4110" w="150" h="64" description="id: dc_ropewalk | zone: duskfall_coast | level: 22-27" />
+		<room id="261" name="League Drydock" x="190" y="4110" w="150" h="64" description="id: dc_drydock | zone: duskfall_coast | level: 22-27" />
+		<room id="262" name="Captain’s Green" x="380" y="4110" w="150" h="64" description="id: dc_captains_green | zone: duskfall_coast | level: 22-27" />
+		<room id="263" name="Tidebound League Hall" x="570" y="4110" w="150" h="64" description="id: dc_league_hall | zone: duskfall_coast | level: 22-27" />
+		<room id="264" name="League Chart Room" x="760" y="4110" w="150" h="64" description="id: dc_chart_room | zone: duskfall_coast | level: 22-27" />
+		<room id="265" name="Wharf Magehouse" x="950" y="4110" w="150" h="64" description="id: dc_wharf_magehouse | zone: duskfall_coast | level: 22-27" />
+		<room id="266" name="Temple of the Returning Tide" x="1140" y="4110" w="150" h="64" description="id: dc_sea_temple | zone: duskfall_coast | level: 22-27" />
+		<room id="267" name="Storm Cellar Beneath the Temple" x="1330" y="4110" w="150" h="64" description="id: dc_storm_cellar | zone: duskfall_coast | level: 22-27" />
+		<room id="268" name="Outer Breakwater Under Bombardment" x="0" y="4230" w="150" h="64" description="id: dc_outer_breakwater | zone: duskfall_coast | level: 22-27" />
+		<room id="269" name="Privateer Bombardment Line" x="190" y="4230" w="150" h="64" description="id: dc_privateer_bombardment_line | zone: duskfall_coast | level: 22-27" />
+		<room id="270" name="Skiff Launch to the Glendes Islands" x="380" y="4230" w="150" h="64" description="id: dc_skiff_launch | zone: duskfall_coast | level: 22-27" />
+		<room id="271" name="Thesmeda Sea Crossing" x="570" y="4230" w="150" h="64" description="id: dc_thesmeda_crossing | zone: duskfall_coast | level: 22-27" />
+		<room id="272" name="Glendes Islands: East Beach" x="760" y="4230" w="150" h="64" description="id: dc_glendes_east_beach | zone: duskfall_coast | level: 22-27" />
+		<room id="273" name="Shellbone Cove" x="950" y="4230" w="150" h="64" description="id: dc_shellbone_cove | zone: duskfall_coast | level: 22-27" />
+		<room id="274" name="Wrecked Privateer Camp" x="1140" y="4230" w="150" h="64" description="id: dc_wrecked_privateer_camp | zone: duskfall_coast | level: 22-27" />
+		<room id="275" name="Glendes Island Jungle Path" x="1330" y="4230" w="150" h="64" description="id: dc_island_jungle_path | zone: duskfall_coast | level: 22-27" />
+		<room id="276" name="Overgrown Terrace Trap Cache" x="0" y="4350" w="150" h="64" description="id: dc_terrace_trap_cache | zone: duskfall_coast | level: 22-27" />
+		<room id="277" name="Tide-Pool Grotto" x="190" y="4350" w="150" h="64" description="id: dc_tide_pool_grotto | zone: duskfall_coast | level: 22-27" />
+		<room id="278" name="Buried Labyrinth: Ruin Forecourt" x="380" y="4350" w="150" h="64" description="id: dc_ruin_forecourt | zone: duskfall_coast | level: 22-27" />
+		<room id="279" name="The Buried Labyrinth: Sunken Entry" x="570" y="4350" w="150" h="64" description="id: dc_buried_labyrinth_entry | zone: duskfall_coast | level: 22-27" />
+		<room id="280" name="Labyrinth Dead End: Sand Chute" x="760" y="4350" w="150" h="64" description="id: dc_sand_chute_deadend | zone: duskfall_coast | level: 22-27" />
+		<room id="281" name="Buried Labyrinth: Compass Hall" x="950" y="4350" w="150" h="64" description="id: dc_labyrinth_compass_hall | zone: duskfall_coast | level: 22-27" />
+		<room id="282" name="Buried Labyrinth: Mirrored Trench" x="1140" y="4350" w="150" h="64" description="id: dc_mirrored_trench | zone: duskfall_coast | level: 22-27" />
+		<room id="283" name="Trap Drop: Pitch-Black Cistern" x="1330" y="4350" w="150" h="64" description="id: dc_pitfall_cistern | zone: duskfall_coast | level: 22-27" />
+		<room id="284" name="Underwater Sluice Cache" x="0" y="4470" w="150" h="64" description="id: dc_underwater_sluice_cache | zone: duskfall_coast | level: 22-27" />
+		<room id="285" name="Buried Labyrinth: Tidal Gallery" x="190" y="4470" w="150" h="64" description="id: dc_tidal_gallery | zone: duskfall_coast | level: 22-27" />
+		<room id="286" name="Gallery Supply Cache" x="380" y="4470" w="150" h="64" description="id: dc_gallery_supply_cache | zone: duskfall_coast | level: 22-27" />
+		<room id="287" name="Crab Crypt" x="570" y="4470" w="150" h="64" description="id: dc_crab_crypt | zone: duskfall_coast | level: 22-27" />
+		<room id="288" name="Buried Labyrinth: Serpent Tile Walk" x="760" y="4470" w="150" h="64" description="id: dc_serpent_tile_walk | zone: duskfall_coast | level: 22-27" />
+		<room id="289" name="Scissor-Gate Crossing" x="950" y="4470" w="150" h="64" description="id: dc_scissor_gate_crossing | zone: duskfall_coast | level: 22-27" />
+		<room id="290" name="False Sanctuary of Dry Stone" x="1140" y="4470" w="150" h="64" description="id: dc_false_sanctuary | zone: duskfall_coast | level: 22-27" />
+		<room id="291" name="Drowned Reliquary Dead End" x="1330" y="4470" w="150" h="64" description="id: dc_drowned_reliquary_deadend | zone: duskfall_coast | level: 22-27" />
+		<room id="292" name="Lower Crossing of Three Floods" x="0" y="4590" w="150" h="64" description="id: dc_lower_crossing | zone: duskfall_coast | level: 22-27" />
+		<room id="293" name="Submerged Underpath" x="190" y="4590" w="150" h="64" description="id: dc_submerged_underpath | zone: duskfall_coast | level: 22-27" />
+		<room id="294" name="Hidden Pearl Cache" x="380" y="4590" w="150" h="64" description="id: dc_hidden_pearl_cache | zone: duskfall_coast | level: 22-27" />
+		<room id="295" name="The Knot Crossing" x="570" y="4590" w="150" h="64" description="id: dc_knot_crossing | zone: duskfall_coast | level: 22-27" />
+		<room id="296" name="Rope Bridge Over the Buried Chasm" x="760" y="4590" w="150" h="64" description="id: dc_rope_bridge_chasm | zone: duskfall_coast | level: 22-27" />
+		<room id="297" name="Obsidian Drop Dead End" x="950" y="4590" w="150" h="64" description="id: dc_obsidian_drop | zone: duskfall_coast | level: 22-27" />
+		<room id="298" name="The Buried Labyrinth: Saltblind Maze" x="1140" y="4590" w="150" h="64" description="id: dc_saltblind_maze | zone: duskfall_coast | level: 22-27 | maze: north,west,north,east,south" />
+		<room id="299" name="Threshold of the Worthy Tide" x="1330" y="4590" w="150" h="64" description="id: dc_labyrinth_worthy_threshold | zone: duskfall_coast | level: 22-27" />
+		<room id="300" name="Antechamber of the Tide-Eyed" x="0" y="4710" w="150" h="64" description="id: dc_serpent_antechamber | zone: duskfall_coast | level: 22-27" />
+		<room id="301" name="Sanctum of Eshdru, the Tide-Eyed" x="190" y="4710" w="150" h="64" description="id: dc_ancient_serpent_sanctum | zone: duskfall_coast | level: 22-27" />
+		<room id="302" name="Glendes North Landing" x="380" y="4710" w="150" h="64" description="id: dc_glendes_north_landing | zone: duskfall_coast | level: 22-27" />
+		<room id="303" name="Duskfall North Cliff Road" x="570" y="4710" w="150" h="64" description="id: dc_north_cliff_road | zone: duskfall_coast | level: 22-27" />
+		<room id="304" name="Stormbreak Foothills" x="1700" y="3750" w="150" h="64" description="id: thundervale_peaks_crossroads | zone: thundervale_peaks | level: 27-32" />
+		<room id="305" name="Windsplit Shepherd Path" x="1890" y="3750" w="150" h="64" description="id: tv_windsplit_shepherd_path | zone: thundervale_peaks | level: 27-32" />
+		<room id="306" name="Sky-Goat Pastures" x="2080" y="3750" w="150" h="64" description="id: tv_sky_goat_pastures | zone: thundervale_peaks | level: 27-32" />
+		<room id="307" name="Stormgoat Shelter" x="2270" y="3750" w="150" h="64" description="id: tv_stormgoat_shelter | zone: thundervale_peaks | level: 27-32" />
+		<room id="308" name="East Rune Outcrop" x="2460" y="3750" w="150" h="64" description="id: tv_east_rune_outcrop | zone: thundervale_peaks | level: 27-32" />
+		<room id="309" name="Pilgrim’s Switchback: Lower Turn" x="2650" y="3750" w="150" h="64" description="id: tv_pilgrims_switchback_lower | zone: thundervale_peaks | level: 27-32" />
+		<room id="310" name="Old Switchback Cache" x="2840" y="3750" w="150" h="64" description="id: tv_wild_switchback_cache | zone: thundervale_peaks | level: 27-32" />
+		<room id="311" name="Pilgrim’s Switchback: Upper Turn" x="3030" y="3750" w="150" h="64" description="id: tv_pilgrims_switchback_upper | zone: thundervale_peaks | level: 27-32" />
+		<room id="312" name="Shepherd’s Eyrie Gate" x="1700" y="3870" w="150" h="64" description="id: tv_shepherds_eyrie_gate | zone: thundervale_peaks | level: 27-32" />
+		<room id="313" name="Shepherd’s Eyrie Common" x="1890" y="3870" w="150" h="64" description="id: tv_shepherds_eyrie_common | zone: thundervale_peaks | level: 27-32" />
+		<room id="314" name="Stormwatch Inn" x="2080" y="3870" w="150" h="64" description="id: tv_stormwatch_inn | zone: thundervale_peaks | level: 27-32" />
+		<room id="315" name="Eyrie Rope-Market" x="2270" y="3870" w="150" h="64" description="id: tv_eyrie_market | zone: thundervale_peaks | level: 27-32" />
+		<room id="316" name="Skyhook Ropewalk" x="2460" y="3870" w="150" h="64" description="id: tv_skyhook_ropewalk | zone: thundervale_peaks | level: 27-32" />
+		<room id="317" name="Shrine of the First Thunder" x="2650" y="3870" w="150" h="64" description="id: tv_ledge_shrine | zone: thundervale_peaks | level: 27-32" />
+		<room id="318" name="Griffon Perch" x="2840" y="3870" w="150" h="64" description="id: tv_griffon_perch | zone: thundervale_peaks | level: 27-32" />
+		<room id="319" name="High-Wind Roost" x="3030" y="3870" w="150" h="64" description="id: tv_high_wind_roost | zone: thundervale_peaks | level: 27-32" />
+		<room id="320" name="Thunderfall Bridge: South Anchorage" x="1700" y="3990" w="150" h="64" description="id: tv_thunderfall_bridge_south | zone: thundervale_peaks | level: 27-32" />
+		<room id="321" name="Thunderfall Bridge: Open Span" x="1890" y="3990" w="150" h="64" description="id: tv_thunderfall_bridge_span | zone: thundervale_peaks | level: 27-32" />
+		<room id="322" name="Thunderfall Underbridge" x="2080" y="3990" w="150" h="64" description="id: tv_thunderfall_underbridge | zone: thundervale_peaks | level: 27-32" />
+		<room id="323" name="Rain-Rune Cleft" x="2270" y="3990" w="150" h="64" description="id: tv_rain_rune_cleft | zone: thundervale_peaks | level: 27-32" />
+		<room id="324" name="Thunderfall Bridge: North Anchorage" x="2460" y="3990" w="150" h="64" description="id: tv_thunderfall_bridge_north | zone: thundervale_peaks | level: 27-32" />
+		<room id="325" name="Lightning-Scarred Raider Camp" x="2650" y="3990" w="150" h="64" description="id: tv_lightning_scarred_camp | zone: thundervale_peaks | level: 27-32" />
+		<room id="326" name="Giant-Step Causeway" x="2840" y="3990" w="150" h="64" description="id: tv_giant_step_causeway | zone: thundervale_peaks | level: 27-32" />
+		<room id="327" name="Overlook of Vhal Torunn" x="3030" y="3990" w="150" h="64" description="id: tv_overlook_of_vhal_torunn | zone: thundervale_peaks | level: 27-32" />
+		<room id="328" name="Broken Storm-Rune Terrace" x="1700" y="4110" w="150" h="64" description="id: tv_broken_storm_rune | zone: thundervale_peaks | level: 27-32" />
+		<room id="329" name="Lower Vhal Torunn Gate" x="1890" y="4110" w="150" h="64" description="id: tv_lower_vhal_torunn_gate | zone: thundervale_peaks | level: 27-32" />
+		<room id="330" name="Lower Vhal Torunn Hall" x="2080" y="4110" w="150" h="64" description="id: tv_lower_vhal_torunn_hall | zone: thundervale_peaks | level: 27-32" />
+		<room id="331" name="Cloud-Smith Workbench" x="2270" y="4110" w="150" h="64" description="id: tv_cloudsmith_workbench | zone: thundervale_peaks | level: 27-32" />
+		<room id="332" name="Prophecy Steps" x="2460" y="4110" w="150" h="64" description="id: tv_prophecy_steps | zone: thundervale_peaks | level: 27-32" />
+		<room id="333" name="Lower Tempest Archive" x="2650" y="4110" w="150" h="64" description="id: tv_tempest_archive_lower | zone: thundervale_peaks | level: 27-32" />
+		<room id="334" name="Rune Index Gallery" x="2840" y="4110" w="150" h="64" description="id: tv_rune_index_gallery | zone: thundervale_peaks | level: 27-32" />
+		<room id="335" name="Audience Beneath Thunder" x="3030" y="4110" w="150" h="64" description="id: tv_giant_audience_chamber | zone: thundervale_peaks | level: 27-32" />
+		<room id="336" name="Oracle Balcony" x="1700" y="4230" w="150" h="64" description="id: tv_oracle_balcony | zone: thundervale_peaks | level: 27-32" />
+		<room id="337" name="Stormlift Base" x="1890" y="4230" w="150" h="64" description="id: tv_stormlift_base | zone: thundervale_peaks | level: 27-32" />
+		<room id="338" name="Upper Stormlift Landing" x="2080" y="4230" w="150" h="64" description="id: tv_upper_stormlift_landing | zone: thundervale_peaks | level: 27-32" />
+		<room id="339" name="Upper Rain Court" x="2270" y="4230" w="150" h="64" description="id: tv_upper_rain_court | zone: thundervale_peaks | level: 27-32" />
+		<room id="340" name="Cloud-Hung Battlements" x="2460" y="4230" w="150" h="64" description="id: tv_cloud_hung_battlements | zone: thundervale_peaks | level: 27-32" />
+		<room id="341" name="Cloud Cache Lintel" x="2650" y="4230" w="150" h="64" description="id: tv_cloud_cache_lintel | zone: thundervale_peaks | level: 27-32" />
+		<room id="342" name="Tempest Archive" x="2840" y="4230" w="150" h="64" description="id: tv_tempest_archive | zone: thundervale_peaks | level: 27-32" />
+		<room id="343" name="Sky-Throne Anteroom" x="3030" y="4230" w="150" h="64" description="id: tv_sky_throne_anteroom | zone: thundervale_peaks | level: 27-32" />
+		<room id="344" name="Hollow Thunderforge Gate" x="1700" y="4350" w="150" h="64" description="id: tv_thunderforge_gate | zone: thundervale_peaks | level: 27-32" />
+		<room id="345" name="The Hollow Thunderforge: Entry Vault" x="1890" y="4350" w="150" h="64" description="id: tv_hollow_thunderforge_entry | zone: thundervale_peaks | level: 27-32" />
+		<room id="346" name="The Hollow Thunderforge: Giant Hall" x="2080" y="4350" w="150" h="64" description="id: tv_thunderforge_giant_hall | zone: thundervale_peaks | level: 27-32" />
+		<room id="347" name="The Hollow Thunderforge: False Ore Spur" x="2270" y="4350" w="150" h="64" description="id: tv_thunderforge_dead_end_ore | zone: thundervale_peaks | level: 27-32" />
+		<room id="348" name="The Hollow Thunderforge: Maintenance Tunnels" x="2460" y="4350" w="150" h="64" description="id: tv_thunderforge_maintenance_tunnels | zone: thundervale_peaks | level: 27-32" />
+		<room id="349" name="The Hollow Thunderforge: Tool Cache" x="2650" y="4350" w="150" h="64" description="id: tv_thunderforge_tool_cache | zone: thundervale_peaks | level: 27-32" />
+		<room id="350" name="The Hollow Thunderforge: Sump Ladders" x="2840" y="4350" w="150" h="64" description="id: tv_thunderforge_sump_ladders | zone: thundervale_peaks | level: 27-32" />
+		<room id="351" name="The Hollow Thunderforge: Flooded Cistern" x="3030" y="4350" w="150" h="64" description="id: tv_thunderforge_flooded_cistern | zone: thundervale_peaks | level: 27-32" />
+		<room id="352" name="The Hollow Thunderforge: Grounding Conduit" x="1700" y="4470" w="150" h="64" description="id: tv_thunderforge_grounding_conduit | zone: thundervale_peaks | level: 27-32" />
+		<room id="353" name="The Hollow Thunderforge: Corpse-Lightning Coils" x="1890" y="4470" w="150" h="64" description="id: tv_thunderforge_corpse_lightning_coils | zone: thundervale_peaks | level: 27-32" />
+		<room id="354" name="The Hollow Thunderforge: Pitfall Floor" x="2080" y="4470" w="150" h="64" description="id: tv_thunderforge_pitfall_floor | zone: thundervale_peaks | level: 27-32" />
+		<room id="355" name="The Hollow Thunderforge: Hidden Weather Cache" x="2270" y="4470" w="150" h="64" description="id: tv_thunderforge_hidden_cache | zone: thundervale_peaks | level: 27-32" />
+		<room id="356" name="The Hollow Thunderforge: Storm-Spirit Pen" x="2460" y="4470" w="150" h="64" description="id: tv_thunderforge_storm_spirit_pen | zone: thundervale_peaks | level: 27-32" />
+		<room id="357" name="The Hollow Thunderforge: Bone Gantry" x="2650" y="4470" w="150" h="64" description="id: tv_thunderforge_bone_gantry | zone: thundervale_peaks | level: 27-32" />
+		<room id="358" name="The Hollow Thunderforge: False Pressure Gallery" x="2840" y="4470" w="150" h="64" description="id: tv_false_pressure_gallery | zone: thundervale_peaks | level: 27-32" />
+		<room id="359" name="The Hollow Thunderforge: Blackened Dynamo" x="3030" y="4470" w="150" h="64" description="id: tv_thunderforge_blackened_dynamo | zone: thundervale_peaks | level: 27-32" />
+		<room id="360" name="The Hollow Thunderforge: Command Circle" x="1700" y="4590" w="150" h="64" description="id: thundervale_peaks_boss_chamber | zone: thundervale_peaks | level: 27-32" />
+		<room id="361" name="Thunderheart Aegis Chamber" x="1890" y="4590" w="150" h="64" description="id: tv_thunderheart_aegis_chamber | zone: thundervale_peaks | level: 27-32" />
+		<room id="362" name="The Blackfall Descent" x="0" y="5000" w="150" h="64" description="id: um_blackfall_descent | zone: umbralwyrm_depths | level: 32-37 | requires: thundervale_peaks_relic" />
+		<room id="363" name="Blackfall Ropewalk" x="190" y="5000" w="150" h="64" description="id: um_blackfall_ropewalk | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="364" name="Collapsed Expedition Camp" x="380" y="5000" w="150" h="64" description="id: um_collapsed_expedition_camp | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="365" name="Dripstone Overlook" x="570" y="5000" w="150" h="64" description="id: um_dripstone_overlook | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="366" name="Basin of Whispering Water" x="760" y="5000" w="150" h="64" description="id: um_water_diviner_basin | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="367" name="Lanternless Threshold" x="950" y="5000" w="150" h="64" description="id: um_lanternless_threshold | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="368" name="Cartographer’s Nook" x="1140" y="5000" w="150" h="64" description="id: um_cartographer_nook | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="369" name="Lightfall Quarry" x="1330" y="5000" w="150" h="64" description="id: um_lightfall_quarry | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="370" name="Ashen Switchback" x="0" y="5120" w="150" h="64" description="id: um_ashen_switchback | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="371" name="Blindstone Warren" x="190" y="5120" w="150" h="64" description="id: um_blindstone_warren | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="372" name="Echo Crack" x="380" y="5120" w="150" h="64" description="id: um_echo_crack | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="373" name="Whispering Pool" x="570" y="5120" w="150" h="64" description="id: um_whispering_pool | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="374" name="Mycelial Rootway" x="760" y="5120" w="150" h="64" description="id: um_mycelial_rootway | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="375" name="Stolen Lantern Hollow" x="950" y="5120" w="150" h="64" description="id: um_stolen_lantern_hollow | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="376" name="Outer Gate of Glowcap Commons" x="1140" y="5120" w="150" h="64" description="id: um_outer_glowcap_gate | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="377" name="Compact Watchfire" x="1330" y="5120" w="150" h="64" description="id: um_compact_watchfire | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="378" name="Spore Toll Stand" x="0" y="5240" w="150" h="64" description="id: um_spore_toll_stand | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="379" name="Glowcap Commons Entry" x="190" y="5240" w="150" h="64" description="id: um_glowcap_commons_entrance | zone: umbralwyrm_depths | level: 32-37 | requires: um_glowcap_safe_lantern" />
+		<room id="380" name="Safe-Lantern Provisioner" x="380" y="5240" w="150" h="64" description="id: um_safe_lantern_shop | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="381" name="Quiet Bloom Spore-Healing Grotto" x="570" y="5240" w="150" h="64" description="id: um_spore_healer_grotto | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="382" name="Glowcap Central Bazaar" x="760" y="5240" w="150" h="64" description="id: um_glowcap_central_bazaar | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="383" name="Bone-Map Archives" x="950" y="5240" w="150" h="64" description="id: um_bone_map_archives | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="384" name="Fungus Farmlanes" x="1140" y="5240" w="150" h="64" description="id: um_fungus_farmlanes | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="385" name="Grief-Spore Cleft" x="1330" y="5240" w="150" h="64" description="id: um_grief_spore_cleft | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="386" name="Mycelial Choir Grove" x="0" y="5360" w="150" h="64" description="id: um_mycelial_choir_grove | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="387" name="Dreamspore Sanctum" x="190" y="5360" w="150" h="64" description="id: um_dreamspore_sanctum | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="388" name="Spore Memory Chamber" x="380" y="5360" w="150" h="64" description="id: um_spore_memory_chamber | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="389" name="Deep Roads Lift" x="570" y="5360" w="150" h="64" description="id: um_deep_roads_lift | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="390" name="Gate to the Ashen Exchange" x="760" y="5360" w="150" h="64" description="id: um_ashen_exchange_gate | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="391" name="Freehammer Deep Forge" x="950" y="5360" w="150" h="64" description="id: um_duergar_free_forge | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="392" name="Drow Exile Gallery" x="1140" y="5360" w="150" h="64" description="id: um_drow_exile_gallery | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="393" name="Ashen Exchange Market" x="1330" y="5360" w="150" h="64" description="id: um_ashen_exchange_market | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="394" name="Debt-Token Den" x="0" y="5480" w="150" h="64" description="id: um_debt_token_den | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="395" name="Blackwater Cistern" x="190" y="5480" w="150" h="64" description="id: um_blackwater_cistern | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="396" name="Wyrmglass Chasm: South Ledge" x="380" y="5480" w="150" h="64" description="id: um_wyrmglass_chasm_south | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="397" name="Echo-Bat Roost" x="570" y="5480" w="150" h="64" description="id: um_echo_bat_roost | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="398" name="Steps to the Shattered Observatory" x="760" y="5480" w="150" h="64" description="id: um_shattered_observatory_steps | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="399" name="Shattered Drow Observatory" x="950" y="5480" w="150" h="64" description="id: um_shattered_drow_observatory | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="400" name="Inverted Starwell" x="1140" y="5480" w="150" h="64" description="id: um_inverted_starwell | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="401" name="Wyrmglass Bridge" x="1330" y="5480" w="150" h="64" description="id: um_chasm_bridge | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="402" name="Suspended Gnomon" x="0" y="5600" w="150" h="64" description="id: um_suspended_gnomon | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="403" name="Wyrmglass Chasm: North Landing" x="190" y="5600" w="150" h="64" description="id: um_chasm_north_landing | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="404" name="Wyrmglass Lower Shelf" x="380" y="5600" w="150" h="64" description="id: um_wyrmglass_lower_shelf | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="405" name="Blackscale Roost" x="570" y="5600" w="150" h="64" description="id: um_blackscale_roost | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="406" name="Approach to the Shadowed Ossuary" x="760" y="5600" w="150" h="64" description="id: um_ossuary_approach | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="407" name="The Shadowed Ossuary Gate" x="950" y="5600" w="150" h="64" description="id: um_shadowed_ossuary_gate | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="408" name="Sun-Mote Outer Cache" x="1140" y="5600" w="150" h="64" description="id: um_sunmote_outer_cache | zone: umbralwyrm_depths | level: 32-37 | requires: um_wyrmglass_lens" />
+		<room id="409" name="Ribbed Hall" x="1330" y="5600" w="150" h="64" description="id: um_ribbed_hall | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="410" name="Silent Hammer Cache" x="0" y="5720" w="150" h="64" description="id: um_silent_hammer_cache | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="411" name="Echoing Catacomb" x="190" y="5720" w="150" h="64" description="id: um_echoing_catacomb | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="412" name="Lower Bone Shaft" x="380" y="5720" w="150" h="64" description="id: um_lower_bone_shaft | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="413" name="Sunken Rib Cache" x="570" y="5720" w="150" h="64" description="id: um_sunken_rib_cache | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="414" name="Ossuary Crossroads" x="760" y="5720" w="150" h="64" description="id: um_ossuary_crossroads | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="415" name="Shadowglass Chapel" x="950" y="5720" w="150" h="64" description="id: um_shadowglass_chapel | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="416" name="Wyrmchain Cage" x="1140" y="5720" w="150" h="64" description="id: um_wyrmchain_cage | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="417" name="Ossuary Underpath" x="1330" y="5720" w="150" h="64" description="id: um_ossuary_underpath | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="418" name="Ossuary Sun-Mote Chamber" x="0" y="5840" w="150" h="64" description="id: um_sunmote_chamber | zone: umbralwyrm_depths | level: 32-37 | requires: um_wyrmglass_lens" />
+		<room id="419" name="Blackflame Altar" x="190" y="5840" w="150" h="64" description="id: um_blackflame_altar | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="420" name="Nhalira’s Ritual Laboratory" x="380" y="5840" w="150" h="64" description="id: um_nhalira_ritual_laboratory | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="421" name="Bone-Lamplighter Vault" x="570" y="5840" w="150" h="64" description="id: um_bone_lamplighter_vault | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="422" name="Wyrmchain Necromancer’s Circle" x="760" y="5840" w="150" h="64" description="id: um_nhalira_boss_chamber | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="423" name="Broken Chain Arch" x="950" y="5840" w="150" h="64" description="id: um_broken_chain_arch | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="424" name="Bargain Antechamber" x="1140" y="5840" w="150" h="64" description="id: um_bargain_antechamber | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="425" name="Binding Control Room" x="1330" y="5840" w="150" h="64" description="id: um_binding_control_room | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="426" name="Nightscale Reliquary" x="0" y="5960" w="150" h="64" description="id: um_nightscale_reliquary | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="427" name="Wyrmheart Cavern" x="190" y="5960" w="150" h="64" description="id: um_wyrmheart_cavern | zone: umbralwyrm_depths | level: 32-37" />
+		<room id="428" name="The Last Breath Before Stars" x="380" y="5960" w="150" h="64" description="id: um_last_breath_before_stars | zone: umbralwyrm_depths | level: 37" />
+		<room id="429" name="Citadel Threshold of Falling Seals" x="1700" y="5000" w="150" h="64" description="id: ac_threshold_falling_seals | zone: astral_crown_citadel | level: 37-40 | locks on exit" />
+		<room id="430" name="Refuge of Broken Chains" x="1890" y="5000" w="150" h="64" description="id: ac_refuge_broken_chains | zone: astral_crown_citadel | level: 37-40" />
+		<room id="431" name="Makeshift Infirmary" x="2080" y="5000" w="150" h="64" description="id: ac_makeshift_infirmary | zone: astral_crown_citadel | level: 37-40" />
+		<room id="432" name="Crate-Market of the Lost" x="2270" y="5000" w="150" h="64" description="id: ac_crate_market_lost | zone: astral_crown_citadel | level: 37-40" />
+		<room id="433" name="War Table of the Unclaimed" x="2460" y="5000" w="150" h="64" description="id: ac_war_table_unclaimed | zone: astral_crown_citadel | level: 37-40" />
+		<room id="434" name="Barricade of Stolen Shields" x="2650" y="5000" w="150" h="64" description="id: ac_barricade_stolen_shields | zone: astral_crown_citadel | level: 37-40" />
+		<room id="435" name="Left Breach Flank" x="2840" y="5000" w="150" h="64" description="id: ac_breach_left_flank | zone: astral_crown_citadel | level: 37-40" />
+		<room id="436" name="Right Breach Flank" x="3030" y="5000" w="150" h="64" description="id: ac_breach_right_flank | zone: astral_crown_citadel | level: 37-40" />
+		<room id="437" name="Cabal Breach Stair" x="1700" y="5120" w="150" h="64" description="id: ac_cabal_breach_stair | zone: astral_crown_citadel | level: 37-40" />
+		<room id="438" name="Hall of Unfinished Materialization" x="1890" y="5120" w="150" h="64" description="id: ac_hall_unfinished_materialization | zone: astral_crown_citadel | level: 37-40" />
+		<room id="439" name="Planar Chain Gallery" x="2080" y="5120" w="150" h="64" description="id: ac_planar_chain_gallery | zone: astral_crown_citadel | level: 37-40" />
+		<room id="440" name="Astral Masonry Yard" x="2270" y="5120" w="150" h="64" description="id: ac_astral_masonry_yard | zone: astral_crown_citadel | level: 37-40" />
+		<room id="441" name="Room of Falling Roads" x="2460" y="5120" w="150" h="64" description="id: ac_room_falling_roads | zone: astral_crown_citadel | level: 37-40" />
+		<room id="442" name="Suspended Road Cache" x="2650" y="5120" w="150" h="64" description="id: ac_suspended_road_cache | zone: astral_crown_citadel | level: 37-40" />
+		<room id="443" name="Cabal Siege Post" x="2840" y="5120" w="150" h="64" description="id: ac_cabal_siege_post | zone: astral_crown_citadel | level: 37-40" />
+		<room id="444" name="Crownworks Rampart" x="3030" y="5120" w="150" h="64" description="id: ac_crownworks_rampart | zone: astral_crown_citadel | level: 37-40" />
+		<room id="445" name="Seal Gate of Survival" x="1700" y="5240" w="150" h="64" description="id: ac_seal_gate_survival | zone: astral_crown_citadel | level: 37-40" />
+		<room id="446" name="Survival Seal Cache" x="1890" y="5240" w="150" h="64" description="id: ac_survival_cache | zone: astral_crown_citadel | level: 37-40" />
+		<room id="447" name="The Concordance Halls" x="2080" y="5240" w="150" h="64" description="id: ac_concordance_halls | zone: astral_crown_citadel | level: 37-40" />
+		<room id="448" name="Hall of Barrow Oaths" x="2270" y="5240" w="150" h="64" description="id: ac_hall_barrow_oaths | zone: astral_crown_citadel | level: 37-40" />
+		<room id="449" name="Thorn-Mirror Court" x="2460" y="5240" w="150" h="64" description="id: ac_thorn_mirror_court | zone: astral_crown_citadel | level: 37-40" />
+		<room id="450" name="Sun-Iron Judgment Forge" x="2650" y="5240" w="150" h="64" description="id: ac_sun_iron_judgment_forge | zone: astral_crown_citadel | level: 37-40" />
+		<room id="451" name="Drowned King’s Witness" x="2840" y="5240" w="150" h="64" description="id: ac_drowned_kings_witness | zone: astral_crown_citadel | level: 37-40" />
+		<room id="452" name="Cabal Interrogatory" x="3030" y="5240" w="150" h="64" description="id: ac_cabal_interrogatory | zone: astral_crown_citadel | level: 37-40" />
+		<room id="453" name="Archive of Stolen Names" x="1700" y="5360" w="150" h="64" description="id: ac_archive_stolen_names | zone: astral_crown_citadel | level: 37-40" />
+		<room id="454" name="Seal Gate of Memory" x="1890" y="5360" w="150" h="64" description="id: ac_seal_gate_memory | zone: astral_crown_citadel | level: 37-40" />
+		<room id="455" name="Memory Seal Cache" x="2080" y="5360" w="150" h="64" description="id: ac_memory_cache | zone: astral_crown_citadel | level: 37-40" />
+		<room id="456" name="Starless Reliquary Entry" x="2270" y="5360" w="150" h="64" description="id: ac_starless_reliquary_entry | zone: astral_crown_citadel | level: 37-40" />
+		<room id="457" name="Mirage Alignment Chamber" x="2460" y="5360" w="150" h="64" description="id: ac_mirage_alignment_chamber | zone: astral_crown_citadel | level: 37-40" />
+		<room id="458" name="Pearl-Tide Observatory" x="2650" y="5360" w="150" h="64" description="id: ac_pearl_tide_observatory | zone: astral_crown_citadel | level: 37-40" />
+		<room id="459" name="Thunderheart Conduit" x="2840" y="5360" w="150" h="64" description="id: ac_thunderheart_conduit | zone: astral_crown_citadel | level: 37-40" />
+		<room id="460" name="Dead-Star Orrery" x="3030" y="5360" w="150" h="64" description="id: ac_dead_star_orrery | zone: astral_crown_citadel | level: 37-40" />
+		<room id="461" name="Seal Gate of Direction" x="1700" y="5480" w="150" h="64" description="id: ac_seal_gate_direction | zone: astral_crown_citadel | level: 37-40" />
+		<room id="462" name="Reliquary of Wrong Horizons" x="1890" y="5480" w="150" h="64" description="id: ac_reliquary_wrong_horizons | zone: astral_crown_citadel | level: 37-40" />
+		<room id="463" name="Astral Collapse Bridge" x="2080" y="5480" w="150" h="64" description="id: ac_astral_collapse_bridge | zone: astral_crown_citadel | level: 37-40" />
+		<room id="464" name="The Lich’s Processional" x="2270" y="5480" w="150" h="64" description="id: ac_lich_processional | zone: astral_crown_citadel | level: 37-40" />
+		<room id="465" name="Crownless Choir Nave" x="2460" y="5480" w="150" h="64" description="id: ac_crownless_choir_nave | zone: astral_crown_citadel | level: 37-40" />
+		<room id="466" name="The Unbreathing Armory" x="2650" y="5480" w="150" h="64" description="id: ac_unbreathing_armory | zone: astral_crown_citadel | level: 37-40" />
+		<room id="467" name="Reliquary of Failed Crowns" x="2840" y="5480" w="150" h="64" description="id: ac_reliquary_failed_crowns | zone: astral_crown_citadel | level: 37-40" />
+		<room id="468" name="Prison of Unfinished Bodies" x="3030" y="5480" w="150" h="64" description="id: ac_prison_unfinished_bodies | zone: astral_crown_citadel | level: 37-40" />
+		<room id="469" name="Nightscale Shadow Alcove" x="1700" y="5600" w="150" h="64" description="id: ac_nightscale_shadow_alcove | zone: astral_crown_citadel | level: 37-40" />
+		<room id="470" name="Black-Star Door" x="1890" y="5600" w="150" h="64" description="id: ac_black_star_door | zone: astral_crown_citadel | level: 37-40" />
+		<room id="471" name="Throne Antechamber" x="2080" y="5600" w="150" h="64" description="id: ac_throne_antechamber | zone: astral_crown_citadel | level: 37-40" />
+		<room id="472" name="The Crownless Throne" x="2270" y="5600" w="150" h="64" description="id: ac_crownless_throne | zone: astral_crown_citadel | level: 37-40" />
+		<room id="473" name="The Astral Crown Reassembled" x="2460" y="5600" w="150" h="64" description="id: ac_astral_crown_reassembled | zone: astral_crown_citadel | level: 37-40" />
+		<line id="474" startText="north" endText="south">
+			<dock index="0" id="1" port="n" />
+			<dock index="1" id="9" port="s" />
+		</line>
+		<line id="475" startText="east" endText="west">
+			<dock index="0" id="1" port="e" />
+			<dock index="1" id="12" port="w" />
+		</line>
+		<line id="476" startText="west" endText="east">
+			<dock index="0" id="1" port="w" />
+			<dock index="1" id="15" port="e" />
+		</line>
+		<line id="477" startText="south" endText="north">
+			<dock index="0" id="1" port="s" />
+			<dock index="1" id="5" port="n" />
+		</line>
+		<line id="478" startText="up" endText="out">
+			<dock index="0" id="1" port="ne" />
+			<dock index="1" id="22" port="sw" />
+		</line>
+		<line id="479" startText="out" endText="in">
+			<dock index="0" id="1" port="nw" />
+			<dock index="1" id="19" port="se" />
+		</line>
+		<line id="480" startText="in" endText="out">
+			<dock index="0" id="1" port="se" />
+			<dock index="1" id="2" port="nw" />
+		</line>
+		<line id="481" startText="down" endText="up">
+			<dock index="0" id="1" port="sw" />
+			<dock index="1" id="4" port="ne" />
+		</line>
+		<line id="482" startText="east" endText="west">
+			<dock index="0" id="2" port="e" />
+			<dock index="1" id="3" port="w" />
+		</line>
+		<line id="483" startText="south" endText="north">
+			<dock index="0" id="2" port="s" />
+			<dock index="1" id="11" port="n" />
+		</line>
+		<line id="484" startText="out">
+			<dock index="0" id="3" port="nw" />
+			<dock index="1" id="1" port="se" />
+		</line>
+		<line id="485" startText="down" endText="up">
+			<dock index="0" id="3" port="sw" />
+			<dock index="1" id="5" port="ne" />
+		</line>
+		<line id="486" startText="west" endText="east">
+			<dock index="0" id="4" port="w" />
+			<dock index="1" id="17" port="e" />
+		</line>
+		<line id="487" startText="east" endText="west">
+			<dock index="0" id="5" port="e" />
+			<dock index="1" id="6" port="w" />
+		</line>
+		<line id="488" startText="west" endText="east">
+			<dock index="0" id="5" port="w" />
+			<dock index="1" id="20" port="e" />
+		</line>
+		<line id="489" startText="in" endText="out">
+			<dock index="0" id="5" port="se" />
+			<dock index="1" id="7" port="nw" />
+		</line>
+		<line id="490" startText="north" endText="south">
+			<dock index="0" id="6" port="n" />
+			<dock index="1" id="12" port="s" />
+		</line>
+		<line id="491" startText="up" endText="down">
+			<dock index="0" id="7" port="ne" />
+			<dock index="1" id="8" port="sw" />
+		</line>
+		<line id="492" startText="east" endText="in">
+			<dock index="0" id="7" port="e" />
+			<dock index="1" id="12" port="w" />
+		</line>
+		<line id="493" startText="east" endText="west">
+			<dock index="0" id="9" port="e" />
+			<dock index="1" id="11" port="w" />
+		</line>
+		<line id="494" startText="west" endText="east">
+			<dock index="0" id="9" port="w" />
+			<dock index="1" id="13" port="e" />
+		</line>
+		<line id="495" startText="in" endText="out">
+			<dock index="0" id="9" port="se" />
+			<dock index="1" id="10" port="nw" />
+		</line>
+		<line id="496" startText="east" endText="west">
+			<dock index="0" id="11" port="e" />
+			<dock index="1" id="22" port="w" />
+		</line>
+		<line id="497" startText="north" endText="south">
+			<dock index="0" id="12" port="n" />
+			<dock index="1" id="13" port="s" />
+		</line>
+		<line id="498" startText="east" endText="west">
+			<dock index="0" id="12" port="e" />
+			<dock index="1" id="14" port="w" />
+		</line>
+		<line id="499" startText="west" endText="north">
+			<dock index="0" id="13" port="w" />
+			<dock index="1" id="15" port="e" />
+		</line>
+		<line id="500" startText="north" endText="south">
+			<dock index="0" id="14" port="n" />
+			<dock index="1" id="23" port="s" />
+		</line>
+		<line id="501" startText="west" endText="east">
+			<dock index="0" id="15" port="w" />
+			<dock index="1" id="16" port="e" />
+		</line>
+		<line id="502" startText="down" endText="up">
+			<dock index="0" id="15" port="sw" />
+			<dock index="1" id="17" port="ne" />
+		</line>
+		<line id="503" startText="west" endText="east">
+			<dock index="0" id="16" port="w" />
+			<dock index="1" id="18" port="e" />
+		</line>
+		<line id="504" startText="in" endText="out">
+			<dock index="0" id="16" port="se" />
+			<dock index="1" id="17" port="nw" />
+		</line>
+		<line id="505" startText="north" endText="south">
+			<dock index="0" id="18" port="n" />
+			<dock index="1" id="26" port="s" />
+		</line>
+		<line id="506" startText="south" endText="north">
+			<dock index="0" id="19" port="s" />
+			<dock index="1" id="20" port="n" />
+		</line>
+		<line id="507" startText="east" endText="west">
+			<dock index="0" id="19" port="e" />
+			<dock index="1" id="21" port="w" />
+		</line>
+		<line id="508" startText="north" endText="south">
+			<dock index="0" id="19" port="n" />
+			<dock index="1" id="22" port="s" />
+		</line>
+		<line id="509" startText="north" endText="south">
+			<dock index="0" id="21" port="n" />
+			<dock index="1" id="25" port="s" />
+		</line>
+		<line id="510" startText="east" endText="west">
+			<dock index="0" id="22" port="e" />
+			<dock index="1" id="23" port="w" />
+		</line>
+		<line id="511" startText="up" endText="down">
+			<dock index="0" id="22" port="ne" />
+			<dock index="1" id="25" port="sw" />
+		</line>
+		<line id="512" startText="down" endText="up">
+			<dock index="0" id="22" port="sw" />
+			<dock index="1" id="24" port="ne" />
+		</line>
+		<line id="513" startText="north" endText="south">
+			<dock index="0" id="26" port="n" />
+			<dock index="1" id="29" port="s" />
+		</line>
+		<line id="514" startText="east" endText="west">
+			<dock index="0" id="26" port="e" />
+			<dock index="1" id="27" port="w" />
+		</line>
+		<line id="515" startText="west" endText="east">
+			<dock index="0" id="26" port="w" />
+			<dock index="1" id="28" port="e" />
+		</line>
+		<line id="516" startText="north" endText="south">
+			<dock index="0" id="27" port="n" />
+			<dock index="1" id="46" port="s" />
+		</line>
+		<line id="517" startText="north" endText="west">
+			<dock index="0" id="28" port="n" />
+			<dock index="1" id="44" port="s" />
+		</line>
+		<line id="518" startText="north" endText="south">
+			<dock index="0" id="29" port="n" />
+			<dock index="1" id="30" port="s" />
+		</line>
+		<line id="519" startText="east" endText="south">
+			<dock index="0" id="29" port="e" />
+			<dock index="1" id="42" port="w" />
+		</line>
+		<line id="520" startText="west" endText="west">
+			<dock index="0" id="29" port="w" />
+			<dock index="1" id="41" port="e" />
+		</line>
+		<line id="521" startText="north" endText="south">
+			<dock index="0" id="30" port="n" />
+			<dock index="1" id="38" port="s" />
+		</line>
+		<line id="522" startText="east" endText="west">
+			<dock index="0" id="30" port="e" />
+			<dock index="1" id="33" port="w" />
+		</line>
+		<line id="523" startText="west" endText="east">
+			<dock index="0" id="30" port="w" />
+			<dock index="1" id="31" port="e" />
+		</line>
+		<line id="524" startText="in" endText="out">
+			<dock index="0" id="30" port="se" />
+			<dock index="1" id="36" port="nw" />
+		</line>
+		<line id="525" startText="out" endText="in">
+			<dock index="0" id="30" port="nw" />
+			<dock index="1" id="37" port="se" />
+		</line>
+		<line id="526" startText="up" endText="down">
+			<dock index="0" id="30" port="ne" />
+			<dock index="1" id="35" port="sw" />
+		</line>
+		<line id="527" startText="down" endText="up">
+			<dock index="0" id="30" port="sw" />
+			<dock index="1" id="40" port="ne" />
+		</line>
+		<line id="528" startText="west" endText="east">
+			<dock index="0" id="31" port="w" />
+			<dock index="1" id="32" port="e" />
+		</line>
+		<line id="529" startText="down">
+			<dock index="0" id="32" port="sw" />
+			<dock index="1" id="56" port="ne" />
+		</line>
+		<line id="530" startText="east" endText="west">
+			<dock index="0" id="33" port="e" />
+			<dock index="1" id="34" port="w" />
+		</line>
+		<line id="531" startText="north" endText="east">
+			<dock index="0" id="33" port="n" />
+			<dock index="1" id="43" port="s" />
+		</line>
+		<line id="532" startText="north" endText="east">
+			<dock index="0" id="34" port="n" />
+			<dock index="1" id="41" port="s" />
+		</line>
+		<line id="533" startText="north" endText="south">
+			<dock index="0" id="35" port="n" />
+			<dock index="1" id="44" port="s" />
+		</line>
+		<line id="534" startText="down">
+			<dock index="0" id="36" port="sw" />
+			<dock index="1" id="32" port="ne" />
+		</line>
+		<line id="535" startText="north" endText="west">
+			<dock index="0" id="37" port="n" />
+			<dock index="1" id="43" port="s" />
+		</line>
+		<line id="536" startText="north" endText="south">
+			<dock index="0" id="38" port="n" />
+			<dock index="1" id="41" port="s" />
+		</line>
+		<line id="537" startText="up" endText="down">
+			<dock index="0" id="38" port="ne" />
+			<dock index="1" id="39" port="sw" />
+		</line>
+		<line id="538" startText="east" endText="west">
+			<dock index="0" id="40" port="e" />
+			<dock index="1" id="42" port="w" />
+		</line>
+		<line id="539" startText="north" endText="south">
+			<dock index="0" id="41" port="n" />
+			<dock index="1" id="43" port="s" />
+		</line>
+		<line id="540" startText="north" endText="west">
+			<dock index="0" id="42" port="n" />
+			<dock index="1" id="47" port="s" />
+		</line>
+		<line id="541" startText="north" endText="south">
+			<dock index="0" id="43" port="n" />
+			<dock index="1" id="47" port="s" />
+		</line>
+		<line id="542" startText="east" endText="west">
+			<dock index="0" id="44" port="e" />
+			<dock index="1" id="46" port="w" />
+		</line>
+		<line id="543" startText="down" endText="up">
+			<dock index="0" id="44" port="sw" />
+			<dock index="1" id="45" port="ne" />
+		</line>
+		<line id="544" startText="north" endText="east">
+			<dock index="0" id="46" port="n" />
+			<dock index="1" id="47" port="s" />
+		</line>
+		<line id="545" startText="north" endText="south">
+			<dock index="0" id="47" port="n" />
+			<dock index="1" id="48" port="s" />
+		</line>
+		<line id="546" startText="north" endText="south">
+			<dock index="0" id="48" port="n" />
+			<dock index="1" id="51" port="s" />
+		</line>
+		<line id="547" startText="east" endText="west">
+			<dock index="0" id="48" port="e" />
+			<dock index="1" id="49" port="w" />
+		</line>
+		<line id="548" startText="west" endText="east">
+			<dock index="0" id="48" port="w" />
+			<dock index="1" id="50" port="e" />
+		</line>
+		<line id="549" startText="in" endText="out">
+			<dock index="0" id="51" port="se" />
+			<dock index="1" id="52" port="nw" />
+		</line>
+		<line id="550" startText="north" endText="south">
+			<dock index="0" id="52" port="n" />
+			<dock index="1" id="55" port="s" />
+		</line>
+		<line id="551" startText="east" endText="west">
+			<dock index="0" id="52" port="e" />
+			<dock index="1" id="53" port="w" />
+		</line>
+		<line id="552" startText="down" endText="up">
+			<dock index="0" id="52" port="sw" />
+			<dock index="1" id="54" port="ne" />
+		</line>
+		<line id="553" startText="north" endText="south">
+			<dock index="0" id="53" port="n" />
+			<dock index="1" id="56" port="s" />
+		</line>
+		<line id="554" startText="north" endText="south">
+			<dock index="0" id="54" port="n" />
+			<dock index="1" id="57" port="s" />
+		</line>
+		<line id="555" startText="east" endText="west">
+			<dock index="0" id="55" port="e" />
+			<dock index="1" id="56" port="w" />
+		</line>
+		<line id="556" startText="west" endText="east">
+			<dock index="0" id="55" port="w" />
+			<dock index="1" id="57" port="e" />
+		</line>
+		<line id="557" startText="north">
+			<dock index="0" id="55" port="n" />
+			<dock index="1" id="58" port="s" />
+		</line>
+		<line id="558" startText="north" endText="south">
+			<dock index="0" id="57" port="n" />
+			<dock index="1" id="58" port="s" />
+		</line>
+		<line id="559" startText="west">
+			<dock index="0" id="59" port="w" />
+			<dock index="1" id="58" port="e" />
+		</line>
+		<line id="560" startText="north" endText="south">
+			<dock index="0" id="59" port="n" />
+			<dock index="1" id="60" port="s" />
+		</line>
+		<line id="561" startText="north" endText="south">
+			<dock index="0" id="60" port="n" />
+			<dock index="1" id="61" port="s" />
+		</line>
+		<line id="562" startText="north" endText="south">
+			<dock index="0" id="61" port="n" />
+			<dock index="1" id="62" port="s" />
+		</line>
+		<line id="563" startText="north" endText="south">
+			<dock index="0" id="62" port="n" />
+			<dock index="1" id="63" port="s" />
+		</line>
+		<line id="564" startText="north" endText="south">
+			<dock index="0" id="63" port="n" />
+			<dock index="1" id="64" port="s" />
+		</line>
+		<line id="565" startText="north" endText="south">
+			<dock index="0" id="64" port="n" />
+			<dock index="1" id="66" port="s" />
+		</line>
+		<line id="566" startText="east" endText="west">
+			<dock index="0" id="64" port="e" />
+			<dock index="1" id="65" port="w" />
+		</line>
+		<line id="567" startText="north" endText="south">
+			<dock index="0" id="65" port="n" />
+			<dock index="1" id="68" port="s" />
+		</line>
+		<line id="568" startText="east" endText="west">
+			<dock index="0" id="65" port="e" />
+			<dock index="1" id="67" port="w" />
+		</line>
+		<line id="569" startText="north" endText="south">
+			<dock index="0" id="66" port="n" />
+			<dock index="1" id="70" port="s" />
+		</line>
+		<line id="570" startText="east" endText="south">
+			<dock index="0" id="66" port="e" />
+			<dock index="1" id="67" port="w" />
+		</line>
+		<line id="571" startText="north" endText="south">
+			<dock index="0" id="67" port="n" />
+			<dock index="1" id="69" port="s" />
+		</line>
+		<line id="572" startText="north" endText="west">
+			<dock index="0" id="68" port="n" />
+			<dock index="1" id="75" port="s" />
+		</line>
+		<line id="573" startText="east" endText="west">
+			<dock index="0" id="68" port="e" />
+			<dock index="1" id="69" port="w" />
+		</line>
+		<line id="574" startText="north" endText="east">
+			<dock index="0" id="69" port="n" />
+			<dock index="1" id="82" port="s" />
+		</line>
+		<line id="575" startText="north" endText="south">
+			<dock index="0" id="70" port="n" />
+			<dock index="1" id="71" port="s" />
+		</line>
+		<line id="576" startText="east" endText="west">
+			<dock index="0" id="70" port="e" />
+			<dock index="1" id="72" port="w" />
+		</line>
+		<line id="577" startText="north" endText="south">
+			<dock index="0" id="71" port="n" />
+			<dock index="1" id="75" port="s" />
+		</line>
+		<line id="578" startText="east" endText="west">
+			<dock index="0" id="71" port="e" />
+			<dock index="1" id="73" port="w" />
+		</line>
+		<line id="579" startText="west" endText="east">
+			<dock index="0" id="71" port="w" />
+			<dock index="1" id="74" port="e" />
+		</line>
+		<line id="580" startText="north" endText="south">
+			<dock index="0" id="72" port="n" />
+			<dock index="1" id="73" port="s" />
+		</line>
+		<line id="581" startText="north" endText="east">
+			<dock index="0" id="73" port="n" />
+			<dock index="1" id="75" port="s" />
+		</line>
+		<line id="582" startText="north" endText="south">
+			<dock index="0" id="74" port="n" />
+			<dock index="1" id="76" port="s" />
+		</line>
+		<line id="583" startText="north" endText="south">
+			<dock index="0" id="75" port="n" />
+			<dock index="1" id="82" port="s" />
+		</line>
+		<line id="584" startText="in" endText="out">
+			<dock index="0" id="76" port="se" />
+			<dock index="1" id="77" port="nw" />
+		</line>
+		<line id="585" startText="north" endText="south">
+			<dock index="0" id="77" port="n" />
+			<dock index="1" id="78" port="s" />
+		</line>
+		<line id="586" startText="east" endText="west">
+			<dock index="0" id="77" port="e" />
+			<dock index="1" id="79" port="w" />
+		</line>
+		<line id="587" startText="down" endText="up">
+			<dock index="0" id="77" port="sw" />
+			<dock index="1" id="80" port="ne" />
+		</line>
+		<line id="588" startText="up" endText="down">
+			<dock index="0" id="78" port="ne" />
+			<dock index="1" id="81" port="sw" />
+		</line>
+		<line id="589" startText="in" endText="out">
+			<dock index="0" id="82" port="se" />
+			<dock index="1" id="83" port="nw" />
+		</line>
+		<line id="590" startText="north" endText="south">
+			<dock index="0" id="83" port="n" />
+			<dock index="1" id="84" port="s" />
+		</line>
+		<line id="591" startText="east" endText="west">
+			<dock index="0" id="83" port="e" />
+			<dock index="1" id="85" port="w" />
+		</line>
+		<line id="592" startText="north" endText="south">
+			<dock index="0" id="84" port="n" />
+			<dock index="1" id="86" port="s" />
+		</line>
+		<line id="593" startText="north" endText="south">
+			<dock index="0" id="85" port="n" />
+			<dock index="1" id="91" port="s" />
+		</line>
+		<line id="594" startText="west" endText="east">
+			<dock index="0" id="86" port="w" />
+			<dock index="1" id="87" port="e" />
+		</line>
+		<line id="595" startText="north" endText="south">
+			<dock index="0" id="86" port="n" />
+			<dock index="1" id="88" port="s" />
+		</line>
+		<line id="596" startText="east" endText="west">
+			<dock index="0" id="86" port="e" />
+			<dock index="1" id="89" port="w" />
+		</line>
+		<line id="597" startText="down" endText="up">
+			<dock index="0" id="86" port="sw" />
+			<dock index="1" id="90" port="ne" />
+		</line>
+		<line id="598" startText="down" endText="up">
+			<dock index="0" id="90" port="sw" />
+			<dock index="1" id="91" port="ne" />
+		</line>
+		<line id="599" startText="north" endText="south">
+			<dock index="0" id="91" port="n" />
+			<dock index="1" id="92" port="s" />
+		</line>
+		<line id="600" startText="north" endText="south">
+			<dock index="0" id="92" port="n" />
+			<dock index="1" id="93" port="s" />
+		</line>
+		<line id="601" startText="north" endText="south">
+			<dock index="0" id="93" port="n" />
+			<dock index="1" id="94" port="s" />
+		</line>
+		<line id="602" startText="east" endText="west">
+			<dock index="0" id="94" port="e" />
+			<dock index="1" id="98" port="w" />
+		</line>
+		<line id="603" startText="north" endText="south">
+			<dock index="0" id="94" port="n" />
+			<dock index="1" id="95" port="s" />
+		</line>
+		<line id="604" startText="east" endText="west">
+			<dock index="0" id="95" port="e" />
+			<dock index="1" id="96" port="w" />
+		</line>
+		<line id="605" startText="east" endText="west">
+			<dock index="0" id="96" port="e" />
+			<dock index="1" id="110" port="w" />
+		</line>
+		<line id="606" startText="in" endText="out">
+			<dock index="0" id="96" port="se" />
+			<dock index="1" id="97" port="nw" />
+		</line>
+		<line id="607" startText="down" endText="west">
+			<dock index="0" id="97" port="sw" />
+			<dock index="1" id="120" port="ne" />
+		</line>
+		<line id="608" startText="east" endText="west">
+			<dock index="0" id="98" port="e" />
+			<dock index="1" id="108" port="w" />
+		</line>
+		<line id="609" startText="north" endText="south">
+			<dock index="0" id="98" port="n" />
+			<dock index="1" id="99" port="s" />
+		</line>
+		<line id="610" startText="in" endText="out">
+			<dock index="0" id="99" port="se" />
+			<dock index="1" id="100" port="nw" />
+		</line>
+		<line id="611" startText="north" endText="south">
+			<dock index="0" id="100" port="n" />
+			<dock index="1" id="104" port="s" />
+		</line>
+		<line id="612" startText="east" endText="west">
+			<dock index="0" id="100" port="e" />
+			<dock index="1" id="101" port="w" />
+		</line>
+		<line id="613" startText="west" endText="east">
+			<dock index="0" id="100" port="w" />
+			<dock index="1" id="106" port="e" />
+		</line>
+		<line id="614" startText="south" endText="north">
+			<dock index="0" id="100" port="s" />
+			<dock index="1" id="107" port="n" />
+		</line>
+		<line id="615" startText="down" endText="up">
+			<dock index="0" id="101" port="sw" />
+			<dock index="1" id="102" port="ne" />
+		</line>
+		<line id="616" startText="east" endText="west">
+			<dock index="0" id="102" port="e" />
+			<dock index="1" id="103" port="w" />
+		</line>
+		<line id="617" startText="down" endText="up">
+			<dock index="0" id="103" port="sw" />
+			<dock index="1" id="129" port="ne" />
+		</line>
+		<line id="618" startText="down" endText="up">
+			<dock index="0" id="104" port="sw" />
+			<dock index="1" id="105" port="ne" />
+		</line>
+		<line id="619" startText="east">
+			<dock index="0" id="105" port="e" />
+			<dock index="1" id="121" port="w" />
+		</line>
+		<line id="620" startText="east" endText="west">
+			<dock index="0" id="108" port="e" />
+			<dock index="1" id="112" port="w" />
+		</line>
+		<line id="621" startText="south" endText="north">
+			<dock index="0" id="108" port="s" />
+			<dock index="1" id="110" port="n" />
+		</line>
+		<line id="622" startText="north" endText="south">
+			<dock index="0" id="108" port="n" />
+			<dock index="1" id="109" port="s" />
+		</line>
+		<line id="623" startText="in" endText="out">
+			<dock index="0" id="110" port="se" />
+			<dock index="1" id="120" port="nw" />
+		</line>
+		<line id="624" startText="south" endText="north">
+			<dock index="0" id="110" port="s" />
+			<dock index="1" id="111" port="n" />
+		</line>
+		<line id="625" startText="east" endText="west">
+			<dock index="0" id="112" port="e" />
+			<dock index="1" id="113" port="w" />
+		</line>
+		<line id="626" startText="south">
+			<dock index="0" id="112" port="s" />
+			<dock index="1" id="120" port="n" />
+		</line>
+		<line id="627" startText="in" endText="out">
+			<dock index="0" id="113" port="se" />
+			<dock index="1" id="114" port="nw" />
+		</line>
+		<line id="628" startText="east" endText="west">
+			<dock index="0" id="113" port="e" />
+			<dock index="1" id="115" port="w" />
+		</line>
+		<line id="629" startText="east">
+			<dock index="0" id="114" port="e" />
+			<dock index="1" id="115" port="w" />
+		</line>
+		<line id="630" startText="north" endText="south">
+			<dock index="0" id="114" port="n" />
+			<dock index="1" id="116" port="s" />
+		</line>
+		<line id="631" startText="south" endText="north">
+			<dock index="0" id="114" port="s" />
+			<dock index="1" id="117" port="n" />
+		</line>
+		<line id="632" startText="up" endText="down">
+			<dock index="0" id="114" port="ne" />
+			<dock index="1" id="118" port="sw" />
+		</line>
+		<line id="633" startText="west" endText="east">
+			<dock index="0" id="114" port="w" />
+			<dock index="1" id="119" port="e" />
+		</line>
+		<line id="634" startText="south" endText="east">
+			<dock index="0" id="115" port="s" />
+			<dock index="1" id="116" port="n" />
+		</line>
+		<line id="635" startText="east" endText="west">
+			<dock index="0" id="115" port="e" />
+			<dock index="1" id="118" port="w" />
+		</line>
+		<line id="636" startText="west">
+			<dock index="0" id="117" port="w" />
+			<dock index="1" id="112" port="e" />
+		</line>
+		<line id="637" startText="south" endText="north">
+			<dock index="0" id="117" port="s" />
+			<dock index="1" id="120" port="n" />
+		</line>
+		<line id="638" startText="in" endText="out">
+			<dock index="0" id="120" port="se" />
+			<dock index="1" id="121" port="nw" />
+		</line>
+		<line id="639" startText="north" endText="south">
+			<dock index="0" id="121" port="n" />
+			<dock index="1" id="127" port="s" />
+		</line>
+		<line id="640" startText="east" endText="west">
+			<dock index="0" id="121" port="e" />
+			<dock index="1" id="122" port="w" />
+		</line>
+		<line id="641" startText="west" endText="east">
+			<dock index="0" id="121" port="w" />
+			<dock index="1" id="123" port="e" />
+		</line>
+		<line id="642" startText="west" endText="east">
+			<dock index="0" id="123" port="w" />
+			<dock index="1" id="124" port="e" />
+		</line>
+		<line id="643" startText="down" endText="up">
+			<dock index="0" id="123" port="sw" />
+			<dock index="1" id="125" port="ne" />
+		</line>
+		<line id="644" startText="north" endText="south">
+			<dock index="0" id="123" port="n" />
+			<dock index="1" id="126" port="s" />
+		</line>
+		<line id="645" startText="east">
+			<dock index="0" id="125" port="e" />
+			<dock index="1" id="129" port="w" />
+		</line>
+		<line id="646" startText="down">
+			<dock index="0" id="125" port="sw" />
+			<dock index="1" id="132" port="ne" />
+		</line>
+		<line id="647" startText="east" endText="west">
+			<dock index="0" id="127" port="e" />
+			<dock index="1" id="129" port="w" />
+		</line>
+		<line id="648" startText="north" endText="south">
+			<dock index="0" id="127" port="n" />
+			<dock index="1" id="130" port="s" />
+		</line>
+		<line id="649" startText="west" endText="east">
+			<dock index="0" id="127" port="w" />
+			<dock index="1" id="128" port="e" />
+		</line>
+		<line id="650" startText="north" endText="south">
+			<dock index="0" id="129" port="n" />
+			<dock index="1" id="136" port="s" />
+		</line>
+		<line id="651" startText="east" endText="west">
+			<dock index="0" id="130" port="e" />
+			<dock index="1" id="131" port="w" />
+		</line>
+		<line id="652" startText="north" endText="south">
+			<dock index="0" id="130" port="n" />
+			<dock index="1" id="132" port="s" />
+		</line>
+		<line id="653" startText="west" endText="east">
+			<dock index="0" id="132" port="w" />
+			<dock index="1" id="133" port="e" />
+		</line>
+		<line id="654" startText="east" endText="west">
+			<dock index="0" id="132" port="e" />
+			<dock index="1" id="136" port="w" />
+		</line>
+		<line id="655" startText="north" endText="south">
+			<dock index="0" id="132" port="n" />
+			<dock index="1" id="138" port="s" />
+		</line>
+		<line id="656" startText="down" endText="up">
+			<dock index="0" id="132" port="sw" />
+			<dock index="1" id="140" port="ne" />
+		</line>
+		<line id="657" startText="north" endText="south">
+			<dock index="0" id="133" port="n" />
+			<dock index="1" id="134" port="s" />
+		</line>
+		<line id="658" startText="west" endText="east">
+			<dock index="0" id="133" port="w" />
+			<dock index="1" id="135" port="e" />
+		</line>
+		<line id="659" startText="east" endText="west">
+			<dock index="0" id="136" port="e" />
+			<dock index="1" id="137" port="w" />
+		</line>
+		<line id="660" startText="north" endText="south">
+			<dock index="0" id="138" port="n" />
+			<dock index="1" id="142" port="s" />
+		</line>
+		<line id="661" startText="east" endText="west">
+			<dock index="0" id="138" port="e" />
+			<dock index="1" id="139" port="w" />
+		</line>
+		<line id="662" startText="north" endText="west">
+			<dock index="0" id="140" port="n" />
+			<dock index="1" id="142" port="s" />
+		</line>
+		<line id="663" startText="east" endText="west">
+			<dock index="0" id="140" port="e" />
+			<dock index="1" id="141" port="w" />
+		</line>
+		<line id="664" startText="north" endText="south">
+			<dock index="0" id="142" port="n" />
+			<dock index="1" id="143" port="s" />
+		</line>
+		<line id="665" startText="north" endText="south">
+			<dock index="0" id="143" port="n" />
+			<dock index="1" id="145" port="s" />
+		</line>
+		<line id="666" startText="east" endText="west">
+			<dock index="0" id="143" port="e" />
+			<dock index="1" id="144" port="w" />
+		</line>
+		<line id="667" startText="north" endText="south">
+			<dock index="0" id="145" port="n" />
+			<dock index="1" id="149" port="s" />
+		</line>
+		<line id="668" startText="east" endText="west">
+			<dock index="0" id="145" port="e" />
+			<dock index="1" id="146" port="w" />
+		</line>
+		<line id="669" startText="north" endText="south">
+			<dock index="0" id="146" port="n" />
+			<dock index="1" id="147" port="s" />
+		</line>
+		<line id="670" startText="in" endText="out">
+			<dock index="0" id="147" port="se" />
+			<dock index="1" id="148" port="nw" />
+		</line>
+		<line id="671" startText="north" endText="south">
+			<dock index="0" id="149" port="n" />
+			<dock index="1" id="155" port="s" />
+		</line>
+		<line id="672" startText="west" endText="east">
+			<dock index="0" id="149" port="w" />
+			<dock index="1" id="150" port="e" />
+		</line>
+		<line id="673" startText="north" endText="south">
+			<dock index="0" id="150" port="n" />
+			<dock index="1" id="151" port="s" />
+		</line>
+		<line id="674" startText="north" endText="north">
+			<dock index="0" id="151" port="n" />
+			<dock index="1" id="165" port="s" />
+		</line>
+		<line id="675" startText="east" endText="west">
+			<dock index="0" id="151" port="e" />
+			<dock index="1" id="152" port="w" />
+		</line>
+		<line id="676" startText="south" endText="north">
+			<dock index="0" id="152" port="s" />
+			<dock index="1" id="153" port="n" />
+		</line>
+		<line id="677" startText="east" endText="west">
+			<dock index="0" id="152" port="e" />
+			<dock index="1" id="154" port="w" />
+		</line>
+		<line id="678" startText="north" endText="east">
+			<dock index="0" id="152" port="n" />
+			<dock index="1" id="155" port="s" />
+		</line>
+		<line id="679" startText="in" endText="out">
+			<dock index="0" id="155" port="se" />
+			<dock index="1" id="156" port="nw" />
+		</line>
+		<line id="680" startText="north" endText="south">
+			<dock index="0" id="156" port="n" />
+			<dock index="1" id="159" port="s" />
+		</line>
+		<line id="681" startText="south" endText="north">
+			<dock index="0" id="156" port="s" />
+			<dock index="1" id="158" port="n" />
+		</line>
+		<line id="682" startText="east" endText="west">
+			<dock index="0" id="156" port="e" />
+			<dock index="1" id="163" port="w" />
+		</line>
+		<line id="683" startText="west" endText="east">
+			<dock index="0" id="156" port="w" />
+			<dock index="1" id="157" port="e" />
+		</line>
+		<line id="684" startText="east" endText="west">
+			<dock index="0" id="159" port="e" />
+			<dock index="1" id="160" port="w" />
+		</line>
+		<line id="685" startText="west" endText="east">
+			<dock index="0" id="159" port="w" />
+			<dock index="1" id="161" port="e" />
+		</line>
+		<line id="686" startText="north" endText="south">
+			<dock index="0" id="159" port="n" />
+			<dock index="1" id="162" port="s" />
+		</line>
+		<line id="687" startText="north" endText="south">
+			<dock index="0" id="162" port="n" />
+			<dock index="1" id="165" port="s" />
+		</line>
+		<line id="688" startText="north" endText="south">
+			<dock index="0" id="163" port="n" />
+			<dock index="1" id="164" port="s" />
+		</line>
+		<line id="689" startText="east" endText="west">
+			<dock index="0" id="163" port="e" />
+			<dock index="1" id="165" port="w" />
+		</line>
+		<line id="690" startText="east" endText="west">
+			<dock index="0" id="165" port="e" />
+			<dock index="1" id="166" port="w" />
+		</line>
+		<line id="691" startText="in" endText="out">
+			<dock index="0" id="166" port="se" />
+			<dock index="1" id="167" port="nw" />
+		</line>
+		<line id="692" startText="north" endText="south">
+			<dock index="0" id="167" port="n" />
+			<dock index="1" id="168" port="s" />
+		</line>
+		<line id="693" startText="east" endText="west">
+			<dock index="0" id="167" port="e" />
+			<dock index="1" id="169" port="w" />
+		</line>
+		<line id="694" startText="west" endText="east">
+			<dock index="0" id="167" port="w" />
+			<dock index="1" id="170" port="e" />
+		</line>
+		<line id="695" startText="down" endText="up">
+			<dock index="0" id="167" port="sw" />
+			<dock index="1" id="172" port="ne" />
+		</line>
+		<line id="696" startText="up" endText="down (hidden, sc_upper_vault_drained)">
+			<dock index="0" id="171" port="ne" />
+			<dock index="1" id="170" port="sw" />
+		</line>
+		<line id="697" startText="east" endText="north">
+			<dock index="0" id="171" port="e" />
+			<dock index="1" id="174" port="w" />
+		</line>
+		<line id="698" startText="west" endText="east">
+			<dock index="0" id="172" port="w" />
+			<dock index="1" id="173" port="e" />
+		</line>
+		<line id="699" startText="north" endText="south">
+			<dock index="0" id="172" port="n" />
+			<dock index="1" id="175" port="s" />
+		</line>
+		<line id="700" startText="west" endText="east (hidden, sc_upper_vault_drained)">
+			<dock index="0" id="174" port="w" />
+			<dock index="1" id="172" port="e" />
+		</line>
+		<line id="701" startText="west" endText="east">
+			<dock index="0" id="175" port="w" />
+			<dock index="1" id="176" port="e" />
+		</line>
+		<line id="702" startText="north" endText="south">
+			<dock index="0" id="175" port="n" />
+			<dock index="1" id="180" port="s" />
+		</line>
+		<line id="703" startText="down" endText="up">
+			<dock index="0" id="176" port="sw" />
+			<dock index="1" id="177" port="ne" />
+		</line>
+		<line id="704" startText="down" endText="up">
+			<dock index="0" id="177" port="sw" />
+			<dock index="1" id="178" port="ne" />
+		</line>
+		<line id="705" startText="west" endText="east (hidden, sc_upper_vault_drained)">
+			<dock index="0" id="179" port="w" />
+			<dock index="1" id="175" port="e" />
+		</line>
+		<line id="706" startText="north" endText="south">
+			<dock index="0" id="180" port="n" />
+			<dock index="1" id="181" port="s" />
+		</line>
+		<line id="707" startText="west" endText="east">
+			<dock index="0" id="181" port="w" />
+			<dock index="1" id="182" port="e" />
+		</line>
+		<line id="708" startText="east" endText="west">
+			<dock index="0" id="181" port="e" />
+			<dock index="1" id="184" port="w" />
+		</line>
+		<line id="709" startText="up" endText="down (hidden, sc_lower_vault_drained)">
+			<dock index="0" id="183" port="ne" />
+			<dock index="1" id="181" port="sw" />
+		</line>
+		<line id="710" startText="north" endText="south">
+			<dock index="0" id="184" port="n" />
+			<dock index="1" id="185" port="s" />
+		</line>
+		<line id="711" startText="east" endText="west">
+			<dock index="0" id="185" port="e" />
+			<dock index="1" id="186" port="w" />
+		</line>
+		<line id="712" startText="north" endText="south">
+			<dock index="0" id="186" port="n" />
+			<dock index="1" id="187" port="s" />
+		</line>
+		<line id="713" startText="east" endText="west">
+			<dock index="0" id="187" port="e" />
+			<dock index="1" id="188" port="w" />
+		</line>
+		<line id="714" startText="north" endText="south">
+			<dock index="0" id="187" port="n" />
+			<dock index="1" id="199" port="s" />
+		</line>
+		<line id="715" startText="east" endText="west">
+			<dock index="0" id="188" port="e" />
+			<dock index="1" id="190" port="w" />
+		</line>
+		<line id="716" startText="south" endText="north">
+			<dock index="0" id="188" port="s" />
+			<dock index="1" id="189" port="n" />
+		</line>
+		<line id="717" startText="east" endText="west">
+			<dock index="0" id="190" port="e" />
+			<dock index="1" id="193" port="w" />
+		</line>
+		<line id="718" startText="north" endText="south">
+			<dock index="0" id="190" port="n" />
+			<dock index="1" id="213" port="s" />
+		</line>
+		<line id="719" startText="south" endText="north">
+			<dock index="0" id="190" port="s" />
+			<dock index="1" id="191" port="n" />
+		</line>
+		<line id="720" startText="east" endText="west">
+			<dock index="0" id="191" port="e" />
+			<dock index="1" id="192" port="w" />
+		</line>
+		<line id="721" startText="east" endText="west">
+			<dock index="0" id="193" port="e" />
+			<dock index="1" id="194" port="w" />
+		</line>
+		<line id="722" startText="south" endText="north">
+			<dock index="0" id="193" port="s" />
+			<dock index="1" id="204" port="n" />
+		</line>
+		<line id="723" startText="north" endText="south">
+			<dock index="0" id="193" port="n" />
+			<dock index="1" id="216" port="s" />
+		</line>
+		<line id="724" startText="east" endText="west">
+			<dock index="0" id="194" port="e" />
+			<dock index="1" id="196" port="w" />
+		</line>
+		<line id="725" startText="south" endText="north">
+			<dock index="0" id="194" port="s" />
+			<dock index="1" id="195" port="n" />
+		</line>
+		<line id="726" startText="east" endText="west">
+			<dock index="0" id="196" port="e" />
+			<dock index="1" id="197" port="w" />
+		</line>
+		<line id="727" startText="north" endText="south">
+			<dock index="0" id="196" port="n" />
+			<dock index="1" id="209" port="s" />
+		</line>
+		<line id="728" startText="south" endText="north">
+			<dock index="0" id="196" port="s" />
+			<dock index="1" id="220" port="n" />
+		</line>
+		<line id="729" startText="east" endText="west">
+			<dock index="0" id="197" port="e" />
+			<dock index="1" id="198" port="w" />
+		</line>
+		<line id="730" startText="north" endText="south">
+			<dock index="0" id="198" port="n" />
+			<dock index="1" id="236" port="s" />
+		</line>
+		<line id="731" startText="in" endText="out">
+			<dock index="0" id="199" port="se" />
+			<dock index="1" id="200" port="nw" />
+		</line>
+		<line id="732" startText="east" endText="west">
+			<dock index="0" id="199" port="e" />
+			<dock index="1" id="201" port="w" />
+		</line>
+		<line id="733" startText="east" endText="west">
+			<dock index="0" id="200" port="e" />
+			<dock index="1" id="202" port="w" />
+		</line>
+		<line id="734" startText="north" endText="south">
+			<dock index="0" id="200" port="n" />
+			<dock index="1" id="203" port="s" />
+		</line>
+		<line id="735" startText="in" endText="out">
+			<dock index="0" id="204" port="se" />
+			<dock index="1" id="205" port="nw" />
+		</line>
+		<line id="736" startText="east" endText="west">
+			<dock index="0" id="204" port="e" />
+			<dock index="1" id="206" port="w" />
+		</line>
+		<line id="737" startText="south" endText="north">
+			<dock index="0" id="204" port="s" />
+			<dock index="1" id="207" port="n" />
+		</line>
+		<line id="738" startText="up" endText="down">
+			<dock index="0" id="205" port="ne" />
+			<dock index="1" id="208" port="sw" />
+		</line>
+		<line id="739" startText="in" endText="out">
+			<dock index="0" id="209" port="se" />
+			<dock index="1" id="210" port="nw" />
+		</line>
+		<line id="740" startText="east" endText="west">
+			<dock index="0" id="209" port="e" />
+			<dock index="1" id="211" port="w" />
+		</line>
+		<line id="741" startText="north" endText="south">
+			<dock index="0" id="210" port="n" />
+			<dock index="1" id="212" port="s" />
+		</line>
+		<line id="742" startText="up" endText="down">
+			<dock index="0" id="213" port="ne" />
+			<dock index="1" id="214" port="sw" />
+		</line>
+		<line id="743" startText="up" endText="down">
+			<dock index="0" id="214" port="ne" />
+			<dock index="1" id="215" port="sw" />
+		</line>
+		<line id="744" startText="up" endText="down">
+			<dock index="0" id="216" port="ne" />
+			<dock index="1" id="217" port="sw" />
+		</line>
+		<line id="745" startText="up" endText="down">
+			<dock index="0" id="217" port="ne" />
+			<dock index="1" id="219" port="sw" />
+		</line>
+		<line id="746" startText="out" endText="in (hidden, gw_ember_spell_cache_opened)">
+			<dock index="0" id="218" port="nw" />
+			<dock index="1" id="217" port="se" />
+		</line>
+		<line id="747" startText="up" endText="down">
+			<dock index="0" id="220" port="ne" />
+			<dock index="1" id="221" port="sw" />
+		</line>
+		<line id="748" startText="up" endText="down">
+			<dock index="0" id="221" port="ne" />
+			<dock index="1" id="222" port="sw" />
+		</line>
+		<line id="749" startText="out" endText="in (hidden, gw_invisible_barrier_dropped)">
+			<dock index="0" id="223" port="nw" />
+			<dock index="1" id="197" port="se" />
+		</line>
+		<line id="750" startText="north" endText="south">
+			<dock index="0" id="223" port="n" />
+			<dock index="1" id="224" port="s" />
+		</line>
+		<line id="751" startText="east" endText="west">
+			<dock index="0" id="224" port="e" />
+			<dock index="1" id="225" port="w" />
+		</line>
+		<line id="752" startText="west" endText="east">
+			<dock index="0" id="224" port="w" />
+			<dock index="1" id="228" port="e" />
+		</line>
+		<line id="753" startText="up" endText="down">
+			<dock index="0" id="224" port="ne" />
+			<dock index="1" id="234" port="sw" />
+		</line>
+		<line id="754" startText="north" endText="south">
+			<dock index="0" id="225" port="n" />
+			<dock index="1" id="226" port="s" />
+		</line>
+		<line id="755" startText="east" endText="west">
+			<dock index="0" id="226" port="e" />
+			<dock index="1" id="227" port="w" />
+		</line>
+		<line id="756" startText="down" endText="east">
+			<dock index="0" id="226" port="sw" />
+			<dock index="1" id="229" port="ne" />
+		</line>
+		<line id="757" startText="north" endText="south">
+			<dock index="0" id="228" port="n" />
+			<dock index="1" id="230" port="s" />
+		</line>
+		<line id="758" startText="down" endText="up">
+			<dock index="0" id="228" port="sw" />
+			<dock index="1" id="229" port="ne" />
+		</line>
+		<line id="759" startText="east" endText="west">
+			<dock index="0" id="230" port="e" />
+			<dock index="1" id="231" port="w" />
+		</line>
+		<line id="760" startText="west" endText="east">
+			<dock index="0" id="230" port="w" />
+			<dock index="1" id="232" port="e" />
+		</line>
+		<line id="761" startText="north" endText="south">
+			<dock index="0" id="230" port="n" />
+			<dock index="1" id="233" port="s" />
+		</line>
+		<line id="762" startText="down" endText="up">
+			<dock index="0" id="232" port="sw" />
+			<dock index="1" id="235" port="ne" />
+		</line>
+		<line id="763" startText="north" endText="south">
+			<dock index="0" id="234" port="n" />
+			<dock index="1" id="235" port="s" />
+		</line>
+		<line id="764" startText="north">
+			<dock index="0" id="235" port="n" />
+			<dock index="1" id="236" port="s" />
+		</line>
+		<line id="765" startText="north" endText="south">
+			<dock index="0" id="236" port="n" />
+			<dock index="1" id="238" port="s" />
+		</line>
+		<line id="766" startText="east" endText="west">
+			<dock index="0" id="236" port="e" />
+			<dock index="1" id="237" port="w" />
+		</line>
+		<line id="767" startText="north" endText="south">
+			<dock index="0" id="238" port="n" />
+			<dock index="1" id="243" port="s" />
+		</line>
+		<line id="768" startText="west" endText="east">
+			<dock index="0" id="238" port="w" />
+			<dock index="1" id="239" port="e" />
+		</line>
+		<line id="769" startText="east" endText="west">
+			<dock index="0" id="238" port="e" />
+			<dock index="1" id="242" port="w" />
+		</line>
+		<line id="770" startText="down" endText="up">
+			<dock index="0" id="239" port="sw" />
+			<dock index="1" id="240" port="ne" />
+		</line>
+		<line id="771" startText="east" endText="west">
+			<dock index="0" id="240" port="e" />
+			<dock index="1" id="241" port="w" />
+		</line>
+		<line id="772" startText="north" endText="south">
+			<dock index="0" id="243" port="n" />
+			<dock index="1" id="246" port="s" />
+		</line>
+		<line id="773" startText="east" endText="west">
+			<dock index="0" id="243" port="e" />
+			<dock index="1" id="244" port="w" />
+		</line>
+		<line id="774" startText="west" endText="east">
+			<dock index="0" id="243" port="w" />
+			<dock index="1" id="245" port="e" />
+		</line>
+		<line id="775" startText="north" endText="south">
+			<dock index="0" id="246" port="n" />
+			<dock index="1" id="251" port="s" />
+		</line>
+		<line id="776" startText="east" endText="west">
+			<dock index="0" id="246" port="e" />
+			<dock index="1" id="248" port="w" />
+		</line>
+		<line id="777" startText="west" endText="east">
+			<dock index="0" id="246" port="w" />
+			<dock index="1" id="247" port="e" />
+		</line>
+		<line id="778" startText="up" endText="down">
+			<dock index="0" id="248" port="ne" />
+			<dock index="1" id="249" port="sw" />
+		</line>
+		<line id="779" startText="in" endText="out">
+			<dock index="0" id="248" port="se" />
+			<dock index="1" id="250" port="nw" />
+		</line>
+		<line id="780" startText="north" endText="south">
+			<dock index="0" id="251" port="n" />
+			<dock index="1" id="262" port="s" />
+		</line>
+		<line id="781" startText="east" endText="west">
+			<dock index="0" id="251" port="e" />
+			<dock index="1" id="256" port="w" />
+		</line>
+		<line id="782" startText="west" endText="east">
+			<dock index="0" id="251" port="w" />
+			<dock index="1" id="259" port="e" />
+		</line>
+		<line id="783" startText="in" endText="out">
+			<dock index="0" id="251" port="se" />
+			<dock index="1" id="252" port="nw" />
+		</line>
+		<line id="784" startText="west" endText="east">
+			<dock index="0" id="252" port="w" />
+			<dock index="1" id="253" port="e" />
+		</line>
+		<line id="785" startText="west" endText="east">
+			<dock index="0" id="253" port="w" />
+			<dock index="1" id="268" port="e" />
+		</line>
+		<line id="786" startText="north" endText="south">
+			<dock index="0" id="253" port="n" />
+			<dock index="1" id="254" port="s" />
+		</line>
+		<line id="787" startText="south" endText="south">
+			<dock index="0" id="253" port="s" />
+			<dock index="1" id="255" port="n" />
+		</line>
+		<line id="788" startText="north" endText="south (hidden, dc_ferry_ticket_checked)">
+			<dock index="0" id="255" port="n" />
+			<dock index="1" id="18" port="s" />
+		</line>
+		<line id="789" startText="east" endText="west">
+			<dock index="0" id="256" port="e" />
+			<dock index="1" id="257" port="w" />
+		</line>
+		<line id="790" startText="north" endText="south">
+			<dock index="0" id="256" port="n" />
+			<dock index="1" id="258" port="s" />
+		</line>
+		<line id="791" startText="west" endText="east">
+			<dock index="0" id="259" port="w" />
+			<dock index="1" id="260" port="e" />
+		</line>
+		<line id="792" startText="north" endText="south">
+			<dock index="0" id="259" port="n" />
+			<dock index="1" id="261" port="s" />
+		</line>
+		<line id="793" startText="north" endText="south">
+			<dock index="0" id="262" port="n" />
+			<dock index="1" id="266" port="s" />
+		</line>
+		<line id="794" startText="east" endText="west">
+			<dock index="0" id="262" port="e" />
+			<dock index="1" id="263" port="w" />
+		</line>
+		<line id="795" startText="west" endText="east">
+			<dock index="0" id="262" port="w" />
+			<dock index="1" id="265" port="e" />
+		</line>
+		<line id="796" startText="in" endText="out">
+			<dock index="0" id="263" port="se" />
+			<dock index="1" id="264" port="nw" />
+		</line>
+		<line id="797" startText="east" endText="west">
+			<dock index="0" id="266" port="e" />
+			<dock index="1" id="267" port="w" />
+		</line>
+		<line id="798" startText="west" endText="east">
+			<dock index="0" id="268" port="w" />
+			<dock index="1" id="270" port="e" />
+		</line>
+		<line id="799" startText="north" endText="south">
+			<dock index="0" id="268" port="n" />
+			<dock index="1" id="269" port="s" />
+		</line>
+		<line id="800" startText="west" endText="east">
+			<dock index="0" id="270" port="w" />
+			<dock index="1" id="271" port="e" />
+		</line>
+		<line id="801" startText="west" endText="east">
+			<dock index="0" id="271" port="w" />
+			<dock index="1" id="272" port="e" />
+		</line>
+		<line id="802" startText="north" endText="south">
+			<dock index="0" id="272" port="n" />
+			<dock index="1" id="273" port="s" />
+		</line>
+		<line id="803" startText="west" endText="east">
+			<dock index="0" id="272" port="w" />
+			<dock index="1" id="275" port="e" />
+		</line>
+		<line id="804" startText="south" endText="north">
+			<dock index="0" id="272" port="s" />
+			<dock index="1" id="274" port="n" />
+		</line>
+		<line id="805" startText="west" endText="east">
+			<dock index="0" id="275" port="w" />
+			<dock index="1" id="278" port="e" />
+		</line>
+		<line id="806" startText="north" endText="south">
+			<dock index="0" id="275" port="n" />
+			<dock index="1" id="276" port="s" />
+		</line>
+		<line id="807" startText="south" endText="north">
+			<dock index="0" id="275" port="s" />
+			<dock index="1" id="277" port="n" />
+		</line>
+		<line id="808" startText="in" endText="out">
+			<dock index="0" id="278" port="se" />
+			<dock index="1" id="279" port="nw" />
+		</line>
+		<line id="809" startText="north" endText="south">
+			<dock index="0" id="279" port="n" />
+			<dock index="1" id="281" port="s" />
+		</line>
+		<line id="810" startText="east" endText="west">
+			<dock index="0" id="279" port="e" />
+			<dock index="1" id="280" port="w" />
+		</line>
+		<line id="811" startText="east" endText="west">
+			<dock index="0" id="281" port="e" />
+			<dock index="1" id="282" port="w" />
+		</line>
+		<line id="812" startText="west" endText="east">
+			<dock index="0" id="281" port="w" />
+			<dock index="1" id="285" port="e" />
+		</line>
+		<line id="813" startText="north" endText="south">
+			<dock index="0" id="281" port="n" />
+			<dock index="1" id="288" port="s" />
+		</line>
+		<line id="814" startText="north" endText="south">
+			<dock index="0" id="282" port="n" />
+			<dock index="1" id="289" port="s" />
+		</line>
+		<line id="815" startText="down" endText="up">
+			<dock index="0" id="282" port="sw" />
+			<dock index="1" id="283" port="ne" />
+		</line>
+		<line id="816" startText="west" endText="east">
+			<dock index="0" id="283" port="w" />
+			<dock index="1" id="284" port="e" />
+		</line>
+		<line id="817" startText="north" endText="south">
+			<dock index="0" id="285" port="n" />
+			<dock index="1" id="287" port="s" />
+		</line>
+		<line id="818" startText="west" endText="east">
+			<dock index="0" id="285" port="w" />
+			<dock index="1" id="286" port="e" />
+		</line>
+		<line id="819" startText="north" endText="south">
+			<dock index="0" id="287" port="n" />
+			<dock index="1" id="292" port="s" />
+		</line>
+		<line id="820" startText="east" endText="west">
+			<dock index="0" id="288" port="e" />
+			<dock index="1" id="289" port="w" />
+		</line>
+		<line id="821" startText="west" endText="east">
+			<dock index="0" id="288" port="w" />
+			<dock index="1" id="290" port="e" />
+		</line>
+		<line id="822" startText="north" endText="south">
+			<dock index="0" id="288" port="n" />
+			<dock index="1" id="295" port="s" />
+		</line>
+		<line id="823" startText="north" endText="south">
+			<dock index="0" id="289" port="n" />
+			<dock index="1" id="296" port="s" />
+		</line>
+		<line id="824" startText="north" endText="west">
+			<dock index="0" id="290" port="n" />
+			<dock index="1" id="292" port="s" />
+		</line>
+		<line id="825" startText="west" endText="east">
+			<dock index="0" id="290" port="w" />
+			<dock index="1" id="291" port="e" />
+		</line>
+		<line id="826" startText="east" endText="west">
+			<dock index="0" id="292" port="e" />
+			<dock index="1" id="295" port="w" />
+		</line>
+		<line id="827" startText="down" endText="up">
+			<dock index="0" id="292" port="sw" />
+			<dock index="1" id="293" port="ne" />
+		</line>
+		<line id="828" startText="north" endText="south">
+			<dock index="0" id="293" port="n" />
+			<dock index="1" id="294" port="s" />
+		</line>
+		<line id="829" startText="east" endText="west">
+			<dock index="0" id="295" port="e" />
+			<dock index="1" id="296" port="w" />
+		</line>
+		<line id="830" startText="north" endText="out">
+			<dock index="0" id="295" port="n" />
+			<dock index="1" id="298" port="s" />
+		</line>
+		<line id="831" startText="north" endText="south">
+			<dock index="0" id="296" port="n" />
+			<dock index="1" id="297" port="s" />
+		</line>
+		<line id="832" startText="south">
+			<dock index="0" id="299" port="s" />
+			<dock index="1" id="298" port="n" />
+		</line>
+		<line id="833" startText="north" endText="south">
+			<dock index="0" id="299" port="n" />
+			<dock index="1" id="300" port="s" />
+		</line>
+		<line id="834" startText="north" endText="south">
+			<dock index="0" id="300" port="n" />
+			<dock index="1" id="301" port="s" />
+		</line>
+		<line id="835" startText="north" endText="south">
+			<dock index="0" id="301" port="n" />
+			<dock index="1" id="302" port="s" />
+		</line>
+		<line id="836" startText="north" endText="south">
+			<dock index="0" id="302" port="n" />
+			<dock index="1" id="303" port="s" />
+		</line>
+		<line id="837" startText="north" endText="south">
+			<dock index="0" id="303" port="n" />
+			<dock index="1" id="304" port="s" />
+		</line>
+		<line id="838" startText="north" endText="south">
+			<dock index="0" id="304" port="n" />
+			<dock index="1" id="309" port="s" />
+		</line>
+		<line id="839" startText="east" endText="west">
+			<dock index="0" id="304" port="e" />
+			<dock index="1" id="305" port="w" />
+		</line>
+		<line id="840" startText="north" endText="south">
+			<dock index="0" id="305" port="n" />
+			<dock index="1" id="312" port="s" />
+		</line>
+		<line id="841" startText="east" endText="west">
+			<dock index="0" id="305" port="e" />
+			<dock index="1" id="306" port="w" />
+		</line>
+		<line id="842" startText="in" endText="out">
+			<dock index="0" id="306" port="se" />
+			<dock index="1" id="307" port="nw" />
+		</line>
+		<line id="843" startText="north" endText="south">
+			<dock index="0" id="306" port="n" />
+			<dock index="1" id="308" port="s" />
+		</line>
+		<line id="844" startText="west" endText="east">
+			<dock index="0" id="308" port="w" />
+			<dock index="1" id="320" port="e" />
+		</line>
+		<line id="845" startText="up" endText="down">
+			<dock index="0" id="309" port="ne" />
+			<dock index="1" id="311" port="sw" />
+		</line>
+		<line id="846" startText="east" endText="west">
+			<dock index="0" id="309" port="e" />
+			<dock index="1" id="310" port="w" />
+		</line>
+		<line id="847" startText="north" endText="south">
+			<dock index="0" id="311" port="n" />
+			<dock index="1" id="320" port="s" />
+		</line>
+		<line id="848" startText="west" endText="east">
+			<dock index="0" id="311" port="w" />
+			<dock index="1" id="312" port="e" />
+		</line>
+		<line id="849" startText="in" endText="out">
+			<dock index="0" id="312" port="se" />
+			<dock index="1" id="313" port="nw" />
+		</line>
+		<line id="850" startText="north" endText="south">
+			<dock index="0" id="313" port="n" />
+			<dock index="1" id="314" port="s" />
+		</line>
+		<line id="851" startText="east" endText="west">
+			<dock index="0" id="313" port="e" />
+			<dock index="1" id="315" port="w" />
+		</line>
+		<line id="852" startText="west" endText="east">
+			<dock index="0" id="313" port="w" />
+			<dock index="1" id="318" port="e" />
+		</line>
+		<line id="853" startText="north" endText="south">
+			<dock index="0" id="315" port="n" />
+			<dock index="1" id="316" port="s" />
+		</line>
+		<line id="854" startText="up" endText="down">
+			<dock index="0" id="316" port="ne" />
+			<dock index="1" id="317" port="sw" />
+		</line>
+		<line id="855" startText="up" endText="down">
+			<dock index="0" id="318" port="ne" />
+			<dock index="1" id="319" port="sw" />
+		</line>
+		<line id="856" startText="north" endText="south">
+			<dock index="0" id="320" port="n" />
+			<dock index="1" id="321" port="s" />
+		</line>
+		<line id="857" startText="north" endText="south">
+			<dock index="0" id="321" port="n" />
+			<dock index="1" id="324" port="s" />
+		</line>
+		<line id="858" startText="down" endText="up">
+			<dock index="0" id="321" port="sw" />
+			<dock index="1" id="322" port="ne" />
+		</line>
+		<line id="859" startText="east" endText="west">
+			<dock index="0" id="322" port="e" />
+			<dock index="1" id="323" port="w" />
+		</line>
+		<line id="860" startText="north" endText="south">
+			<dock index="0" id="324" port="n" />
+			<dock index="1" id="326" port="s" />
+		</line>
+		<line id="861" startText="east" endText="west">
+			<dock index="0" id="324" port="e" />
+			<dock index="1" id="325" port="w" />
+		</line>
+		<line id="862" startText="north" endText="south">
+			<dock index="0" id="326" port="n" />
+			<dock index="1" id="328" port="s" />
+		</line>
+		<line id="863" startText="east" endText="west">
+			<dock index="0" id="326" port="e" />
+			<dock index="1" id="327" port="w" />
+		</line>
+		<line id="864" startText="north" endText="south">
+			<dock index="0" id="328" port="n" />
+			<dock index="1" id="329" port="s" />
+		</line>
+		<line id="865" startText="in" endText="out">
+			<dock index="0" id="329" port="se" />
+			<dock index="1" id="330" port="nw" />
+		</line>
+		<line id="866" startText="north" endText="south">
+			<dock index="0" id="330" port="n" />
+			<dock index="1" id="332" port="s" />
+		</line>
+		<line id="867" startText="east" endText="west">
+			<dock index="0" id="330" port="e" />
+			<dock index="1" id="337" port="w" />
+		</line>
+		<line id="868" startText="west" endText="east">
+			<dock index="0" id="330" port="w" />
+			<dock index="1" id="331" port="e" />
+		</line>
+		<line id="869" startText="up" endText="down">
+			<dock index="0" id="332" port="ne" />
+			<dock index="1" id="333" port="sw" />
+		</line>
+		<line id="870" startText="north" endText="south">
+			<dock index="0" id="332" port="n" />
+			<dock index="1" id="335" port="s" />
+		</line>
+		<line id="871" startText="east" endText="west">
+			<dock index="0" id="333" port="e" />
+			<dock index="1" id="334" port="w" />
+		</line>
+		<line id="872" startText="east">
+			<dock index="0" id="335" port="e" />
+			<dock index="1" id="337" port="w" />
+		</line>
+		<line id="873" startText="west" endText="east">
+			<dock index="0" id="335" port="w" />
+			<dock index="1" id="336" port="e" />
+		</line>
+		<line id="874" startText="up (tv_stormlift_awakened)" endText="down">
+			<dock index="0" id="337" port="ne" />
+			<dock index="1" id="338" port="sw" />
+		</line>
+		<line id="875" startText="north" endText="south">
+			<dock index="0" id="338" port="n" />
+			<dock index="1" id="340" port="s" />
+		</line>
+		<line id="876" startText="east" endText="west">
+			<dock index="0" id="338" port="e" />
+			<dock index="1" id="339" port="w" />
+		</line>
+		<line id="877" startText="north" endText="south">
+			<dock index="0" id="339" port="n" />
+			<dock index="1" id="342" port="s" />
+		</line>
+		<line id="878" startText="east" endText="west">
+			<dock index="0" id="340" port="e" />
+			<dock index="1" id="342" port="w" />
+		</line>
+		<line id="879" startText="north" endText="south">
+			<dock index="0" id="340" port="n" />
+			<dock index="1" id="344" port="s" />
+		</line>
+		<line id="880" startText="west" endText="east">
+			<dock index="0" id="340" port="w" />
+			<dock index="1" id="341" port="e" />
+		</line>
+		<line id="881" startText="north" endText="south">
+			<dock index="0" id="342" port="n" />
+			<dock index="1" id="343" port="s" />
+		</line>
+		<line id="882" startText="in" endText="out">
+			<dock index="0" id="344" port="se" />
+			<dock index="1" id="345" port="nw" />
+		</line>
+		<line id="883" startText="north" endText="south">
+			<dock index="0" id="345" port="n" />
+			<dock index="1" id="346" port="s" />
+		</line>
+		<line id="884" startText="east" endText="west">
+			<dock index="0" id="345" port="e" />
+			<dock index="1" id="348" port="w" />
+		</line>
+		<line id="885" startText="north" endText="south">
+			<dock index="0" id="346" port="n" />
+			<dock index="1" id="352" port="s" />
+		</line>
+		<line id="886" startText="west" endText="east">
+			<dock index="0" id="346" port="w" />
+			<dock index="1" id="347" port="e" />
+		</line>
+		<line id="887" startText="north" endText="south">
+			<dock index="0" id="348" port="n" />
+			<dock index="1" id="350" port="s" />
+		</line>
+		<line id="888" startText="east" endText="west">
+			<dock index="0" id="348" port="e" />
+			<dock index="1" id="349" port="w" />
+		</line>
+		<line id="889" startText="down" endText="up">
+			<dock index="0" id="350" port="sw" />
+			<dock index="1" id="351" port="ne" />
+		</line>
+		<line id="890" startText="north" endText="down">
+			<dock index="0" id="351" port="n" />
+			<dock index="1" id="356" port="s" />
+		</line>
+		<line id="891" startText="east" endText="west">
+			<dock index="0" id="352" port="e" />
+			<dock index="1" id="353" port="w" />
+		</line>
+		<line id="892" startText="north" endText="south">
+			<dock index="0" id="352" port="n" />
+			<dock index="1" id="356" port="s" />
+		</line>
+		<line id="893" startText="north" endText="south">
+			<dock index="0" id="353" port="n" />
+			<dock index="1" id="357" port="s" />
+		</line>
+		<line id="894" startText="down" endText="up">
+			<dock index="0" id="353" port="sw" />
+			<dock index="1" id="354" port="ne" />
+		</line>
+		<line id="895" startText="east" endText="west">
+			<dock index="0" id="354" port="e" />
+			<dock index="1" id="355" port="w" />
+		</line>
+		<line id="896" startText="east" endText="west">
+			<dock index="0" id="356" port="e" />
+			<dock index="1" id="357" port="w" />
+		</line>
+		<line id="897" startText="north" endText="south">
+			<dock index="0" id="357" port="n" />
+			<dock index="1" id="359" port="s" />
+		</line>
+		<line id="898" startText="east" endText="west">
+			<dock index="0" id="357" port="e" />
+			<dock index="1" id="358" port="w" />
+		</line>
+		<line id="899" startText="north" endText="south">
+			<dock index="0" id="359" port="n" />
+			<dock index="1" id="360" port="s" />
+		</line>
+		<line id="900" startText="east" endText="west">
+			<dock index="0" id="360" port="e" />
+			<dock index="1" id="361" port="w" />
+		</line>
+		<line id="901" startText="north" endText="south">
+			<dock index="0" id="361" port="n" />
+			<dock index="1" id="362" port="s" />
+		</line>
+		<line id="902" startText="down" endText="up">
+			<dock index="0" id="362" port="sw" />
+			<dock index="1" id="363" port="ne" />
+		</line>
+		<line id="903" startText="down" endText="up">
+			<dock index="0" id="363" port="sw" />
+			<dock index="1" id="367" port="ne" />
+		</line>
+		<line id="904" startText="east" endText="west">
+			<dock index="0" id="363" port="e" />
+			<dock index="1" id="364" port="w" />
+		</line>
+		<line id="905" startText="west" endText="east">
+			<dock index="0" id="363" port="w" />
+			<dock index="1" id="365" port="e" />
+		</line>
+		<line id="906" startText="down" endText="up">
+			<dock index="0" id="365" port="sw" />
+			<dock index="1" id="366" port="ne" />
+		</line>
+		<line id="907" startText="north" endText="south">
+			<dock index="0" id="367" port="n" />
+			<dock index="1" id="371" port="s" />
+		</line>
+		<line id="908" startText="east" endText="west">
+			<dock index="0" id="367" port="e" />
+			<dock index="1" id="369" port="w" />
+		</line>
+		<line id="909" startText="west" endText="east">
+			<dock index="0" id="367" port="w" />
+			<dock index="1" id="368" port="e" />
+		</line>
+		<line id="910" startText="north" endText="south">
+			<dock index="0" id="369" port="n" />
+			<dock index="1" id="370" port="s" />
+		</line>
+		<line id="911" startText="north">
+			<dock index="0" id="370" port="n" />
+			<dock index="1" id="390" port="s" />
+		</line>
+		<line id="912" startText="north" endText="south">
+			<dock index="0" id="371" port="n" />
+			<dock index="1" id="376" port="s" />
+		</line>
+		<line id="913" startText="east" endText="west">
+			<dock index="0" id="371" port="e" />
+			<dock index="1" id="372" port="w" />
+		</line>
+		<line id="914" startText="west" endText="east">
+			<dock index="0" id="371" port="w" />
+			<dock index="1" id="375" port="e" />
+		</line>
+		<line id="915" startText="down" endText="up">
+			<dock index="0" id="372" port="sw" />
+			<dock index="1" id="373" port="ne" />
+		</line>
+		<line id="916" startText="north" endText="south">
+			<dock index="0" id="373" port="n" />
+			<dock index="1" id="374" port="s" />
+		</line>
+		<line id="917" startText="north">
+			<dock index="0" id="374" port="n" />
+			<dock index="1" id="386" port="s" />
+		</line>
+		<line id="918" startText="north" endText="south">
+			<dock index="0" id="376" port="n" />
+			<dock index="1" id="379" port="s" />
+		</line>
+		<line id="919" startText="east" endText="west">
+			<dock index="0" id="376" port="e" />
+			<dock index="1" id="377" port="w" />
+		</line>
+		<line id="920" startText="west" endText="east">
+			<dock index="0" id="376" port="w" />
+			<dock index="1" id="378" port="e" />
+		</line>
+		<line id="921" startText="north" endText="south">
+			<dock index="0" id="379" port="n" />
+			<dock index="1" id="382" port="s" />
+		</line>
+		<line id="922" startText="east" endText="west">
+			<dock index="0" id="379" port="e" />
+			<dock index="1" id="380" port="w" />
+		</line>
+		<line id="923" startText="west" endText="east">
+			<dock index="0" id="379" port="w" />
+			<dock index="1" id="381" port="e" />
+		</line>
+		<line id="924" startText="north" endText="south">
+			<dock index="0" id="382" port="n" />
+			<dock index="1" id="390" port="s" />
+		</line>
+		<line id="925" startText="east" endText="west">
+			<dock index="0" id="382" port="e" />
+			<dock index="1" id="384" port="w" />
+		</line>
+		<line id="926" startText="west" endText="east">
+			<dock index="0" id="382" port="w" />
+			<dock index="1" id="383" port="e" />
+		</line>
+		<line id="927" startText="down" endText="up">
+			<dock index="0" id="382" port="sw" />
+			<dock index="1" id="389" port="ne" />
+		</line>
+		<line id="928" startText="north" endText="south">
+			<dock index="0" id="384" port="n" />
+			<dock index="1" id="386" port="s" />
+		</line>
+		<line id="929" startText="east" endText="west">
+			<dock index="0" id="384" port="e" />
+			<dock index="1" id="385" port="w" />
+		</line>
+		<line id="930" startText="north" endText="south">
+			<dock index="0" id="386" port="n" />
+			<dock index="1" id="387" port="s" />
+		</line>
+		<line id="931" startText="west" endText="east">
+			<dock index="0" id="386" port="w" />
+			<dock index="1" id="388" port="e" />
+		</line>
+		<line id="932" startText="down">
+			<dock index="0" id="389" port="sw" />
+			<dock index="1" id="393" port="ne" />
+		</line>
+		<line id="933" startText="north" endText="south">
+			<dock index="0" id="390" port="n" />
+			<dock index="1" id="393" port="s" />
+		</line>
+		<line id="934" startText="east" endText="west">
+			<dock index="0" id="390" port="e" />
+			<dock index="1" id="391" port="w" />
+		</line>
+		<line id="935" startText="west" endText="east">
+			<dock index="0" id="390" port="w" />
+			<dock index="1" id="392" port="e" />
+		</line>
+		<line id="936" startText="north" endText="south">
+			<dock index="0" id="393" port="n" />
+			<dock index="1" id="396" port="s" />
+		</line>
+		<line id="937" startText="east" endText="west">
+			<dock index="0" id="393" port="e" />
+			<dock index="1" id="394" port="w" />
+		</line>
+		<line id="938" startText="west" endText="east">
+			<dock index="0" id="393" port="w" />
+			<dock index="1" id="395" port="e" />
+		</line>
+		<line id="939" startText="north" endText="south">
+			<dock index="0" id="396" port="n" />
+			<dock index="1" id="401" port="s" />
+		</line>
+		<line id="940" startText="east" endText="west">
+			<dock index="0" id="396" port="e" />
+			<dock index="1" id="398" port="w" />
+		</line>
+		<line id="941" startText="west" endText="east">
+			<dock index="0" id="396" port="w" />
+			<dock index="1" id="397" port="e" />
+		</line>
+		<line id="942" startText="down" endText="up">
+			<dock index="0" id="396" port="sw" />
+			<dock index="1" id="404" port="ne" />
+		</line>
+		<line id="943" startText="up" endText="down">
+			<dock index="0" id="398" port="ne" />
+			<dock index="1" id="399" port="sw" />
+		</line>
+		<line id="944" startText="north" endText="south">
+			<dock index="0" id="399" port="n" />
+			<dock index="1" id="400" port="s" />
+		</line>
+		<line id="945" startText="west" endText="west">
+			<dock index="0" id="399" port="w" />
+			<dock index="1" id="401" port="e" />
+		</line>
+		<line id="946" startText="north" endText="south">
+			<dock index="0" id="401" port="n" />
+			<dock index="1" id="403" port="s" />
+		</line>
+		<line id="947" startText="east" endText="west">
+			<dock index="0" id="401" port="e" />
+			<dock index="1" id="402" port="w" />
+		</line>
+		<line id="948" startText="down">
+			<dock index="0" id="403" port="sw" />
+			<dock index="1" id="404" port="ne" />
+		</line>
+		<line id="949" startText="north" endText="south">
+			<dock index="0" id="404" port="n" />
+			<dock index="1" id="406" port="s" />
+		</line>
+		<line id="950" startText="east" endText="west">
+			<dock index="0" id="404" port="e" />
+			<dock index="1" id="405" port="w" />
+		</line>
+		<line id="951" startText="in" endText="out">
+			<dock index="0" id="406" port="se" />
+			<dock index="1" id="407" port="nw" />
+		</line>
+		<line id="952" startText="north" endText="south">
+			<dock index="0" id="407" port="n" />
+			<dock index="1" id="409" port="s" />
+		</line>
+		<line id="953" startText="east" endText="west">
+			<dock index="0" id="407" port="e" />
+			<dock index="1" id="408" port="w" />
+		</line>
+		<line id="954" startText="north" endText="south">
+			<dock index="0" id="409" port="n" />
+			<dock index="1" id="414" port="s" />
+		</line>
+		<line id="955" startText="east" endText="west">
+			<dock index="0" id="409" port="e" />
+			<dock index="1" id="410" port="w" />
+		</line>
+		<line id="956" startText="west" endText="east">
+			<dock index="0" id="409" port="w" />
+			<dock index="1" id="411" port="e" />
+		</line>
+		<line id="957" startText="down" endText="up">
+			<dock index="0" id="411" port="sw" />
+			<dock index="1" id="412" port="ne" />
+		</line>
+		<line id="958" startText="north" endText="south">
+			<dock index="0" id="412" port="n" />
+			<dock index="1" id="413" port="s" />
+		</line>
+		<line id="959" startText="north" endText="south">
+			<dock index="0" id="414" port="n" />
+			<dock index="1" id="419" port="s" />
+		</line>
+		<line id="960" startText="east" endText="west">
+			<dock index="0" id="414" port="e" />
+			<dock index="1" id="416" port="w" />
+		</line>
+		<line id="961" startText="west" endText="east">
+			<dock index="0" id="414" port="w" />
+			<dock index="1" id="415" port="e" />
+		</line>
+		<line id="962" startText="down" endText="up">
+			<dock index="0" id="414" port="sw" />
+			<dock index="1" id="417" port="ne" />
+		</line>
+		<line id="963" startText="north" endText="south">
+			<dock index="0" id="417" port="n" />
+			<dock index="1" id="418" port="s" />
+		</line>
+		<line id="964" startText="north" endText="south">
+			<dock index="0" id="419" port="n" />
+			<dock index="1" id="420" port="s" />
+		</line>
+		<line id="965" startText="north" endText="south">
+			<dock index="0" id="420" port="n" />
+			<dock index="1" id="422" port="s" />
+		</line>
+		<line id="966" startText="east" endText="west">
+			<dock index="0" id="420" port="e" />
+			<dock index="1" id="421" port="w" />
+		</line>
+		<line id="967" startText="north" endText="south">
+			<dock index="0" id="422" port="n" />
+			<dock index="1" id="423" port="s" />
+		</line>
+		<line id="968" startText="north" endText="south">
+			<dock index="0" id="423" port="n" />
+			<dock index="1" id="426" port="s" />
+		</line>
+		<line id="969" startText="east" endText="west">
+			<dock index="0" id="423" port="e" />
+			<dock index="1" id="424" port="w" />
+		</line>
+		<line id="970" startText="west" endText="east">
+			<dock index="0" id="423" port="w" />
+			<dock index="1" id="425" port="e" />
+		</line>
+		<line id="971" startText="north" endText="south">
+			<dock index="0" id="426" port="n" />
+			<dock index="1" id="427" port="s" />
+		</line>
+		<line id="972" startText="north" endText="south">
+			<dock index="0" id="427" port="n" />
+			<dock index="1" id="428" port="s" />
+		</line>
+		<line id="973" startText="south" endText="north (hidden, astral_crown_gate_opened)">
+			<dock index="0" id="429" port="s" />
+			<dock index="1" id="428" port="n" />
+		</line>
+		<line id="974" startText="north" endText="south">
+			<dock index="0" id="429" port="n" />
+			<dock index="1" id="430" port="s" />
+		</line>
+		<line id="975" startText="north" endText="south">
+			<dock index="0" id="430" port="n" />
+			<dock index="1" id="434" port="s" />
+		</line>
+		<line id="976" startText="east" endText="west">
+			<dock index="0" id="430" port="e" />
+			<dock index="1" id="432" port="w" />
+		</line>
+		<line id="977" startText="west" endText="east">
+			<dock index="0" id="430" port="w" />
+			<dock index="1" id="431" port="e" />
+		</line>
+		<line id="978" startText="up" endText="down">
+			<dock index="0" id="430" port="ne" />
+			<dock index="1" id="433" port="sw" />
+		</line>
+		<line id="979" startText="north" endText="south">
+			<dock index="0" id="434" port="n" />
+			<dock index="1" id="437" port="s" />
+		</line>
+		<line id="980" startText="east" endText="west">
+			<dock index="0" id="434" port="e" />
+			<dock index="1" id="436" port="w" />
+		</line>
+		<line id="981" startText="west" endText="east">
+			<dock index="0" id="434" port="w" />
+			<dock index="1" id="435" port="e" />
+		</line>
+		<line id="982" startText="north" endText="south">
+			<dock index="0" id="437" port="n" />
+			<dock index="1" id="438" port="s" />
+		</line>
+		<line id="983" startText="east" endText="west">
+			<dock index="0" id="438" port="e" />
+			<dock index="1" id="439" port="w" />
+		</line>
+		<line id="984" startText="west" endText="east">
+			<dock index="0" id="438" port="w" />
+			<dock index="1" id="441" port="e" />
+		</line>
+		<line id="985" startText="north" endText="south">
+			<dock index="0" id="438" port="n" />
+			<dock index="1" id="443" port="s" />
+		</line>
+		<line id="986" startText="north" endText="south">
+			<dock index="0" id="439" port="n" />
+			<dock index="1" id="444" port="s" />
+		</line>
+		<line id="987" startText="east" endText="west">
+			<dock index="0" id="439" port="e" />
+			<dock index="1" id="440" port="w" />
+		</line>
+		<line id="988" startText="up" endText="down">
+			<dock index="0" id="441" port="ne" />
+			<dock index="1" id="442" port="sw" />
+		</line>
+		<line id="989" startText="north" endText="south">
+			<dock index="0" id="443" port="n" />
+			<dock index="1" id="445" port="s" />
+		</line>
+		<line id="990" startText="north">
+			<dock index="0" id="444" port="n" />
+			<dock index="1" id="445" port="s" />
+		</line>
+		<line id="991" startText="west" endText="east (hidden, ac_survival_gate_opened)">
+			<dock index="0" id="446" port="w" />
+			<dock index="1" id="445" port="e" />
+		</line>
+		<line id="992" startText="south" endText="north (hidden, ac_survival_gate_opened)">
+			<dock index="0" id="447" port="s" />
+			<dock index="1" id="445" port="n" />
+		</line>
+		<line id="993" startText="north" endText="south">
+			<dock index="0" id="447" port="n" />
+			<dock index="1" id="448" port="s" />
+		</line>
+		<line id="994" startText="east" endText="west">
+			<dock index="0" id="447" port="e" />
+			<dock index="1" id="449" port="w" />
+		</line>
+		<line id="995" startText="west" endText="east">
+			<dock index="0" id="447" port="w" />
+			<dock index="1" id="450" port="e" />
+		</line>
+		<line id="996" startText="down" endText="up">
+			<dock index="0" id="447" port="sw" />
+			<dock index="1" id="451" port="ne" />
+		</line>
+		<line id="997" startText="north" endText="south">
+			<dock index="0" id="448" port="n" />
+			<dock index="1" id="452" port="s" />
+		</line>
+		<line id="998" startText="north" endText="south">
+			<dock index="0" id="452" port="n" />
+			<dock index="1" id="453" port="s" />
+		</line>
+		<line id="999" startText="north" endText="south">
+			<dock index="0" id="453" port="n" />
+			<dock index="1" id="454" port="s" />
+		</line>
+		<line id="1000" startText="west" endText="east (hidden, ac_memory_gate_opened)">
+			<dock index="0" id="455" port="w" />
+			<dock index="1" id="454" port="e" />
+		</line>
+		<line id="1001" startText="south" endText="north (hidden, ac_memory_gate_opened)">
+			<dock index="0" id="456" port="s" />
+			<dock index="1" id="454" port="n" />
+		</line>
+		<line id="1002" startText="east" endText="west">
+			<dock index="0" id="456" port="e" />
+			<dock index="1" id="457" port="w" />
+		</line>
+		<line id="1003" startText="west" endText="east">
+			<dock index="0" id="456" port="w" />
+			<dock index="1" id="458" port="e" />
+		</line>
+		<line id="1004" startText="north" endText="south">
+			<dock index="0" id="456" port="n" />
+			<dock index="1" id="459" port="s" />
+		</line>
+		<line id="1005" startText="north" endText="south">
+			<dock index="0" id="457" port="n" />
+			<dock index="1" id="460" port="s" />
+		</line>
+		<line id="1006" startText="north" endText="south">
+			<dock index="0" id="459" port="n" />
+			<dock index="1" id="461" port="s" />
+		</line>
+		<line id="1007" startText="west" endText="east">
+			<dock index="0" id="460" port="w" />
+			<dock index="1" id="461" port="e" />
+		</line>
+		<line id="1008" startText="east" endText="west (hidden, ac_direction_gate_opened)">
+			<dock index="0" id="462" port="e" />
+			<dock index="1" id="461" port="w" />
+		</line>
+		<line id="1009" startText="north" endText="south">
+			<dock index="0" id="462" port="n" />
+			<dock index="1" id="463" port="s" />
+		</line>
+		<line id="1010" startText="east">
+			<dock index="0" id="463" port="e" />
+			<dock index="1" id="464" port="w" />
+		</line>
+		<line id="1011" startText="south" endText="north (hidden, ac_direction_gate_opened)">
+			<dock index="0" id="464" port="s" />
+			<dock index="1" id="461" port="n" />
+		</line>
+		<line id="1012" startText="east" endText="west">
+			<dock index="0" id="464" port="e" />
+			<dock index="1" id="465" port="w" />
+		</line>
+		<line id="1013" startText="west" endText="east">
+			<dock index="0" id="464" port="w" />
+			<dock index="1" id="466" port="e" />
+		</line>
+		<line id="1014" startText="north" endText="south">
+			<dock index="0" id="464" port="n" />
+			<dock index="1" id="467" port="s" />
+		</line>
+		<line id="1015" startText="north" endText="south">
+			<dock index="0" id="467" port="n" />
+			<dock index="1" id="470" port="s" />
+		</line>
+		<line id="1016" startText="east" endText="west">
+			<dock index="0" id="467" port="e" />
+			<dock index="1" id="468" port="w" />
+		</line>
+		<line id="1017" startText="west" endText="east">
+			<dock index="0" id="467" port="w" />
+			<dock index="1" id="469" port="e" />
+		</line>
+		<line id="1018" startText="south" endText="north (hidden, ac_black_star_door_opened)">
+			<dock index="0" id="471" port="s" />
+			<dock index="1" id="470" port="n" />
+		</line>
+		<line id="1019" startText="north" endText="south">
+			<dock index="0" id="471" port="n" />
+			<dock index="1" id="472" port="s" />
+		</line>
+		<line id="1020" startText="east" endText="west">
+			<dock index="0" id="472" port="e" />
+			<dock index="1" id="473" port="w" />
+		</line>
+	</map>
+</trizbort>
