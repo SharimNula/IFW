@@ -221,12 +221,14 @@ class EngineCombatMixin:
         lines = [f"{enemy.name} falls in battle."]
         if enemy.defeat_text:
             lines.append(enemy.defeat_text)
+        if enemy.boss_encounter is not None:
+            self._apply_defeated_boss_resolution_flag(state)
         self._add_currency("gold", enemy.gold_reward)
         lines.append(f"You gain {self._format_currency(enemy.gold_reward, 'gold')}.")
         lines.append(f"You gain {enemy.exp_reward} experience.")
         lines.extend(self._gain_player_experience(enemy.exp_reward))
 
-        lines.extend(self._award_enemy_loot(enemy))
+        lines.extend(self._award_enemy_loot(enemy, guaranteed=enemy.boss_encounter is not None))
 
         lines.extend(self._check_quest_completion())
         return lines

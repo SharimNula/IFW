@@ -115,6 +115,7 @@ class EngineBossMixin:
         choice: BossEncounterChoice,
     ) -> list[str]:
         self._mark_boss_encounter_started(state)
+        self._track_boss_fight_resolution_flag(state, choice)
         enemy = self.world.enemies[state.enemy_id]
         return [
             choice.text or f"You stand your ground against {enemy.name}.",
@@ -139,7 +140,7 @@ class EngineBossMixin:
             choice.text
             or f"What you have learned gives {enemy.name} reason to withdraw."
         ]
-        lines.extend(self._resolve_boss_without_combat(state))
+        lines.extend(self._resolve_boss_without_combat(state, choice))
         return lines
 
     def _control_boss(
@@ -160,7 +161,7 @@ class EngineBossMixin:
         lines = [choice.text or f"{item.name} bends {enemy.name} to your command."]
         if choice.consume_item:
             lines.append(f"{item.name} is consumed.")
-        lines.extend(self._resolve_boss_without_combat(state))
+        lines.extend(self._resolve_boss_without_combat(state, choice))
         return lines
 
     def _delay_boss(
@@ -176,27 +177,51 @@ class EngineBossMixin:
                 "Standard combat begins.",
             ]
 
-        assert choice.set_flag is not None
-        self._set_story_flags([choice.set_flag])
         lines = [
             choice.success_text
             or f"You delay {enemy.name}, but the danger is not ended."
         ]
+        lines.extend(self._resolve_boss_without_combat(state, choice))
+        return lines
+
+    def _resolve_boss_without_combat(
+        self,
+        state: EnemyState,
+        choice: BossEncounterChoice,
+    ) -> list[str]:
+        self._mark_boss_encounter_started(state)
+        self._apply_boss_choice_flag(choice)
         self._remove_resolved_boss(state)
-        lines.extend(self._award_enemy_loot(enemy, guaranteed=True))
+        enemy = self.world.enemies[state.enemy_id]
+        lines = self._award_enemy_loot(enemy, guaranteed=True)
         lines.extend(self._check_quest_completion())
         lines.extend(self._next_boss_encounter_lines())
         return lines
 
-    def _resolve_boss_without_combat(self, state: EnemyState) -> list[str]:
-        self._mark_boss_encounter_started(state)
-        self._remove_resolved_boss(state)
-        lines = self._check_quest_completion()
-        lines.extend(self._next_boss_encounter_lines())
-        return lines
+    def _track_boss_fight_resolution_flag(
+        self,
+        state: EnemyState,
+        choice: BossEncounterChoice,
+    ) -> None:
+        encounter_key = self._boss_encounter_key(state)
+        if choice.set_flag:
+            self.progress.boss_resolution_flags[encounter_key] = choice.set_flag
+        else:
+            self.progress.boss_resolution_flags.pop(encounter_key, None)
+
+    def _apply_boss_choice_flag(self, choice: BossEncounterChoice) -> None:
+        if choice.set_flag:
+            self._set_story_flags([choice.set_flag])
+
+    def _apply_defeated_boss_resolution_flag(self, state: EnemyState) -> None:
+        encounter_key = self._boss_encounter_key(state)
+        flag = self.progress.boss_resolution_flags.pop(encounter_key, None)
+        if flag:
+            self._set_story_flags([flag])
 
     def _remove_resolved_boss(self, state: EnemyState) -> None:
         enemy = self.world.enemies[state.enemy_id]
+        self.progress.boss_resolution_flags.pop(self._boss_encounter_key(state), None)
         self._room_enemies().remove(state)
         if enemy.enemy_id not in self.progress.defeated_enemies:
             self.progress.defeated_enemies.append(enemy.enemy_id)

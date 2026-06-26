@@ -33,6 +33,7 @@ class WorldProgress:
     pickpocketed_targets: list[str] = field(default_factory=list)
     lockpick_failures: dict[str, int] = field(default_factory=dict)
     started_boss_encounters: list[str] = field(default_factory=list)
+    boss_resolution_flags: dict[str, str] = field(default_factory=dict)
 
     def add_item(self, item_id: str, amount: int = 1) -> None:
         self.inventory[item_id] = self.inventory.get(item_id, 0) + amount
@@ -104,6 +105,7 @@ class WorldProgress:
             "pickpocketed_targets": self.pickpocketed_targets,
             "lockpick_failures": self.lockpick_failures,
             "started_boss_encounters": self.started_boss_encounters,
+            "boss_resolution_flags": self.boss_resolution_flags,
         }
 
     @classmethod
@@ -171,6 +173,10 @@ class WorldProgress:
                 str(encounter_key)
                 for encounter_key in list(payload.get("started_boss_encounters", []))
             ],
+            boss_resolution_flags={
+                str(encounter_key): str(flag)
+                for encounter_key, flag in dict(payload.get("boss_resolution_flags", {})).items()
+            },
         )
 
 

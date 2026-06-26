@@ -199,6 +199,7 @@ def _parse_boss_choice(
         choice_type=choice_type,
         label=choice_element.get("label", "").strip() or default_label,
         text=_optional_text(choice_element),
+        set_flag=choice_element.get("set_flag"),
     )
 
 

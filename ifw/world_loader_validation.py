@@ -522,6 +522,11 @@ def validate_boss_encounter(world: World, enemy, source: Path) -> None:
                 f"{source}: enemy '{enemy.enemy_id}' boss choice '{choice.choice_type}' "
                 "must have a label."
             )
+        if choice.set_flag is None or not choice.set_flag.strip():
+            raise ValueError(
+                f"{source}: enemy '{enemy.enemy_id}' boss choice '{choice.choice_type}' "
+                "must set a story flag."
+            )
         if choice.choice_type == "bypass":
             if not choice.required_flags or any(
                 not flag.strip() for flag in choice.required_flags
@@ -544,10 +549,6 @@ def validate_boss_encounter(world: World, enemy, source: Path) -> None:
             if not 1 <= choice.success_chance <= 100:
                 raise ValueError(
                     f"{source}: enemy '{enemy.enemy_id}' delay chance must be between 1 and 100."
-                )
-            if choice.set_flag is None or not choice.set_flag.strip():
-                raise ValueError(
-                    f"{source}: enemy '{enemy.enemy_id}' delay choice must set a flag."
                 )
 
 
